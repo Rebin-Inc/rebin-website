@@ -1,3 +1,160 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html * {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.bg-rebin-light-blue {
+  background-color: #f2f5fd;
+}
+
+.bg-rebin-blue {
+  background-color: #0043ff;
+}
+
+.bg-rebin-dark-blue {
+  background-color: #12274f;
+}
+
+.bg-rebin-grey {
+  background-color: #a0aec0;
+}
+
+.bg-rebin-red {
+  background-color: rgba(216, 0, 39, 0.05);
+}
+
+.bg-rebin-fail {
+  background-color: #fed7d7;
+}
+
+.bg-rebin-success {
+  background-color: #c6f6d5;
+}
+
+.bg-rebin-green {
+  background-color: rgba(79, 209, 197, 0.08);
+}
+
+.bg-gradient {
+  background: rgb(0, 67, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 67, 255, 1) 0%,
+    rgba(18, 39, 79, 1) 100%
+  );
+}
+
+.bg-rebin-hover:hover {
+  background-color: #0055ff;
+}
+
+.bg-rebin-dark-blue-hover:hover {
+  background-color: #12274f;
+}
+
+.bg-gradient-hover:hover {
+  background: rgb(0, 67, 255);
+  background: linear-gradient(
+    30deg,
+    rgba(0, 67, 255, 1) 0%,
+    rgba(18, 39, 79, 1) 100%
+  );
+}
+
+.bg-rebin-grey-hover:hover {
+  background-color: #a0aec0;
+}
+
+.text-gradient {
+  background: -webkit-linear-gradient(#0043ff, #12274f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-alert-color {
+  color: #2d3748;
+}
+
+.text-rebin-darkblue {
+  color: #12274f;
+}
+
+.text-rebin-blue {
+  color: #0043ff;
+}
+
+.text-rebin-grey {
+  color: #a0aec0;
+}
+
+.text-rebin-darkgrey {
+  color: #696f79;
+}
+
+.text-rebin-red {
+  color: #d80027;
+}
+
+.text-rebin-green {
+  color: #4fd1c5;
+}
+
+.text-rebin-blue-hover:hover {
+  color: #0043ff;
+}
+
+.text-rebin-light-blue {
+  color: #f2f5fd;
+}
+
+.border-rebin {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #dee5ec;
+}
+
+.border-rebin-blue {
+  border-color: #0043ff;
+  border-width: 2px;
+}
+
+.border-rebin-dark-blue {
+  border-color: #12274f;
+  border-width: 2px;
+}
+
+.divide-rebin {
+  border-bottom: 1px solid #dee5ec;
+}
+
+.rebin-password {
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+
+.icon {
+  stroke-width: 0;
+}
+
+.rdt_TableHeadRow {
+  color: #a0aec0;
+  font-weight: 700;
+}
+
+.rdt_TableCell {
+  color: #12274f;
+  font-weight: 500;
+}
+
+.items-between {
+  align-items: space-between;
+}
