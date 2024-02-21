@@ -1,10 +1,11 @@
 import React from "react";
+import Contact from "./pages/contact/Contact";
 
 function App() {
   return (
-    <div className="App">
-      rebin
-    </div>
+    <>
+      <Contact></Contact>
+    </>
   );
 }
 
