@@ -34,7 +34,7 @@ const ContactForm = () => {
             </div>
             {/* Contact form */}
             <form className="p-8 flex flex-col justify-center col-span-3">
-              <h1 className="text-normal text-sm text-xl font-semibold text-black mt-2 my-12">
+              <h1 className="text-normal text-xl font-semibold text-black mt-2 my-12">
                 Get in touch
               </h1>
               <div className="flex flex-row space-x-3">
