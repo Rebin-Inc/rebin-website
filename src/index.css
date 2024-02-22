@@ -3,61 +3,86 @@
 @tailwind utilities;
 
 html * {
-  font-family: 'Poppins', sans-serif;;
+  font-family: "Poppins", sans-serif;
 }
 
 .bg-gradient {
-  background: rgb(0,67,255);
-  background: linear-gradient(90deg, rgba(0,67,255,1) 0%, rgba(18,39,79,1) 100%);
+  background: rgb(0, 67, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 67, 255, 1) 0%,
+    rgba(18, 39, 79, 1) 100%
+  );
+}
+
+.bg-gradient-reverse {
+  background: rgb(0, 67, 255);
+  background: linear-gradient(rgba(0, 67, 255, 1) 0%, rgba(18, 39, 79, 1) 100%);
 }
 
 .bg-gradient-hover:hover {
-  background: rgb(0,67,255);
-  background: linear-gradient(30deg, rgba(0,67,255,1) 0%, rgba(18,39,79,1) 100%);
+  background: rgb(0, 67, 255);
+  background: linear-gradient(
+    30deg,
+    rgba(0, 67, 255, 1) 0%,
+    rgba(18, 39, 79, 1) 100%
+  );
 }
 
-
 .bg-gradient-footer {
-  background: rgb(0,67,255);
-  background: linear-gradient(30deg, rgba(0,67,255,1) 0%, rgba(18,39,79,1) 100%);
+  background: rgb(0, 67, 255);
+  background: linear-gradient(
+    30deg,
+    rgba(0, 67, 255, 1) 0%,
+    rgba(18, 39, 79, 1) 100%
+  );
 }
 
 .bg-rebin-grey {
-  background-color: #F2F2F2;
+  background-color: #f2f2f2;
 }
 
 .divide-rebin-darkblue {
-  border-color:#12274F
+  border-color: #12274f;
 }
 
 .text-gradient {
-  background: -webkit-linear-gradient(#0043ff, #12274F);
+  background: -webkit-linear-gradient(#0043ff, #12274f);
   -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-horizontal {
+  background: -webkit-linear-gradient(45deg, #0043ff, #12274f);
+  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-rebin-darkblue {
-  color: #12274F
+  color: #12274f;
 }
 
 .text-rebin-blue {
-  color:#0043ff;
+  color: #0043ff;
 }
 
 .text-gradient-hover:hover {
-  background: -webkit-linear-gradient(left,#0043ff, #12274F);
+  background: -webkit-linear-gradient(left, #0043ff, #12274f);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
-  font-weight:semi-bold;
+  font-weight: semi-bold;
 }
 
 .border-rebin-blue {
   border-style: solid;
-  border-color: #12274F;
+  border-color: #12274f;
   border-width: 3px;
 }
 
 /* SLIDER */
- .slick-dots {
-  bottom: -50px; 
+.slick-dots {
+  bottom: -50px;
 }
