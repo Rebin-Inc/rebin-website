@@ -52,6 +52,15 @@ body {
   );
 }
 
+.bg-gradient-horizontal {
+  background: rgb(0, 67, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 67, 255, 1) 0%,
+    rgba(18, 39, 79, 1) 100%
+  );
+}
+
 .bg-rebin-hover:hover {
   background-color: #0055ff;
 }
@@ -75,6 +84,13 @@ body {
 
 .text-gradient {
   background: -webkit-linear-gradient(#0043ff, #12274f);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-gradient-horizontal {
+  background: -webkit-linear-gradient(45deg, #0043ff, #12274f);
   -webkit-background-clip: text;
   background-clip: text;
   -webkit-text-fill-color: transparent;
