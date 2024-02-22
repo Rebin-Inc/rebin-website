@@ -3,7 +3,7 @@ import ContactForm from "./Components/ContactForm";
 
 const Contact = () => {
   return (
-    <main>
+    <main className="pb-20">
       <div className="grid place-content-center my-20">
         <h1 className="text-center text-gradient-horizontal font-bold text-3xl">
           Contact us
