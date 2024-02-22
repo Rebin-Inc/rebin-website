@@ -2,7 +2,7 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { default as Logo } from "../../assets/images/Rebin.svg";
 import { Button } from "@chakra-ui/react";
-import LanguageDropdown from "./LanguageDropdown";
+import LanguageDropdown from "../../components/LanguageDropdown";
 
 const navigation = [
   { name: "How it works", href: "#", current: false },
