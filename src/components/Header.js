@@ -1,11 +1,8 @@
-import React from 'react'
-import { useState } from 'react'
-import { Dialog, Disclosure, Popover } from '@headlessui/react'
-import { Bars3Icon,ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline'
-import rebin from '../Images/rebin-blue.png'
-
-
-
+import React from 'react';
+import { useState } from 'react';
+import { Dialog, Disclosure, Popover } from '@headlessui/react';
+import { Bars3Icon,ChevronDownIcon, XMarkIcon } from '@heroicons/react/24/outline';
+import rebin from '../assets/images/Rebin.svg';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
