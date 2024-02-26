@@ -8,6 +8,9 @@ import References from "./pages/references/References";
 import About from "./pages/about/About";
 import Login from "./pages/login/Login";
 import Solution from "./pages/solution/Solution";
+import Software from "./pages/software/Software";
+import Consulting from "./pages/consulting/Consulting";
+import Sensor from "./pages/sensor/Sensor";
 
 function App() {
   return (
@@ -19,6 +22,9 @@ function App() {
         <Route path="about" element={<About />} />
         <Route path="login" element={<Login />} />
         <Route path="solution" element={<Solution />} />
+        <Route path="software" element={<Software />} />
+        <Route path="consulting" element={<Consulting />} />
+        <Route path="sensor" element={<Sensor />} />
       </Route>
     </Routes>
   );
