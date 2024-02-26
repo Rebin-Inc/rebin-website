@@ -8,6 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 import rebin from "../assets/images/Rebin.svg";
 import LanguageDropdown from "./LanguageDropdown";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -48,10 +49,10 @@ const Header = () => {
         className="flex mx-auto max-w-7xl items-center justify-between p-6 "
         aria-label="Global"
       >
-        <a href="/">
+        <Link to="/">
           <span className="sr-only">Rebin</span>
           <img className="h-16 w-auto" src={rebin} alt=""></img>
-        </a>
+        </Link>
         <div className="flex lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(true)}
@@ -68,12 +69,12 @@ const Header = () => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a
+          <Link
             className="text-sm font-medium text-gradient-hover"
-            href="how-it-works"
+            to="how-it-works"
           >
             How it works
-          </a>
+          </Link>
           <Popover className="relative">
             <Popover.Button className="flex items-center focus:outline-none gap-x-1 text-sm font-medium leading-6 text-gradient-hover">
               Solution
@@ -98,13 +99,13 @@ const Header = () => {
                       />
                     </div>
                     <div className="flex-auto">
-                      <a
-                        href={item.href}
+                      <Link
+                        to={item.href}
                         className="block font-semibold text-gray-900 text-gradient-hover"
                       >
                         {item.name}
                         <span className="absolute inset-0" />
-                      </a>
+                      </Link>
                       <p className="mt-1 text-gray-600">{item.description}</p>
                     </div>
                   </div>
@@ -112,26 +113,29 @@ const Header = () => {
               </div>
             </Popover.Panel>
           </Popover>
-          <a
+          <Link
             className="text-sm font-medium text-gradient-hover"
-            href="references"
+            to="references"
           >
             References
-          </a>
-          <a className="text-sm font-medium text-gradient-hover" href="about">
+          </Link>
+          <Link className="text-sm font-medium text-gradient-hover" to="about">
             About us
-          </a>
-          <a className="text-sm font-medium text-gradient-hover" href="contact">
+          </Link>
+          <Link
+            className="text-sm font-medium text-gradient-hover"
+            to="contact"
+          >
             Contact
-          </a>
+          </Link>
         </Popover.Group>
         <div className="hidden lg:flex space-x-2">
-          <a
-            href="login"
+          <Link
+            to="login"
             className="rounded-full bg-gradient text-white px-6 py-2.5 text-sm font-semibold shadow-sm bg-gradient-hover"
           >
             Log in
-          </a>
+          </Link>
           <LanguageDropdown></LanguageDropdown>
         </div>
 
@@ -143,10 +147,10 @@ const Header = () => {
         >
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-200">
             <div className="flex items-center justify-between">
-              <a href="/" className="-m-1.5 p-1.5">
+              <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Rebin</span>
                 <img className="h-8 w-auto" src={rebin} alt="" />
-              </a>
+              </Link>
               <button
                 type="button"
                 className="-m-2.5 rounded-md p-2.5 text-gray-700"
@@ -159,12 +163,12 @@ const Header = () => {
             <div className="mt-6 flow-root">
               <div className="-my-6 divide-y divide-gray-200">
                 <div className="space-y-2 py-6">
-                  <a
-                    href="how-it-works"
+                  <Link
+                    to="how-it-works"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     How it works
-                  </a>
+                  </Link>
                   <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
@@ -183,7 +187,7 @@ const Header = () => {
                             <Disclosure.Button
                               key={item.name}
                               as="a"
-                              href={item.href}
+                              to={item.href}
                               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-medium leading-7 hover:bg-gray-50"
                             >
                               {item.name}
@@ -193,32 +197,32 @@ const Header = () => {
                       </>
                     )}
                   </Disclosure>
-                  <a
-                    href="references"
+                  <Link
+                    to="references"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     References
-                  </a>
-                  <a
-                    href="about"
+                  </Link>
+                  <Link
+                    to="about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     About us
-                  </a>
-                  <a
-                    href="contact"
+                  </Link>
+                  <Link
+                    to="contact"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     Contact
-                  </a>
+                  </Link>
                 </div>
                 <div className="py-6">
-                  <a
-                    href="login"
+                  <Link
+                    to="login"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
-                  </a>
+                  </Link>
                   <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
@@ -237,7 +241,7 @@ const Header = () => {
                             <Disclosure.Button
                               key={item.name}
                               as="a"
-                              href={item.href}
+                              to={item.href}
                               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-medium leading-7 hover:bg-gray-50"
                             >
                               {item.name}

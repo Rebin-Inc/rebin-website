@@ -1,6 +1,7 @@
 import React from "react";
 import rebin from "../assets/images/rebin-white.png";
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -10,75 +11,75 @@ const Footer = () => {
         aria-label="Global"
       >
         <div className="space-y-6 pb-10">
-          <a className="mt-8" href="#">
+          <Link className="mt-8" to="/">
             <span className="sr-only">Rebin</span>
             <img className="h-8 w-auto" src={rebin} alt=""></img>
-          </a>
+          </Link>
           <p className="text-sm font-light opacity-50">
             Copyright &copy; 2024 for Rebin.<br></br>
             All rights reserved.
           </p>
-          <a
-            href="https://linkedin.com/company/rebin-be"
+          <Link
+            to="https://linkedin.com/company/rebin-be"
             className="mr-2 inline-flex items-center justify-center rounded-full p-2 bg-white/10 hover:bg-white/30"
           >
             <FaLinkedin className="h-4 w-4" aria-hidden="true"></FaLinkedin>
-          </a>
-          <a
-            href="https://www.youtube.com/"
+          </Link>
+          <Link
+            to="https://www.youtube.com/"
             className="m-1 inline-flex items-center justify-center rounded-full p-2 bg-white/10 hover:bg-white/30"
           >
             <FaYoutube className="h-4 w-4" aria-hidden="true"></FaYoutube>
-          </a>
+          </Link>
         </div>
         <div className="grid grid-cols-2 gap-y-10 mb-8 sm:grid-cols-4 lg:flex lg:flex-row lg:justify-around lg lg:w-full">
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Explore</p>
-            <a
-              href=""
+            <Link
+              to="how-it-works"
               className="inline text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
             >
               How it works
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="references"
               className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
             >
               References
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="about"
               className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
             >
               About us
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="contact"
               className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
             >
               Contact
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Solution</p>
-            <a
-              href=""
+            <Link
+              to="sensor"
               className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
             >
               Smart waste sensor
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="software"
               className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
             >
               Software
-            </a>
-            <a
-              href=""
+            </Link>
+            <Link
+              to="consulting"
               className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
             >
               Consulting
-            </a>
+            </Link>
           </div>
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Contact</p>
@@ -111,24 +112,24 @@ const Footer = () => {
         className="flex gap-x-6 sm:gap-x-8 mx-auto max-w-7xl pb-10 px-6"
         aria-label="Global"
       >
-        <a
-          href=""
+        <Link
+          to="cookie-policy"
           className="text-xs font-light opacity-50 hover:font-normal hover:opacity-100"
         >
           Cookie policy
-        </a>
-        <a
-          href=""
+        </Link>
+        <Link
+          to="terms-and-conditions"
           className="text-xs font-light opacity-50 hover:font-normal hover:opacity-100"
         >
           Terms & conditions
-        </a>
-        <a
-          href=""
+        </Link>
+        <Link
+          to="privacy-policy"
           className="text-xs font-light opacity-50 hover:font-normal hover:opacity-100"
         >
           Privacy policy
-        </a>
+        </Link>
       </div>
     </footer>
   );
