@@ -16,19 +16,19 @@ const Header = () => {
     {
       name: "Smart waste sensor",
       description: "Discover world's most innovative waste sensor",
-      href: "#",
+      href: "sensor",
       src: "./Images/sensor_icon.png",
     },
     {
       name: "Software",
       description: "Discover world's most innovative sensor",
-      href: "#",
+      href: "software",
       src: "./Images/software_icon.png",
     },
     {
       name: "Consulting",
       description: "Discover world's most innovative sensor",
-      href: "#",
+      href: "consulting",
       src: "./Images/consulting_icon.png",
     },
   ];
@@ -48,7 +48,7 @@ const Header = () => {
         className="flex mx-auto max-w-7xl items-center justify-between p-6 "
         aria-label="Global"
       >
-        <a href="#">
+        <a href="/">
           <span className="sr-only">Rebin</span>
           <img className="h-16 w-auto" src={rebin} alt=""></img>
         </a>
@@ -63,7 +63,10 @@ const Header = () => {
           </button>
         </div>
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
-          <a className="text-sm font-medium text-gradient-hover" href="">
+          <a
+            className="text-sm font-medium text-gradient-hover"
+            href="how-it-works"
+          >
             How it works
           </a>
           <Popover className="relative">
@@ -104,22 +107,22 @@ const Header = () => {
               </div>
             </Popover.Panel>
           </Popover>
-          <a className="text-sm font-medium text-gradient-hover" href="">
-            References
-          </a>
-          <a className="text-sm font-medium text-gradient-hover" href="">
-            About us
-          </a>
           <a
             className="text-sm font-medium text-gradient-hover"
-            href="text-gradient"
+            href="references"
           >
+            References
+          </a>
+          <a className="text-sm font-medium text-gradient-hover" href="about">
+            About us
+          </a>
+          <a className="text-sm font-medium text-gradient-hover" href="contact">
             Contact
           </a>
         </Popover.Group>
         <div className="hidden lg:flex space-x-2">
           <a
-            href="#"
+            href="login"
             className="rounded-full bg-gradient text-white px-6 py-2.5 text-sm font-semibold shadow-sm bg-gradient-hover"
           >
             Log in
@@ -135,7 +138,7 @@ const Header = () => {
         >
           <Dialog.Panel className="fixed inset-y-0 right-0 z-10 w-full overflow-y-auto bg-white px-6 py-6 sm:max-w-sm sm:ring-1 sm:ring-gray-200">
             <div className="flex items-center justify-between">
-              <a href="#" className="-m-1.5 p-1.5">
+              <a href="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Rebin</span>
                 <img className="h-8 w-auto" src={rebin} alt="" />
               </a>
@@ -152,7 +155,7 @@ const Header = () => {
               <div className="-my-6 divide-y divide-gray-200">
                 <div className="space-y-2 py-6">
                   <a
-                    href="#"
+                    href="how-it-works"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     How it works
@@ -186,19 +189,19 @@ const Header = () => {
                     )}
                   </Disclosure>
                   <a
-                    href="#"
+                    href="references"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     References
                   </a>
                   <a
-                    href="#"
+                    href="about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     About us
                   </a>
                   <a
-                    href="#"
+                    href="contact"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                   >
                     Contact
@@ -206,7 +209,7 @@ const Header = () => {
                 </div>
                 <div className="py-6">
                   <a
-                    href="#"
+                    href="login"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
                   >
                     Log in
