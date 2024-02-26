@@ -1,5 +1,5 @@
 import React from "react";
-import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/outline";
+import { MdLocationPin, MdEmail } from "react-icons/md";
 
 const ContactForm = () => {
   return (
@@ -13,7 +13,7 @@ const ContactForm = () => {
                 Contact information
               </h1>
               <div className="flex items-center mt-2 text-white">
-                <EnvelopeIcon className="size-10"></EnvelopeIcon>
+                <MdEmail className="size-10"></MdEmail>
                 <div className="ml-4 ">
                   <label htmlFor="">Email</label>
                   <div className="text-md tracking-wide font-medium w-40">
@@ -22,7 +22,7 @@ const ContactForm = () => {
                 </div>
               </div>
               <div className="flex items-center mt-8 text-white">
-                <MapPinIcon className="size-10"></MapPinIcon>
+                <MdLocationPin className="size-10"></MdLocationPin>
                 <div className="ml-4 ">
                   <label htmlFor="">Address</label>
                   <div className="text-md tracking-wide font-medium w-45">
