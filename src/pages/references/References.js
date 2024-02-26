@@ -1,7 +1,7 @@
 import React from "react";
 
 const References = () => {
-  return <div>References</div>;
+  return <main>References</main>;
 };
 
 export default References;

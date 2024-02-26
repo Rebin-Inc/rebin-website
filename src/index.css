@@ -6,6 +6,13 @@ html * {
   font-family: "Poppins", sans-serif;
 }
 
+main {
+  max-width: 80rem;
+  padding: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .bg-gradient {
   background: rgb(0, 67, 255);
   background: linear-gradient(
@@ -85,4 +92,11 @@ html * {
 /* SLIDER */
 .slick-dots {
   bottom: -50px;
+}
+
+.blob {
+  height: 150px;
+  width: 150px;
+  background-color: #0043ff;
+  filter: blur(80px);
 }

@@ -1,7 +1,7 @@
 import React from "react";
 
 const HowItWorks = () => {
-  return <div>HowItWorks</div>;
+  return <main>HowItWorks</main>;
 };
 
 export default HowItWorks;

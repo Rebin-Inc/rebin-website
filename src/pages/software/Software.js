@@ -1,7 +1,7 @@
 import React from "react";
 
 const Software = () => {
-  return <div>Software</div>;
+  return <main>Software</main>;
 };
 
 export default Software;
