@@ -1,15 +1,15 @@
 import React from "react";
 import Contact from "./pages/contact/Contact";
-import Header from "./components/Header";
-import Footer from "./components/Footer";
+import { Route, Routes } from "react-router-dom";
+import Layout from "./Layout";
 
 function App() {
   return (
-    <>
-      <Header></Header>
-      <Contact></Contact>
-      <Footer></Footer>
-    </>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index path="contact" element={<Contact />} />
+      </Route>
+    </Routes>
   );
 }
 
