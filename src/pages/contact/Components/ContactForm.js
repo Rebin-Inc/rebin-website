@@ -8,11 +8,11 @@ const ContactForm = () => {
         <div className="overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-5 space-x-2">
             {/* Blue banner */}
-            <div className="p-8 bg-gradient-reverse rounded-lg col-span-2">
-              <h1 className="text-normal text-lg sm:text-xl font-semibold text-white mt-2 my-12">
+            <div className="p-8 bg-gradient-reverse rounded-lg col-span-2 space-y-10">
+              <h1 className="text-normal text-lg sm:text-xl font-semibold text-white my-5 mb-16">
                 Contact information
               </h1>
-              <div className="flex items-center mt-2 text-white">
+              <div className="flex items-center text-white">
                 <MdEmail className="size-10"></MdEmail>
                 <div className="ml-4 ">
                   <label htmlFor="">Email</label>
@@ -33,12 +33,12 @@ const ContactForm = () => {
               </div>
             </div>
             {/* Contact form */}
-            <form className="p-8 flex flex-col justify-center col-span-3 space-y-5">
-              <h1 className="text-normal text-xl font-semibold text-black mt-2 my-12">
+            <form className="p-8 flex flex-col justify-center col-span-3 space-y-8">
+              <h1 className="text-normal text-xl font-semibold text-black my-5">
                 Get in touch
               </h1>
               <div className="grid grid-cols-1 space-y-5 sm:grid-cols-2 sm:space-y-0">
-                <div className="flex flex-col space-y-0 mr-3">
+                <div className="flex flex-col space-y-0 sm:mr-3">
                   <label for="name" className="font-medium">
                     Full name *
                   </label>
@@ -48,7 +48,7 @@ const ContactForm = () => {
                     name="name"
                     id="name"
                     placeholder="Your full name"
-                    className="max-w-56 mt-2 py-1 px-3 rounded-md bg-white  border border-gray-400 text-gray-800  focus:outline-none"
+                    className="mt-2 py-1 px-3 rounded-md bg-white  border border-gray-400 text-gray-800  focus:outline-none"
                   ></input>
                 </div>
 
@@ -62,7 +62,7 @@ const ContactForm = () => {
                     name="tel"
                     id="tel"
                     placeholder="Your phone number"
-                    className="max-w-56 mt-2 py-1 px-3 rounded-md bg-white  border border-gray-400 text-gray-800 focus:outline-none"
+                    className="mt-2 py-1 px-3 rounded-md bg-white  border border-gray-400 text-gray-800 focus:outline-none"
                   ></input>
                 </div>
               </div>
@@ -88,12 +88,12 @@ const ContactForm = () => {
                   name="message"
                   id="message"
                   placeholder="Please include all relevant information"
-                  className="w-100 mt-2 py-3 p-2 rounded-md bg-white border border-gray-400  text-gray-800  focus:outline-none"
+                  className="w-100 h-36 mt-2 py-3 p-2 rounded-md bg-white border border-gray-400  text-gray-800  focus:outline-none"
                 ></textarea>
               </div>
               <button
                 type="submit"
-                className="ml-auto md:w-46 bg-gradient text-white font-bold py-4 px-6 rounded-full mt-6 transition ease-in-out duration-300"
+                className="ml-auto md:w-46 bg-gradient text-white font-bold py-2.5 px-5 rounded-full mt-6 transition ease-in-out duration-300"
               >
                 Send message
               </button>
