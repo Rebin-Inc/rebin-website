@@ -76,7 +76,7 @@ const Header = () => {
             How it works
           </Link>
           <Popover className="relative">
-            <Popover.Button className="flex items-center focus:outline-none gap-x-1 text-sm font-medium leading-6 text-gradient-hover">
+            <Popover.Button className="flex items-center focus:outline-none gap-x-1 text-sm font-medium text-gradient-hover">
               Solution
               <ChevronDownIcon
                 className="h-4 w-4 flex-none text-gray-500 text-gradient-hover"
