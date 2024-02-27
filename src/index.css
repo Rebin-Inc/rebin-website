@@ -56,14 +56,12 @@ main {
 .text-gradient {
   background: -webkit-linear-gradient(#0043ff, #12274f);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .text-gradient-horizontal {
   background: -webkit-linear-gradient(45deg, #0043ff, #12274f);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
@@ -78,7 +76,6 @@ main {
 .text-gradient-hover:hover {
   background: -webkit-linear-gradient(left, #0043ff, #12274f);
   -webkit-background-clip: text;
-  background-clip: text;
   -webkit-text-fill-color: transparent;
   font-weight: semi-bold;
 }
