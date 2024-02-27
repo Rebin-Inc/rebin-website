@@ -3,8 +3,8 @@ import ContactForm from "./Components/ContactForm";
 
 const Contact = () => {
   return (
-    <main className="">
-      <div className="grid place-content-center">
+    <main className="space-y-16">
+      <div className="grid place-content-center gap-4">
         <h1 className="text-center text-gradient-horizontal font-bold text-3xl">
           Contact us
         </h1>
