@@ -3,8 +3,8 @@ import ContactForm from "./Components/ContactForm";
 
 const Contact = () => {
   return (
-    <main className="pb-20">
-      <div className="grid place-content-center my-20">
+    <main className="">
+      <div className="grid place-content-center">
         <h1 className="text-center text-gradient-horizontal font-bold text-3xl">
           Contact us
         </h1>
