@@ -51,7 +51,7 @@ const Header = () => {
       >
         <Link to="/">
           <span className="sr-only">Rebin</span>
-          <img className="h-16 w-auto" src={rebin} alt=""></img>
+          <img className="h-20 w-auto" src={rebin} alt=""></img>
         </Link>
         <div className="flex lg:hidden">
           <button
