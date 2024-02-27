@@ -12,12 +12,13 @@ export default function SolutionCards() {
       <Card className="mt-6 w-96">
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            UI/UX Review Check
+            Waste sensor
           </Typography>
           <Typography>
-            The place is close to Barceloneta Beach and bus stop just 2 min by
-            walk and near to &quot;Naviglio&quot; where you can enjoy the main
-            night life in Barcelona.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum,
+            animi placeat natus repellendus ducimus recusandae harum error eos
+            cupiditate inventore et quae facere amet, quibusdam voluptatibus
+            voluptatum quam minima minus?
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">
@@ -27,12 +28,13 @@ export default function SolutionCards() {
       <Card className="mt-6 w-96">
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            UI/UX Review Check
+            Software
           </Typography>
           <Typography>
-            The place is close to Barceloneta Beach and bus stop just 2 min by
-            walk and near to &quot;Naviglio&quot; where you can enjoy the main
-            night life in Barcelona.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis
+            impedit et nemo tempore nobis, iste minima qui, doloribus vitae
+            laudantium delectus reprehenderit eligendi ab consequatur totam
+            repellendus, veritatis error unde.
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">
@@ -42,12 +44,13 @@ export default function SolutionCards() {
       <Card className="mt-6 w-96">
         <CardBody>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            UI/UX Review Check
+            Consulting
           </Typography>
           <Typography>
-            The place is close to Barceloneta Beach and bus stop just 2 min by
-            walk and near to &quot;Naviglio&quot; where you can enjoy the main
-            night life in Barcelona.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae
+            ex sint non fugiat quisquam. Dolorum dolore fugit similique
+            voluptates ipsa doloribus exercitationem nemo minus, atque quisquam
+            voluptatem, in reiciendis earum.
           </Typography>
         </CardBody>
         <CardFooter className="pt-0">

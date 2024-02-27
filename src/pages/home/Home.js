@@ -8,28 +8,34 @@ import TestimonialCard from "./components/TestimonialCard";
 import CallToAction from "../../components/CallToAction";
 import Infographic from "../../assets/images/infographic.svg";
 import PartnersSection from "./components/PartnersSection";
+import ArrowRightWhite from "../../assets/images/Pijl_Rechts_Wit.svg";
 
 const Home = () => {
   return (
-    <main className="space-y-20 lg:space-y-36">
+    <main className="space-y-20">
       <div className="grid grid-cols-2">
         <div className="flex flex-col space-y-6">
           <h1 className="font-bold text-5xl">
-            The nr.1 platform for efficient waste management
+            The <span className="text-gradient-horizontal">nr.1 platform</span>{" "}
+            for efficient waste management
           </h1>
           <p>
             Our team of experts has years of experience in the IT industry and a
             passion for innovative technology solutions.{" "}
           </p>
-          <button className="mt-12 mx-auto inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <button className="w-36 inline-flex items-center justify-center rounded-full p-2.5 px-3 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             <span className="sr-only">Contact us</span>
             Contact us
           </button>
         </div>
-        <img src={Infographic} alt="infographic" />
+        <img
+          src={Infographic}
+          alt="infographic"
+          className="place-self-center w-80"
+        />
       </div>
       <StatisticBar></StatisticBar>
-      <div>
+      <div className="text-center">
         <h1 className="text-gradient-horizontal font-bold text-3xl">
           Solutions
         </h1>
@@ -40,7 +46,7 @@ const Home = () => {
       </div>
       <div className="grid grid-cols-2">
         <AboutVideo></AboutVideo>
-        <div>
+        <div className="space-y-5">
           <h1 className="text-gradient-horizontal font-bold text-3xl">About</h1>
           <h2 className="font-bold text-4xl mt-4">
             We believe that waste management can be more efficient
@@ -52,15 +58,19 @@ const Home = () => {
             way, we want to make a positive contribution to improving waste
             management and enhancing sustainability.
           </p>
-          <button>View case study</button>
+          <button className="relative inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <span className="sr-only">View case study</span>
+            View case study
+            <img src={ArrowRightWhite} alt="Rebin Arrow" className="w-8" />
+          </button>
         </div>
       </div>
       <PartnersSection></PartnersSection>
       <div>
-        <h1 className="text-gradient-horizontal font-bold text-3xl">
+        <h1 className="text-center text-gradient-horizontal font-bold text-3xl">
           Why choose us?
         </h1>
-        <h2 className="font-bold text-4xl mt-4">
+        <h2 className="text-center font-bold text-4xl mt-4">
           Global leader in waste management
         </h2>
         <WhyChooseUsCards></WhyChooseUsCards>
