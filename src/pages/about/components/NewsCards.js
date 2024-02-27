@@ -32,22 +32,29 @@ const NewsCards = () => {
   ];
 
   return (
-    <div className="grid grid-cols-3">
+    <div className="grid grid-cols-3 my-16">
       {news.map((article) => (
-        <div class="relative flex flex-col mt-6 text-gray-700 bg-white shadow-md bg-clip-border rounded-xl w-96">
-          <div class="relative h-56 mx-4 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
-            <img src={article.image} alt="News article" />
+        <button className="w-96">
+          <div className="p-4 pb-8 relative flex flex-col text-gray-700 bg-white shadow-2xl bg-clip-border rounded-xl w-96">
+            <div className="relative h-48 -mt-6 overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+              <img src={article.image} alt="News article" />
+            </div>
+            <div className="mb-6 mt-10 bg-rebin-grey w-28 rounded-lg">
+              <h5 className="text-gradient-horizontal text-center font-bold">
+                News article
+              </h5>
+            </div>
+            <div className="">
+              <h5 className="h-20 text-left block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                {article.title}
+              </h5>
+              <p className="my-auto text-left text-sm font-sans text-blue-gray-500">
+                {article.duration} &emsp;
+                {article.date}
+              </p>
+            </div>
           </div>
-          <div class="p-6">
-            <h5 class="block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              {article.title}
-            </h5>
-            <p class="mb-4 text-sm font-sans text-blue-gray-500">
-              {article.duration} &emsp;
-              {article.date}
-            </p>
-          </div>
-        </div>
+        </button>
       ))}
     </div>
   );

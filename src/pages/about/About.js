@@ -4,11 +4,12 @@ import StatisticBar from "./components/StatisticBar";
 import ValueCards from "./components/ValueCards";
 import TeamCards from "./components/TeamCards";
 import NewsCards from "./components/NewsCards";
+import ArrowRightWhite from "../../assets/images/Pijl_Rechts_Wit.svg";
 
 const About = () => {
   return (
     <main className="space-y-36">
-      <div className="grid grid-cols-2 gap-4 mt-28">
+      <div className="grid grid-cols-2 gap-4">
         <div>
           <h1 className="text-gradient-horizontal font-bold text-3xl">
             Our story
@@ -29,7 +30,7 @@ const About = () => {
       <StatisticBar></StatisticBar>
       <div className="grid grid-cols-2 px-10">
         <img
-          className="w-72 h-64 rounded-lg object-cover mx-auto"
+          className="w-72 h-60 rounded-lg object-cover mx-auto m-4"
           src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
           alt="nature"
         />
@@ -58,25 +59,37 @@ const About = () => {
         <ValueCards></ValueCards>
       </div>
 
-      <div>
-        <h1 className="text-center text-gradient-horizontal font-bold text-3xl">
+      <div className="text-center">
+        <h1 className="text-gradient-horizontal font-bold text-3xl">
           Meet our team
         </h1>
-        <h2 className="text-center font-bold text-4xl mt-4">
+        <h2 className="font-bold text-4xl mt-4">
           Meet the Rebineers thriving for impact
         </h2>
         <TeamCards></TeamCards>
-        <button>Become a Rebineer</button>
+        <button className="relative inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <span className="sr-only">Become a Rebineer</span>
+          Become a Rebineer
+          <img src={ArrowRightWhite} alt="Rebin Arrow" className="w-8" />
+        </button>
       </div>
       <div>
-        <h1>Articles</h1>
-        <h2>Rebin in the news</h2>
+        <h1 className="text-gradient-horizontal font-bold text-3xl">
+          Articles
+        </h1>
+        <h2 className="font-bold text-4xl mt-4">Rebin in the news</h2>
         <NewsCards></NewsCards>
       </div>
-      <div>
-        <h1>Is you organisation next?</h1>
-        <h2>start now</h2>
-        <button>Contact us</button>
+      <div className="grid place-content-center">
+        <div className="space-y-4 flex flex-col">
+          <h1 className="font-bold text-5xl">Is your organisation next?</h1>
+          <h2 className=" text-5xl mt-4">start now</h2>
+          <button className="mx-auto inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+            <span className="sr-only">Contact us</span>
+            Contact us
+            <img src={ArrowRightWhite} alt="Rebin Arrow" className="w-8" />
+          </button>
+        </div>
       </div>
     </main>
   );
