@@ -4,7 +4,7 @@ import ArrowRightWhite from "../assets/images/Pijl_Rechts_Wit.svg";
 
 const CallToAction = () => {
   return (
-    <div className="grid place-content-center">
+    <div className="grid place-content-center py-20">
       <img
         src={Swoosh}
         alt="swoosh"
