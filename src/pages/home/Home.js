@@ -3,8 +3,8 @@ import StatisticBar from "./components/StatisticBar";
 import SolutionCards from "./components/SolutionCards";
 import AboutVideo from "../../components/AboutVideo";
 import WhyChooseUsCards from "./components/WhyChooseUsCards";
-import IndustryCards from "./components/IndustryCards";
-import TestimonialCard from "./components/TestimonialCard";
+import Industries from "./components/Industries";
+import Testimonial from "./components/Testimonial";
 import CallToAction from "../../components/CallToAction";
 import Infographic from "../../assets/images/infographic.svg";
 import PartnersSection from "./components/PartnersSection";
@@ -14,16 +14,16 @@ const Home = () => {
   return (
     <main className="space-y-20">
       <div className="grid grid-cols-2">
-        <div className="flex flex-col space-y-6">
+        <div className="flex flex-col">
           <h1 className="font-bold text-5xl">
             The <span className="text-gradient-horizontal">nr.1 platform</span>{" "}
             for efficient waste management
           </h1>
-          <p>
+          <p className="mt-6 text-lg max-w-xl">
             Our team of experts has years of experience in the IT industry and a
             passion for innovative technology solutions.{" "}
           </p>
-          <button className="w-36 inline-flex items-center justify-center rounded-full p-2.5 px-3 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <button className="mt-12 w-36 justify-center rounded-full p-2.5 px-3 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             <span className="sr-only">Contact us</span>
             Contact us
           </button>
@@ -31,7 +31,7 @@ const Home = () => {
         <img
           src={Infographic}
           alt="infographic"
-          className="place-self-center w-80"
+          className="place-self-center w-86"
         />
       </div>
       <StatisticBar></StatisticBar>
@@ -44,9 +44,9 @@ const Home = () => {
         </h2>
         <SolutionCards></SolutionCards>
       </div>
-      <div className="grid grid-cols-2">
+      <div className="grid grid-cols-2 gap-6">
         <AboutVideo></AboutVideo>
-        <div className="space-y-5">
+        <div className="space-y-6">
           <h1 className="text-gradient-horizontal font-bold text-3xl">About</h1>
           <h2 className="font-bold text-4xl mt-4">
             We believe that waste management can be more efficient
@@ -58,7 +58,7 @@ const Home = () => {
             way, we want to make a positive contribution to improving waste
             management and enhancing sustainability.
           </p>
-          <button className="relative inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+          <button className="relative inline-flex items-center justify-center space-x-2 px-8 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
             <span className="sr-only">View case study</span>
             View case study
             <img src={ArrowRightWhite} alt="Rebin Arrow" className="w-8" />
@@ -80,14 +80,14 @@ const Home = () => {
           Applicable industries
         </h1>
         <h2 className="font-bold text-4xl mt-4">We can help you</h2>
-        <IndustryCards></IndustryCards>
+        <Industries></Industries>
       </div>
       <div>
         <h1 className="text-gradient-horizontal font-bold text-3xl">
           Testimonials
         </h1>
         <h2 className="font-bold text-4xl mt-4">What our clients say</h2>
-        <TestimonialCard></TestimonialCard>
+        <Testimonial></Testimonial>
       </div>
       <CallToAction></CallToAction>
     </main>
