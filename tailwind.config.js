@@ -2,8 +2,12 @@
 module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      backgroundImage: {
+        "dotted-circle":
+          'url("/src/assets/images/whyChooseUs/dottedCircle.svg")',
+      },
+    },
   },
   plugins: [],
-}
-
+};
