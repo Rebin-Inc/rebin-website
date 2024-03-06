@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -10,7 +10,7 @@ import glass from "../../../assets/images/Industries/glass.svg";
 import ArrowRightWhite from "../../../assets/images/Pijl_Rechts_Wit.svg";
 import ArrowLeftWhite from "../../../assets/images/Pijl_Links_Wit.svg";
 
-const Industries = () => {
+function Industries() {
   const industries = [
     {
       industry: "Local governments",
@@ -44,38 +44,28 @@ const Industries = () => {
     },
   ];
 
-  var settings = {
-    dots: true,
+  let sliderRef = useRef(null);
+  const next = () => {
+    sliderRef.slickNext();
+  };
+  const previous = () => {
+    sliderRef.slickPrev();
+  };
+  const settings = {
+    dots: false,
     infinite: true,
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
   };
-
-  function NextArrow(props) {
-    const { onClick } = props;
-    return (
-      <div className="bg-gradient size-10 nextArrow my-auto" onClick={onClick}>
-        <img src={ArrowRightWhite} alt="Next industry card" />
-      </div>
-    );
-  }
-
-  function PrevArrow(props) {
-    const { onClick } = props;
-
-    return (
-      <div className="bg-gradient size-10 my-auto order-last" onClick={onClick}>
-        <img src={ArrowLeftWhite} alt="Previous industry card" />
-      </div>
-    );
-  }
-
   return (
-    <section className="mx-auto max-w-7xl px-6 mt-28">
-      <Slider {...settings} className="justify-stretch">
+    <div className="slider-container">
+      <Slider
+        ref={(slider) => {
+          sliderRef = slider;
+        }}
+        {...settings}
+      >
         {industries.map((_, index) => (
           <div
             key={index}
@@ -91,24 +81,22 @@ const Industries = () => {
           </div>
         ))}
       </Slider>
-      {/* <Slider className="flex justify-center gap-x-10" {...settings}>
-        {industries.map((_, index) => (
-          <div
-            key={index}
-            className="flex flex-col max-w-xs p-5 items-start rounded-xl border-rebin-blue hover:border-none bg-gradient-hover hover:text-white"
-          >
-            <img className="h-12 mb-12" src={industries[index].src} alt="" />
-            <h3 className="text-xl font-semibold mb-4">
-              {industries[index].industry}
-            </h3>
-            <h4 className="text-base font-light mb-6">
-              {industries[index].summary}
-            </h4>
-          </div>
-        ))}
-      </Slider> */}
-    </section>
+      <div className="text-center space-x-2 mt-2">
+        <button
+          className="button bg-gradient w-12 aspect-square rounded-lg"
+          onClick={previous}
+        >
+          <img src={ArrowLeftWhite} alt="Previous industry" />
+        </button>
+        <button
+          className="button bg-gradient w-12 aspect-square rounded-lg"
+          onClick={next}
+        >
+          <img src={ArrowRightWhite} alt="Next industry" />
+        </button>
+      </div>
+    </div>
   );
-};
+}
 
 export default Industries;
