@@ -63,16 +63,12 @@ function Industries() {
         breakpoint: 1024,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
-          infinite: true,
-          slidesToShow: 0,
-          slidesToScroll: 1,
+          slidesToShow: 1,
         },
       },
     ],
@@ -86,17 +82,19 @@ function Industries() {
         {...settings}
       >
         {industries.map((_, index) => (
-          <div
-            key={index}
-            className="max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue hover:border-none bg-gradient-hover hover:text-white"
-          >
-            <img className="h-12 mb-12" src={industries[index].src} alt="" />
-            <h3 className="text-xl font-semibold mb-4 max-w-xs">
-              {industries[index].industry}
-            </h3>
-            <h4 className="text-base font-light mb-6 max-w-xs ">
-              {industries[index].summary}
-            </h4>
+          <div>
+            <div
+              key={index}
+              className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue hover:border-none bg-gradient-hover hover:text-white"
+            >
+              <img className="h-12 mb-12" src={industries[index].src} alt="" />
+              <h3 className="text-xl font-semibold mb-4 max-w-xs">
+                {industries[index].industry}
+              </h3>
+              <h4 className="text-base font-light mb-6 max-w-xs ">
+                {industries[index].summary}
+              </h4>
+            </div>
           </div>
         ))}
       </Slider>
