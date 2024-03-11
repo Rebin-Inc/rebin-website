@@ -26,7 +26,9 @@ const About = () => {
             system, aiming to reduce the nuisance of overflowing trash bins.
           </p>
         </div>
-        <AboutVideo></AboutVideo>
+        <div className="max-w-lg mx-auto place-self-center">
+          <AboutVideo></AboutVideo>
+        </div>
       </div>
       <StatisticBar></StatisticBar>
       <div className="grid md:grid-cols-2 px-10 gap-4">
