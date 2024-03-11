@@ -6,6 +6,7 @@ module.exports = {
       backgroundImage: {
         "dotted-circle":
           'url("/src/assets/images/whyChooseUs/dottedCircle.svg")',
+        "dotted-line": 'url("/src/assets/images/whyChooseUs/dottedLine.svg")',
       },
     },
   },
