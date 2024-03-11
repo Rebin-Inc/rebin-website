@@ -6,7 +6,7 @@ import consulting from "../../../assets/images/solutions/consulting.svg";
 export default function SolutionCards() {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3 mx-auto w-5/6 my-10 ">
-      <Card className="my-auto min-h-96 py-4 shadow-2xl -bottom-2 md:bottom-0 md:-right-2 mx-5 md:mx-0 rounded-3xl">
+      <Card className="my-auto min-h-96 py-4 shadow-2xl -bottom-4 md:bottom-0 md:-right-2 mx-5 md:mx-0 rounded-3xl">
         <CardBody className="space-y-4">
           <img src={sensor} alt="" className="mx-auto" />
           <h4 className="mb-2 text-rebin-darkblue text-3xl md:text-2xl font-bold">
@@ -40,7 +40,7 @@ export default function SolutionCards() {
           </button>
         </CardFooter>
       </Card>
-      <Card className="my-8 min-h-96 py-4 shadow-2xl -top-2 md:top-0 md:-left-2 mx-5 md:mx-0 rounded-3xl">
+      <Card className="md:my-8 min-h-96 py-4 shadow-2xl -top-4 md:top-0 md:-left-2 mx-5 md:mx-0 rounded-3xl">
         <CardBody className="space-y-4">
           <img src={consulting} alt="" className="mx-auto" />
           <h4 className="mb-2 text-rebin-darkblue text-3xl md:text-2xl font-bold">
