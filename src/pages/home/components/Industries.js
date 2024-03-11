@@ -2,11 +2,6 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import government from "../../../assets/images/Industries/government.svg";
-import collector from "../../../assets/images/Industries/collector.svg";
-import park from "../../../assets/images/Industries/park.svg";
-import airport from "../../../assets/images/Industries/airport.svg";
-import glass from "../../../assets/images/Industries/glass.svg";
 import ArrowRightWhite from "../../../assets/images/Pijl_Rechts_Wit.svg";
 import ArrowLeftWhite from "../../../assets/images/Pijl_Links_Wit.svg";
 
@@ -14,31 +9,31 @@ function Industries() {
   const industries = [
     {
       industry: "Local governments",
-      src: government,
+      image: "bg-government-blue group-hover:bg-government-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Private waste collectors",
-      src: collector,
+      image: "bg-collector-blue group-hover:bg-collector-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Theme parks",
-      src: park,
+      image: "bg-park-blue group-hover:bg-park-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Airports",
-      src: airport,
+      image: "bg-airport-blue group-hover:bg-airport-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Glass containers",
-      src: glass,
+      image: "bg-glass-blue group-hover:bg-government-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
@@ -73,6 +68,7 @@ function Industries() {
       },
     ],
   };
+
   return (
     <div className="slider-container mt-16">
       <Slider
@@ -85,9 +81,16 @@ function Industries() {
           <div>
             <div
               key={index}
-              className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue hover:border-none bg-gradient-hover hover:text-white"
+              className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue hover:border-white bg-gradient-hover hover:text-white group"
             >
-              <img className="h-12 mb-12" src={industries[index].src} alt="" />
+              <div
+                className={industries[index].image}
+                style={{
+                  height: 50,
+                  width: 50,
+                  marginBottom: 50,
+                }}
+              ></div>
               <h3 className="text-xl font-semibold mb-4 max-w-xs">
                 {industries[index].industry}
               </h3>
