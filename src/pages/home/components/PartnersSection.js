@@ -1,8 +1,8 @@
 import React from "react";
-import startItKBC from "../../../assets/images/start-it-kbc.svg";
-import unizo from "../../../assets/images/unizo.svg";
-import VLAIO from "../../../assets/images/VLAIO.svg";
-import voka from "../../../assets/images/voka.svg";
+import startItKBC from "../../../assets/images/partners/start-it-kbc.svg";
+import unizo from "../../../assets/images/partners/unizo.svg";
+import VLAIO from "../../../assets/images/partners/VLAIO.svg";
+import voka from "../../../assets/images/partners/voka.svg";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
