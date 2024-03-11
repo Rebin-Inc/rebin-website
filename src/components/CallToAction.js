@@ -8,7 +8,7 @@ const CallToAction = () => {
       <img
         src={Swoosh}
         alt="swoosh"
-        className="absolute w-full min-w-max place-self-center"
+        className="absolute w-full max-w-max place-self-center"
       />
       <div className="flex flex-col">
         <h1 className="font-bold text-5xl">Is your organisation next?</h1>

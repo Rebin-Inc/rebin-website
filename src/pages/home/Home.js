@@ -28,14 +28,16 @@ const Home = () => {
             Contact us
           </button>
         </div>
-        <video
-          className="place-self-center max-w-2xl order-2 rotate-6"
-          autoplay="autoplay"
-          loop
-        >
-          <source src={SmartCity} type="video/mp4" />
-          Your browser does not support the video tag.
-        </video>
+        <div className="order-2 max-w-2xl overflow-hidden">
+          <video
+            className="place-self-center max-w-2xl rotate-6"
+            autoplay="autoplay"
+            loop
+          >
+            <source src={SmartCity} type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
       </div>
       <StatisticBar></StatisticBar>
       <div className="text-center">
@@ -49,8 +51,10 @@ const Home = () => {
       </div>
       <div className="grid grid-cols lg:grid-cols-2 lg:grid-rows-2 gap-x-20 gap-y-16 lg:gap-y-0 place-items-center lg:place-items-start">
         <div className="space-y-6 max-w-2xl">
-          <h1 className="text-gradient-horizontal font-bold text-3xl">About</h1>
-          <h2 className="font-bold text-4xl mt-4">
+          <h1 className="text-gradient-horizontal font-semibold text-3xl">
+            About
+          </h1>
+          <h2 className="font-semibold text-4xl mt-4">
             We believe that waste management can be more efficient
           </h2>
         </div>
