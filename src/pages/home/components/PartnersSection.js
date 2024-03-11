@@ -32,10 +32,10 @@ const PartnersSection = () => {
     dots: false,
     slidesToShow: 4,
     slidesToScroll: 1,
-    initialSlide: 0,
     arrows: false,
-    autoplay: false,
-    speed: 3000,
+    autoplay: true,
+    speed: 4000,
+    autoplaySpeed: 0,
     cssEase: "linear",
     pauseOnHover: false,
     responsive: [
@@ -43,21 +43,18 @@ const PartnersSection = () => {
         breakpoint: 1024,
         settings: {
           slidesToShow: 3,
-          autoplay: true,
         },
       },
       {
         breakpoint: 768,
         settings: {
           slidesToShow: 3,
-          autoplay: true,
         },
       },
       {
         breakpoint: 640,
         settings: {
           slidesToShow: 1,
-          autoplay: true,
         },
       },
     ],
@@ -68,8 +65,11 @@ const PartnersSection = () => {
       <p className=" text-slate-500">Trusted by the following partners</p>
       <Slider {...settings}>
         {partners.map((_, index) => (
-          <div key={index} className="slider-container">
-            <div className="flex space-x-2 h-16 justify-center">
+          <div
+            key={index}
+            className="slider-container border-l divide-rebin-darkblue"
+          >
+            <div className="flex space-x-3 h-16 justify-center">
               <img
                 src={partners[index].src}
                 alt={partners[index].name}
