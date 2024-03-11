@@ -2,7 +2,7 @@ import React from "react";
 import joris from "../../../assets/images/customers/joris.svg";
 import brakel from "../../../assets/images/customers/Brakel.svg";
 import brusselsAirport from "../../../assets/images/customers/Brussels-Airport.svg";
-import centerParc from "../../../assets/images/customers/Center-Parcs.svg";
+import centerParcs from "../../../assets/images/customers/Center-Parcs.svg";
 import arrow from "../../../assets/images/Pijl_Rechts_Blauw.svg";
 import binMaarkedal from "../../../assets/images/customers/bin_Maarkedal.jpg";
 
@@ -41,7 +41,7 @@ const Testimonial = () => {
               <img src={brakel} alt="" />
             </a>
             <a href="/">
-              <img src={centerParc} alt="" />
+              <img src={centerParcs} alt="" />
             </a>
             <a
               className="flex items-center gap-x-2 text-rebin-blue opacity-80 text-lg lg:text-xl font-semibold hover:opacity-100"
