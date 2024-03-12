@@ -61,8 +61,8 @@ const PartnersSection = () => {
   };
 
   return (
-    <section className="text-center py-8 space-y-6">
-      <div className="bg-rebin-grey absolute h-40 w-full min-w-max left-0 -z-10"></div>
+    <section className="text-center py-8 space-y-8">
+      <div className="bg-rebin-grey absolute h-48 w-full min-w-max left-0 -z-10"></div>
       <p className="text-slate-500">Trusted by the following partners</p>
       <Slider {...settings}>
         {partners.map((_, index) => (
