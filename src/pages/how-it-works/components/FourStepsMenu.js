@@ -20,7 +20,7 @@ import Cards from "../../../assets/images/fourStepApproach/cards.svg";
 import Checkmark from "../../../assets/images/fourStepApproach/checkmark.svg";
 
 export default function FourStepsMenu() {
-  const [activeTab, setActiveTab] = React.useState("html");
+  const [activeTab, setActiveTab] = React.useState(0);
   const steps = [
     {
       thumbnail: Step1,
@@ -77,7 +77,7 @@ export default function FourStepsMenu() {
   ];
 
   return (
-    <Tabs value={0} orientation="vertical" className="mt-20">
+    <Tabs value={activeTab} orientation="vertical" className="mt-20">
       <TabsHeader
         className="rounded-none border-r-8 border-blue-gray-50 bg-transparent p-0 max-w-sm py-10"
         indicatorProps={{
