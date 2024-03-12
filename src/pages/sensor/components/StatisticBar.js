@@ -6,40 +6,37 @@ const StatisticBar = () => {
       <dl className="grid divide-y-0 grid-cols-2  sm:divide-y-0 md:grid-cols-4 divide-x divide-solid divide-rebin-darkblue">
         <div className="grid place-content-center text-center space-y-5 p-6">
           <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            1.221
+            5+
           </dd>
           <dt className="text-base text-gray-600">
-            Collection <span className="font-black text-rebin-blue">hours</span>{" "}
-            saved
+            <span className="font-black text-rebin-blue">years</span> battery
+            life
           </dt>
         </div>
         <div className="grid place-content-center text-center space-y-5 p-6">
           <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            9.210
+            &lt;200
           </dd>
           <dt className="text-base text-gray-600">
-            <span className="font-black text-rebin-blue">Kilometers</span> less
-            covered
+            <span className="font-black text-rebin-blue">grams</span> total
+            sensor weight
           </dt>
         </div>
         <div className="grid place-content-center text-center space-y-5 p-6">
           <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            7,6
+            50
           </dd>
           <dt className="text-base text-gray-600">
-            Tons less{" "}
-            <span className="font-black text-rebin-blue">
-              CO<sub>2</sub>
-            </span>
+            <span className="font-black text-rebin-blue">mm</span> sensor
+            diameter
           </dt>
         </div>
         <div className="grid place-content-center text-center space-y-5 p-6">
           <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            13.410
+            65
           </dd>
           <dt className="text-base text-gray-600">
-            <span className="font-black text-rebin-blue">Plastic</span> bags
-            avoided
+            <span className="font-black text-rebin-blue">mm</span> sensor length
           </dt>
         </div>
       </dl>
