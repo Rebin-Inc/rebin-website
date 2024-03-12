@@ -105,3 +105,8 @@ main {
     rgba(18, 39, 79, 1) 100%
   );
 }
+
+/* prevent image dragging */
+img {
+  pointer-events: none;
+}
