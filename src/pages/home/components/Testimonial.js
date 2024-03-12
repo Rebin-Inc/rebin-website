@@ -43,7 +43,7 @@ const Testimonial = () => {
             </a>
             <a
               className="flex items-center gap-x-2 text-rebin-blue opacity-80 text-lg lg:text-xl font-semibold hover:opacity-100"
-              href="#"
+              href="/"
             >
               <span className="sr-only">Rebin</span>
               Meet customers

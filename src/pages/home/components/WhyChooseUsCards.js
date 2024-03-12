@@ -16,7 +16,7 @@ const WhyChooseUsCards = () => {
     autoplaySpeed: 5000,
     customPaging: function (i) {
       return (
-        <a href="#">
+        <a href="/">
           <div className="bg-rebin-grey w-4 aspect-square rounded-full"></div>
         </a>
       );
@@ -26,7 +26,7 @@ const WhyChooseUsCards = () => {
   return (
     <div className="mt-16">
       <div className="hidden xl:grid grid-cols-7 grid-rows-5 bg-dotted-circle bg-center bg-no-repeat bg-contain p-16">
-        <Card className="row-start- col-start-1 col-span-3 row-span-2 border">
+        <Card shadow={false} className="row-start-1 col-start-1 col-span-3 row-span-2 border shadow-around">
           <CardBody className="flex h-full">
             <div className="p-4 pl-0 text-balance space-y-2 w-full">
               <h4 className="mb-1 text-2xl font-bold">24/7 support</h4>
@@ -42,7 +42,7 @@ const WhyChooseUsCards = () => {
             />
           </CardBody>
         </Card>
-        <Card className="row-start-1 col-start-5 col-span-3 row-span-2 border">
+        <Card shadow={false} className="row-start-1 col-start-5 col-span-3 row-span-2 border shadow-around">
           <CardBody className="flex h-full">
             <img
               src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
@@ -58,7 +58,7 @@ const WhyChooseUsCards = () => {
             </div>
           </CardBody>
         </Card>
-        <Card className="row-start-4 col-start-1 col-span-3 row-span-2 border">
+        <Card shadow={false} className="row-start-4 col-start-1 col-span-3 row-span-2 border shadow-around">
           <CardBody className="flex h-full">
             <div className="p-4 pl-0 text-balance space-y-2 w-full">
               <h4 className="mb-1 text-2xl font-bold">User-friendly</h4>
@@ -74,7 +74,7 @@ const WhyChooseUsCards = () => {
             />
           </CardBody>
         </Card>
-        <Card className="row-start-4 col-start-5 col-span-3 row-span-2 border">
+        <Card shadow={false} className="row-start-4 col-start-5 col-span-3 row-span-2 border shadow-around">
           <CardBody className="flex h-full">
             <img
               src="https://images.unsplash.com/photo-1554629947-334ff61d85dc?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=128&h=128&q=80"
@@ -98,7 +98,7 @@ const WhyChooseUsCards = () => {
         <Card className="row-start-3 col-start-4 w-fit h-fit m-auto">
           <img src={RebinRBlue} alt="" className="w-24 aspect-square" />
         </Card>
-        <Slider {...settings}>
+        <Slider {...settings} className="shadow-around rounded-lg">
           <Card className="row-start- col-start-1 col-span-3 row-span-2 border">
             <CardBody className="flex h-full">
               <div className="p-4 pl-0 text-balance space-y-2 w-full">

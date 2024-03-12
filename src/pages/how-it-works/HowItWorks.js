@@ -27,7 +27,7 @@ const HowItWorks = () => {
           </button>
         </div>
         <div className="max-w-lg mx-auto place-self-center">
-          <img src={Stats}></img>
+          <img src={Stats} alt="Infographic representing the repoint platform"></img>
         </div>
       </div>
       <AdvantageBar></AdvantageBar>

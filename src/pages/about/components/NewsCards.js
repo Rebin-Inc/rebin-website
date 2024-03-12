@@ -35,8 +35,8 @@ const NewsCards = () => {
     <div className="grid md:grid-cols-3 my-16 place-content-center gap-10">
       {news.map((article) => (
         <button className="max-w-96 flex content-stretch">
-          <div className="border p-4 pb-8 flex flex-col text-gray-700 bg-white shadow-2xl bg-clip-border rounded-xl">
-            <div className="relative overflow-hidden text-white shadow-lg bg-clip-border rounded-xl bg-blue-gray-500 shadow-blue-gray-500/40">
+          <div className="border p-4 pb-8 flex flex-col text-gray-700 bg-white shadow-around bg-clip-border rounded-xl">
+            <div className="overflow-hidden rounded-xl">
               <img src={article.image} alt="News article" />
             </div>
             <div className="mb-6 mt-10 bg-rebin-grey w-28 rounded-lg">

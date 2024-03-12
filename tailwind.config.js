@@ -22,6 +22,9 @@ module.exports = {
         "glass-blue": 'url("/src/assets/images/Industries/glass.svg")',
         // "glass-white": 'url("/src/assets/images/Industries/glass_white.svg")',
       },
+      boxShadow: {
+        "around": "0 0 20px 1px rgba(0, 0, 0, 0.25)",
+      },
     },
   },
   plugins: [],
