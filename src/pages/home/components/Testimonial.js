@@ -17,7 +17,7 @@ const Testimonial = () => {
         src={binMaarkedal}
         alt="Gloednieuwe vuilnisbak in Maarkedal met een sensor van Rebin"
       />
-      <div className="flex flex-col lg:col-span-2 gap-y-5 text-justify">
+      <div className="flex flex-col lg:col-span-2 gap-y-8 text-justify">
         <p className="text-lg text-rebin-darkblue max-w-full">{testimonial}</p>
         <div className="flex gap-x-5 items-center w-fit">
           <img className="h-10 w-auto sm:h-auto" src={joris} alt="" />
