@@ -4,7 +4,7 @@ import { MdLocationPin, MdEmail } from "react-icons/md";
 const ContactForm = () => {
   return (
     <div className="relative flex items-top justify-center bg-white sm:items-center sm:pt-0">
-      <div className="max-w-5xl mx-auto px-2 border-1 rounded-xl shadow-2xl p-3">
+      <div className="max-w-5xl mx-auto px-2 border-1 rounded-xl shadow-around p-3">
         <div className="overflow-hidden">
           <div className="grid grid-cols-1 md:grid-cols-5 space-x-2">
             {/* Blue banner */}

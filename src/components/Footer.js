@@ -15,7 +15,7 @@ const Footer = () => {
             <span className="sr-only">Rebin</span>
             <img className="h-8 w-auto" src={rebin} alt=""></img>
           </Link>
-          <p className="text-sm font-light opacity-50">
+          <p className="text-sm font-light opacity-80">
             Copyright &copy; 2024 for Rebin.<br></br>
             All rights reserved.
           </p>
@@ -37,25 +37,25 @@ const Footer = () => {
             <p className="text-sm font-semibold">Explore</p>
             <Link
               to="how-it-works"
-              className="inline text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
+              className="inline text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               How it works
             </Link>
             <Link
               to="references"
-              className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
+              className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               References
             </Link>
             <Link
               to="about"
-              className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
+              className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               About us
             </Link>
             <Link
               to="contact"
-              className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
+              className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               Contact
             </Link>
@@ -64,28 +64,28 @@ const Footer = () => {
             <p className="text-sm font-semibold">Solution</p>
             <Link
               to="sensor"
-              className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
+              className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               Smart waste sensor
             </Link>
             <Link
               to="software"
-              className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
+              className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               Software
             </Link>
             <Link
               to="consulting"
-              className="text-sm font-light opacity-50 hover:font-normal hover:opacity-100"
+              className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               Consulting
             </Link>
           </div>
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Contact</p>
-            <p className="text-sm font-light opacity-50">info@rebin.be</p>
-            <p className="text-sm font-light opacity-50">9000 Gent</p>
-            <p className="text-sm font-light opacity-50">BE 0799.727.089</p>
+            <p className="text-sm font-light opacity-80">info@rebin.be</p>
+            <p className="text-sm font-light opacity-80">9000 Gent</p>
+            <p className="text-sm font-light opacity-80">BE 0799.727.089</p>
           </div>
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Stay up to date</p>
@@ -114,19 +114,19 @@ const Footer = () => {
       >
         <Link
           to="cookie-policy"
-          className="text-xs font-light opacity-50 hover:font-normal hover:opacity-100"
+          className="text-xs font-light opacity-80 hover:font-normal hover:opacity-100"
         >
           Cookie policy
         </Link>
         <Link
           to="terms-and-conditions"
-          className="text-xs font-light opacity-50 hover:font-normal hover:opacity-100"
+          className="text-xs font-light opacity-80 hover:font-normal hover:opacity-100"
         >
           Terms & conditions
         </Link>
         <Link
           to="privacy-policy"
-          className="text-xs font-light opacity-50 hover:font-normal hover:opacity-100"
+          className="text-xs font-light opacity-80 hover:font-normal hover:opacity-100"
         >
           Privacy policy
         </Link>

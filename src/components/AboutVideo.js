@@ -2,8 +2,8 @@ import React from "react";
 
 const AboutVideo = () => {
   return (
-    <div className="place-self-center md:pl-6 md:py-6 my-auto">
-      <video className="rounded-lg max-w-xl" controls>
+    <div className="md:p-6 my-auto">
+      <video className="rounded-lg w-full" controls>
         <source
           src="https://docs.material-tailwind.com/demo.mp4"
           type="video/mp4"

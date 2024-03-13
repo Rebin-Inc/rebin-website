@@ -1,31 +1,89 @@
 import React from "react";
-import startItKBC from "../../../assets/images/start-it-kbc.svg";
-import unizo from "../../../assets/images/unizo.svg";
-import VLAIO from "../../../assets/images/VLAIO.svg";
-import voka from "../../../assets/images/voka.svg";
+import startItKBC from "../../../assets/images/partners/start-it-kbc.svg";
+import unizo from "../../../assets/images/partners/unizo.svg";
+import VLAIO from "../../../assets/images/partners/VLAIO.svg";
+import voka from "../../../assets/images/partners/voka.svg";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const PartnersSection = () => {
+  const partners = [
+    {
+      name: "Start it KBC",
+      src: startItKBC,
+    },
+    {
+      name: "Unizo",
+      src: unizo,
+    },
+    {
+      name: "VLAIO",
+      src: VLAIO,
+    },
+    {
+      name: "Voka",
+      src: voka,
+    },
+  ];
+
+  const settings = {
+    infinite: true,
+    dots: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    arrows: false,
+    autoplay: true,
+    speed: 4000,
+    autoplaySpeed: 0,
+    cssEase: "linear",
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 640,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
+  };
+
   return (
-    <section className="bg-rebin-grey text-center py-8 space-y-6 px-36">
-      <p className=" text-slate-500">Trusted by the following partners</p>
-      <div className="grid grid-cols-4 divide-x divide-solid place-content-stretch">
-        <div className="flex justify-center space-x-3">
-          <img src={startItKBC} alt="Logo Start It KBC" className="my-auto" />
-          <p className="my-auto font-medium text-lg">Start it KBC</p>
-        </div>
-        <div className="flex justify-center space-x-3">
-          <img src={unizo} alt="partner" className="my-auto" />
-          <p className="my-auto font-medium text-lg">Unizo</p>
-        </div>
-        <div className="flex justify-center space-x-3">
-          <img src={VLAIO} alt="Logo VLAIO" className="my-auto" />
-          <p className="my-auto font-medium text-lg">Vlaio</p>
-        </div>
-        <div className="flex justify-center space-x-3">
-          <img src={voka} alt="Logo Voka" className="my-auto" />
-          <p className="my-auto font-medium text-lg">Voka</p>
-        </div>
-      </div>
+    <section className="text-center py-8 space-y-8">
+      <div className="bg-rebin-grey absolute h-48 w-full min-w-max left-0 -z-10"></div>
+      <p className="text-slate-500">Trusted by the following partners</p>
+      <Slider {...settings}>
+        {partners.map((_, index) => (
+          <div
+            key={index}
+            className="slider-container border-l divide-rebin-darkblue"
+          >
+            <div className="flex space-x-3 h-16 justify-center">
+              <img
+                src={partners[index].src}
+                alt={partners[index].name}
+                className="h-5/6 align-middle my-auto"
+              />
+              <p className="my-auto font-medium text-lg">
+                {" "}
+                {partners[index].name}
+              </p>
+            </div>
+          </div>
+        ))}
+      </Slider>
     </section>
   );
 };

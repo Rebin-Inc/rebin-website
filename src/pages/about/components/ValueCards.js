@@ -8,7 +8,7 @@ import Innovation from "../../../assets/images/innovation.svg";
 const ValueCards = () => {
   return (
     <div className="grid md:grid-cols-2 place-content-center mx-auto max-w-7xl gap-4 mt-12 md:px-20">
-      <Card className="shadow-2xl border">
+      <Card shadow={false} className="shadow-around border">
         <CardBody>
           <div className="bg-gradient rounded-md w-10">
             <img
@@ -26,7 +26,7 @@ const ValueCards = () => {
           </Typography>
         </CardBody>
       </Card>
-      <Card className="shadow-2xl border">
+      <Card shadow={false} className="shadow-around border">
         <CardBody>
           <div className="bg-gradient rounded-md w-10">
             <img
@@ -44,7 +44,7 @@ const ValueCards = () => {
           </Typography>
         </CardBody>
       </Card>
-      <Card className="shadow-2xl border">
+      <Card shadow={false} className="shadow-around border">
         <CardBody>
           <div className="bg-gradient rounded-md w-10">
             <img
@@ -62,7 +62,7 @@ const ValueCards = () => {
           </Typography>
         </CardBody>
       </Card>
-      <Card className="shadow-2xl border">
+      <Card shadow={false} className="shadow-around border">
         <CardBody>
           <div className="bg-gradient rounded-md w-10">
             <img

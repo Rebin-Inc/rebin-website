@@ -2,11 +2,6 @@ import React, { useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import government from "../../../assets/images/Industries/government.svg";
-import collector from "../../../assets/images/Industries/collector.svg";
-import park from "../../../assets/images/Industries/park.svg";
-import airport from "../../../assets/images/Industries/airport.svg";
-import glass from "../../../assets/images/Industries/glass.svg";
 import ArrowRightWhite from "../../../assets/images/Pijl_Rechts_Wit.svg";
 import ArrowLeftWhite from "../../../assets/images/Pijl_Links_Wit.svg";
 
@@ -14,31 +9,31 @@ function Industries() {
   const industries = [
     {
       industry: "Local governments",
-      src: government,
+      image: "bg-government-blue group-hover:bg-government-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Private waste collectors",
-      src: collector,
+      image: "bg-collector-blue group-hover:bg-collector-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Theme parks",
-      src: park,
+      image: "bg-park-blue group-hover:bg-park-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Airports",
-      src: airport,
+      image: "bg-airport-blue group-hover:bg-airport-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
     {
       industry: "Glass containers",
-      src: glass,
+      image: "bg-glass-blue group-hover:bg-government-white",
       summary:
         "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
     },
@@ -57,9 +52,25 @@ function Industries() {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   };
+
   return (
-    <div className="slider-container">
+    <div className="slider-container mt-16">
       <Slider
         ref={(slider) => {
           sliderRef = slider;
@@ -67,29 +78,38 @@ function Industries() {
         {...settings}
       >
         {industries.map((_, index) => (
-          <div
-            key={index}
-            className="max-w-xs p-5 rounded-xl border-rebin-blue hover:border-none bg-gradient-hover hover:text-white"
-          >
-            <img className="h-12 mb-12" src={industries[index].src} alt="" />
-            <h3 className="text-xl font-semibold mb-4">
-              {industries[index].industry}
-            </h3>
-            <h4 className="text-base font-light mb-6">
-              {industries[index].summary}
-            </h4>
+          <div>
+            <div
+              key={index}
+              className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue hover:border-white bg-gradient-hover hover:text-white group"
+            >
+              <div
+                className={industries[index].image}
+                style={{
+                  height: 50,
+                  width: 50,
+                  marginBottom: 50,
+                }}
+              ></div>
+              <h3 className="text-xl font-semibold mb-4 max-w-xs">
+                {industries[index].industry}
+              </h3>
+              <h4 className="text-base font-light mb-6 max-w-xs ">
+                {industries[index].summary}
+              </h4>
+            </div>
           </div>
         ))}
       </Slider>
-      <div className="text-center space-x-2 mt-2">
+      <div className="text-center space-x-6 mt-14">
         <button
-          className="button bg-gradient w-12 aspect-square rounded-lg"
+          className="button bg-gradient w-10 aspect-square rounded-lg"
           onClick={previous}
         >
           <img src={ArrowLeftWhite} alt="Previous industry" />
         </button>
         <button
-          className="button bg-gradient w-12 aspect-square rounded-lg"
+          className="button bg-gradient w-10 aspect-square rounded-lg"
           onClick={next}
         >
           <img src={ArrowRightWhite} alt="Next industry" />
