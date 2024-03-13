@@ -25,6 +25,9 @@ module.exports = {
       boxShadow: {
         "around": "0 0 20px 1px rgba(0, 0, 0, 0.25)",
       },
+      objectPosition: {
+        'center-right': '80% 50%',
+      }
     },
   },
   plugins: [],

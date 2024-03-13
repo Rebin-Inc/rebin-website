@@ -13,7 +13,7 @@ const Testimonial = () => {
   return (
     <section className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center rounded-xl bg-rebin-grey gap-y-10 md:gap-x-10 p-6">
       <img
-        className="mx-auto h-full object-cover rounded-xl"
+        className="mx-auto h-full object-cover rounded-xl object-center-right"
         src={binMaarkedal}
         alt="Gloednieuwe vuilnisbak in Maarkedal met een sensor van Rebin"
       />

@@ -28,9 +28,9 @@ const Home = () => {
             Contact us
           </button>
         </div>
-        <div className="order-2 max-w-2xl overflow-hidden">
+        <div className="order-2 self-center overflow-hidden">
           <video
-            className="place-self-center max-w-2xl rotate-6"
+            className="place-self-center rotate-6"
             autoplay="autoplay"
             loop
           >
