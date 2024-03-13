@@ -17,7 +17,7 @@ import React from "react";
 import Vuilnisbak from "../../../assets/images/fourStepApproach/vuilnisbak.svg";
 import Repoint from "../../../assets/images/fourStepApproach/repoint.svg";
 import Cards from "../../../assets/images/fourStepApproach/cards.svg";
-import Checkmark from "../../../assets/images/fourStepApproach/checkmark.svg";
+import Checkmark from "../../../assets/images/checkmark.svg";
 
 export default function FourStepsMenu() {
   const [activeTab, setActiveTab] = React.useState(0);
