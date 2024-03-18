@@ -12,7 +12,7 @@ import SmartCity from "../../assets/videos/smart_city.MP4";
 
 const Home = () => {
   return (
-    <main className="space-y-20 md:my-16">
+    <main className="space-y-20 md:mt-16 pb-0">
       <div className="grid grid-cols-1 md:grid-cols-2">
         <div className="flex flex-col order-3 md:order-1 space-y-6">
           <h1 className="mt-8 font-bold text-4xl md:text-5xl">
