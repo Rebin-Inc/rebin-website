@@ -30,17 +30,20 @@ const Testimonial = () => {
             </p>
           </div>
         </div>
-        <div className="flex flex-col gap-y-5 gap-x-10 mt-5 w-fit">
-          <div className="flex gap-x-5 items-center">
-            <a href="/">
-              <img src={brusselsAirport} alt="" />
-            </a>
-            <a href="/">
-              <img src={brakel} alt="" />
-            </a>
-            <a href="/">
-              <img src={centerParcs} alt="" />
-            </a>
+        <div className="flex flex-col gap-y-5 gap-x-10 w-fit">
+          <div className="grid lg:grid-cols-2 gap-5">
+            <div className="flex gap-x-5 items-center">
+              <a href="/">
+                <img src={brusselsAirport} alt="" />
+              </a>
+              <a href="/">
+                <img src={brakel} alt="" />
+              </a>
+              <a href="/">
+                <img src={centerParcs} alt="" />
+              </a>
+
+            </div>
             <a
               className="flex items-center gap-x-2 text-rebin-blue opacity-80 text-lg lg:text-xl font-semibold hover:opacity-100"
               href="/"
