@@ -2,7 +2,6 @@ import React from "react";
 import StatisticBar from "./components/StatisticBar";
 import ArrowRightWhite from "../../assets/images/Pijl_Rechts_Wit.svg";
 import Sensor1 from "../../assets/images/sensor/sensor1.png";
-import Sensor3 from "../../assets/images/sensor/sensor3.png";
 import SensorMenu from "./components/SensorMenu";
 import SpecificationBar from "./components/SpecificationBar";
 import CallToAction from "../../components/CallToAction";
@@ -34,8 +33,10 @@ const Sensor = () => {
         <SensorMenu></SensorMenu>
       </div>
       <div>
-        <h3>Technical specifications</h3>
-        <h4>Get more insights about our sensor</h4>
+        <h3 className="text-gradient-horizontal font-bold text-3xl">
+          Technical specifications
+        </h3>
+        <h4 className="font-bold text-4xl mt-4">Get more insights about our sensor</h4>
         <SpecificationBar></SpecificationBar>
       </div>
       <CallToAction></CallToAction>
