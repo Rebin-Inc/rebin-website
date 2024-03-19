@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import { Dialog, Disclosure, Popover } from "@headlessui/react";
+import { Dialog, Disclosure, Menu } from "@headlessui/react";
 import {
   Bars3Icon,
   ChevronDownIcon,
@@ -9,6 +9,7 @@ import {
 import rebin from "../assets/images/Rebin.svg";
 import LanguageDropdown from "./LanguageDropdown";
 import { Link } from "react-router-dom";
+import { Fragment } from "react";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -68,51 +69,42 @@ const Header = () => {
             )}
           </button>
         </div>
-        <Popover.Group className="hidden lg:flex lg:gap-x-12">
+        <div className="hidden lg:flex lg:gap-x-12">
           <Link
             className="text-sm font-medium text-gradient-hover"
             to="how-it-works"
           >
             How it works
           </Link>
-          <Popover className="relative">
-            <Popover.Button className="flex items-center focus:outline-none gap-x-1 text-sm font-medium text-gradient-hover">
+          <Menu className="relative" as="div">
+            <Menu.Button className="flex items-center focus:outline-none gap-x-1 text-sm font-medium text-gradient-hover">
               Solution
               <ChevronDownIcon
                 className="h-4 w-4 flex-none text-gray-500 text-gradient-hover"
                 aria-hidden="true"
               />
-            </Popover.Button>
-            <Popover.Panel className="absolute -left-8 top-full z-10 mt-8 w-screen max-w-md overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-gray-200">
-              <div className="p-4">
-                {solutions.map((item) => (
-                  <div
-                    key={item.name}
-                    className="relative flex items-center gap-x-6 rounded-lg p-4 text-sm leading-6 hover:bg-gray-50"
-                  >
-                    <div className="flex h-11 w-11 flex-none items-center justify-center rounded-lg bg-gray-50 group-hover:bg-white">
+            </Menu.Button>
+            <Menu.Items className="absolute -left-8 top-full z-10 mt-8 w-screen max-w-md overflow-hidden rounded-2xl bg-white shadow-md ring-1 ring-gray-200">
+              {solutions.map((item) => (
+                <Menu.Button key={item.href} as={Fragment}>
+                  <Link
+                    className="relative flex items-center p-4 hover:bg-gray-50 text-gradient-hover"
+                    to={item.href}>
+                    <div className="flex h-11 aspect-square items-center justify-center rounded-lg bg-gray-50">
                       <img
-                        className="h-6 w-6 text-gray-600"
+                        className="h-6 aspect-square text-gray-600"
                         aria-hidden="true"
                         src={item.src}
                         alt=""
                       />
                     </div>
-                    <div className="flex-auto">
-                      <Link
-                        to={item.href}
-                        className="block font-semibold text-gray-900 text-gradient-hover"
-                      >
-                        {item.name}
-                        <span className="absolute inset-0" />
-                      </Link>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-            </Popover.Panel>
-          </Popover>
+                    <p className="ml-4 min-w-40 font-semibold text-gray-900 text-sm">{item.name}</p>
+                    <p className="text-gray-600 font-light text-sm text-right">{item.description}</p>
+                  </Link>
+                </Menu.Button>
+              ))}
+            </Menu.Items>
+          </Menu>
           <Link
             className="text-sm font-medium text-gradient-hover"
             to="references"
@@ -128,7 +120,7 @@ const Header = () => {
           >
             Contact
           </Link>
-        </Popover.Group>
+        </div>
         <div className="hidden lg:flex space-x-2">
           <Link
             to="login"
@@ -166,6 +158,8 @@ const Header = () => {
                   <Link
                     to="how-it-works"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
+
                   >
                     How it works
                   </Link>
@@ -186,11 +180,13 @@ const Header = () => {
                           {solutions.map((item) => (
                             <Disclosure.Button
                               key={item.name}
-                              as="a"
-                              to={item.href}
+                              as={Fragment}
                               className="block rounded-lg py-2 pl-6 pr-3 text-sm font-medium leading-7 hover:bg-gray-50"
+                              onClick={() => setMobileMenuOpen(false)}
                             >
-                              {item.name}
+                              <Link to={item.href}>
+                                {item.name}
+                              </Link>
                             </Disclosure.Button>
                           ))}
                         </Disclosure.Panel>
@@ -200,18 +196,21 @@ const Header = () => {
                   <Link
                     to="references"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     References
                   </Link>
                   <Link
                     to="about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     About us
                   </Link>
                   <Link
                     to="contact"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     Contact
                   </Link>
@@ -220,6 +219,7 @@ const Header = () => {
                   <Link
                     to="login"
                     className="-mx-3 block rounded-lg px-3 py-2.5 text-base font-medium leading-7 text-gray-900 hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
                   >
                     Log in
                   </Link>
