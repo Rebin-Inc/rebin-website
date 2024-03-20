@@ -91,11 +91,10 @@ const ContactForm = () => {
                   className="w-100 h-36 mt-2 py-3 p-2 rounded-md bg-white border border-gray-400  text-gray-800  focus:outline-none"
                 ></textarea>
               </div>
-              <button
-                type="submit"
-                className="ml-auto md:w-46 bg-gradient text-white font-bold py-2.5 px-5 rounded-full mt-6 transition ease-in-out duration-300"
-              >
-                Send message
+
+              <button className="ml-auto w-fit p-3 flex justify-center items-center rounded-lg bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+                <span className="sr-only">Send message</span>
+                Send Message
               </button>
             </form>
           </div>

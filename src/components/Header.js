@@ -10,6 +10,7 @@ import rebin from "../assets/images/Rebin.svg";
 import LanguageDropdown from "./LanguageDropdown";
 import { Link } from "react-router-dom";
 import { Fragment } from "react";
+import Button from "../components/Button";
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -121,13 +122,8 @@ const Header = () => {
             Contact
           </Link>
         </div>
-        <div className="hidden lg:flex space-x-2">
-          <Link
-            to="login"
-            className="rounded-full bg-gradient text-white px-6 py-2.5 text-sm font-semibold shadow-sm bg-gradient-hover"
-          >
-            Log in
-          </Link>
+        <div className="hidden lg:flex space-x-2 items-center">
+          <Button text="Log in" href="https://rebin-prod.we-are.be/login" margin="0" />
           <LanguageDropdown></LanguageDropdown>
         </div>
 

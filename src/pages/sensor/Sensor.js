@@ -1,10 +1,10 @@
 import React from "react";
 import StatisticBar from "./components/StatisticBar";
-import ArrowRightWhite from "../../assets/images/Pijl_Rechts_Wit.svg";
 import Sensor1 from "../../assets/images/sensor/sensor1.png";
 import SensorMenu from "./components/SensorMenu";
 import SpecificationBar from "./components/SpecificationBar";
 import CallToAction from "../../components/CallToAction";
+import Button from "../../components/Button";
 
 const Sensor = () => {
   return (
@@ -15,11 +15,7 @@ const Sensor = () => {
           <h2 className="mt-4 text-3xl">
             Small. Advanced. Sustainable.
           </h2>
-          <button className="mt-8 relative inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-            <span className="sr-only">Request sensor</span>
-            Request sensor
-            <img src={ArrowRightWhite} alt="Rebin Arrow" className="w-8" />
-          </button>
+          <Button text="Request sensor" arrow={true} href="/contact" />
         </div>
         <div className="grid place-items-center mt-6">
           <div className="blob absolute -z-10"></div>

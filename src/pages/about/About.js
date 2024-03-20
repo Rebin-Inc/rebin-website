@@ -4,8 +4,8 @@ import StatisticBar from "./components/StatisticBar";
 import ValueCards from "./components/ValueCards";
 import TeamCards from "./components/TeamCards";
 import NewsCards from "./components/NewsCards";
-import ArrowRightWhite from "../../assets/images/Pijl_Rechts_Wit.svg";
 import CallToAction from "../../components/CallToAction";
+import Button from "../../components/Button";
 
 const About = () => {
   return (
@@ -70,11 +70,7 @@ const About = () => {
           Meet the Rebineers thriving for impact
         </h2>
         <TeamCards></TeamCards>
-        <button className="relative inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
-          <span className="sr-only">Become a Rebineer</span>
-          Become a Rebineer
-          <img src={ArrowRightWhite} alt="Rebin Arrow" className="w-8" />
-        </button>
+        <Button text="Become a Rebineer" arrow={true} href="/contact" />
       </div>
       <div>
         <h1 className="text-gradient-horizontal font-bold text-3xl">
