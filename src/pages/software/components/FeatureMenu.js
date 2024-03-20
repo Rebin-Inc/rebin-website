@@ -69,13 +69,13 @@ export default function FeatureMenu() {
             <TabsHeader
                 className="mt-20 rounded-none border-b-8 border-rebin-grey p-0"
                 indicatorProps={{
-                    className: "h-2 -mb-2 w-full mt-auto bg-gradient rounded-full",
+                    className: "h-2 w-full bg-gradient rounded-full mt-20",
                 }}>
                 {data.map(({ label, icon }, index) => (
                     <Tab key={index} value={index} className="" onClick={() => setActiveTab(index)}>
-                        <button>
-                            <div className="flex items-center justify-center space-x-4">
-                                <img src={icon} alt={label} className="w-12" />
+                        <button className="h-16">
+                            <div className="flex justify-center">
+                                <img src={icon} alt={label} className="h-12" />
                                 <span className="font-bold text-xl text-rebin-darkblue">{label}</span>
                             </div>
                         </button>
