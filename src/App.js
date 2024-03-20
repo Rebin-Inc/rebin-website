@@ -1,12 +1,10 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
-
 import Contact from "./pages/contact/Contact";
 import HowItWorks from "./pages/how-it-works/HowItWorks";
 import References from "./pages/references/References";
 import About from "./pages/about/About";
-import Solution from "./pages/solution/Solution";
 import Software from "./pages/software/Software";
 import Consulting from "./pages/consulting/Consulting";
 import Sensor from "./pages/sensor/Sensor";
