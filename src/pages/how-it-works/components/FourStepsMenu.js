@@ -81,7 +81,7 @@ export default function FourStepsMenu() {
       <TabsHeader
         className="rounded-none border-r-8 border-blue-gray-50 bg-transparent p-0 max-w-sm py-10"
         indicatorProps={{
-          className: "-mr-3 w-4 ml-auto bg-gradient rounded-full",
+          className: "w-4 ml-96 bg-gradient rounded-full",
         }}
       >
         {steps.map(({ thumbnail, thumbnailSelected, title }, index) => (
