@@ -2,6 +2,9 @@ import React from "react";
 import rebin from "../assets/images/rebin-white.png";
 import { FaLinkedin, FaYoutube } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import CookiePolicy from "../assets/documents/Cookieverklaring_Rebin.pdf";
+import TermsAndConditions from "../assets/documents/AlgemeneVoorwaarden_Rebin.pdf";
+import PrivacyPolicy from "../assets/documents/Privacyverklaring_Rebin.pdf";
 
 const Footer = () => {
   return (
@@ -112,24 +115,24 @@ const Footer = () => {
         className="flex gap-x-6 sm:gap-x-8 mx-auto max-w-7xl pb-10 px-6"
         aria-label="Global"
       >
-        <Link
-          to="cookie-policy"
+        <a
+          href={CookiePolicy}
           className="text-xs font-light opacity-80 hover:font-normal hover:opacity-100"
         >
           Cookie policy
-        </Link>
-        <Link
-          to="terms-and-conditions"
+        </a>
+        <a
+          href={TermsAndConditions}
           className="text-xs font-light opacity-80 hover:font-normal hover:opacity-100"
         >
           Terms & conditions
-        </Link>
-        <Link
-          to="privacy-policy"
+        </a>
+        <a
+          href={PrivacyPolicy}
           className="text-xs font-light opacity-80 hover:font-normal hover:opacity-100"
         >
           Privacy policy
-        </Link>
+        </a>
       </div>
     </footer>
   );
