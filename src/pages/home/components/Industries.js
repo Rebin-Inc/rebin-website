@@ -81,7 +81,7 @@ function Industries() {
           <div>
             <div
               key={index}
-              className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-darkblue border-4 hover:border-white bg-gradient-hover hover:text-white group"
+              className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue border-2 hover:border-white bg-gradient-hover hover:text-white group"
             >
               <div
                 className={industries[index].image}
