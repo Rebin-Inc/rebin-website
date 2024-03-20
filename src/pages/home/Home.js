@@ -1,5 +1,5 @@
 import React from "react";
-import StatisticBar from "./components/StatisticBar";
+import StatisticBar from "../../components/StatisticBar";
 import SolutionCards from "./components/SolutionCards";
 import AboutVideo from "../../components/AboutVideo";
 import WhyChooseUsCards from "./components/WhyChooseUsCards";

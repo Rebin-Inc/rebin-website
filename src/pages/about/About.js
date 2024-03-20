@@ -1,6 +1,6 @@
 import React from "react";
 import AboutVideo from "../../components/AboutVideo";
-import StatisticBar from "./components/StatisticBar";
+import StatisticBar from "../../components/StatisticBar";
 import ValueCards from "./components/ValueCards";
 import TeamCards from "./components/TeamCards";
 import NewsCards from "./components/NewsCards";
