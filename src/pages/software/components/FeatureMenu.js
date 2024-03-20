@@ -74,7 +74,7 @@ export default function FeatureMenu() {
                 {data.map(({ label, icon }, index) => (
                     <Tab key={index} value={index} className="" onClick={() => setActiveTab(index)}>
                         <button className="h-16">
-                            <div className="flex justify-center">
+                            <div className="flex space-x-4 items-center">
                                 <img src={icon} alt={label} className="h-12" />
                                 <span className="font-bold text-xl text-rebin-darkblue">{label}</span>
                             </div>
