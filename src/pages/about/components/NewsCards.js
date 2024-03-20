@@ -1,4 +1,9 @@
 import React from "react";
+import { Link } from "react-router-dom";
+import Article1 from "../../../assets/images/about/Artikel1.jpg";
+import Article2 from "../../../assets/images/about/Artikel2.jpg";
+import Article3 from "../../../assets/images/about/Artikel3.jpg";
+
 
 const NewsCards = () => {
   const news = [
@@ -8,8 +13,8 @@ const NewsCards = () => {
         "Maarkedal zet slimme vuilnisbakken in om te besparen op tijd en brandstof van vuilniswagens",
       duration: "1 min",
       date: "August 20, 2024",
-      image:
-        "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+      image: Article1,
+      href: "https://www.vrt.be/vrtnws/nl/2023/10/22/maarkedal-zet-slimme-vuilbakken-in-om-tijd-en-brandstof-van-vuil/"
     },
     {
       id: 2,
@@ -17,8 +22,8 @@ const NewsCards = () => {
         "Rebin (Maarkedal) en Straal (Gent) halen 50.000 euro binnen via Unizo Oost-Vlaanderen",
       duration: "3 min",
       date: "August 20, 2024",
-      image:
-        "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+      image: Article2,
+      href: "https://www.unizo.be/berichten/pers/rebin-maarkedal-en-straal-gent-halen-50000-euro-binnen-unizo-oost-vlaanderen"
     },
     {
       id: 3,
@@ -26,32 +31,38 @@ const NewsCards = () => {
         "Slimme vuilnisbakken vangen tekort aan gemeentepersoneel op in Brakel",
       duration: "2 min",
       date: "August 20,2024",
-      image:
-        "https://images.unsplash.com/photo-1540553016722-983e48a2cd10?ixlib=rb-1.2.1&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=80",
+      image: Article3,
+      href: "https://www.nieuwsblad.be/cnt/dmf20231102_95819056"
     },
   ];
+
+  const openInNewTab = url => {
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
     <div className="grid md:grid-cols-3 my-16 place-content-center gap-10">
       {news.map((article) => (
         <button className="max-w-96 flex content-stretch">
-          <div className="border p-4 pb-8 flex flex-col text-gray-700 bg-white shadow-around bg-clip-border rounded-xl">
-            <div className="overflow-hidden rounded-xl">
-              <img src={article.image} alt="News article" />
-            </div>
-            <div className="mb-6 mt-10 bg-rebin-grey w-28 rounded-lg">
-              <h5 className="text-gradient-horizontal text-center font-bold">
-                News article
+          <Link onClick={() => openInNewTab(article.href)} >
+            <div className="border p-4 pb-8 flex flex-col text-gray-700 bg-white shadow-around bg-clip-border rounded-xl h-full">
+              <div className="overflow-hidden rounded-xl">
+                <img src={article.image} alt="News article" className="w-full" />
+              </div>
+              <div className="mb-6 mt-10 bg-rebin-grey w-28 rounded-lg">
+                <h5 className="text-gradient-horizontal text-center font-bold">
+                  News article
+                </h5>
+              </div>
+              <h5 className="text-left block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
+                {article.title}
               </h5>
+              <p className="mt-auto text-left text-sm font-sans text-blue-gray-500">
+                {article.duration} &emsp;
+                {article.date}
+              </p>
             </div>
-            <h5 className="text-left block mb-2 font-sans text-xl antialiased font-semibold leading-snug tracking-normal text-blue-gray-900">
-              {article.title}
-            </h5>
-            <p className="mt-auto text-left text-sm font-sans text-blue-gray-500">
-              {article.duration} &emsp;
-              {article.date}
-            </p>
-          </div>
+          </Link>
         </button>
       ))}
     </div>
