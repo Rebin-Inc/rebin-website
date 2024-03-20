@@ -61,9 +61,9 @@ export default function SensorMenu() {
                 indicatorProps={{
                     className: "",
                 }}>
-                <div className="flex mt-20 h-36 divide-x p-0 rounded-2xl w-5/6 mx-auto border-b-2 border-r-2">
+                <div className="grid grid-cols-3 mt-20 md:h-24 lg:h-36 divide-x p-0 rounded-2xl md:w-5/6 mx-auto border-b-4 border-r-4 w-full">
                     {data.map(({ label }, index) => (
-                        <button className={activeTab === index ? "w-full border-t-8 rounded-xl border-t-rebin-blue -mb-3 bg-white -mr-0.5" : "w-full mt-2 ml-0.5"}>
+                        <button className={activeTab === index ? "w-full border-t-8 rounded-xl border-t-rebin-blue -mb-3 pb-3 bg-white ml-2" : "w-full mt-2 ml-2"}>
                             <Tab key={index} value={index} className="" onClick={() => setActiveTab(index)}>
                                 <div className=
                                     {activeTab === index ? "mx-auto bg-gradient w-8 aspect-square rounded-full text-white font-bold text-xl flex place-content-center"
@@ -72,7 +72,7 @@ export default function SensorMenu() {
                                         {index + 1}
                                     </div>
                                 </div>
-                                <p className="font-bold text-xl text-rebin-darkblue mt-1">
+                                <p className="font-bold md:text-xl text-rebin-darkblue mt-1">
                                     {label}
                                 </p>
                             </Tab>
