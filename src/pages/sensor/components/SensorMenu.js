@@ -57,34 +57,33 @@ export default function SensorMenu() {
     return (
         <Tabs value={activeTab}>
             <TabsHeader
-                className="mt-20 h-36 divide-x p-0 rounded-lg overflow-hidden"
+                className="overflow-hidden p-0"
                 indicatorProps={{
-                    className: "shadow-none mt-1",
+                    className: "",
                 }}>
-                {data.map(({ label }, index) => (
-                    <button className={activeTab === index ? "w-full border-t-[12px] border-grey rounded-md" : "w-full"}>
-                        <Tab key={index} value={index} className="shadow-md -mt-1" onClick={() => setActiveTab(index)}>
-                            <div className=
-                                {activeTab === index ? "mx-auto bg-gradient w-8 aspect-square rounded-full text-white font-bold text-xl flex place-content-center"
-                                    : "mx-auto bg-rebin-grey w-8 aspect-square rounded-full font-bold text-xl flex place-content-center"}>
-                                <div className={activeTab === index ? "h-min text-white" : "h-min text-gradient-horizontal"}>
-                                    {index + 1}
+                <div className="flex mt-20 h-36 divide-x p-0 rounded-2xl w-5/6 mx-auto border-b-2 border-r-2">
+                    {data.map(({ label }, index) => (
+                        <button className={activeTab === index ? "w-full border-t-8 rounded-xl border-t-rebin-blue -mb-3 bg-white -mr-0.5" : "w-full mt-2 ml-0.5"}>
+                            <Tab key={index} value={index} className="" onClick={() => setActiveTab(index)}>
+                                <div className=
+                                    {activeTab === index ? "mx-auto bg-gradient w-8 aspect-square rounded-full text-white font-bold text-xl flex place-content-center"
+                                        : "mx-auto bg-rebin-grey w-8 aspect-square rounded-full font-bold text-xl flex place-content-center"}>
+                                    <div className={activeTab === index ? "h-min text-white" : "h-min text-gradient-horizontal"}>
+                                        {index + 1}
+                                    </div>
                                 </div>
-                            </div>
-                            <p className="font-bold text-xl text-rebin-darkblue mt-1">
-                                {label}
-                            </p>
-                        </Tab>
-                    </button>
-                ))}
+                                <p className="font-bold text-xl text-rebin-darkblue mt-1">
+                                    {label}
+                                </p>
+                            </Tab>
+                        </button>
+                    ))}
+                </div>
+
+
+
             </TabsHeader>
-            <TabsBody
-                animate={{
-                    initial: { y: 250 },
-                    mount: { y: 0 },
-                    unmount: { y: 250 },
-                }}
-            >
+            <TabsBody>
                 {data.map(({ title, desc }, index) => (
                     <TabPanel
                         key={index}

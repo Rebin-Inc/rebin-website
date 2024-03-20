@@ -91,6 +91,11 @@ main {
   border-color: #0043ff;
 }
 
+.border-t-rebin-blue {
+  border-style: solid;
+  border-top-color: #0043ff;
+}
+
 /* SLIDER */
 .slick-dots {
   bottom: -50px;
