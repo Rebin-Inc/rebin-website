@@ -28,7 +28,7 @@ const HowItWorks = () => {
       </div>
       <AdvantageBar></AdvantageBar>
       <div>
-        <h3 className="text-gradient-horizontal font-bold text-4xl text-center">
+        <h3 className="text-gradient-horizontal font-bold text-4xl mx-auto">
           4 step approach
         </h3>
         <h4 className="font-bold text-4xl mt-4 w-2xl text-center">

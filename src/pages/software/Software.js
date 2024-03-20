@@ -26,7 +26,7 @@ const Software = () => {
         </div>
       </div>
       <div>
-        <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal">Features</h3>
+        <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal mx-auto">Features</h3>
         <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Explore the features you need</h4>
         <FeatureMenu></FeatureMenu>
       </div>

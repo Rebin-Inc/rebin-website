@@ -24,7 +24,7 @@ const Sensor = () => {
       </div>
       <StatisticBar />
       <div>
-        <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal">Advantages</h3>
+        <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal mx-auto">Advantages</h3>
         <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Where hardware meets innovation</h4>
         <SensorMenu></SensorMenu>
       </div>

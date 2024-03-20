@@ -38,7 +38,7 @@ const Home = () => {
       </div>
       <StatisticBar></StatisticBar>
       <div className="text-center">
-        <h1 className="text-gradient-horizontal font-bold text-3xl">
+        <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto">
           Solutions
         </h1>
         <h2 className="font-bold text-4xl mt-4">
@@ -71,7 +71,7 @@ const Home = () => {
       </div>
       <PartnersSection></PartnersSection>
       <div>
-        <h1 className="text-center text-gradient-horizontal font-bold text-3xl">
+        <h1 className="text-center text-gradient-horizontal font-bold text-3xl mx-auto">
           Why choose us?
         </h1>
         <h2 className="text-center font-bold text-4xl mt-4">

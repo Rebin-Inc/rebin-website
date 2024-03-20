@@ -58,12 +58,14 @@ main {
   background: -webkit-linear-gradient(#0043ff, #12274f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  height: fit-content;
 }
 
 .text-gradient-horizontal {
   background: -webkit-linear-gradient(45deg, #0043ff, #12274f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  width: fit-content;
 }
 
 .text-rebin-darkblue {

@@ -53,7 +53,7 @@ const About = () => {
         </div>
       </div>
       <div>
-        <h1 className="text-center text-gradient-horizontal font-bold text-3xl">
+        <h1 className="text-center text-gradient-horizontal font-bold text-3xl mx-auto">
           Core values
         </h1>
         <h2 className="text-center font-bold text-4xl mt-4">
@@ -63,7 +63,7 @@ const About = () => {
       </div>
 
       <div className="text-center">
-        <h1 className="text-gradient-horizontal font-bold text-3xl">
+        <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto">
           Our team
         </h1>
         <h2 className="font-bold text-4xl mt-4">
