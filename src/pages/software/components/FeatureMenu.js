@@ -12,6 +12,7 @@ import Sensor from "../../../assets/images/software/sensor.svg";
 import Analytics from "../../../assets/images/software/analytics.svg";
 import Repoint from "../../../assets/images/software/repoint.svg";
 import Checkmark from "../../../assets/images/checkmark.svg";
+import Dashboard from "../../../assets/images/software/dashboard.svg";
 
 
 export default function FeatureMenu() {
@@ -22,6 +23,7 @@ export default function FeatureMenu() {
             label: "Dashboard",
             icon: Sensor,
             title: "Dashboard",
+            image: Repoint,
             subtitle: "Know the status of your assets",
             desc: `
                 Track the fill levels of your assets with a complete overview. Quickly identify critical KPIs and make informed decisions accordingly.
@@ -37,6 +39,7 @@ export default function FeatureMenu() {
             label: "Route optimalisation",
             icon: Route,
             title: "Route optimalisation",
+            image: Repoint,
             subtitle: "Bypass unnecessary assets",
             desc: `
             Improve collection operations by overlooking redundant assets, saving costs and reducing CO2 emissions along the way. Tailor routes using up-to-date fill level information to avoid unnecessary staff deployment.
@@ -53,6 +56,7 @@ export default function FeatureMenu() {
             label: "Statistics",
             icon: Analytics,
             title: "Statistics",
+            image: Dashboard,
             subtitle: "Take strategic decisions",
             desc: `
             Access a variety of statistics, such as collection frequencies, waste amounts, and fill rates. Utilize data-driven decisions to streamline resource management and reporting.
@@ -85,13 +89,13 @@ export default function FeatureMenu() {
                 ))}
             </TabsHeader>
             <TabsBody>
-                {data.map(({ title, subtitle, desc, advantages, percentages }, index) => (
+                {data.map(({ title, subtitle, desc, advantages, percentages, image }, index) => (
                     <TabPanel
                         key={index}
                         value={index}
                         className="mt-10 grid grid-cols-2 place-items-center gap-14"
                     >
-                        <img src={Repoint} alt="The Repoint waste management platform" className="mx-auto" />
+                        <img src={image} alt="The Repoint waste management platform" className="mx-auto" />
                         <div className="space-y-4">
                             <h3 className="text-gradient-horizontal font-bold text-3xl">{title}</h3>
                             <h4 className="text-rebin-darkblue text-4xl font-semibold">

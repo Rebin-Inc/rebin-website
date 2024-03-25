@@ -1,6 +1,6 @@
 import React from "react";
 import Button from "../../components/Button";
-import RepointOnDevices from "../../assets/images/software/repoint_on_devices.svg";
+import Repoint from "../../assets/images/software/software.svg";
 import FeatureMenu from "./components/FeatureMenu";
 import BenefitBar from "./components/BenefitBar";
 import CallToAction from "../../components/CallToAction";
@@ -17,12 +17,12 @@ const Software = () => {
             The all in-one-solution for asset monitoring
           </h2>
           <p className="text-md mt-6 text-balance">
-            Rebin provides real-time monitoring, streamlines collection routes, and delivers actionable insights, one asset at a time. 
+            Rebin provides real-time monitoring, streamlines collection routes, and delivers actionable insights, one asset at a time.
           </p>
           <Button text="Contact us" arrow={true} href="/contact" />
         </div>
         <div className="max-w-lg mx-auto place-self-center mt-6 float-right">
-          <img src={RepointOnDevices} alt="Infographic representing the repoint platform"></img>
+          <img src={Repoint} alt="Infographic representing the repoint platform"></img>
         </div>
       </div>
       <div>
@@ -31,7 +31,7 @@ const Software = () => {
         <FeatureMenu></FeatureMenu>
       </div>
       <div>
-        <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal">Benefits</h3>
+        <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal mx-auto">Benefits</h3>
         <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Discover the benefits for your organisation</h4>
         <BenefitBar></BenefitBar>
       </div>
