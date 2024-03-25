@@ -50,7 +50,7 @@ const NewsCards = () => {
                 <img src={article.image} alt="News article" className="w-full" />
               </div>
               <div className="mb-6 mt-10 bg-rebin-grey w-28 rounded-lg">
-                <h5 className="text-gradient-horizontal text-center font-bold">
+                <h5 className="text-gradient-horizontal font-bold mx-auto">
                   News article
                 </h5>
               </div>
