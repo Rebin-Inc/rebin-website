@@ -18,6 +18,7 @@ import Vuilnisbak from "../../../assets/images/fourStepApproach/vuilnisbak.svg";
 import Repoint from "../../../assets/images/fourStepApproach/repoint.svg";
 import Cards from "../../../assets/images/fourStepApproach/cards.svg";
 import Checkmark from "../../../assets/images/checkmark.svg";
+import CustomerSupport from "../../../assets/images/fourStepApproach/customer_support.svg";
 
 export default function FourStepsMenu() {
   const [activeTab, setActiveTab] = React.useState(0);
@@ -67,7 +68,7 @@ export default function FourStepsMenu() {
     {
       thumbnail: Step4,
       thumbnailSelected: Step4Selected,
-      image: Vuilnisbak,
+      image: CustomerSupport,
       title: "Customer support",
       desc1: `Rebin provides full support from installation to troubleshooting, ensuring optimal functionality at all times.`,
       desc2: `Save time by focusing on your core business instead of configuring IoT applications.`,
