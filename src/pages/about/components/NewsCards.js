@@ -44,7 +44,7 @@ const NewsCards = () => {
     <div className="grid md:grid-cols-3 my-16 place-content-center gap-10">
       {news.map((article) => (
         <button className="max-w-96 flex content-stretch">
-          <Link onClick={() => openInNewTab(article.href)} >
+          <Link onClick={() => openInNewTab(article.href)} className="h-full" >
             <div className="border p-4 pb-8 flex flex-col text-gray-700 bg-white shadow-around bg-clip-border rounded-xl h-full">
               <div className="overflow-hidden rounded-xl">
                 <img src={article.image} alt="News article" className="w-full" />
