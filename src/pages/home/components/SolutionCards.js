@@ -16,11 +16,11 @@ export default function SolutionCards() {
           <p className="text-black mx-auto md:text-base">
             Rebin selects the best sensor for your application
           </p>
-          <Button text="Learn more" href="/sensor" />
+          {/* <Button text="Learn more" href="/sensor" /> */}
         </CardBody>
       </Card>
       <Card shadow={false} className="md:max-w-96 min-h-80 my-auto shadow-around z-10 rounded-3xl py-10">
-        <CardBody className="space-y-4">
+        <CardBody className="">
           <img src={software} alt="" className="mx-auto" />
           <h4 className="mb-2 text-rebin-darkblue text-3xl md:text-2xl font-bold">
             Software
@@ -28,7 +28,7 @@ export default function SolutionCards() {
           <p className="text-black mx-auto md:text-base">
             Streamline any type of asset with our unified software solution
           </p>
-          <Button text="Learn more" href="/software" />
+          <Button text="Learn more" href="/software" margin="mt-8" />
         </CardBody>
       </Card>
       <Card shadow={false} className="md:my-8 m-h-80 py-4 shadow-around -top-4 md:top-0 md:-left-2 mx-5 md:mx-0 rounded-3xl">
@@ -40,7 +40,7 @@ export default function SolutionCards() {
           <p className="text-black mx-auto md:text-base">
             Experience customized asset policies to fit your needs
           </p>
-          <Button text="Learn more" href="/consulting" />
+          {/* <Button text="Learn more" href="/consulting" /> */}
         </CardBody>
       </Card>
     </div>
