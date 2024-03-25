@@ -72,10 +72,10 @@ const Home = () => {
         <WhyChooseUsCards></WhyChooseUsCards>
       </div>
       <div>
-        <h1 className="text-gradient-horizontal font-bold text-3xl">
+        <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto">
           Applications
         </h1>
-        <h2 className="font-bold text-4xl mt-4">We can help you</h2>
+        <h2 className="font-bold text-4xl mt-4 text-center">We can help you</h2>
         <Industries></Industries>
       </div>
       <div>
