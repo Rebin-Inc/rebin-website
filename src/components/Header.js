@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Dialog, Disclosure, Menu } from "@headlessui/react";
+import { Dialog, Disclosure } from "@headlessui/react";
+// import { Menu } from "@headlessui/react";
 import {
   Bars3Icon,
   ChevronDownIcon,
@@ -15,26 +16,26 @@ import Button from "../components/Button";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const solutions = [
-    {
-      name: "Smart waste sensor",
-      description: "Discover world's most innovative waste sensor",
-      href: "sensor",
-      src: "./Images/sensor_icon.png",
-    },
-    {
-      name: "Software",
-      description: "Discover world's most innovative sensor",
-      href: "software",
-      src: "./Images/software_icon.png",
-    },
-    {
-      name: "Consulting",
-      description: "Discover world's most innovative sensor",
-      href: "consulting",
-      src: "./Images/consulting_icon.png",
-    },
-  ];
+  // const solutions = [
+  //   {
+  //     name: "Smart waste sensor",
+  //     description: "Discover world's most innovative waste sensor",
+  //     href: "sensor",
+  //     src: "./Images/sensor_icon.png",
+  //   },
+  //   {
+  //     name: "Software",
+  //     description: "Discover world's most innovative sensor",
+  //     href: "software",
+  //     src: "./Images/software_icon.png",
+  //   },
+  //   {
+  //     name: "Consulting",
+  //     description: "Discover world's most innovative sensor",
+  //     href: "consulting",
+  //     src: "./Images/consulting_icon.png",
+  //   },
+  // ];
 
   const languages = [
     { name: "English", href: "#", current: true },
