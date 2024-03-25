@@ -6,6 +6,7 @@ import TeamCards from "./components/TeamCards";
 import NewsCards from "./components/NewsCards";
 import CallToAction from "../../components/CallToAction";
 import Button from "../../components/Button";
+import Team from "../../assets/images/about/team.png";
 
 const About = () => {
   return (
@@ -29,23 +30,25 @@ const About = () => {
       <StatisticBar></StatisticBar>
       <div className="grid md:grid-cols-2 px-10 gap-4">
         <img
-          className="w-full sm:w-3/5 md:w-72 aspect-square rounded-lg object-fill mx-auto my-auto"
-          src="https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+          className="w-full sm:w-3/5 md:w-96 aspect-square rounded-lg object-contain mx-auto my-auto"
+          src={Team}
           alt="nature"
         />
-        <div>
-          <h1 className="text-gradient-horizontal font-bold text-3xl">
-            Our mission
-          </h1>
-          <h2 className="font-bold text-4xl mt-4">
-            Empowering organisations with smart asset management solutions
-          </h2>
-          <p className="mt-6">
-            Our mission is to achieve a more cost-efficient and environmentally
-            friendly way of waste collection. We want to make a positive
-            contribution to improving waste management and enhancing
-            sustainability.
-          </p>
+        <div className="flex items-center">
+          <div>
+            <h1 className="text-gradient-horizontal font-bold text-3xl">
+              Our mission
+            </h1>
+            <h2 className="font-bold text-4xl mt-4">
+              Empowering organisations with smart asset management solutions
+            </h2>
+            <p className="mt-6">
+              Our mission is to achieve a more cost-efficient and environmentally
+              friendly way of waste collection. We want to make a positive
+              contribution to improving waste management and enhancing
+              sustainability.
+            </p>
+          </div>
         </div>
       </div>
       <div>
