@@ -1,44 +1,72 @@
 import React from 'react'
-import RepointOnLaptop from "../../../assets/images/software/repoint_on_laptop.png";
+import { Card, CardBody } from "@material-tailwind/react";
 
 const BenefitBar = () => {
     const data = [
         {
-            title: "Easy to use",
-            desc: "We provide customized solutions that meet our clients' unique needs and "
+            title: "Cut operational costs",
+            desc: " streamline your asset management processes and cut collection costs."
         },
         {
-            title: "Better planning",
-            desc: "We provide customized solutions that meet our clients' unique needs and "
+            title: "Improve processes",
+            desc: "Real-time data allows for more efficient allocation of assets, personnel, and transportation."
         },
         {
-            title: "Implementation bins without sensor",
-            desc: "We provide customized solutions that meet our clients' unique needs and "
+            title: "Understand assets",
+            desc: "Gain insights into how often assets are used and act accordingly."
         },
         {
-            title: "Hotspots litter and fly-tipping",
-            desc: "We provide customized solutions that meet our clients' unique needs and "
+            title: "Legislation complient",
+            desc: "Meet the latest regulations effortlessly through accessible data from the Rebin platform."
         },
     ]
 
     return (
-        <div className='grid grid-cols-1 lg:grid-cols-5 bg-rebin-grey rounded-xl p-4 mt-12'>
-            <div className='p-6 col-span-3 my-auto order-last lg:order-first'>
-                <ul className='space-y-6'>
-                    {data.map(({ title, desc }, index) => (
-                        <li key={index} className='flex space-x-6'>
-                            <div className='bg-gradient my-auto h-12 aspect-square rounded-lg grid place-content-center'>
-                                <span className='text-white text-3xl font-bold'>{index + 1}</span>
-                            </div>
-                            <div className='space-y-2'>
-                                <h3 className='text-rebin-darkblue font-bold text-2xl'>{title}</h3>
-                                <p className='max-w-sm'>{desc}</p>
-                            </div>
-                        </li>
-                    ))}
-                </ul>
+        <div className='grid grid-cols-1 md:bg-dotted-half-circle bg-no-repeat bg-center bg-contain mt-36'>
+            <div className='grid grid-cols-1 md:grid-cols-3 mx-auto lg:mx-36 gap-y-4'>
+                <Card className='max-w-sm'>
+                    <CardBody className="flex h-full items-center gap-4">
+                        <div className="text-balance space-y-2 w-full">
+                            <h4 className="mb-1 text-2xl font-bold">{data[0].title}</h4>
+                            <p className="text-lg text-black">
+                                {data[0].desc}
+                            </p>
+                        </div>
+                    </CardBody>
+                </Card>
+                <Card className='md:col-start-3 max-w-sm'>
+                    <CardBody className="flex h-full items-center gap-4">
+                        <div className="text-balance space-y-2 w-full">
+                            <h4 className="mb-1 text-2xl font-bold">{data[1].title}</h4>
+                            <p className="text-lg text-black">
+                                {data[1].desc}
+                            </p>
+                        </div>
+                    </CardBody>
+                </Card>
             </div>
-            <img className='col-span-2 w-full lg:h-full' src={RepointOnLaptop} alt="Our waste management Repoint running on a laptop" />
+            <div className='grid grid-cols-1 md:grid-cols-3 mt-4  md:mt-36 mb-10 gap-y-4 md:gap-16 mx-auto'>
+                <Card className='max-w-sm'>
+                    <CardBody className="flex h-full items-center gap-4">
+                        <div className="text-balance space-y-2 w-full">
+                            <h4 className="mb-1 text-2xl font-bold">{data[2].title}</h4>
+                            <p className="text-lg text-black">
+                                {data[2].desc}
+                            </p>
+                        </div>
+                    </CardBody>
+                </Card>
+                <Card className='md:col-start-3 max-w-sm'>
+                    <CardBody className="flex h-full items-center gap-4">
+                        <div className="text-balance space-y-2 w-full">
+                            <h4 className="mb-1 text-2xl font-bold">{data[3].title}</h4>
+                            <p className="text-lg text-black">
+                                {data[3].desc}
+                            </p>
+                        </div>
+                    </CardBody>
+                </Card>
+            </div>
         </div>
     )
 }
