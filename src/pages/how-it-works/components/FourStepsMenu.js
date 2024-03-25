@@ -14,7 +14,7 @@ import Step2Selected from "../../../assets/images/fourStepApproach/Step2_selecte
 import Step3Selected from "../../../assets/images/fourStepApproach/Step3_selected.svg";
 import Step4Selected from "../../../assets/images/fourStepApproach/Step4_selected.svg";
 import React from "react";
-import Vuilnisbak from "../../../assets/images/fourStepApproach/vuilnisbak.svg";
+import Bin from "../../../assets/images/fourStepApproach/bin.png";
 import Repoint from "../../../assets/images/fourStepApproach/repoint.svg";
 import Cards from "../../../assets/images/fourStepApproach/cards.svg";
 import Checkmark from "../../../assets/images/checkmark.svg";
@@ -26,7 +26,7 @@ export default function FourStepsMenu() {
     {
       thumbnail: Step1,
       thumbnailSelected: Step1Selected,
-      image: Vuilnisbak,
+      image: Bin,
       title: "Installation",
       desc1: `We take care of the entire installation process for any type of asset, including bins, containers, and more.`,
       desc2: `In no time, your assets are up and running on the Rebin platform.`,
