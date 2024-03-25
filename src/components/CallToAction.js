@@ -8,7 +8,7 @@ const CallToAction = () => {
   return (
     <section className="-mt-20 h-64 sm:h-80 md:h-96 grid">
       <div className="absolute h-64 sm:h-80 md:h-96 w-full min-w-max left-0 -z-10">
-        <div className="flex gap-x-12 w-full h-full">
+        <div className="flex gap-x-12 w-full h-64 xs:h-56 sm:h-full">
           <img src={LeftArrow} alt="" className="mr-auto h-full" />
           <img src={RightArrow} alt="" className="ml-auto h-full invisible sm:visible" />
         </div>
