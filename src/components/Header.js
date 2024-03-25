@@ -201,7 +201,7 @@ const Header = () => {
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Software
+                    Solution
                   </Link>
                   <Link
                     to="references"
