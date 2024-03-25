@@ -76,14 +76,14 @@ export default function FeatureMenu() {
             <TabsHeader
                 className="mt-20 p-0 grid grid-cols-3"
                 indicatorProps={{
-                    className: "h-2 w-full bg-gradient rounded-full mt-20",
+                    className: "h-2 w-full bg-gradient rounded-full -mb-3",
                 }}>
                 {data.map(({ label, icon }, index) => (
-                    <Tab key={index} value={index} className="" onClick={() => setActiveTab(index)}>
-                        <button className="h-16">
-                            <div className="flex space-x-4 items-center">
+                    <Tab key={index} value={index} className="flex items-end" onClick={() => setActiveTab(index)}>
+                        <button className="min-h-16">
+                            <div className="flex flex-col md:flex-row space-x-4">
                                 <img src={icon} alt={label} className="h-12" />
-                                <span className="font-bold text-xl text-rebin-darkblue">{label}</span>
+                                <span className="font-bold text-xl text-rebin-darkblue hidden sm:block">{label}</span>
                             </div>
                         </button>
                     </Tab>
@@ -95,7 +95,7 @@ export default function FeatureMenu() {
                     <TabPanel
                         key={index}
                         value={index}
-                        className="mt-10 grid grid-cols-2 place-items-center gap-14"
+                        className="mt-10 grid md:grid-cols-2 place-items-center gap-14"
                     >
                         <img src={image} alt="The Repoint waste management platform" className="mx-auto" />
                         <div className="space-y-4">
