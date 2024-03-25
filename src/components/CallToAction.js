@@ -1,6 +1,5 @@
 import React from "react";
 import Button from "../components/Button";
-import CtaBackground from "../assets/images/callToAction/cta_bg.svg";
 import LeftArrow from "../assets/images/callToAction/left.svg";
 import RightArrow from "../assets/images/callToAction/right.svg";
 
