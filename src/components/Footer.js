@@ -25,12 +25,14 @@ const Footer = () => {
           <Link
             to="https://linkedin.com/company/rebin-be"
             className="mr-2 inline-flex items-center justify-center rounded-full p-2 bg-white/10 hover:bg-white/30"
+            target="_blank" rel="noopener noreferrer"
           >
             <FaLinkedin className="h-4 w-4" aria-hidden="true"></FaLinkedin>
           </Link>
           <Link
             to="https://www.youtube.com/"
             className="m-1 inline-flex items-center justify-center rounded-full p-2 bg-white/10 hover:bg-white/30"
+            target="_blank" rel="noopener noreferrer"
           >
             <FaYoutube className="h-4 w-4" aria-hidden="true"></FaYoutube>
           </Link>
@@ -87,7 +89,7 @@ const Footer = () => {
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Contact</p>
             <p className="text-sm font-light opacity-80">info@rebin.be</p>
-            <p className="text-sm font-light opacity-80">9000 Gent</p>
+            <p className="text-sm font-light opacity-80">Sassevaartstraat 46,<br />  9000 Gent</p>
             <p className="text-sm font-light opacity-80">BE 0799.727.089</p>
           </div>
           <div className="flex flex-col space-y-4">
