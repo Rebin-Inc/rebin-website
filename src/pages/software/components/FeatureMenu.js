@@ -13,6 +13,7 @@ import Analytics from "../../../assets/images/software/analytics.svg";
 import Repoint from "../../../assets/images/software/repoint.svg";
 import Checkmark from "../../../assets/images/checkmark.svg";
 import Dashboard from "../../../assets/images/software/dashboard.svg";
+import CreateRoute from "../../../assets/images/software/create_route.svg";
 
 
 export default function FeatureMenu() {
@@ -39,7 +40,7 @@ export default function FeatureMenu() {
             label: "Route optimalisation",
             icon: Route,
             title: "Route optimalisation",
-            image: Repoint,
+            image: CreateRoute,
             subtitle: "Bypass unnecessary assets",
             desc: `
             Improve collection operations by overlooking redundant assets, saving costs and reducing CO2 emissions along the way. Tailor routes using up-to-date fill level information to avoid unnecessary staff deployment.
