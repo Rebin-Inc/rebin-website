@@ -19,7 +19,7 @@ const HowItWorks = () => {
           <p className="text-md mt-6 text-balance">
             Take control of your resources and explore how your asset management can be optimized.
           </p>
-          <Button text="Book a demo" arrow={true} href="/contact" />
+          <Button text="Book a demo" href="/contact" />
         </div>
         <div className="max-w-lg mx-auto place-self-center">
           <img src={Stats} alt="Infographic representing the repoint platform"></img>
