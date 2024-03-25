@@ -4,9 +4,7 @@ import { Card, CardBody } from "@material-tailwind/react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Support from "../../../assets/images/whyChooseUs/support.jpg";
-import Sensor from "../../../assets/images/whyChooseUs/sensor.jpg";
-import Dashboard from "../../../assets/images/whyChooseUs/dashboard.jpg";
+
 
 const WhyChooseUsCards = () => {
 
@@ -14,7 +12,6 @@ const WhyChooseUsCards = () => {
     {
       title: "Advanced software",
       description: "Discover the capabilities of our comprehensive software, ranging from optimal collection routes to insightful statisitcs.",
-      image: Support,
       rowStart: "row-start-1",
       colStart: "col-start-1",
       imagePosition: "right",
@@ -22,7 +19,6 @@ const WhyChooseUsCards = () => {
     {
       title: "All asset types",
       description: "Experience the power of our versatile solution, turning all kinds of assets into smart ones.",
-      image: Sensor,
       rowStart: "row-start-1",
       colStart: "col-start-5",
       imagePosition: "left",
@@ -30,7 +26,6 @@ const WhyChooseUsCards = () => {
     {
       title: "User-friendly",
       description: "Our software excels in its intuitive workflow, ensuring smooth adoption across any organization.",
-      image: Dashboard,
       rowStart: "row-start-4",
       colStart: "col-start-1",
       imagePosition: "right",
@@ -38,7 +33,6 @@ const WhyChooseUsCards = () => {
     {
       title: "Automated reports",
       description: "We provide valuable insights for optimizing asset control through data reports.",
-      image: Support,
       rowStart: "row-start-4",
       colStart: "col-start-5",
       imagePosition: "left",
@@ -67,18 +61,16 @@ const WhyChooseUsCards = () => {
       <div className="hidden xl:grid grid-cols-7 grid-rows-5 bg-dotted-circle bg-center bg-no-repeat bg-contain p-16">
         {data.map((item, index) => (
           <Card key={index} shadow={false} className={`${item.colStart} ${item.rowStart} col-span-3 row-span-2 border shadow-around`}>
-            <CardBody className="flex h-full items-center gap-4">
+            <CardBody className="flex h-full items-center gap-6">
               <div className="text-balance space-y-2 w-full">
-                <h4 className="mb-1 text-2xl font-bold">{item.title}</h4>
+                <h4 className="mb-1 text-2xl font-bold text-rebin-darkblue">{item.title}</h4>
                 <p className="text-lg text-black">
                   {item.description}
                 </p>
               </div>
-              <img
-                src={item.image}
-                alt=""
-                className={`object-cover rounded-xl w-36 ${item.imagePosition === "right" ? "order-last" : "order-first"}`}
-              />
+              <span className="order-first text-9xl font-bold text-gradient w-52 text-center">
+                {index + 1 + "."}
+              </span>
             </CardBody>
           </Card>
         ))}
@@ -95,17 +87,15 @@ const WhyChooseUsCards = () => {
             data.map((item, index) => (
               <Card key={index} className="border">
                 <CardBody className="flex h-64">
-                  <div className="pr-4 md:p-4 text-balance space-y-2 w-full">
-                    <h4 className="mb-1 text-2xl font-bold">{item.title}</h4>
-                    <p className="text-lg text-black line-clamp-4">
+                  <div className="pr-4 md:p-4 text-balance space-y-2 w-full my-auto">
+                    <h4 className="mb-1 text-2xl md:text-4xl font-bold text-rebin-darkblue">{item.title}</h4>
+                    <p className="text-lg md:text-2xl text-black">
                       {item.description}
                     </p>
                   </div>
-                  <img
-                    src={item.image}
-                    alt=""
-                    className="object-cover rounded-xl w-36"
-                  />
+                  <span className="order-first text-9xl font-bold text-gradient w-52 text-center my-auto">
+                    {index + 1 + "."}
+                  </span>
                 </CardBody>
               </Card>
             ))}
