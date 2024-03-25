@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
-import { Dialog, Disclosure, Menu } from "@headlessui/react";
+import { Dialog, Disclosure } from "@headlessui/react";
+// import { Menu } from "@headlessui/react";
 import {
   Bars3Icon,
   ChevronDownIcon,
@@ -15,26 +16,26 @@ import Button from "../components/Button";
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
-  const solutions = [
-    {
-      name: "Smart waste sensor",
-      description: "Discover world's most innovative waste sensor",
-      href: "sensor",
-      src: "./Images/sensor_icon.png",
-    },
-    {
-      name: "Software",
-      description: "Discover world's most innovative sensor",
-      href: "software",
-      src: "./Images/software_icon.png",
-    },
-    {
-      name: "Consulting",
-      description: "Discover world's most innovative sensor",
-      href: "consulting",
-      src: "./Images/consulting_icon.png",
-    },
-  ];
+  // const solutions = [
+  //   {
+  //     name: "Smart waste sensor",
+  //     description: "Discover world's most innovative waste sensor",
+  //     href: "sensor",
+  //     src: "./Images/sensor_icon.png",
+  //   },
+  //   {
+  //     name: "Software",
+  //     description: "Discover world's most innovative sensor",
+  //     href: "software",
+  //     src: "./Images/software_icon.png",
+  //   },
+  //   {
+  //     name: "Consulting",
+  //     description: "Discover world's most innovative sensor",
+  //     href: "consulting",
+  //     src: "./Images/consulting_icon.png",
+  //   },
+  // ];
 
   const languages = [
     { name: "English", href: "#", current: true },
@@ -58,11 +59,11 @@ const Header = () => {
         <div className="flex lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="relative inline-flex items-center justify-center space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            className="relative inline-flex items-center justify-center sm:space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
           >
             <span className="absolute -inset-0.5" />
             <span className="sr-only">Open main menu</span>
-            Menu
+            <span className="leading-none mb-0.5 hidden sm:block">Menu</span>
             {mobileMenuOpen ? (
               <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
             ) : (
@@ -77,7 +78,7 @@ const Header = () => {
           >
             How it works
           </Link>
-          <Menu className="relative" as="div">
+          {/* <Menu className="relative" as="div">
             <Menu.Button className="flex items-center focus:outline-none gap-x-1 text-sm font-medium text-gradient-hover">
               Solution
               <ChevronDownIcon
@@ -105,7 +106,13 @@ const Header = () => {
                 </Menu.Button>
               ))}
             </Menu.Items>
-          </Menu>
+          </Menu> */}
+          <Link
+            className="text-sm font-medium text-gradient-hover"
+            to="software"
+          >
+            Solution
+          </Link>
           <Link
             className="text-sm font-medium text-gradient-hover"
             to="references"
@@ -159,7 +166,7 @@ const Header = () => {
                   >
                     How it works
                   </Link>
-                  <Disclosure as="div" className="-mx-3">
+                  {/* <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-medium leading-7 hover:bg-gray-50">
@@ -188,7 +195,14 @@ const Header = () => {
                         </Disclosure.Panel>
                       </>
                     )}
-                  </Disclosure>
+                  </Disclosure> */}
+                  <Link
+                    to="software"
+                    className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
+                    onClick={() => setMobileMenuOpen(false)}
+                  >
+                    Solution
+                  </Link>
                   <Link
                     to="references"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"

@@ -40,7 +40,7 @@ const ContactForm = () => {
               <div className="grid grid-cols-1 space-y-5 sm:grid-cols-2 sm:space-y-0">
                 <div className="flex flex-col space-y-0 sm:mr-3">
                   <label for="name" className="font-medium">
-                    Full name *
+                    Full name
                   </label>
                   <input
                     required
@@ -54,7 +54,7 @@ const ContactForm = () => {
 
                 <div className="flex flex-col space-y-0">
                   <label for="tel" className="font-medium">
-                    Phone *
+                    Phone
                   </label>
                   <input
                     required
@@ -68,7 +68,7 @@ const ContactForm = () => {
               </div>
               <div className="flex flex-col mt-2 space-y-0">
                 <label for="email" className="font-medium">
-                  Email *
+                  Email
                 </label>
                 <input
                   required
