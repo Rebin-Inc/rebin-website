@@ -74,7 +74,7 @@ export default function FeatureMenu() {
     return (
         <Tabs value={activeTab}>
             <TabsHeader
-                className="mt-20 rounded-none border-b-8 border-rebin-grey p-0"
+                className="mt-20 p-0 grid grid-cols-3"
                 indicatorProps={{
                     className: "h-2 w-full bg-gradient rounded-full mt-20",
                 }}>
@@ -88,6 +88,7 @@ export default function FeatureMenu() {
                         </button>
                     </Tab>
                 ))}
+                <div className="h-2 bg-rebin-grey w-full col-span-3 rounded-full"></div>
             </TabsHeader>
             <TabsBody>
                 {data.map(({ title, subtitle, desc, advantages, percentages, image }, index) => (
