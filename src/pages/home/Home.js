@@ -28,7 +28,7 @@ const Home = () => {
           <video className="place-self-center rotate-6" autoPlay loop muted>
             <source src={SmartCity} type="video/mp4" />
             Your browser does not support the video tag.
-           </video>
+          </video>
         </div>
       </div>
       <StatisticBar></StatisticBar>
@@ -42,7 +42,7 @@ const Home = () => {
         <SolutionCards></SolutionCards>
       </div>
       <div className="grid grid-cols lg:grid-cols-2 lg:grid-rows-2 gap-x-20 gap-y-16 lg:gap-y-0 place-items-center lg:place-items-start">
-        <div className="max-w-2xl place-self-end mb-6">
+        <div className="max-w-2xl mb-6">
           <h1 className="text-gradient-horizontal font-semibold text-3xl">
             About
           </h1>
@@ -55,7 +55,7 @@ const Home = () => {
         </div>
         <div className="lg:col-start-2 lg:row-start-2 max-w-2xl">
           <p className="text-balance">
-            Our goal is to enhance asset management within organizations. 
+            Our goal is to enhance asset management within organizations.
             Leveraging our solution, you save time, cut costs, and reduce environmental impact.
           </p>
           <Button text="View case study" arrow={true} />
