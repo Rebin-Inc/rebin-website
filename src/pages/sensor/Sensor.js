@@ -15,7 +15,7 @@ const Sensor = () => {
           <h2 className="mt-4 text-3xl">
             Small. Advanced. Sustainable.
           </h2>
-          <Button text="Request sensor" arrow={true} href="/contact" />
+          <Button text="Request sensor" href="/contact" />
         </div>
         <div className="grid place-items-center mt-6">
           <div className="blob absolute -z-10"></div>

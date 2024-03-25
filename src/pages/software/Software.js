@@ -19,7 +19,7 @@ const Software = () => {
           <p className="text-md mt-6 text-balance">
             Rebin provides real-time monitoring, streamlines collection routes, and delivers actionable insights, one asset at a time.
           </p>
-          <Button text="Contact us" arrow={true} href="/contact" />
+          <Button text="Contact us" href="/contact" />
         </div>
         <div className="max-w-lg mx-auto place-self-center mt-6 float-right">
           <img src={Repoint} alt="Infographic representing the repoint platform"></img>
