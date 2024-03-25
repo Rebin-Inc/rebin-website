@@ -21,8 +21,8 @@ const ValueCards = () => {
             Customer satisfaction
           </Typography>
           <Typography>
-            Customer satisfaction is our utmost priority. Should any issues
-            arise, we are always available to assist.
+            At Rebin, customer satisfaction is one of our guiding principals. 
+            We value your feedback to continuously improve and exceed expectations.
           </Typography>
         </CardBody>
       </Card>
@@ -36,11 +36,11 @@ const ValueCards = () => {
             />
           </div>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            Reliability
+            Entrepreunerial
           </Typography>
           <Typography>
-            We keep our promises, deliver consistent results, and remain
-            reliable, regardless of the circumstances.
+            We challenge industry norms with an entrepreneurial mindset. 
+            Embracing a move-fast approach, we are always evolving to lead the industry. 
           </Typography>
         </CardBody>
       </Card>
@@ -57,8 +57,8 @@ const ValueCards = () => {
             Sustainability
           </Typography>
           <Typography>
-            With our solution, we contribute to a more sustainable living
-            environment.
+           We prioritize sustainability in all decisions, from partnerships to product development. 
+           We firmly believe our solution advances society towards a smarter future.
           </Typography>
         </CardBody>
       </Card>
@@ -75,8 +75,8 @@ const ValueCards = () => {
             Innovation
           </Typography>
           <Typography>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Natus iure
-            cum harum in voluptatibus, nisi necessitatibus molestias amet.
+            Rebin is dedicated to continuous innovation,
+            leveraging the latest technologies to ensure state-of-the-art solutions.
           </Typography>
         </CardBody>
       </Card>

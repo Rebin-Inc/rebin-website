@@ -3,19 +3,19 @@ import React from "react";
 const AdvantageBar = () => {
   const advantages = [
     {
-      title: "Easy to use",
+      title: "Fill level monitoring",
       description:
-        "Utilize our user-friendly software application and gain insights to optimize collection.",
+        "Monitor asset fill levels in real-time and collect only when necessary.",
     },
     {
-      title: "Enhance and minimize",
+      title: "Optimal collection routes",
       description:
-        "Make your waste management more efficient and reduce costs and CO2 emissions.",
+        "Optimize collection routes to reduce time, costs, and emissions.",
     },
     {
-      title: "Customer service",
+      title: "Actionable data insights",
       description:
-        "Receive excellent customer service on your journey towards efficient waste management.",
+        "Gain practical data insights for strategic asset decision-making.",
     },
   ];
 
@@ -30,7 +30,7 @@ const AdvantageBar = () => {
             <h4 className="font-bold text-xl text-rebin-darkblue">
               {advantage.title}
             </h4>
-            <p className="text-sm font-medium max-w-52">
+            <p className="text-sm font-regular max-w-52">
               {advantage.description}
             </p>
           </div>

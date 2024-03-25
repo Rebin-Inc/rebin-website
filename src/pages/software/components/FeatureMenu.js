@@ -22,23 +22,24 @@ export default function FeatureMenu() {
             label: "Dashboard",
             icon: Sensor,
             title: "Dashboard",
-            subtitle: "Get to know which bins are full",
+            subtitle: "Know the status of your assets",
             desc: `
-            Our mission is to achieve a more cost-efficient and environmentally friendly way of waste collection. We want to make a positive contribution to improving waste management and enhancing sustainability.
+                Track the fill levels of your assets with a complete overview. Quickly identify critical KPIs and make informed decisions accordingly.
             `,
             advantages: [
-                "Accurate measurements",
-                "Water- and shockproof",
-                "universal sensor"
+                "Detailed asset inventory",
+                "Real-time asset monitoring",
+                "Relevant KPIs",
+                "Alerts and notifications"
             ],
         },
         {
             label: "Route optimalisation",
             icon: Route,
             title: "Route optimalisation",
-            subtitle: "Get to know which bins are full",
+            subtitle: "Bypass unnecessary assets",
             desc: `
-            Our mission is to achieve a more cost-efficient and environmentally friendly way of waste collection. We want to make a positive contribution to improving waste management and enhancing sustainability.
+            Improve collection operations by overlooking redundant assets, saving costs and reducing CO2 emissions along the way. Tailor routes using up-to-date fill level information to avoid unnecessary staff deployment.
             `,
             advantages: [
                 "Reduced collection time",
@@ -51,15 +52,16 @@ export default function FeatureMenu() {
         {
             label: "Statistics",
             icon: Analytics,
-            title: "The smallest sensor",
-            subtitle: "Get to know which bins are full",
+            title: "Statistics",
+            subtitle: "Take strategic decisions",
             desc: `
-            Our mission is to achieve a more cost-efficient and environmentally friendly way of waste collection. We want to make a positive contribution to improving waste management and enhancing sustainability.
+            Access a variety of statistics, such as collection frequencies, waste amounts, and fill rates. Utilize data-driven decisions to streamline resource management and reporting.
             `,
             advantages: [
-                "Accurate measurements",
-                "Water- and shockproof",
-                "universal sensor"
+                "Understand your assets",
+                "Automated reports",
+                "Detect zombie assets",
+                "Be legislation compliant"
             ],
         },
     ];
@@ -95,7 +97,7 @@ export default function FeatureMenu() {
                             <h4 className="text-rebin-darkblue text-4xl font-semibold">
                                 {subtitle}
                             </h4>
-                            <p className="text-black font-medium text-lg text-balance">
+                            <p className="text-black font-regular text-lg text-balance">
                                 {parse(desc)}
                             </p>
                             <ul className="grid grid-rows-2 grid-cols-2 grid-flow-col">

@@ -16,14 +16,10 @@ const About = () => {
             Our story
           </h1>
           <h2 className="font-bold text-5xl mt-4 w-2xl">How we started</h2>
-          <p className="text-md mt-6 text-balance">
-            During a leisurely stroll in the park, we came across an overflowing
-            trash bin, surrounded by litter that clearly had a negative impact
-            on the environment. Instead of ignoring it, we decided to take
-            action. Soon, we realized that the inefficiency in the collection
-            process was the root cause. Driven by our concern for the
-            environment and the community, we set out to improve the collection
-            system, aiming to reduce the nuisance of overflowing trash bins.
+          <p className="text-md font-regular mt-6 text-balance">
+            Spotting an overflowing bin in the park, we decided to act. 
+            Recognizing inefficiencies in waste collection, we resolved to enhance the system, 
+            tackling overflowing bins and other asset challenges to benefit the environment and community.
           </p>
         </div>
         <div className="max-w-lg mx-auto place-self-center">
@@ -42,9 +38,9 @@ const About = () => {
             Our mission
           </h1>
           <h2 className="font-bold text-4xl mt-4">
-            Empowering organizations with smart waste management solutions
+            Empowering organisations with smart asset management solutions
           </h2>
-          <p>
+          <p className="mt-6">
             Our mission is to achieve a more cost-efficient and environmentally
             friendly way of waste collection. We want to make a positive
             contribution to improving waste management and enhancing

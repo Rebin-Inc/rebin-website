@@ -17,23 +17,18 @@ const Home = () => {
         <div className="flex flex-col order-3 md:order-1 h-fit">
           <h1 className="font-bold text-4xl md:text-5xl">
             The <span className="text-gradient-horizontal">nr.1 platform </span>
-            for efficient waste management
+            for efficient asset management
           </h1>
           <p className="text-lg max-w-xl mt-6">
-            Our team of experts has years of experience in the IT industry and a
-            passion for innovative technology solutions.
+            Access fill level monitoring, optimize collection routes, and obtain key data insights.
           </p>
           <Button text="Contact us" href="/contact" />
         </div>
         <div className="order-2 self-center overflow-hidden">
-          <video
-            className="place-self-center rotate-6"
-            autoplay="autoplay"
-            loop
-          >
+          <video className="place-self-center rotate-6" autoPlay loop muted>
             <source src={SmartCity} type="video/mp4" />
             Your browser does not support the video tag.
-          </video>
+           </video>
         </div>
       </div>
       <StatisticBar></StatisticBar>
@@ -42,7 +37,7 @@ const Home = () => {
           Solutions
         </h1>
         <h2 className="font-bold text-4xl mt-4">
-          Check out our different offerings
+          Discover our comprehensive offering
         </h2>
         <SolutionCards></SolutionCards>
       </div>
@@ -52,7 +47,7 @@ const Home = () => {
             About
           </h1>
           <h2 className="font-semibold text-4xl mt-4">
-            We believe that waste management can be more efficient
+            We believe that asset monitoring can be more efficient
           </h2>
         </div>
         <div className="lg:row-start-1 lg:col-start-1 lg:row-span-2 w-fit place-self-center max-w-3xl">
@@ -60,11 +55,8 @@ const Home = () => {
         </div>
         <div className="lg:col-start-2 lg:row-start-2 max-w-2xl">
           <p className="text-balance">
-            That is why we're committed to to achieve a more cost-efficient and
-            environmentally friendly way of waste collection. We aim to make
-            every bin a smart bin by combining hardware and software. In this
-            way, we want to make a positive contribution to improving waste
-            management and enhancing sustainability.
+            Our goal is to enhance asset management within organizations. 
+            Leveraging our solution, you save time, cut costs, and reduce environmental impact.
           </p>
           <Button text="View case study" arrow={true} />
         </div>
@@ -81,7 +73,7 @@ const Home = () => {
       </div>
       <div>
         <h1 className="text-gradient-horizontal font-bold text-3xl">
-          Applicable industries
+          Applications
         </h1>
         <h2 className="font-bold text-4xl mt-4">We can help you</h2>
         <Industries></Industries>

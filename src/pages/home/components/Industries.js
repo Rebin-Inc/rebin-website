@@ -8,34 +8,28 @@ import ArrowLeftWhite from "../../../assets/images/Pijl_Links_Wit.svg";
 function Industries() {
   const industries = [
     {
-      industry: "Local governments",
+      industry: "Bins",
       image: "bg-government-blue group-hover:bg-government-white",
       summary:
-        "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
+        "Prevent overflowing bins in both public and private sectors. Cut costs with efficient collection routes and strategic bin placement, supported by data.",
     },
     {
-      industry: "Private waste collectors",
+      industry: "Containers",
       image: "bg-collector-blue group-hover:bg-collector-white",
       summary:
-        "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
+        "Customized for private waste collectors, our solution allows for remote monitoring of containers, including textile and underground glass containers, and more.",
     },
     {
-      industry: "Theme parks",
+      industry: "Silos",
       image: "bg-park-blue group-hover:bg-park-white",
       summary:
-        "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
+        "Accurate fill-level data enables precise scheduling of deliveries and material transfers in silos for manufacturing, agriculture, and beyond.",
     },
     {
-      industry: "Airports",
+      industry: "Liquid tanks",
       image: "bg-airport-blue group-hover:bg-airport-white",
       summary:
-        "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
-    },
-    {
-      industry: "Glass containers",
-      image: "bg-glass-blue group-hover:bg-government-white",
-      summary:
-        "We provide customized solutions that meet our clients' unique needs and help them succeed in an increasingly digital world.",
+        "Map fill levels of various reservoirs, from household cisterns to large tanks in residential complexes. Save on costs by optimizing liquid collection, including oil.",
     },
   ];
 
@@ -94,7 +88,7 @@ function Industries() {
               <h3 className="text-xl font-semibold mb-4 max-w-xs">
                 {industries[index].industry}
               </h3>
-              <h4 className="text-base font-light mb-6 max-w-xs ">
+              <h4 className=" text-base font-light mb-6 max-w-xs ">
                 {industries[index].summary}
               </h4>
             </div>

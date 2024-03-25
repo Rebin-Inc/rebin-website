@@ -1,7 +1,10 @@
-import React from "react";
+import React from 'react';
+import Blog from './components/Blog';
 
 const References = () => {
-  return <main>References</main>;
-};
+  return (
+    <Blog></Blog>
+  )
+}
 
-export default References;
+export default References

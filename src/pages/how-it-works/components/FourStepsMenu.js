@@ -26,13 +26,14 @@ export default function FourStepsMenu() {
       thumbnail: Step1,
       thumbnailSelected: Step1Selected,
       image: Vuilnisbak,
-      title: "Installation process",
-      desc1: `Our user-friendly software effortlessly maps your trash bins and ensures you stay up-to-date with the latest fill levels. `,
-      desc2: `Utilize optimal routes to streamline the collection process for greater efficiency.`,
+      title: "Installation",
+      desc1: `We take care of the entire installation process for any type of asset, including bins, containers, and more.`,
+      desc2: `In no time, your assets are up and running on the Rebin platform.`,
       advantages: [
         "Easy to install",
-        "Water- and shockproof",
-        "Universal sensor",
+        "Any type of asset",
+        "Easy onboarding",
+        "Simple software setup",
       ],
     },
     {
@@ -40,12 +41,13 @@ export default function FourStepsMenu() {
       thumbnailSelected: Step2Selected,
       image: Repoint,
       title: "Repoint platform",
-      desc1: `Our user-friendly software effortlessly maps your trash bins and ensures you stay up-to-date with the latest fill levels. `,
-      desc2: `Utilize optimal routes to streamline the collection process for greater efficiency.`,
+      desc1: `Our unified software easily maps any type of asset on a convenient dashboard.`,
+      desc2: `Keep track of current fill levels and utilize optimal routes to streamline the collection process, increasing operational efficiency.`,
       advantages: [
-        "Easy to install",
-        "Water- and shockproof",
-        "Universal sensor",
+        "Easy-to-use",
+        "Fill level monitoring",
+        "Route optimization",
+        "Tailored requirements",
       ],
     },
     {
@@ -53,12 +55,13 @@ export default function FourStepsMenu() {
       thumbnailSelected: Step3Selected,
       image: Cards,
       title: "Data insights",
-      desc1: `Our user-friendly software effortlessly maps your trash bins and ensures you stay up-to-date with the latest fill levels. `,
-      desc2: `Utilize optimal routes to streamline the collection process for greater efficiency.`,
+      desc1: `Gain valuable insights off your current assets. Identify potential pain points and make appropriate policy decisions.`,
+      desc2: `Receive detailed reports on cost savings, reductions in CO2 emissions,  and more.`,
       advantages: [
-        "Easy to install",
-        "Water- and shockproof",
-        "Universal sensor",
+        "Up-to-date statistics",
+        "Get reports at any time",
+        "Data-driven decisions",
+        "Become legislation compliant",
       ],
     },
     {
@@ -66,12 +69,13 @@ export default function FourStepsMenu() {
       thumbnailSelected: Step4Selected,
       image: Vuilnisbak,
       title: "Customer support",
-      desc1: `Our user-friendly software effortlessly maps your trash bins and ensures you stay up-to-date with the latest fill levels. `,
-      desc2: `Utilize optimal routes to streamline the collection process for greater efficiency.`,
+      desc1: `Rebin provides full support from installation to troubleshooting, ensuring optimal functionality at all times.`,
+      desc2: `Save time by focusing on your core business instead of configuring IoT applications.`,
       advantages: [
-        "Easy to install",
-        "Water- and shockproof",
-        "Universal sensor",
+        "24/7 availability",
+        "Proactive response",
+        "1 on 1 support",
+        "Regular follow-up",
       ],
     },
   ];
@@ -116,7 +120,7 @@ export default function FourStepsMenu() {
               <h3 className="text-rebin-darkblue text-4xl font-semibold">
                 {title}
               </h3>
-              <p className="text-black font-medium text-lg text-balance">
+              <p className="text-black font-regular text-lg text-balance">
                 {desc1}
                 <br />
                 <br />

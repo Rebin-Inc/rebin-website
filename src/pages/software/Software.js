@@ -14,10 +14,10 @@ const Software = () => {
             Solution
           </h1>
           <h2 className="font-bold text-4xl w-2xl">
-            The all in one solution for bin monitoring
+            The all in-one-solution for asset monitoring
           </h2>
-          <p className="text-md font-medium">
-            During a leisurely stroll in the park, we came across an overflowing trash bin, surrounded by litter that clearly had a negative impact on the environment.
+          <p className="text-md mt-6 text-balance">
+            Rebin provides real-time monitoring, streamlines collection routes, and delivers actionable insights, one asset at a time. 
           </p>
           <Button text="Contact us" arrow={true} href="/contact" />
         </div>

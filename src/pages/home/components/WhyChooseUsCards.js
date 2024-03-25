@@ -12,16 +12,16 @@ const WhyChooseUsCards = () => {
 
   const data = [
     {
-      title: "24/7 support",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, animi placeat natus repellendus ducimus",
+      title: "Advanced software",
+      description: "Discover the capabilities of our comprehensive software, ranging from optimal collection routes to insightful statisitcs.",
       image: Support,
       rowStart: "row-start-1",
       colStart: "col-start-1",
       imagePosition: "right",
     },
     {
-      title: "World's best sensor",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, animi placeat natus repellendus ducimus",
+      title: "All asset types",
+      description: "Experience the power of our versatile solution, turning all kinds of assets into smart ones.",
       image: Sensor,
       rowStart: "row-start-1",
       colStart: "col-start-5",
@@ -29,15 +29,15 @@ const WhyChooseUsCards = () => {
     },
     {
       title: "User-friendly",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, animi placeat natus repellendus ducimus",
+      description: "Our software excels in its intuitive workflow, ensuring smooth adoption across any organization.",
       image: Dashboard,
       rowStart: "row-start-4",
       colStart: "col-start-1",
       imagePosition: "right",
     },
     {
-      title: "100% Belgium made",
-      description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Rerum, animi placeat natus repellendus ducimus",
+      title: "Automated reports",
+      description: "We provide valuable insights for optimizing asset control through data reports.",
       image: Support,
       rowStart: "row-start-4",
       colStart: "col-start-5",

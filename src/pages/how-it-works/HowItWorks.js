@@ -14,11 +14,10 @@ const HowItWorks = () => {
             How it works
           </h1>
           <h2 className="font-bold text-4xl w-2xl">
-            The route to waste management efficiency
+            The route to asset management efficiency
           </h2>
-          <p className="text-md font-medium">
-            Take control of your waste and explore with us how we can optimize
-            your waste management.
+          <p className="text-md mt-6 text-balance">
+            Take control of your resources and explore how your asset management can be optimized.
           </p>
           <Button text="Book a demo" arrow={true} href="/contact" />
         </div>
@@ -29,7 +28,7 @@ const HowItWorks = () => {
       <AdvantageBar></AdvantageBar>
       <div>
         <h3 className="text-gradient-horizontal font-bold text-4xl mx-auto">
-          4 step approach
+          Our approach
         </h3>
         <h4 className="font-bold text-4xl mt-4 w-2xl text-center">
           Your journey in 4 steps

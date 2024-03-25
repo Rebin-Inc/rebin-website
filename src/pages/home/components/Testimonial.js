@@ -8,7 +8,7 @@ import binMaarkedal from "../../../assets/images/customers/bin_Maarkedal.jpg";
 
 const Testimonial = () => {
   let testimonial =
-    "Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.";
+    "By avoiding detours past empty or half-full bins, we save about 40% in the number of kilometers traveled. The smart collection routes take 50% less time, which means that employees can be deployed to other tasks. The project is a great example of how using technology results in a more efficient way of working. Besides, as mayor, I consider a clean municipality of great importance. Overflowing bins quickly lead to surrounding litter and complaints from residents. By cooperating with Rebin, we can avoid the bins being emptied too late. A smart system, with a lot of advantages and potential.";
 
   return (
     <section className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center rounded-xl bg-rebin-grey gap-y-10 md:gap-x-10 p-6">
@@ -32,18 +32,6 @@ const Testimonial = () => {
         </div>
         <div className="flex flex-col gap-y-5 gap-x-10 w-fit">
           <div className="grid lg:grid-cols-2 gap-5">
-            <div className="flex gap-x-5 items-center">
-              <a href="/">
-                <img src={brusselsAirport} alt="" />
-              </a>
-              <a href="/">
-                <img src={brakel} alt="" />
-              </a>
-              <a href="/">
-                <img src={centerParcs} alt="" />
-              </a>
-
-            </div>
             <a
               className="flex items-center gap-x-2 text-rebin-blue opacity-80 text-lg lg:text-xl font-semibold hover:opacity-100"
               href="/"

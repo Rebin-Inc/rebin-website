@@ -14,31 +14,31 @@ export default function SolutionCards() {
             Hardware
           </h4>
           <p className="text-black mx-auto md:text-base">
-            That is why we're committed to to achieve a more
+            Rebin selects the best sensor for your application
           </p>
           <Button text="Learn more" href="/sensor" />
         </CardBody>
       </Card>
-      <Card shadow={false} className="md:max-w-96 min-h-80 shadow-around z-10 rounded-3xl py-10">
+      <Card shadow={false} className="md:max-w-96 min-h-80 my-auto shadow-around z-10 rounded-3xl py-10">
         <CardBody className="space-y-4">
           <img src={software} alt="" className="mx-auto" />
           <h4 className="mb-2 text-rebin-darkblue text-3xl md:text-2xl font-bold">
             Software
           </h4>
           <p className="text-black mx-auto md:text-base">
-            That is why we're committed to to achieve a more
+            Streamline any type of asset with our unified software solution
           </p>
           <Button text="Learn more" href="/software" />
         </CardBody>
       </Card>
-      <Card shadow={false} className="md:my-8 min-h-80 py-4 shadow-around -top-4 md:top-0 md:-left-2 mx-5 md:mx-0 rounded-3xl">
+      <Card shadow={false} className="md:my-8 m-h-80 py-4 shadow-around -top-4 md:top-0 md:-left-2 mx-5 md:mx-0 rounded-3xl">
         <CardBody className="space-y-4">
           <img src={consulting} alt="" className="mx-auto" />
           <h4 className="mb-2 text-rebin-darkblue text-3xl md:text-2xl font-bold">
             Consulting
           </h4>
           <p className="text-black mx-auto md:text-base">
-            That is why we're committed to to achieve a more
+            Experience customized asset policies to fit your needs
           </p>
           <Button text="Learn more" href="/consulting" />
         </CardBody>
