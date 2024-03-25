@@ -9,25 +9,25 @@ function Industries() {
   const industries = [
     {
       industry: "Bins",
-      image: "bg-government-blue group-hover:bg-government-white",
+      image: "bg-bin-blue group-hover:bg-bin-white",
       summary:
         "Prevent overflowing bins in both public and private sectors. Cut costs with efficient collection routes and strategic bin placement, supported by data.",
     },
     {
       industry: "Containers",
-      image: "bg-collector-blue group-hover:bg-collector-white",
+      image: "bg-container-blue group-hover:bg-container-white",
       summary:
         "Customized for private waste collectors, our solution allows for remote monitoring of containers, including textile and underground glass containers, and more.",
     },
     {
       industry: "Silos",
-      image: "bg-park-blue group-hover:bg-park-white",
+      image: "bg-silo-blue group-hover:bg-silo-white",
       summary:
         "Accurate fill-level data enables precise scheduling of deliveries and material transfers in silos for manufacturing, agriculture, and beyond.",
     },
     {
       industry: "Liquid tanks",
-      image: "bg-airport-blue group-hover:bg-airport-white",
+      image: "bg-liquid-blue group-hover:bg-liquid-white",
       summary:
         "Map fill levels of various reservoirs, from household cisterns to large tanks in residential complexes. Save on costs by optimizing liquid collection, including oil.",
     },
@@ -78,7 +78,7 @@ function Industries() {
               className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue border-2 hover:border-white bg-gradient-hover hover:text-white group"
             >
               <div
-                className={industries[index].image}
+                className={`${industries[index].image} bg-no-repeat bg-center-right bg-contain`}
                 style={{
                   height: 50,
                   width: 50,

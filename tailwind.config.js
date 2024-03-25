@@ -12,9 +12,9 @@ module.exports = {
           'url("/src/assets/images/industries/bin.svg")',
         "bin-white":
           'url("/src/assets/images/industries/bin_white.svg")',
-        //"container-blue": 'url("/src/assets/images/industries/container.svg")',
+        "container-blue": 'url("/src/assets/images/industries/container.svg")',
         "container-white":
-          'url("/src/assets/images/industries/container.svg")',
+          'url("/src/assets/images/industries/container_white.svg")',
         "silo-blue": 'url("/src/assets/images/industries/silo.svg")',
         "silo-white": 'url("/src/assets/images/industries/silo_white.svg")',
         "factory-blue": 'url("/src/assets/images/industries/factory.svg")',
