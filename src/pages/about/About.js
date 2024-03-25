@@ -10,15 +10,15 @@ import Button from "../../components/Button";
 const About = () => {
   return (
     <main className="space-y-20 lg:space-y-36">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24 items-center">
         <div className="order-last lg:order-first">
           <h1 className="text-gradient-horizontal font-bold text-4xl">
             Our story
           </h1>
           <h2 className="font-bold text-5xl mt-4 w-2xl">How we started</h2>
           <p className="text-md font-regular mt-6 text-balance">
-            Spotting an overflowing bin in the park, we decided to act. 
-            Recognizing inefficiencies in waste collection, we resolved to enhance the system, 
+            Spotting an overflowing bin in the park, we decided to act.
+            Recognizing inefficiencies in waste collection, we resolved to enhance the system,
             tackling overflowing bins and other asset challenges to benefit the environment and community.
           </p>
         </div>
