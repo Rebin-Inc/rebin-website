@@ -1,4 +1,7 @@
 import React from "react";
+import Emilio from "../../../assets/images/Team/Emilio1.jpg";
+import Kyanu from "../../../assets/images/Team/Kyanu1.jpg";
+import Simon from "../../../assets/images/Team/Simon1.jpg";
 
 const TeamCards = () => {
 
@@ -6,17 +9,17 @@ const TeamCards = () => {
     {
       name: "Emilio Van Der Linden",
       role: "Co-founder",
-      image: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+      image: Emilio
     },
     {
       name: "Kyanu Delrue",
       role: "Co-founder",
-      image: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+      image: Kyanu
     },
     {
       name: "Simon De Geyter",
       role: "Co-founder",
-      image: "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80"
+      image: Simon
     },
   ];
 
