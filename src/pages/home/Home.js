@@ -12,8 +12,8 @@ import Button from "../../components/Button";
 
 const Home = () => {
   return (
-    <main className="space-y-20 md:mt-16 pb-0">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-y-10">
+    <main className="md:mt-16 pb-0">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-x-6 items-center gap-y-10">
         <div className="flex flex-col order-1 h-fit">
           <h1 className="font-bold text-4xl md:text-5xl">
             The <span className="text-gradient-horizontal">nr.1 platform </span>
@@ -24,7 +24,7 @@ const Home = () => {
           </p>
           <Button text="Contact us" href="/contact" />
         </div>
-        <div className="order-2 self-center overflow-hidden rotate-6">
+        <div className="hidden md:block order-2 self-center overflow-hidden rotate-6">
           <video className="place-self-center" autoPlay loop muted>
             <source src={SmartCity} type="video/mp4" />
             Your browser does not support the video tag.
@@ -32,7 +32,7 @@ const Home = () => {
         </div>
       </div>
       <StatisticBar></StatisticBar>
-      <div className="text-center">
+      <div className="text-center mt-20">
         <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto">
           Solutions
         </h1>
@@ -41,7 +41,7 @@ const Home = () => {
         </h2>
         <SolutionCards></SolutionCards>
       </div>
-      <div className="grid grid-cols lg:grid-cols-2 lg:grid-rows-2 gap-x-20 gap-y-16 lg:gap-y-0 place-items-center lg:place-items-start">
+      <div className="mt-20 grid grid-cols lg:grid-cols-2 lg:grid-rows-2 gap-x-20 gap-y-16 lg:gap-y-0 place-items-center lg:place-items-start">
         <div className="max-w-2xl mb-6">
           <h1 className="text-gradient-horizontal font-semibold text-3xl">
             About
@@ -58,12 +58,12 @@ const Home = () => {
             Our goal is to enhance asset management within organizations.
             Leveraging our solution, you save time, cut costs, and reduce environmental impact.
           </p>
-          <Button text="View case study" arrow={true} />
+          <Button text="View case study" arrow={true} href="references" />
         </div>
       </div>
       <PartnersSection></PartnersSection>
       <div>
-        <h1 className="text-center text-gradient-horizontal font-bold text-3xl mx-auto">
+        <h1 className="mt-28 text-center text-gradient-horizontal font-bold text-3xl mx-auto">
           Why choose us?
         </h1>
         <h2 className="text-center font-bold text-4xl mt-4">
@@ -71,14 +71,14 @@ const Home = () => {
         </h2>
         <WhyChooseUsCards></WhyChooseUsCards>
       </div>
-      <div>
+      <div className="mt-20">
         <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto">
           Applications
         </h1>
         <h2 className="font-bold text-4xl mt-4 text-center">We can help you</h2>
         <Industries></Industries>
       </div>
-      <div>
+      <div className="mt-20">
         <h1 className="text-gradient-horizontal font-bold text-3xl">
           Testimonials
         </h1>

@@ -7,8 +7,8 @@ import CallToAction from "../../components/CallToAction";
 
 const Software = () => {
   return (
-    <main className="space-y-20">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24">
+    <main className="">
+      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24">
         <div className="self-center space-y-6">
           <h1 className="text-gradient-horizontal font-bold text-4xl">
             Solution
@@ -25,14 +25,14 @@ const Software = () => {
           <img src={Repoint} alt="Infographic representing the repoint platform"></img>
         </div>
       </div>
-      <div>
+      <div className="mt-28">
         <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal mx-auto">Features</h3>
         <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Explore the features you need</h4>
         <FeatureMenu></FeatureMenu>
       </div>
-      <div>
+      <div className="mt-20">
         <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal mx-auto">Benefits</h3>
-        <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Discover the benefits for your organisation</h4>
+        <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Discover the benefits for your organization</h4>
         <BenefitBar></BenefitBar>
       </div>
       <CallToAction></CallToAction>
