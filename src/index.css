@@ -122,3 +122,10 @@ main {
 img {
   pointer-events: none;
 }
+
+.border-rebin {
+  border-style: solid;
+  border-width: 1px;
+  border-color: #DEE5EC;
+  outline-color: #0043ff;
+}
