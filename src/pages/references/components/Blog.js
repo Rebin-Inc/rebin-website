@@ -40,10 +40,10 @@ const Blog = () => {
         </div>
       </section>
       <section className='p-10 border-y-2 border-slate-100'>
-        <div className='flex justify-between max-w-sm mx-auto'>
-          <span className='bg-gradient text-sm text-white rounded-md py-2 px-2'>Smart city</span>
-          <span className='bg-gradient text-sm text-white rounded-md py-2 px-2'>Waste management</span>
-          <span className='bg-gradient text-sm text-white rounded-md py-2 px-2'>Sensors</span>
+        <div className='flex flex-col sm:flex-row justify-center gap-y-5 sm:gap-x-5 max-w-sm mx-auto'>
+          <span className='bg-gradient text-center text-sm text-white rounded-md py-2 px-2'>Smart city</span>
+          <span className='bg-gradient text-center text-sm text-white rounded-md py-2 px-2'>Waste management</span>
+          <span className='bg-gradient text-center text-sm text-white rounded-md py-2 px-2'>Sensors</span>
         </div>
       </section>
     </main>
