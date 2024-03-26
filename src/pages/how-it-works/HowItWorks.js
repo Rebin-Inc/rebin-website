@@ -22,7 +22,7 @@ const HowItWorks = () => {
           <Button text="Book a demo" href="/contact" />
         </div>
         <div className="max-w-lg mx-auto place-self-center">
-          <img src={Stats} alt="Infographic representing the repoint platform"></img>
+          <img src={Stats} alt="Infographic representing the Repoint platform"></img>
         </div>
       </div>
       <AdvantageBar></AdvantageBar>

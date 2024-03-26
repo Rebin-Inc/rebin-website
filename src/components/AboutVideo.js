@@ -9,6 +9,7 @@ const AboutVideo = () => {
           type="video/mp4"
         />
         Your browser does not support the video tag.
+        <meta itemprop="description" content="Animation showing a network of bins where the bins which are full are indicated using a red arrow. A garbage truck then picks up only the bins which are full." />
       </video>
     </div>
   );

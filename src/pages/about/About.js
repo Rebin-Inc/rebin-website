@@ -32,7 +32,7 @@ const About = () => {
         <img
           className="w-full sm:w-3/5 md:w-96 aspect-square rounded-lg object-contain mx-auto my-auto"
           src={Team}
-          alt="nature"
+          alt="The Rebin team"
         />
         <div className="flex items-center">
           <div>

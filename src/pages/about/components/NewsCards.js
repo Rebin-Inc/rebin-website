@@ -14,7 +14,8 @@ const NewsCards = () => {
       duration: "1 min",
       date: "August 20, 2024",
       image: Article1,
-      href: "https://www.vrt.be/vrtnws/nl/2023/10/22/maarkedal-zet-slimme-vuilbakken-in-om-tijd-en-brandstof-van-vuil/"
+      href: "https://www.vrt.be/vrtnws/nl/2023/10/22/maarkedal-zet-slimme-vuilbakken-in-om-tijd-en-brandstof-van-vuil/",
+      image_description: "Close-up of the Rebin Smart Waste Sensor installed inside a bin in Maarkedal."
     },
     {
       id: 2,
@@ -23,7 +24,8 @@ const NewsCards = () => {
       duration: "3 min",
       date: "August 20, 2024",
       image: Article2,
-      href: "https://www.unizo.be/berichten/pers/rebin-maarkedal-en-straal-gent-halen-50000-euro-binnen-unizo-oost-vlaanderen"
+      href: "https://www.unizo.be/berichten/pers/rebin-maarkedal-en-straal-gent-halen-50000-euro-binnen-unizo-oost-vlaanderen",
+      image_description: "Group photo of the Rebin team around a newly installed Rebin Smart Waste Sensor."
     },
     {
       id: 3,
@@ -32,7 +34,8 @@ const NewsCards = () => {
       duration: "2 min",
       date: "August 20,2024",
       image: Article3,
-      href: "https://www.nieuwsblad.be/cnt/dmf20231102_95819056"
+      href: "https://www.nieuwsblad.be/cnt/dmf20231102_95819056",
+      image_description: "Local authority of the municipality of Brakel overseeing the installation of the Rebin Smart Waste Sensors."
     },
   ];
 
@@ -47,7 +50,7 @@ const NewsCards = () => {
           <Link onClick={() => openInNewTab(article.href)} className="h-full" >
             <div className="border p-4 pb-8 flex flex-col text-gray-700 bg-white shadow-around bg-clip-border rounded-xl h-full">
               <div className="overflow-hidden rounded-xl">
-                <img src={article.image} alt="News article" className="w-full" />
+                <img src={article.image} alt={article.image_description} className="w-full" />
               </div>
               <div className="mb-6 mt-10 bg-rebin-grey w-28 rounded-lg">
                 <h5 className="text-gradient-horizontal font-bold mx-auto">

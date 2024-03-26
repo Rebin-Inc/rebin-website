@@ -54,7 +54,7 @@ const Header = () => {
       >
         <Link to="/" className="transform hover:scale-95 transition-transform active:scale-90">
           <span className="sr-only">Rebin</span>
-          <img className="h-20 w-auto" src={rebin} alt=""></img>
+          <img className="h-20 w-auto" src={rebin} alt="The Rebin Logo"></img>
         </Link>
         <div className="flex lg:hidden">
           <button
@@ -144,7 +144,7 @@ const Header = () => {
             <div className="flex items-center justify-between">
               <Link to="/" className="-m-1.5 p-1.5">
                 <span className="sr-only">Rebin</span>
-                <img className="h-8 w-auto" src={rebin} alt="" />
+                <img className="h-8 w-auto" src={rebin} alt="The Rebin logo" />
               </Link>
               <button
                 type="button"

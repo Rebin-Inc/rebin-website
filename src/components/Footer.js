@@ -16,7 +16,7 @@ const Footer = () => {
         <div className="space-y-6 pb-10">
           <Link className="mt-8" to="/">
             <span className="sr-only">Rebin</span>
-            <img className="h-8 w-auto" src={rebin} alt=""></img>
+            <img className="h-8 w-auto" src={rebin} alt="The Rebin Logo"></img>
           </Link>
           <p className="text-sm font-light opacity-80">
             Copyright &copy; 2024 for Rebin.<br></br>
@@ -30,7 +30,7 @@ const Footer = () => {
             <FaLinkedin className="h-4 w-4" aria-hidden="true"></FaLinkedin>
           </Link>
           <Link
-            to="https://www.youtube.com/"
+            to="https://www.youtube.com/@Rebin_inc."
             className="m-1 inline-flex items-center justify-center rounded-full p-2 bg-white/10 hover:bg-white/30"
             target="_blank" rel="noopener noreferrer"
           >
