@@ -1,7 +1,45 @@
-import React from "react";
+import React, { useState } from "react";
 import { MdLocationPin, MdEmail } from "react-icons/md";
+import emailjs from 'emailjs-com';
+import axios from 'axios';
+
 
 const ContactForm = () => {
+
+  const [inputs, setInputs] = useState({
+    name: '',
+    phone: '',
+    email: '',
+    message:'',
+  });
+
+  const handleChange = (e) => {
+    setInputs({...inputs, [e.target.name]: e.target.value});
+  }
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const result = await axios.post('https://api.emailjs.com/api/v1.0/email/send', {
+      service_id:'service_gx6m6mz',
+      template_id: 'template_bywh74c',
+      user_id: 'NX7_T34KfIWfA-7ma',
+      template_params: {
+        'from_name': inputs.name,
+        'email': inputs.email,
+        'phone': inputs.phone,
+        'message': inputs.message
+      }
+    });
+    setInputs({
+      name: '',
+      phone: '',
+      email: '',
+      message: '',
+    });
+
+
+  }
+
   return (
     <div className="relative flex items-top justify-center bg-white sm:items-center sm:pt-0">
       <div className="max-w-5xl mx-auto px-2 border-1 rounded-xl shadow-around p-3">
@@ -33,7 +71,7 @@ const ContactForm = () => {
               </div>
             </div>
             {/* Contact form */}
-            <form className="p-8 flex flex-col justify-center col-span-3 space-y-8">
+            <form onSubmit={handleSubmit} className="p-8 flex flex-col justify-center col-span-3 space-y-8">
               <h1 className="text-normal text-xl font-semibold text-black my-5">
                 Get in touch
               </h1>
@@ -49,6 +87,8 @@ const ContactForm = () => {
                     id="name"
                     placeholder="Your full name"
                     className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
+                    value={inputs.name} 
+                    onChange={handleChange}
                   ></input>
                 </div>
 
@@ -59,10 +99,12 @@ const ContactForm = () => {
                   <input
                     required
                     type="tel"
-                    name="tel"
+                    name="phone"
                     id="tel"
                     placeholder="Your phone number"
                     className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
+                    value={inputs.phone} 
+                    onChange={handleChange}
                   ></input>
                 </div>
               </div>
@@ -77,6 +119,8 @@ const ContactForm = () => {
                   id="email"
                   placeholder="Your email address"
                   className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
+                  value={inputs.email} 
+                  onChange={handleChange}
                 ></input>
               </div>
               <div className="flex flex-col mt-2 space-y-2">
@@ -89,6 +133,8 @@ const ContactForm = () => {
                   id="message"
                   placeholder="Please include all relevant information"
                   className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
+                  value={inputs.message} 
+                  onChange={handleChange}
                 ></textarea>
               </div>
 
