@@ -25,7 +25,7 @@ const BenefitBar = () => {
         <div className='grid grid-cols-1 md:bg-dotted-half-circle bg-no-repeat bg-center bg-contain mt-8 md:mt-28'>
             <div className='grid grid-cols-1 md:grid-cols-3 mx-auto lg:mx-36 gap-y-4'>
                 <Card className='max-w-sm'>
-                    <CardBody className="flex h-full items-center gap-4">
+                    <CardBody className="flex h-full gap-4 p-4">
                         <div className="text-balance space-y-2 w-full">
                             <h4 className="mb-1 text-2xl font-bold">{data[0].title}</h4>
                             <p className="text-lg text-black">
@@ -35,7 +35,7 @@ const BenefitBar = () => {
                     </CardBody>
                 </Card>
                 <Card className='md:col-start-3 max-w-sm'>
-                    <CardBody className="flex h-full items-center gap-4">
+                    <CardBody className="flex h-full items-center gap-4 p-4">
                         <div className="text-balance space-y-2 w-full">
                             <h4 className="mb-1 text-2xl font-bold">{data[1].title}</h4>
                             <p className="text-lg text-black">
@@ -47,7 +47,7 @@ const BenefitBar = () => {
             </div>
             <div className='grid grid-cols-1 md:grid-cols-3 mt-4  md:mt-36 mb-10 gap-y-4 md:gap-16 mx-auto'>
                 <Card className='max-w-sm'>
-                    <CardBody className="flex h-full items-center gap-4">
+                    <CardBody className="flex h-full items-center gap-4 p-4">
                         <div className="text-balance space-y-2 w-full">
                             <h4 className="mb-1 text-2xl font-bold">{data[2].title}</h4>
                             <p className="text-lg text-black">
@@ -57,7 +57,7 @@ const BenefitBar = () => {
                     </CardBody>
                 </Card>
                 <Card className='md:col-start-3 max-w-sm'>
-                    <CardBody className="flex h-full items-center gap-4">
+                    <CardBody className="flex h-full items-center gap-4 p-4">
                         <div className="text-balance space-y-2 w-full">
                             <h4 className="mb-1 text-2xl font-bold">{data[3].title}</h4>
                             <p className="text-lg text-black">
