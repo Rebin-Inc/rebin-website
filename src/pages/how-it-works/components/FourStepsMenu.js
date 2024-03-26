@@ -156,7 +156,7 @@ export default function FourStepsMenu() {
                 <br />
                 {desc2}
               </p>
-              <ul className="grid sm:grid-cols-1 md:grid-cols-2 space-y-2">
+              <ul className="grid sm:grid-cols-1 md:grid-cols-2 gap-y-4">
                 {advantages.map((advantage, index) => (
                   <li key={index} className="flex space-x-2 items-center">
                     <img
