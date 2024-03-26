@@ -24,7 +24,7 @@ const Home = () => {
           </p>
           <Button text="Contact us" href="/contact" />
         </div>
-        <div className="order-2 self-center overflow-hidden rotate-6">
+        <div className="hidden md:block order-2 self-center overflow-hidden rotate-6">
           <video className="place-self-center" autoPlay loop muted>
             <source src={SmartCity} type="video/mp4" />
             Your browser does not support the video tag.
