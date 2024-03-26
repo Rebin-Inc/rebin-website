@@ -11,9 +11,9 @@ import Team from "../../assets/images/about/team.png";
 const About = () => {
   return (
     <main className="space-y-20 lg:space-y-36">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-12 lg:gap-24 items-center">
         <div className="order-last lg:order-first">
-          <h1 className="text-gradient-horizontal font-bold text-4xl">
+          <h1 className="text-gradient-horizontal font-bold text-4xl ">
             Our story
           </h1>
           <h2 className="font-bold text-5xl mt-4 w-2xl">How we started</h2>
@@ -28,7 +28,7 @@ const About = () => {
         </div>
       </div>
       <StatisticBar></StatisticBar>
-      <div className="grid md:grid-cols-2 px-10 gap-4">
+      <div className="grid md:grid-cols-2 gap-x-4 gap-y-12">
         <img
           className="w-full sm:w-3/5 md:w-96 aspect-square rounded-lg object-contain mx-auto my-auto"
           src={Team}
@@ -36,13 +36,13 @@ const About = () => {
         />
         <div className="flex items-center">
           <div>
-            <h1 className="text-gradient-horizontal font-bold text-3xl">
+            <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto sm:mx-0">
               Our mission
             </h1>
-            <h2 className="font-bold text-4xl mt-4">
+            <h2 className="font-bold text-4xl mt-4 text-center sm:text-left">
               Empowering organisations with smart asset management solutions
             </h2>
-            <p className="mt-6">
+            <p className="mt-6 text-center sm:text-left">
               Our mission is to achieve a more cost-efficient and environmentally
               friendly way of waste collection. We want to make a positive
               contribution to improving waste management and enhancing
