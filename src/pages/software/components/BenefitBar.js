@@ -78,9 +78,7 @@ const BenefitBar = () => {
                         </CardBody>
                     </Card>
                     <div className='flex align-middle'>
-                        <Card className="w-28 aspect-square m-auto">
-                            <img src={RebinRBlue} alt="The blue letter R from the Rebin logo" className="w-28 aspect-square" />
-                        </Card>
+                        
                     </div>
                     <Card className='md:col-start-3 max-w-sm'>
                         <CardBody className="flex h-full items-center gap-4 p-4">
@@ -95,7 +93,7 @@ const BenefitBar = () => {
                 </div>
             </div>
             {/* mobile screen */}
-            <div className="block xl:hidden space-y-16 bg-dotted-line bg-no-repeat bg-top">
+            <div className="block xl:hidden space-y-16 bg-dotted-line bg-no-repeat bg-top mt-10">
                 <Card className="row-start-3 col-start-4 w-fit h-fit m-auto">
                     <img src={RebinRBlue} alt="The blue letter R from the Rebin logo" className="w-24 aspect-square" />
                 </Card>
@@ -103,7 +101,7 @@ const BenefitBar = () => {
                     {
                         data.map((item, index) => (
                             <Card key={index} className="border">
-                                <CardBody className="flex min-h-64">
+                                <CardBody className="flex min-h-44">
                                     <div className="md:p-4 text-balance space-y-2 w-full my-auto">
                                         <h4 className="mb-1 text-xl sm:text-4xl font-bold text-rebin-darkblue">{item.title}</h4>
                                         <p className="text-sm md:text-2xl text-black">
