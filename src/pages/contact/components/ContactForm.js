@@ -25,7 +25,9 @@ const ContactForm = () => {
       user_id: 'NX7_T34KfIWfA-7ma',
       template_params: {
         'from_name': inputs.name,
-        'message': inputs.message
+        'message': inputs.message,
+        'phone': inputs.phone,
+        'email': inputs.email
       }
     });
     console.log(result);

@@ -1,18 +1,31 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import YouTube from 'react-youtube';
 
 const AboutVideo = () => {
+
+  const opts = {
+    height: `235`,
+    width: `410`,
+    playerVars: {
+      autoplay: 0,
+      showinfo: 0,
+      quality: 'hd720',
+    },
+  };
+
+  const videoStyle = {
+    borderRadius: '10px', // Adjust the radius to your preference
+    overflow: 'hidden',   // Ensure the video content is within the rounded corners
+    maxWidth: '100%',     // Make the video container responsive
+  };
+
   return (
-    <div className="md:p-6 my-auto">
-      <video className="rounded-lg w-full" controls>
-        <source
-          src="https://docs.material-tailwind.com/demo.mp4"
-          type="video/mp4"
-        />
-        Your browser does not support the video tag.
-        <meta itemprop="description" content="Animation showing a network of bins where the bins which are full are indicated using a red arrow. A garbage truck then picks up only the bins which are full." />
-      </video>
+    <div className="my-auto rounded-lg" style={videoStyle}>
+      <YouTube videoId="eX3YBk9gxZ8" opts={opts}/>
+      <meta itemprop="description" content="Animation showing a network of bins where the bins which are full are indicated using a red arrow. A garbage truck then picks up only the bins which are full." />
     </div>
   );
 };
 
 export default AboutVideo;
+
