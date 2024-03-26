@@ -36,13 +36,13 @@ const About = () => {
         />
         <div className="flex items-center">
           <div>
-            <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto sm:mx-0">
+            <h1 className="text-gradient-horizontal font-bold text-3xl sm:mx-0">
               Our mission
             </h1>
-            <h2 className="font-bold text-4xl mt-4 text-center sm:text-left">
+            <h2 className="font-bold text-4xl mt-4  sm:text-left">
               Empowering organisations with smart asset management solutions
             </h2>
-            <p className="mt-6 text-center sm:text-left">
+            <p className="mt-6 sm:text-left">
               Our mission is to achieve a more cost-efficient and environmentally
               friendly way of waste collection. We want to make a positive
               contribution to improving waste management and enhancing

@@ -9,7 +9,7 @@ const HowItWorks = () => {
   return (
     <main className="px-4 sm:px-6 lg:space-y-28">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24">
-        <div className="self-center space-y-6">
+        <div className="mb-7 sm:mb-0 self-center space-y-6">
           <h1 className="text-gradient-horizontal font-bold text-4xl">
             How it works
           </h1>

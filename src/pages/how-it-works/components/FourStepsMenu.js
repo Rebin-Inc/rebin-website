@@ -31,7 +31,7 @@ export default function FourStepsMenu() {
       desc1: `We take care of the entire installation process for any type of asset, including bins, containers, and more.`,
       desc2: `In no time, your assets are up and running on the Rebin platform.`,
       advantages: [
-        "Easy to install",
+        "Quick installation",
         "Any type of asset",
         "Easy onboarding",
         "Simple software setup",
