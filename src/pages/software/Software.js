@@ -32,7 +32,7 @@ const Software = () => {
       </div>
       <div className="mt-20">
         <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal mx-auto">Benefits</h3>
-        <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Discover the benefits for your organisation</h4>
+        <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Discover the benefits for your organization</h4>
         <BenefitBar></BenefitBar>
       </div>
       <CallToAction></CallToAction>
