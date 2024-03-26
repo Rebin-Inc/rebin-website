@@ -62,7 +62,7 @@ export default function FourStepsMenu() {
         "Up-to-date statistics",
         "Get reports at any time",
         "Data-driven decisions",
-        "Become legislation compliant",
+        "Be legislation compliant",
       ],
     },
     {
