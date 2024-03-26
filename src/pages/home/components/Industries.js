@@ -97,13 +97,13 @@ function Industries() {
       </Slider>
       <div className="text-center space-x-6 mt-14">
         <button
-          className="button bg-gradient w-10 aspect-square rounded-lg"
+          className="button bg-gradient w-10 aspect-square rounded-lg transform hover:scale-95 transition-transform active:scale-90"
           onClick={previous}
         >
           <img src={ArrowLeftWhite} alt="Previous industry" />
         </button>
         <button
-          className="button bg-gradient w-10 aspect-square rounded-lg"
+          className="button bg-gradient w-10 aspect-square rounded-lg transform hover:scale-95 transition-transform active:scale-90"
           onClick={next}
         >
           <img src={ArrowRightWhite} alt="Next industry" />

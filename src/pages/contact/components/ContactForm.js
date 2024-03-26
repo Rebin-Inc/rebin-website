@@ -92,7 +92,7 @@ const ContactForm = () => {
                 ></textarea>
               </div>
 
-              <button className="mx-auto sm:mr-0 w-fit p-3 flex justify-center items-center rounded-lg bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <button className="mx-auto sm:mr-0 w-fit p-3 flex justify-center items-center rounded-lg bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white transform hover:scale-95 transition-transform active:scale-90">
                 <span className="sr-only">Send message</span>
                 Send Message
               </button>
