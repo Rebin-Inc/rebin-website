@@ -2,6 +2,7 @@ import React from "react";
 import joris from "../../../assets/images/customers/joris.svg";
 import arrow from "../../../assets/images/Pijl_Rechts_Blauw.svg";
 import binMaarkedal from "../../../assets/images/customers/bin_Maarkedal.jpg";
+import { Link } from "react-router-dom";
 
 const Testimonial = () => {
   let testimonial =
@@ -29,13 +30,13 @@ const Testimonial = () => {
         </div>
         <div className="flex flex-col gap-y-5 gap-x-10 w-fit">
           <div className="grid lg:grid-cols-2 gap-5">
-            <a
+            <Link
               className="flex items-center gap-x-2 text-rebin-blue opacity-80 text-lg lg:text-xl font-semibold hover:opacity-100"
-              href="/"
+              to="references"
             >
               Meet customers
               <img className="h-4 aspect-square mt-1" src={arrow} alt="A blue Rebin arrow"></img>
-            </a>
+            </Link>
           </div>
         </div>
       </div>
