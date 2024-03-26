@@ -10,8 +10,8 @@ import Team from "../../assets/images/about/team.png";
 
 const About = () => {
   return (
-    <main className="space-y-20 lg:space-y-36">
-      <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-12 lg:gap-24 items-center">
+    <main className="">
+      <div className="mt-10 grid grid-cols-1 lg:grid-cols-2 gap-x-6 gap-y-12 lg:gap-24 items-center">
         <div className="order-last lg:order-first">
           <h1 className="text-gradient-horizontal font-bold text-4xl ">
             Our story
@@ -28,7 +28,7 @@ const About = () => {
         </div>
       </div>
       <StatisticBar></StatisticBar>
-      <div className="grid md:grid-cols-2 gap-x-4 gap-y-12">
+      <div className="mt-20 lg:mt-28 grid md:grid-cols-2 gap-x-4 gap-y-12">
         <img
           className="w-full sm:w-3/5 md:w-96 aspect-square rounded-lg object-contain mx-auto my-auto"
           src={Team}
@@ -51,7 +51,7 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div className="mt-20 lg:mt-28">
         <h1 className="text-center text-gradient-horizontal font-bold text-3xl mx-auto">
           Core values
         </h1>
@@ -61,7 +61,7 @@ const About = () => {
         <ValueCards></ValueCards>
       </div>
 
-      <div className="text-center">
+      <div className="text-center mt-20 lg:mt-36">
         <h1 className="text-gradient-horizontal font-bold text-3xl mx-auto">
           Our team
         </h1>
@@ -71,7 +71,7 @@ const About = () => {
         <TeamCards></TeamCards>
         <Button text="Become a Rebineer" arrow={true} href="/contact" />
       </div>
-      <div>
+      <div className="mt-20 lg:mt-28">
         <h1 className="text-gradient-horizontal font-bold text-3xl">
           Articles
         </h1>
