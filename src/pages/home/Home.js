@@ -13,8 +13,8 @@ import Button from "../../components/Button";
 const Home = () => {
   return (
     <main className="space-y-20 md:mt-16 pb-0">
-      <div className="grid grid-cols-1 md:grid-cols-2 items-center">
-        <div className="flex flex-col order-3 md:order-1 h-fit">
+      <div className="grid grid-cols-1 md:grid-cols-2 items-center gap-y-10">
+        <div className="flex flex-col order-1 h-fit">
           <h1 className="font-bold text-4xl md:text-5xl">
             The <span className="text-gradient-horizontal">nr.1 platform </span>
             for efficient asset management
