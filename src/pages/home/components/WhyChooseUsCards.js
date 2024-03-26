@@ -82,18 +82,18 @@ const WhyChooseUsCards = () => {
         <Card className="row-start-3 col-start-4 w-fit h-fit m-auto">
           <img src={RebinRBlue} alt="The blue letter R from the Rebin logo" className="w-24 aspect-square" />
         </Card>
-        <Slider {...settings} className="shadow-around rounded-lg max-h-30">
+        <Slider {...settings} className="max-h-30">
           {
             data.map((item, index) => (
               <Card key={index} className="border">
-                <CardBody className="flex h-64">
-                  <div className="pr-4 md:p-4 text-balance space-y-2 w-full my-auto">
-                    <h4 className="mb-1 text-2xl md:text-4xl font-bold text-rebin-darkblue">{item.title}</h4>
-                    <p className="text-lg md:text-2xl text-black">
+                <CardBody className="flex min-h-64">
+                  <div className="md:p-4 text-balance space-y-2 w-full my-auto">
+                    <h4 className="mb-1 text-xl sm:text-4xl font-bold text-rebin-darkblue">{item.title}</h4>
+                    <p className="text-sm md:text-2xl text-black">
                       {item.description}
                     </p>
                   </div>
-                  <span className="order-first text-9xl font-bold text-gradient w-52 text-center my-auto">
+                  <span className="order-first text-6xl md:text-9xl font-bold text-gradient w-36 text-center my-auto">
                     {index + 1 + "."}
                   </span>
                 </CardBody>
