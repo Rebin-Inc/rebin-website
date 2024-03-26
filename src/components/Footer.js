@@ -40,12 +40,12 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-y-10 mb-8 sm:grid-cols-4 lg:flex lg:flex-row lg:justify-around lg lg:w-full">
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Explore</p>
-            <Link
+            {/* <Link
               to="how-it-works"
               className="inline text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               How it works
-            </Link>
+            </Link> */}
             <Link
               to="references"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
@@ -67,11 +67,17 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Solution</p>
-            <Link
+            {/* <Link
               to="sensor"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               Smart waste sensor
+            </Link> */}
+            <Link
+              to="how-it-works"
+              className="inline text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
+            >
+              How it works
             </Link>
             <Link
               to="software"
@@ -79,12 +85,12 @@ const Footer = () => {
             >
               Software
             </Link>
-            <Link
+            {/* <Link
               to="consulting"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
               Consulting
-            </Link>
+            </Link> */}
           </div>
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Contact</p>
