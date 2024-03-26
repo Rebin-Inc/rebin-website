@@ -13,7 +13,7 @@ const ValueCards = () => {
           <div className="bg-gradient rounded-md w-10">
             <img
               src={Customer}
-              alt="Customer"
+              alt="icon of a customer with a heart"
               className="w-10 h-10 p-2 mb-5 text-white"
             />
           </div>
@@ -21,7 +21,7 @@ const ValueCards = () => {
             Customer satisfaction
           </Typography>
           <Typography>
-            At Rebin, customer satisfaction is one of our guiding principals. 
+            At Rebin, customer satisfaction is one of our guiding principals.
             We value your feedback to continuously improve and exceed expectations.
           </Typography>
         </CardBody>
@@ -31,7 +31,7 @@ const ValueCards = () => {
           <div className="bg-gradient rounded-md w-10">
             <img
               src={Reliability}
-              alt="Reliability"
+              alt="Icon of a handshake"
               className="w-10 h-10 p-2 mb-5 text-white"
             />
           </div>
@@ -39,8 +39,8 @@ const ValueCards = () => {
             Entrepreunerial
           </Typography>
           <Typography>
-            We challenge industry norms with an entrepreneurial mindset. 
-            Embracing a move-fast approach, we are always evolving to lead the industry. 
+            We challenge industry norms with an entrepreneurial mindset.
+            Embracing a move-fast approach, we are always evolving to lead the industry.
           </Typography>
         </CardBody>
       </Card>
@@ -49,7 +49,7 @@ const ValueCards = () => {
           <div className="bg-gradient rounded-md w-10">
             <img
               src={Sustainability}
-              alt="Sustainability"
+              alt="Icon of a leaf in a lightbulb"
               className="w-10 h-10 p-2 mb-5 text-white"
             />
           </div>
@@ -57,8 +57,8 @@ const ValueCards = () => {
             Sustainability
           </Typography>
           <Typography>
-           We prioritize sustainability in all decisions, from partnerships to product development. 
-           We firmly believe our solution advances society towards a smarter future.
+            We prioritize sustainability in all decisions, from partnerships to product development.
+            We firmly believe our solution advances society towards a smarter future.
           </Typography>
         </CardBody>
       </Card>
@@ -67,7 +67,7 @@ const ValueCards = () => {
           <div className="bg-gradient rounded-md w-10">
             <img
               src={Innovation}
-              alt="Innovation"
+              alt="Icon of a lightbulb symbolizing an idea"
               className="w-10 h-10 p-2 mb-5 text-white"
             />
           </div>

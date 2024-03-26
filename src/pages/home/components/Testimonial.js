@@ -12,12 +12,12 @@ const Testimonial = () => {
       <img
         className="mx-auto h-full object-cover rounded-xl object-center-right"
         src={binMaarkedal}
-        alt="Gloednieuwe vuilnisbak in Maarkedal met een sensor van Rebin"
+        alt="A newly installed Rebin Smart Waste Sensor in Maarkedal."
       />
       <div className="flex flex-col lg:col-span-2 gap-y-8 text-justify">
         <p className="text-lg text-rebin-darkblue max-w-full">{testimonial}</p>
         <div className="flex gap-x-5 items-center w-fit">
-          <img className="h-10 w-auto sm:h-auto" src={joris} alt="" />
+          <img className="h-10 w-auto sm:h-auto" src={joris} alt="Joris Nachtergaele, mayor of Maarkedal" />
           <div className="flex flex-col">
             <p className="text-rebin-blue opacity-80 text-lg sm:text-xl font-semibold">
               Joris Nachtergaele
@@ -34,7 +34,7 @@ const Testimonial = () => {
               href="/"
             >
               Meet customers
-              <img className="h-4 aspect-square mt-1" src={arrow} alt=""></img>
+              <img className="h-4 aspect-square mt-1" src={arrow} alt="A blue Rebin arrow"></img>
             </a>
           </div>
         </div>

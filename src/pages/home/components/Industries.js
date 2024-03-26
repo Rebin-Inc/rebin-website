@@ -100,13 +100,13 @@ function Industries() {
           className="button bg-gradient w-10 aspect-square rounded-lg transform hover:scale-95 transition-transform active:scale-90"
           onClick={previous}
         >
-          <img src={ArrowLeftWhite} alt="Previous industry" />
+          <img src={ArrowLeftWhite} alt="Arrow to select previous industry" />
         </button>
         <button
           className="button bg-gradient w-10 aspect-square rounded-lg transform hover:scale-95 transition-transform active:scale-90"
           onClick={next}
         >
-          <img src={ArrowRightWhite} alt="Next industry" />
+          <img src={ArrowRightWhite} alt="Arrow to select next industry" />
         </button>
       </div>
     </div>

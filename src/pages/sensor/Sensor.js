@@ -19,7 +19,7 @@ const Sensor = () => {
         </div>
         <div className="grid place-items-center mt-6">
           <div className="blob absolute -z-10"></div>
-          <img src={Sensor1} alt="Sensor" className="w-1/2" />
+          <img src={Sensor1} alt="The Rebin Smart Waste Sensor" className="w-1/2" />
         </div>
       </div>
       <StatisticBar />

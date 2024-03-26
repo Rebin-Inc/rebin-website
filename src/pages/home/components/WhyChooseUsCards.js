@@ -75,12 +75,12 @@ const WhyChooseUsCards = () => {
           </Card>
         ))}
         <Card className="row-start-3 col-start-4 w-fit h-fit m-auto">
-          <img src={RebinRBlue} alt="" className="w-24 aspect-square" />
+          <img src={RebinRBlue} alt="The blue letter R from the Rebin logo" className="w-24 aspect-square" />
         </Card>
       </div>
       <div className="block xl:hidden space-y-16 bg-dotted-line bg-no-repeat bg-top">
         <Card className="row-start-3 col-start-4 w-fit h-fit m-auto">
-          <img src={RebinRBlue} alt="" className="w-24 aspect-square" />
+          <img src={RebinRBlue} alt="The blue letter R from the Rebin logo" className="w-24 aspect-square" />
         </Card>
         <Slider {...settings} className="shadow-around rounded-lg max-h-30">
           {
