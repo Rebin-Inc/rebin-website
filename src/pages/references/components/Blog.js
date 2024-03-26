@@ -8,8 +8,8 @@ const Blog = () => {
         Technology
       </span>
       <h1 className='font-semibold text-4xl'>
-        Optimizing waste collection in municipality Maarkedal 
-        with smart waste sensors.
+        Optimizing waste collection in municipality Maarkedal
+        with smart waste sensors
       </h1>
       <div className='flex gap-x-6'>
         <span className='text-sm'>5 min</span>
