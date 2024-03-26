@@ -22,7 +22,7 @@ const BenefitBar = () => {
     ]
 
     return (
-        <div className='grid grid-cols-1 md:bg-dotted-half-circle bg-no-repeat bg-center bg-contain mt-36'>
+        <div className='grid grid-cols-1 md:bg-dotted-half-circle bg-no-repeat bg-center bg-contain mt-8 md:mt-28'>
             <div className='grid grid-cols-1 md:grid-cols-3 mx-auto lg:mx-36 gap-y-4'>
                 <Card className='max-w-sm'>
                     <CardBody className="flex h-full items-center gap-4">
