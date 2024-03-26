@@ -82,100 +82,98 @@ export default function FourStepsMenu() {
   ];
 
   return (
-    <div>
-      <Tabs value={activeTab} orientation="vertical" className="mt-20 flex flex-col lg:flex-row">
+    <Tabs value={activeTab} orientation="vertical" className="mt-20 flex flex-col lg:flex-row">
 
-        {/* Horizontal tabs for small screen */}
-        <TabsHeader className="flex flex-row lg:hidden">
+      {/* Horizontal tabs for small screen */}
+      <TabsHeader className="flex flex-row lg:hidden">
+        {steps.map(({ thumbnail, thumbnailSelected, title }, index) => (
+          <Tab
+            key={index}
+            value={index}
+            onClick={() => setActiveTab(index)}
+            className="my-3"
+          >
+            <button>
+              <div className="grid grid-cols-1 gap-y-2">
+                <img
+                  src={activeTab === index ? thumbnailSelected : thumbnail}
+                  alt={title}
+                  className="w-28 aspect-square my-auto"
+                />
+                <h5 className="my-auto font-bold md:text-3xl">Step {index + 1}</h5>
+              </div>
+            </button>
+          </Tab>
+        ))}
+      </TabsHeader>
+      <div className="hidden lg:flex">
+        {/* Vertical tabs for large screen */}
+        <TabsHeader
+          className="rounded-none border-r-8 border-blue-gray-50 bg-transparent p-0 max-w-sm py-10"
+          indicatorProps={{
+            className: "invisible lg:visible w-4 ml-96 bg-gradient rounded-full",
+          }}
+        >
           {steps.map(({ thumbnail, thumbnailSelected, title }, index) => (
             <Tab
               key={index}
               value={index}
               onClick={() => setActiveTab(index)}
-              className="p-4 my-3"
+              className="max-w-xl p-4 my-3"
             >
               <button>
-                <div className="grid grid-cols-1 gap-y-4">
+                <div className="w-96 grid grid-cols-2">
+                  <h5 className="my-auto font-bold text-3xl">Step {index + 1}</h5>
                   <img
                     src={activeTab === index ? thumbnailSelected : thumbnail}
                     alt={title}
                     className="w-28 aspect-square my-auto"
                   />
-                  <h5 className="my-auto font-bold md:text-3xl">Step {index + 1}</h5>
                 </div>
               </button>
             </Tab>
           ))}
         </TabsHeader>
-        <div className="hidden lg:flex">
-          {/* Vertical tabs for large screen */}
-          <TabsHeader
-            className="rounded-none border-r-8 border-blue-gray-50 bg-transparent p-0 max-w-sm py-10"
-            indicatorProps={{
-              className: "invisible lg:visible w-4 ml-96 bg-gradient rounded-full",
-            }}
+
+
+
+      </div>
+      <TabsBody>
+        {steps.map(({ title, desc1, desc2, advantages, image }, index) => (
+          <TabPanel
+            key={index}
+            value={index}
+            className="lg:px-32 grid grid-rows-3Z"
           >
-            {steps.map(({ thumbnail, thumbnailSelected, title }, index) => (
-              <Tab
-                key={index}
-                value={index}
-                onClick={() => setActiveTab(index)}
-                className="max-w-xl p-4 my-3"
-              >
-                <button>
-                  <div className="w-96 grid grid-cols-2">
-                    <h5 className="my-auto font-bold text-3xl">Step {index + 1}</h5>
+            <img src={image} alt={title} className="mx-auto" />
+            <div className="space-y-6 mt-8">
+              <h3 className="text-rebin-darkblue text-4xl font-semibold">
+                {title}
+              </h3>
+              <p className="text-black font-regular text-lg text-balance">
+                {desc1}
+                <br />
+                <br />
+                {desc2}
+              </p>
+              <ul className="grid sm:grid-cols-1 md:grid-cols-2 space-y-2">
+                {advantages.map((advantage, index) => (
+                  <li key={index} className="flex space-x-2 items-center">
                     <img
-                      src={activeTab === index ? thumbnailSelected : thumbnail}
-                      alt={title}
-                      className="w-28 aspect-square my-auto"
+                      src={Checkmark}
+                      alt="Checkmark"
+                      className="w-6 inline-block"
                     />
-                  </div>
-                </button>
-              </Tab>
-            ))}
-          </TabsHeader>
-
-
-
-        </div>
-        <TabsBody>
-          {steps.map(({ title, desc1, desc2, advantages, image }, index) => (
-            <TabPanel
-              key={index}
-              value={index}
-              className="lg:px-32 grid grid-rows-2"
-            >
-              <img src={image} alt={title} className="mx-auto" />
-              <div className="space-y-6 mt-8">
-                <h3 className="text-rebin-darkblue text-4xl font-semibold">
-                  {title}
-                </h3>
-                <p className="text-black font-regular text-lg text-balance">
-                  {desc1}
-                  <br />
-                  <br />
-                  {desc2}
-                </p>
-                <ul className="grid grid-cols-2 space-y-2">
-                  {advantages.map((advantage, index) => (
-                    <li key={index} className="flex space-x-2 items-center">
-                      <img
-                        src={Checkmark}
-                        alt="Checkmark"
-                        className="w-6 inline-block"
-                      />
-                      <p className="text-rebin-darkblue font-medium">
-                        {advantage}
-                      </p>
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            </TabPanel>
-          ))}
-        </TabsBody>
-      </Tabs>
-    </div >
+                    <p className="text-rebin-darkblue font-medium">
+                      {advantage}
+                    </p>
+                  </li>
+                ))}
+              </ul>
+            </div>
+          </TabPanel>
+        ))}
+      </TabsBody>
+    </Tabs>
   );
 }

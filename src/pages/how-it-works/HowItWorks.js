@@ -7,7 +7,7 @@ import Button from "../../components/Button";
 
 const HowItWorks = () => {
   return (
-    <main className="space-y-20 lg:space-y-28">
+    <main className="px-4 sm:px-6 space-y-20 lg:space-y-28">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-24">
         <div className="order-last lg:order-first self-center space-y-6">
           <h1 className="text-gradient-horizontal font-bold text-4xl">
