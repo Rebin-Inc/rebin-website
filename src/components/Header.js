@@ -52,7 +52,7 @@ const Header = () => {
         className="flex mx-auto max-w-7xl items-center justify-between p-6 "
         aria-label="Global"
       >
-        <Link to="/">
+        <Link to="/" className="transform hover:scale-95 transition-transform active:scale-90">
           <span className="sr-only">Rebin</span>
           <img className="h-20 w-auto" src={rebin} alt=""></img>
         </Link>
