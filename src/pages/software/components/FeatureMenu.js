@@ -106,7 +106,7 @@ export default function FeatureMenu() {
                             <p className="text-black font-regular text-lg text-balance">
                                 {parse(desc)}
                             </p>
-                            <ul className="grid grid-rows-2 grid-cols-2 grid-flow-col">
+                            <ul className="grid md:grid-cols-2 grid-cols-1">
                                 {advantages.map((advantage, index) => (
                                     <li key={index} className="flex space-x-2 items-center p-2">
                                         {percentages && (
