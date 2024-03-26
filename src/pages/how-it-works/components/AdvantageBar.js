@@ -21,7 +21,7 @@ const AdvantageBar = () => {
 
   return (
     <div className="bg-rebin-grey py-4 rounded-xl">
-      <div className="grid divide-y-0 grid-cols-2 sm:divide-y-0 md:grid-cols-3 ">
+      <div className="grid divide-y-0 grid-cols-1 sm:divide-y-0 md:grid-cols-3 ">
         {advantages.map((advantage, index) => (
           <div key={index} className="flex flex-col space-y-4 p-4 px-12">
             <h3 className="font-bold text-5xl text-gradient-horizontal ">
