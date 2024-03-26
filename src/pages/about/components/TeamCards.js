@@ -25,7 +25,7 @@ const TeamCards = () => {
 
 
   return (
-    <div className="grid grid-cols-3 my-16 place-content-center max-w-4xl mx-auto gap-4">
+    <div className="grid grid-cols-1 sm:grid-cols-3 my-16 place-content-center max-w-4xl mx-auto gap-4">
       {teamMembers.map((member) => (
         <div key={member.name} className="flex flex-col">
           <img
