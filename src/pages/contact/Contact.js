@@ -13,7 +13,7 @@ const Contact = () => {
           management more efficient
         </h2>
       </div>
-      <ContactForm></ContactForm>;
+      <ContactForm></ContactForm>
     </main>
   );
 };

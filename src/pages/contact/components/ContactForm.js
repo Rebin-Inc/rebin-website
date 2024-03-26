@@ -38,7 +38,7 @@ const ContactForm = () => {
                 Get in touch
               </h1>
               <div className="grid grid-cols-1 space-y-5 sm:grid-cols-2 sm:space-y-0">
-                <div className="flex flex-col space-y-0 sm:mr-3">
+                <div className="flex flex-col space-y-2 sm:mr-3">
                   <label for="name" className="font-medium">
                     Full name
                   </label>
@@ -48,11 +48,11 @@ const ContactForm = () => {
                     name="name"
                     id="name"
                     placeholder="Your full name"
-                    className="mt-2 py-1 px-3 rounded-md bg-white  border border-gray-400 text-gray-800  focus:outline-none"
+                    className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
                   ></input>
                 </div>
 
-                <div className="flex flex-col space-y-0">
+                <div className="flex flex-col space-y-2">
                   <label for="tel" className="font-medium">
                     Phone
                   </label>
@@ -62,11 +62,11 @@ const ContactForm = () => {
                     name="tel"
                     id="tel"
                     placeholder="Your phone number"
-                    className="mt-2 py-1 px-3 rounded-md bg-white  border border-gray-400 text-gray-800 focus:outline-none"
+                    className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
                   ></input>
                 </div>
               </div>
-              <div className="flex flex-col mt-2 space-y-0">
+              <div className="flex flex-col mt-2 space-y-2">
                 <label for="email" className="font-medium">
                   Email
                 </label>
@@ -76,10 +76,10 @@ const ContactForm = () => {
                   name="email"
                   id="email"
                   placeholder="Your email address"
-                  className="w-100 mt-2 py-1 px-3 rounded-md bg-white border border-gray-400  text-gray-800  focus:outline-none"
+                  className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
                 ></input>
               </div>
-              <div className="flex flex-col mt-2 space-y-0">
+              <div className="flex flex-col mt-2 space-y-2">
                 <label for="message" className="font-medium">
                   Message
                 </label>
@@ -88,11 +88,11 @@ const ContactForm = () => {
                   name="message"
                   id="message"
                   placeholder="Please include all relevant information"
-                  className="w-100 h-36 mt-2 py-3 p-2 rounded-md bg-white border border-gray-400  text-gray-800  focus:outline-none"
+                  className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
                 ></textarea>
               </div>
 
-              <button className="ml-auto w-fit p-3 flex justify-center items-center rounded-lg bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
+              <button className="mx-auto sm:ml-auto w-fit p-3 flex justify-center items-center rounded-lg bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white">
                 <span className="sr-only">Send message</span>
                 Send Message
               </button>
