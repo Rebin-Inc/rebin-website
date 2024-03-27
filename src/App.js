@@ -14,7 +14,7 @@ function App() {
   return (
     <HashRouter>
       <Routes>
-        <Route  element={<Layout />}>
+        <Route element={<Layout />}>
           <Route index path="/" element={<Home />} />
           <Route path="contact" element={<Contact />} />
           <Route path="how-it-works" element={<HowItWorks />} />
