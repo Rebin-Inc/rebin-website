@@ -2,7 +2,7 @@
   "homepage": "https://Rebin-Inc.github.io/",
   "name": "rebin-website",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@emailjs/nodejs": "^2.2.0",
     "@headlessui/react": "^1.7.18",
