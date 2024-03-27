@@ -28,10 +28,8 @@ const PartnersSection = () => {
   ];
 
   const settings = {
-    infinite: true,
     dots: false,
     slidesToShow: 4,
-    slidesToScroll: 1,
     arrows: false,
     autoplay: true,
     speed: 4000,
