@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route, Navigate, HashRouter } from 'react-router-dom';
 import Layout from "./Layout";
 import Contact from "./pages/contact/Contact";
 import HowItWorks from "./pages/how-it-works/HowItWorks";
@@ -12,7 +12,7 @@ import Home from "./pages/home/Home";
 
 function App() {
   return (
-    <Router> 
+    <HashRouter>
       <Routes>
         <Route  element={<Layout />}>
           <Route index path="/" element={<Home />} />
@@ -25,7 +25,7 @@ function App() {
           <Route path="sensor" element={<Sensor />} />
         </Route>
       </Routes>
-    </Router> 
+    </HashRouter>
   );
 }
 
