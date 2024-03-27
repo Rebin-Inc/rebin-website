@@ -9,10 +9,14 @@ import Software from "./pages/software/Software";
 import Consulting from "./pages/consulting/Consulting";
 import Sensor from "./pages/sensor/Sensor";
 import Home from "./pages/home/Home";
+import ScrollToTop from "./components/ScrollToTop";
+
+
 
 function App() {
   return (
     <HashRouter>
+      <ScrollToTop />
       <Routes>
         <Route element={<Layout />}>
           <Route index path="/" element={<Home />} />
