@@ -25,6 +25,9 @@ const BenefitBar = () => {
 
     const settings = {
         dots: true,
+        prevArrow: false,
+        nextArrow: false,
+        arrows: false,
         infinite: true,
         speed: 500,
         slidesToShow: 1,
@@ -78,7 +81,7 @@ const BenefitBar = () => {
                         </CardBody>
                     </Card>
                     <div className='flex align-middle'>
-                        
+
                     </div>
                     <Card className='md:col-start-3 max-w-sm'>
                         <CardBody className="flex h-full items-center gap-4 p-4">

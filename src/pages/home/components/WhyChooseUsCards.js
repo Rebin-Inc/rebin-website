@@ -41,6 +41,9 @@ const WhyChooseUsCards = () => {
 
   const settings = {
     dots: true,
+    prevArrow: false,
+    nextArrow: false,
+    arrows: false,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
