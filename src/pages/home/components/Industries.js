@@ -89,9 +89,9 @@ function Industries() {
         {...settings}
       >
         {industries.map((industry, index) => (
-          <div>
+          <div key={index}>
             <div
-              key={index}
+
               className="mx-auto max-w-xs max-h-sm p-5 rounded-xl border-rebin-blue border-2 hover:border-white bg-gradient-hover hover:text-white group"
               onMouseOver={() => setActiveTab(index)} onMouseOut={() => setActiveTab(null)}
             >
