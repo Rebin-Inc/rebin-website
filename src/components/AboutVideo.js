@@ -21,7 +21,7 @@ const AboutVideo = () => {
   return (
     <div className="my-auto rounded-lg" style={videoStyle}>
       <YouTube videoId="eX3YBk9gxZ8" opts={opts} />
-      <meta itemprop="description" content="Animation showing a network of bins where the bins which are full are indicated using a red arrow. A garbage truck then picks up only the bins which are full." />
+      <meta itemProp="description" content="Animation showing a network of bins where the bins which are full are indicated using a red arrow. A garbage truck then picks up only the bins which are full." />
     </div>
   );
 };
