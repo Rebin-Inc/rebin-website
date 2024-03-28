@@ -2,7 +2,7 @@ import React from "react";
 import Button from "../../components/Button";
 import Repoint from "../../assets/images/software/software.svg";
 import FeatureMenu from "./components/FeatureMenu";
-import BenefitBar from "./components/BenefitBar";
+import Benefits from "./components/Benefits";
 import CallToAction from "../../components/CallToAction";
 
 const Software = () => {
@@ -33,7 +33,7 @@ const Software = () => {
       <div className="mt-20">
         <h3 className="text-gradient-horizontal font-bold text-4xl text-center leading-normal mx-auto">Benefits</h3>
         <h4 className="font-bold text-4xl mt-2 w-2xl text-center text-rebin-darkblue">Discover the benefits for your organization</h4>
-        <BenefitBar></BenefitBar>
+        <Benefits></Benefits>
       </div>
       <CallToAction></CallToAction>
     </main>
