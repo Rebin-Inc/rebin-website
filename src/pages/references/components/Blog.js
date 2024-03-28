@@ -16,7 +16,7 @@ const Blog = () => {
         <span className='text-sm'>March 25, 2024</span>
       </div>
       <div className='rounded-xl w-full h-80 my-10'>
-        <img src={Maarkedal} className='rounded-xl w-full h-80 object-cover' />
+        <img src={Maarkedal} alt='A newly installed bin using the Rebin Smart Waste Sensor in Maarkedal' className='rounded-xl w-full h-80 object-cover' />
       </div>
       <div className='font-light text-lg text-justify'>Maarkedal, a rural municipality nestled in the heart of the Flemish Ardennes, experiences significant variation in the utilization of public bins across different locations. While tourist activity surges during the summer months, attracting hiking and cycling enthusiasts, winters tend to bring a quieter atmosphere. This seasonal fluctuation, alongside differing usage patterns among various areas, poses a challenge for efficient waste management within Maarkedal. Unfortunately, the lack of comprehensive data hinders an effective response from Maarkedal's authorities.</div>
       <div className='font-light text-lg text-justify'>Frank Maes, head of the municipality's technical department, finds himself grappling with this issue. "Every week, my team is tasked with emptying the bins, totaling 73 across the municipality. However, due to the lack of prior knowledge regarding which bins require attention, we must inspect each one during our collection routes. This results in unnecessary expenditure of work hours, further compounded by our existing shortage of manpower." Mayor Joris Nachtergaele is well aware of this challenge and sought assistance from Rebin.</div>
