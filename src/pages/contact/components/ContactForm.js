@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MdLocationPin, MdEmail } from "react-icons/md";
-import emailjs from 'emailjs-com';
 import axios from 'axios';
 
 const ContactForm = () => {
