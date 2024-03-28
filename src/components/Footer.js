@@ -100,7 +100,7 @@ const Footer = () => {
           </div>
           <div className="flex flex-col space-y-4">
             <p className="text-sm font-semibold">Stay up to date</p>
-            <div class="flex flex-col space-y-4 max-w-md">
+            <div className="flex flex-col space-y-4 max-w-md">
               <input
                 id="email-address"
                 name="email"
