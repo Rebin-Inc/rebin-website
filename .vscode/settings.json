@@ -3,10 +3,12 @@
   "cSpell.enableFiletypes": ["tailwindcss"],
   "cSpell.words": [
     "brakel",
+    "bywh",
     "checkmark",
     "Delrue",
     "emsp",
     "Geyter",
+    "itemprop",
     "Kyanu",
     "Linkedin",
     "Nachtergaele",
@@ -18,10 +20,13 @@
     "Rebineers",
     "Sigfox",
     "tailwindcss",
+    "transform",
     "unizo",
     "Unizo",
     "VLAIO",
     "voka",
+    "youtube",
     "Youtube"
-  ]
+  ],
+  "cSpell.ignoreWords": ["transform"]
 }
