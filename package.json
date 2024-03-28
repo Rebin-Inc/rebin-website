@@ -4,17 +4,12 @@
   "version": "0.1.0",
   "private": false,
   "dependencies": {
-    "@emailjs/nodejs": "^2.2.0",
     "@headlessui/react": "^1.7.18",
     "@heroicons/react": "^2.1.1",
     "@material-tailwind/react": "^2.1.9",
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
     "axios": "^1.6.8",
-    "emailjs-com": "^3.2.0",
+    "eslint-config-react-app": "^7.0.1",
     "html-react-parser": "^5.1.8",
-    "primereact": "^10.5.1",
     "react": "^18.2.0",
     "react-countup": "^6.5.2",
     "react-dom": "^18.2.0",
@@ -23,8 +18,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
     "react-youtube": "^10.1.0",
-    "slick-carousel": "^1.8.1",
-    "web-vitals": "^2.1.4"
+    "slick-carousel": "^1.8.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -53,7 +47,6 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "tailwindcss": "^3.4.1"
+    "gh-pages": "^6.1.1"
   }
 }
