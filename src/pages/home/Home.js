@@ -7,7 +7,7 @@ import Industries from "./components/Industries";
 import Testimonial from "./components/Testimonial";
 import CallToAction from "../../components/CallToAction";
 import PartnersSection from "./components/PartnersSection";
-import SmartCity from "../../assets/videos/smart_city.MP4";
+import SmartCity from "../../assets/videos/home/smart_city.mp4";
 import Button from "../../components/Button";
 
 const Home = () => {

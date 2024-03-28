@@ -1,7 +1,7 @@
 import React from "react";
-import Emilio from "../../../assets/images/team/emilio.jpg";
-import Kyanu from "../../../assets/images/team/kyanu.jpg";
-import Simon from "../../../assets/images/team/simon.jpg";
+import Emilio from "../../../assets/images/about/team/emilio.jpg";
+import Kyanu from "../../../assets/images/about/team/kyanu.jpg";
+import Simon from "../../../assets/images/about/team/simon.jpg";
 
 const TeamCards = () => {
 

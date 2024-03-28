@@ -1,6 +1,6 @@
 import React from "react";
 import StatisticBar from "./components/StatisticBar";
-import Sensor1 from "../../assets/images/sensor/sensor1.png";
+import Sensor1 from "../../assets/images/sensor/sensor.png";
 import SensorMenu from "./components/SensorMenu";
 import SpecificationBar from "./components/SpecificationBar";
 import CallToAction from "../../components/CallToAction";

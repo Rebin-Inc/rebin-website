@@ -7,13 +7,13 @@ import {
 } from "@material-tailwind/react";
 import React from "react";
 import parse from "html-react-parser";
-import Route from "../../../assets/images/software/route.svg";
-import Sensor from "../../../assets/images/software/sensor.svg";
-import Analytics from "../../../assets/images/software/analytics.svg";
-import Repoint from "../../../assets/images/software/repoint.svg";
+import Route from "../../../assets/images/software/featureMenu/route.svg";
+import Sensor from "../../../assets/images/software/featureMenu/sensor.svg";
+import Analytics from "../../../assets/images/software/featureMenu/analytics.svg";
+import Repoint from "../../../assets/images/software/featureMenu/repoint.svg";
 import Checkmark from "../../../assets/images/checkmark.svg";
-import Dashboard from "../../../assets/images/software/dashboard.svg";
-import CreateRoute from "../../../assets/images/software/create_route.svg";
+import Dashboard from "../../../assets/images/software/featureMenu/dashboard.svg";
+import CreateRoute from "../../../assets/images/software/featureMenu/create_route.svg";
 
 
 export default function FeatureMenu() {

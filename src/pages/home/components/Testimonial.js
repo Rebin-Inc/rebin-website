@@ -1,7 +1,7 @@
 import React from "react";
-import joris from "../../../assets/images/customers/joris.svg";
+import joris from "../../../assets/images/home/testimonial/joris.png";
 import arrow from "../../../assets/images/Pijl_Rechts_Blauw.svg";
-import binMaarkedal from "../../../assets/images/customers/bin_Maarkedal.jpg";
+import binMaarkedal from "../../../assets/images/home/testimonial/bin_maarkedal.jpg";
 import { Link } from "react-router-dom";
 
 const Testimonial = () => {
