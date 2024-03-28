@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useLayoutEffect, useRef } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -44,6 +44,15 @@ function Industries() {
         "Map fill levels of various reservoirs, from household cisterns to large tanks in residential complexes. Save on costs by optimizing liquid collection, including oil.",
     },
   ];
+
+  useLayoutEffect(() => {
+    /* load white icons at page load */
+    const images = industries.map((industry) => industry.imageWhite);
+    images.forEach((src) => {
+      const img = new Image();
+      img.src = src;
+    });
+  });
 
   let sliderRef = useRef(null);
   const next = () => {
