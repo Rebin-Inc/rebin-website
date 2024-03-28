@@ -1,5 +1,5 @@
 import React from 'react';
-import Maarkedal from '../../../assets/images/refferenceMaarkedal.png';
+import Maarkedal from '../../../assets/images/referenceMaarkedal.png';
 
 const Blog = () => {
   return (
