@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.adceb7b4.css",
-    "main.js": "/static/js/main.6347102d.js",
+    "main.css": "/static/css/main.9327882c.css",
+    "main.js": "/static/js/main.b39152d8.js",
     "static/media/cards.svg": "/static/media/cards.f352a09c9a9ac18c053ce822b7d7e315.svg",
     "static/media/maarkedal.png": "/static/media/maarkedal.d9b7bdd310d2ac65aec8.png",
     "static/media/bin_white.svg": "/static/media/bin_white.f536456f16fae2b4e6373c2b06f45084.svg",
@@ -70,11 +70,11 @@
     "static/media/right.svg": "/static/media/right.757216d2b603b8a2364287827c441a80.svg",
     "static/media/dottedCircle.svg": "/static/media/dottedCircle.f097a254136a93621b39.svg",
     "static/media/dottedLine.svg": "/static/media/dottedLine.4e97ea2abce03bfc91e2.svg",
-    "main.adceb7b4.css.map": "/static/css/main.adceb7b4.css.map",
-    "main.6347102d.js.map": "/static/js/main.6347102d.js.map"
+    "main.9327882c.css.map": "/static/css/main.9327882c.css.map",
+    "main.b39152d8.js.map": "/static/js/main.b39152d8.js.map"
   },
   "entrypoints": [
-    "static/css/main.adceb7b4.css",
-    "static/js/main.6347102d.js"
+    "static/css/main.9327882c.css",
+    "static/js/main.b39152d8.js"
   ]
 }
