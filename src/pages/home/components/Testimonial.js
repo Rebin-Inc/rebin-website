@@ -11,12 +11,12 @@ const Testimonial = () => {
   return (
     <section className="mt-10 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-center rounded-xl bg-rebin-grey gap-y-10 md:gap-x-6 p-6">
       <img
-        className="mx-auto h-full object-cover rounded-xl object-center-right"
+        className="object-cover rounded-xl object-center-right self-stretch"
         src={binMaarkedal}
         alt="A newly installed Rebin Smart Waste Sensor in Maarkedal."
       />
       <div className="flex flex-col lg:col-span-2 gap-y-8 text-justify">
-        <p className="text-lg text-rebin-darkblue max-w-full">{testimonial}</p>
+        <p className="text-lg leading-snug lg:leading-normal text-rebin-darkblue max-w-full">{testimonial}</p>
         <div className="flex gap-x-5 items-center w-fit">
           <img className="h-14 aspect-square" src={joris} alt="Joris Nachtergaele, mayor of Maarkedal" />
           <div className="flex flex-col">
