@@ -1,9 +1,9 @@
 import React from "react";
 import { Card, CardBody, Typography } from "@material-tailwind/react";
-import Customer from "../../../assets/images/customer.svg";
-import Reliability from "../../../assets/images/reliability.svg";
-import Sustainability from "../../../assets/images/sustainability.svg";
-import Innovation from "../../../assets/images/innovation.svg";
+import Customer from "../../../assets/images/about/valueCards/customer.svg";
+import Reliability from "../../../assets/images/about/valueCards/reliability.svg";
+import Sustainability from "../../../assets/images/about/valueCards/sustainability.svg";
+import Innovation from "../../../assets/images/about/valueCards/innovation.svg";
 
 const ValueCards = () => {
   return (

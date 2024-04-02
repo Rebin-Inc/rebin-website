@@ -1,7 +1,7 @@
 import { Card, CardBody } from "@material-tailwind/react";
-import sensor from "../../../assets/images/solutions/sensor.svg";
-import software from "../../../assets/images/solutions/software.svg";
-import consulting from "../../../assets/images/solutions/consulting.svg";
+import sensor from "../../../assets/images/home/solutions/sensor.svg";
+import software from "../../../assets/images/home/solutions/software.svg";
+import consulting from "../../../assets/images/home/solutions/consulting.svg";
 import Button from "../../../components/Button";
 
 export default function SolutionCards() {

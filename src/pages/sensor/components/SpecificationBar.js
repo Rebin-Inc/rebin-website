@@ -1,5 +1,5 @@
 import React from 'react'
-import Sensor3 from "../../../assets/images/sensor/sensor3.png";
+import Sensor from "../../../assets/images/sensor/specificationBar/sensor.png";
 
 const SpecificationBar = () => {
     const specs = [
@@ -67,7 +67,7 @@ const SpecificationBar = () => {
 
     return (
         <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 bg-rebin-grey rounded-xl p-4 md:p-8 mt-12'>
-            <img src={Sensor3} alt="Insides of sensor" className='place-self-center col-span-2 md:col-span-1 mb-8' />
+            <img src={Sensor} alt="Insides of sensor" className='place-self-center col-span-2 md:col-span-1 mb-8' />
             <div className='grid lg:grid-cols-2 lg:grid-rows-6 lg:grid-flow-col lg:col-span-2 gap-x-12 gap-y-4'>
                 {specs.map((spec, index) => (
                     <div key={index} className='flex justify-between w-full'>

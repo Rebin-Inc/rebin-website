@@ -7,7 +7,7 @@ import Industries from "./components/Industries";
 import Testimonial from "./components/Testimonial";
 import CallToAction from "../../components/CallToAction";
 import PartnersSection from "./components/PartnersSection";
-import SmartCity from "../../assets/videos/smart_city.MP4";
+import SmartCity from "../../assets/videos/home/smart_city.mp4";
 import Button from "../../components/Button";
 
 const Home = () => {
@@ -41,8 +41,8 @@ const Home = () => {
         </h2>
         <SolutionCards></SolutionCards>
       </div>
-      <div className="mt-20 grid grid-cols lg:grid-cols-2 lg:grid-rows-2 gap-x-20 gap-y-16 lg:gap-y-0 place-items-center lg:place-items-start">
-        <div className="max-w-2xl mb-6">
+      <div className="mt-20 grid grid-cols lg:grid-cols-2 lg:grid-rows-2 gap-x-12 gap-y-16 lg:gap-y-0 place-items-center lg:place-items-start">
+        <div className="max-w-2xl mb-6 lg:ml-16">
           <h1 className="text-gradient-horizontal font-semibold text-3xl">
             About
           </h1>
@@ -50,10 +50,10 @@ const Home = () => {
             We believe that asset monitoring can be more efficient
           </h2>
         </div>
-        <div className="lg:row-start-1 lg:col-start-1 lg:row-span-2 w-fit place-self-center max-w-3xl">
+        <div className="lg:row-start-1 lg:col-start-1 lg:row-span-2 w-full place-self-center max-w-2xl">
           <AboutVideo></AboutVideo>
         </div>
-        <div className="lg:col-start-2 lg:row-start-2 max-w-2xl">
+        <div className="lg:col-start-2 lg:ml-16 lg:row-start-2 max-w-2xl">
           <p className="text-balance">
             Our goal is to enhance asset management within organizations.
             Leveraging our solution, you save time, cut costs, and reduce environmental impact.

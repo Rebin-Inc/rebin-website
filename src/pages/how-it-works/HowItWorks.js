@@ -1,7 +1,7 @@
 import React from "react";
 import AdvantageBar from "./components/AdvantageBar";
 import CallToAction from "../../components/CallToAction";
-import Stats from "../../assets/images/Stats.svg";
+import Stats from "../../assets/images/howItWorks/stats.svg";
 import FourStepsMenu from "./components/FourStepsMenu";
 import Button from "../../components/Button";
 

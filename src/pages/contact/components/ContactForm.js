@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { MdLocationPin, MdEmail } from "react-icons/md";
-import emailjs from 'emailjs-com';
 import axios from 'axios';
 
 const ContactForm = () => {
@@ -54,7 +53,7 @@ const ContactForm = () => {
               <div className="flex items-center text-white">
                 <MdEmail className="size-10"></MdEmail>
                 <div className="ml-4 ">
-                  <label htmlFor="">Email</label>
+                  <span>Email</span>
                   <div className="text-md tracking-wide font-medium w-40">
                     info@rebin.be
                   </div>
@@ -63,7 +62,7 @@ const ContactForm = () => {
               <div className="flex items-center mt-8 text-white">
                 <MdLocationPin className="size-10"></MdLocationPin>
                 <div className="ml-4 ">
-                  <label htmlFor="">Address</label>
+                  <span>Address</span>
                   <div className="text-md tracking-wide font-medium w-45">
                     Sassevaartstraat 46, <br />
                     9000 Gent
@@ -72,7 +71,7 @@ const ContactForm = () => {
               </div>
             </div>
             {/* Contact form */}
-            <form onSubmit={handleSubmit} className="p-8 flex flex-col justify-center col-span-3 space-y-8">
+            <form onSubmit={handleSubmit} className="p-8 flex flex-col justify-center col-span-3 space-y-8" name="contactForm">
               <h1 className="text-normal text-xl font-semibold text-black my-5">
                 Get in touch
               </h1>
@@ -86,6 +85,7 @@ const ContactForm = () => {
                     type="text"
                     name="name"
                     id="name"
+                    autoComplete="given-name"
                     placeholder="Your full name"
                     className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
                     value={inputs.name}
@@ -102,6 +102,7 @@ const ContactForm = () => {
                     type="tel"
                     name="phone"
                     id="tel"
+                    autoComplete="tel"
                     placeholder="Your phone number"
                     className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
                     value={inputs.phone}
@@ -118,6 +119,7 @@ const ContactForm = () => {
                   type="email"
                   name="email"
                   id="email"
+                  autoComplete="email"
                   placeholder="Your email address"
                   className="block w-full rounded-md py-2 pl-5 pr-20 mb-4 text-sm font-light border-rebin"
                   value={inputs.email}

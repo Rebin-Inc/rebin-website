@@ -6,7 +6,7 @@ import {
     TabPanel,
 } from "@material-tailwind/react";
 import React from "react";
-import Sensor2 from "../../../assets/images/sensor/sensor2.png";
+import Sensor from "../../../assets/images/sensor/sensorMenu/sensor.png";
 import parse from "html-react-parser";
 
 export default function SensorMenu() {
@@ -90,7 +90,7 @@ export default function SensorMenu() {
                         value={index}
                         className="grid md:grid-cols-2 gap-8 mt-8"
                     >
-                        <img className="mx-auto" src={Sensor2} alt="The worlds smallest waste sensor" />
+                        <img className="mx-auto" src={Sensor} alt="The worlds smallest waste sensor" />
                         <div className="space-y-4">
                             <h3 className="text-gradient-horizontal font-bold text-xl">{title}</h3>
                             <p className="text-black font-medium drop-shadow-xl">{parse(desc)}</p>

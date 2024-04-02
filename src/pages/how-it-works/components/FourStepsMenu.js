@@ -5,20 +5,20 @@ import {
   Tab,
   TabPanel,
 } from "@material-tailwind/react";
-import Step1 from "../../../assets/images/fourStepApproach/Step1.svg";
-import Step2 from "../../../assets/images/fourStepApproach/Step2.svg";
-import Step3 from "../../../assets/images/fourStepApproach/Step3.svg";
-import Step4 from "../../../assets/images/fourStepApproach/Step4.svg";
-import Step1Selected from "../../../assets/images/fourStepApproach/Step1_selected.svg";
-import Step2Selected from "../../../assets/images/fourStepApproach/Step2_selected.svg";
-import Step3Selected from "../../../assets/images/fourStepApproach/Step3_selected.svg";
-import Step4Selected from "../../../assets/images/fourStepApproach/Step4_selected.svg";
+import Step1 from "../../../assets/images/howItWorks/fourStepMenu/step1.svg";
+import Step2 from "../../../assets/images/howItWorks/fourStepMenu/step2.svg";
+import Step3 from "../../../assets/images/howItWorks/fourStepMenu/step3.svg";
+import Step4 from "../../../assets/images/howItWorks/fourStepMenu/step4.svg";
+import Step1Selected from "../../../assets/images/howItWorks/fourStepMenu/step1_selected.svg";
+import Step2Selected from "../../../assets/images/howItWorks/fourStepMenu/step2_selected.svg";
+import Step3Selected from "../../../assets/images/howItWorks/fourStepMenu/step3_selected.svg";
+import Step4Selected from "../../../assets/images/howItWorks/fourStepMenu/step4_selected.svg";
 import React from "react";
-import Bin from "../../../assets/images/fourStepApproach/bin.png";
-import Repoint from "../../../assets/images/fourStepApproach/repoint.svg";
-import Cards from "../../../assets/images/fourStepApproach/cards.svg";
+import Bin from "../../../assets/images/howItWorks/fourStepMenu/bin.png";
+import Repoint from "../../../assets/images/howItWorks/fourStepMenu/repoint.svg";
+import Cards from "../../../assets/images/howItWorks/fourStepMenu/cards.svg";
 import Checkmark from "../../../assets/images/checkmark.svg";
-import CustomerSupport from "../../../assets/images/fourStepApproach/customer_support.svg";
+import CustomerSupport from "../../../assets/images/howItWorks/fourStepMenu/customer_support.svg";
 
 export default function FourStepsMenu() {
   const [activeTab, setActiveTab] = React.useState(0);
