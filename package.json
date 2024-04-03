@@ -53,7 +53,7 @@
     "prettier-plugin-tailwindcss": "^0.5.13"
   },
   "prettier": {
-    "semi": false,
+    "semi": true,
     "singleQuote": true,
     "plugins": [
       "prettier-plugin-tailwindcss"

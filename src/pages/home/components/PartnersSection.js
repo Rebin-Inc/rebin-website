@@ -1,28 +1,28 @@
-import React from "react";
-import startItKBC from "../../../assets/images/home/partners/start_it_kbc.png";
-import unizo from "../../../assets/images/home/partners/unizo.png";
-import VLAIO from "../../../assets/images/home/partners/vlaio.png";
-import voka from "../../../assets/images/home/partners/voka.png";
-import Slider from "react-slick";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import React from 'react';
+import startItKBC from '../../../assets/images/home/partners/start_it_kbc.png';
+import unizo from '../../../assets/images/home/partners/unizo.png';
+import VLAIO from '../../../assets/images/home/partners/vlaio.png';
+import voka from '../../../assets/images/home/partners/voka.png';
+import Slider from 'react-slick';
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 const PartnersSection = () => {
   const partners = [
     {
-      name: "Start it KBC",
+      name: 'Start it KBC',
       src: startItKBC,
     },
     {
-      name: "Unizo",
+      name: 'Unizo',
       src: unizo,
     },
     {
-      name: "VLAIO",
+      name: 'VLAIO',
       src: VLAIO,
     },
     {
-      name: "Voka",
+      name: 'Voka',
       src: voka,
     },
   ];
@@ -34,7 +34,7 @@ const PartnersSection = () => {
     autoplay: true,
     speed: 4000,
     autoplaySpeed: 2000,
-    cssEase: "linear",
+    cssEase: 'linear',
     pauseOnHover: false,
     responsive: [
       {
@@ -59,23 +59,23 @@ const PartnersSection = () => {
   };
 
   return (
-    <section className="mt-20 text-center py-8 space-y-8">
-      <div className="bg-rebin-grey absolute h-48 w-full min-w-max left-0 -z-10"></div>
+    <section className="mt-20 space-y-8 py-8 text-center">
+      <div className="bg-rebin-grey absolute left-0 -z-10 h-48 w-full min-w-max"></div>
       <p className="text-slate-500">Trusted by the following partners</p>
       <Slider {...settings}>
         {partners.map((_, index) => (
           <div
             key={index}
-            className="slider-container border-l divide-rebin-darkblue"
+            className="slider-container divide-rebin-darkblue border-l"
           >
-            <div className="flex space-x-3 h-16 justify-center">
+            <div className="flex h-16 justify-center space-x-3">
               <img
                 src={partners[index].src}
                 alt={partners[index].name}
-                className="h-5/6 align-middle my-auto"
+                className="my-auto h-5/6 align-middle"
               />
-              <p className="my-auto font-medium text-lg">
-                {" "}
+              <p className="my-auto text-lg font-medium">
+                {' '}
                 {partners[index].name}
               </p>
             </div>

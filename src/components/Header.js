@@ -1,17 +1,17 @@
-import React from "react";
-import { useState } from "react";
-import { Dialog, Disclosure } from "@headlessui/react";
+import React from 'react';
+import { useState } from 'react';
+import { Dialog, Disclosure } from '@headlessui/react';
 // import { Menu } from "@headlessui/react";
 import {
   Bars3Icon,
   ChevronDownIcon,
   XMarkIcon,
-} from "@heroicons/react/24/outline";
-import rebin from "../assets/images/Rebin.svg";
-import LanguageDropdown from "./LanguageDropdown";
-import { Link } from "react-router-dom";
-import { Fragment } from "react";
-import Button from "../components/Button";
+} from '@heroicons/react/24/outline';
+import rebin from '../assets/images/Rebin.svg';
+import LanguageDropdown from './LanguageDropdown';
+import { Link } from 'react-router-dom';
+import { Fragment } from 'react';
+import Button from '../components/Button';
 
 const Header = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -38,32 +38,35 @@ const Header = () => {
   // ];
 
   const languages = [
-    { name: "English", href: "#", current: true },
-    { name: "Nederlands", href: "#", current: false },
+    { name: 'English', href: '#', current: true },
+    { name: 'Nederlands', href: '#', current: false },
   ];
 
   function classNames(...classes) {
-    return classes.filter(Boolean).join(" ");
+    return classes.filter(Boolean).join(' ');
   }
 
   return (
     <header>
       <nav
-        className="flex mx-auto max-w-7xl items-center justify-between p-6 "
+        className="mx-auto flex max-w-7xl items-center justify-between p-6 "
         aria-label="Global"
       >
-        <Link to="/" className="transform hover:scale-95 transition-transform active:scale-90">
+        <Link
+          to="/"
+          className="transform transition-transform hover:scale-95 active:scale-90"
+        >
           <span className="sr-only">Rebin</span>
           <img className="h-20 w-auto" src={rebin} alt="The Rebin Logo"></img>
         </Link>
         <div className="flex lg:hidden">
           <button
             onClick={() => setMobileMenuOpen(true)}
-            className="relative inline-flex items-center justify-center sm:space-x-2 px-5 rounded-full p-2 bg-gradient font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white"
+            className="bg-gradient relative inline-flex items-center justify-center rounded-full p-2 px-5 font-bold text-white focus:outline-none focus:ring-2 focus:ring-inset focus:ring-white sm:space-x-2"
           >
             <span className="absolute -inset-0.5" />
             <span className="sr-only">Open main menu</span>
-            <span className="leading-none mb-0.5 hidden sm:block">Menu</span>
+            <span className="mb-0.5 hidden leading-none sm:block">Menu</span>
             {mobileMenuOpen ? (
               <XMarkIcon className="block h-6 w-6" aria-hidden="true" />
             ) : (
@@ -73,7 +76,7 @@ const Header = () => {
         </div>
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
-            className="text-sm font-medium text-gradient-hover"
+            className="text-gradient-hover text-sm font-medium"
             to="how-it-works"
           >
             How it works
@@ -108,29 +111,33 @@ const Header = () => {
             </Menu.Items>
           </Menu> */}
           <Link
-            className="text-sm font-medium text-gradient-hover"
+            className="text-gradient-hover text-sm font-medium"
             to="software"
           >
             Solution
           </Link>
           <Link
-            className="text-sm font-medium text-gradient-hover"
+            className="text-gradient-hover text-sm font-medium"
             to="references"
           >
             References
           </Link>
-          <Link className="text-sm font-medium text-gradient-hover" to="about">
+          <Link className="text-gradient-hover text-sm font-medium" to="about">
             About us
           </Link>
           <Link
-            className="text-sm font-medium text-gradient-hover"
+            className="text-gradient-hover text-sm font-medium"
             to="contact"
           >
             Contact
           </Link>
         </div>
-        <div className="hidden lg:flex space-x-2 items-center">
-          <Button text="Log in" href="https://rebin-prod.we-are.be/login" margin="0" />
+        <div className="hidden items-center space-x-2 lg:flex">
+          <Button
+            text="Log in"
+            href="https://rebin-prod.we-are.be/login"
+            margin="0"
+          />
           <LanguageDropdown></LanguageDropdown>
         </div>
 
@@ -162,7 +169,6 @@ const Header = () => {
                     to="how-it-works"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
-
                   >
                     How it works
                   </Link>
@@ -240,8 +246,8 @@ const Header = () => {
                           Language
                           <ChevronDownIcon
                             className={classNames(
-                              open ? "rotate-180" : "",
-                              "h-5 w-5 flex-none"
+                              open ? 'rotate-180' : '',
+                              'h-5 w-5 flex-none',
                             )}
                             aria-hidden="true"
                           />
