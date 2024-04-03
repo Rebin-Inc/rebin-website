@@ -53,7 +53,7 @@ const Home = () => {
         <div className="lg:row-start-1 lg:col-start-1 lg:row-span-2 w-full place-self-center max-w-2xl">
           <AboutVideo></AboutVideo>
         </div>
-        <div className="lg:col-start-2 lg:ml-16 lg:row-start-2 max-w-2xl">
+        <div className="lg:col-start-2 lg:ml-16 lg:row-start-2 max-w-xl">
           <p className="text-balance">
             Our goal is to enhance asset management within organizations.
             Leveraging our solution, you save time, cut costs, and reduce environmental impact.

@@ -23,7 +23,7 @@ const About = () => {
             tackling overflowing bins and other asset challenges to benefit the environment and community.
           </p>
         </div>
-        <div className="max-w-lg mx-auto place-self-center">
+        <div className="w-full max-w-xl mx-auto place-self-center">
           <AboutVideo></AboutVideo>
         </div>
       </div>
