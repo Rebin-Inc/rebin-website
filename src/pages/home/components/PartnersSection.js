@@ -1,8 +1,8 @@
 import React from "react";
-import startItKBC from "../../../assets/images/home/partners/start_it_kbc.svg";
-import unizo from "../../../assets/images/home/partners/unizo.svg";
-import VLAIO from "../../../assets/images/home/partners/vlaio.svg";
-import voka from "../../../assets/images/home/partners/voka.svg";
+import startItKBC from "../../../assets/images/home/partners/start_it_kbc.png";
+import unizo from "../../../assets/images/home/partners/unizo.png";
+import VLAIO from "../../../assets/images/home/partners/vlaio.png";
+import voka from "../../../assets/images/home/partners/voka.png";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -33,7 +33,7 @@ const PartnersSection = () => {
     arrows: false,
     autoplay: true,
     speed: 4000,
-    autoplaySpeed: 0,
+    autoplaySpeed: 2000,
     cssEase: "linear",
     pauseOnHover: false,
     responsive: [
