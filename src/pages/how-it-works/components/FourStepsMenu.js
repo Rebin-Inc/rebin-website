@@ -109,7 +109,7 @@ export default function FourStepsMenu() {
       <div className="hidden lg:flex">
         {/* Vertical tabs for large screen */}
         <TabsHeader
-          className="rounded-none border-r-8 border-blue-gray-50 bg-transparent p-0 max-w-sm py-10"
+          className="bg-transparent p-0 max-w-sm py-10"
           indicatorProps={{
             className: "invisible lg:visible w-4 ml-96 bg-gradient rounded-full",
           }}
@@ -134,18 +134,16 @@ export default function FourStepsMenu() {
             </Tab>
           ))}
         </TabsHeader>
-
-
-
+        <div className="w-2 rounded-full h-full bg-rebin-grey -ml-1"></div>
       </div>
       <TabsBody>
         {steps.map(({ title, desc1, desc2, advantages, image }, index) => (
           <TabPanel
             key={index}
             value={index}
-            className="lg:px-32 grid grid-rows-3Z"
+            className="lg:px-32 grid"
           >
-            <img src={image} alt={title} className="mx-auto" />
+            <img src={image} alt={title} className="mx-auto max-h-96" />
             <div className="space-y-6 mt-8">
               <h3 className="text-rebin-darkblue text-4xl font-semibold">
                 {title}

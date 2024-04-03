@@ -26,7 +26,7 @@ const HowItWorks = () => {
         </div>
       </div>
       <AdvantageBar></AdvantageBar>
-      <div className="mt-20 -mb-10">
+      <div className="mt-20">
         <h3 className="text-gradient-horizontal font-bold text-4xl mx-auto">
           Our approach
         </h3>
