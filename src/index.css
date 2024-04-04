@@ -14,10 +14,6 @@ main {
   padding-bottom: 0;
 }
 
-* {
-  shape-rendering: crispEdges;
-}
-
 .bg-gradient {
   background: rgb(0, 67, 255);
   background: linear-gradient(
