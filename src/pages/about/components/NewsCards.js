@@ -11,7 +11,7 @@ const NewsCards = () => {
       title:
         'Maarkedal zet slimme vuilnisbakken in om te besparen op tijd en brandstof van vuilniswagens',
       duration: '1 min',
-      date: 'August 20, 2024',
+      date: 'October 22, 2023',
       image: Article1,
       href: 'https://www.vrt.be/vrtnws/nl/2023/10/22/maarkedal-zet-slimme-vuilbakken-in-om-tijd-en-brandstof-van-vuil/',
       image_description:
@@ -22,7 +22,7 @@ const NewsCards = () => {
       title:
         'Rebin (Maarkedal) en Straal (Gent) halen 50.000 euro binnen via Unizo Oost-Vlaanderen',
       duration: '3 min',
-      date: 'August 20, 2024',
+      date: 'July 10, 2023',
       image: Article2,
       href: 'https://www.unizo.be/berichten/pers/rebin-maarkedal-en-straal-gent-halen-50000-euro-binnen-unizo-oost-vlaanderen',
       image_description:
@@ -33,7 +33,7 @@ const NewsCards = () => {
       title:
         'Slimme vuilnisbakken vangen tekort aan gemeentepersoneel op in Brakel',
       duration: '2 min',
-      date: 'August 20,2024',
+      date: 'November 2,2023',
       image: Article3,
       href: 'https://www.nieuwsblad.be/cnt/dmf20231102_95819056',
       image_description:
