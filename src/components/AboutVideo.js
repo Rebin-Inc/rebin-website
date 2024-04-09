@@ -1,6 +1,5 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
-import Maarkedal from '../assets/images/references/blog/maarkedal.png';
 
 const AboutVideo = () => {
   return (
