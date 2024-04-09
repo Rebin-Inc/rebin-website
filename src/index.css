@@ -6,6 +6,11 @@ html * {
   font-family: 'Poppins', sans-serif;
 }
 
+img {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
 main {
   max-width: 80rem;
   padding: 1.5rem;
