@@ -78,13 +78,13 @@ function App() {
       >
         <Route element={<Layout />}>
           <Route index path="/" element={<Home />} />
-          <Route path="contact" element={<Contact />} />
-          <Route path="how-it-works" element={<HowItWorks />} />
-          <Route path="references" element={<References />} />
-          <Route path="about" element={<About />} />
-          <Route path="software" element={<Software />} />
-          <Route path="consulting" element={<Consulting />} />
-          <Route path="sensor" element={<Sensor />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/references" element={<References />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/software" element={<Software />} />
+          <Route path="/consulting" element={<Consulting />} />
+          <Route path="/sensor" element={<Sensor />} />
         </Route>
       </Route>
     </Routes>

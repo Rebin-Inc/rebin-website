@@ -8,7 +8,6 @@ const AboutVideo = () => {
       <ReactPlayer
         url="https://www.youtube.com/watch?v=eX3YBk9gxZ8"
         controls={false}
-        light={Maarkedal}
         width="100%"
         height="100%"
       />

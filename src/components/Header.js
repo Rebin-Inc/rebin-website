@@ -77,7 +77,7 @@ const Header = () => {
         <div className="hidden lg:flex lg:gap-x-12">
           <Link
             className="text-gradient-hover text-sm font-medium"
-            to="how-it-works"
+            to="/how-it-works"
           >
             How it works
           </Link>
@@ -112,13 +112,13 @@ const Header = () => {
           </Menu> */}
           <Link
             className="text-gradient-hover text-sm font-medium"
-            to="software"
+            to="/software"
           >
             Solution
           </Link>
           <Link
             className="text-gradient-hover text-sm font-medium"
-            to="references"
+            to="/references"
           >
             References
           </Link>
@@ -127,7 +127,7 @@ const Header = () => {
           </Link>
           <Link
             className="text-gradient-hover text-sm font-medium"
-            to="contact"
+            to="/contact"
           >
             Contact
           </Link>
@@ -166,7 +166,7 @@ const Header = () => {
               <div className="-my-6 divide-y divide-gray-200">
                 <div className="space-y-2 py-6">
                   <Link
-                    to="how-it-works"
+                    to="/how-it-works"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
@@ -203,28 +203,28 @@ const Header = () => {
                     )}
                   </Disclosure> */}
                   <Link
-                    to="software"
+                    to="/software"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     Solution
                   </Link>
                   <Link
-                    to="references"
+                    to="/references"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     References
                   </Link>
                   <Link
-                    to="about"
+                    to="/about"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     About us
                   </Link>
                   <Link
-                    to="contact"
+                    to="/contact"
                     className="-mx-3 block rounded-lg px-3 py-2 text-base font-medium leading-7 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
