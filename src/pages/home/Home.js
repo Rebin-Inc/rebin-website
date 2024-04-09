@@ -69,7 +69,7 @@ const Home = () => {
           Why choose us?
         </h1>
         <h2 className="mt-4 text-center text-4xl font-bold">
-          Global leader in waste management
+          Global leader in asset management
         </h2>
         <WhyChooseUsCards></WhyChooseUsCards>
       </div>
