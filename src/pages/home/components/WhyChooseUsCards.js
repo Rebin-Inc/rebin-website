@@ -68,7 +68,7 @@ const WhyChooseUsCards = () => {
           <Card
             key={index}
             shadow={false}
-            className={`${item.colStart} ${item.rowStart} col-span-3 row-span-2 border shadow-around`}
+            className={`${item.colStart} ${item.rowStart} col-span-3 row-span-2 h-56 shadow-around`}
           >
             <CardBody className="flex h-full items-center gap-6">
               <div className="w-full space-y-2 text-balance">
@@ -83,7 +83,7 @@ const WhyChooseUsCards = () => {
             </CardBody>
           </Card>
         ))}
-        <Card className="col-start-4 row-start-3 mx-8 my-6 rounded-xl p-4">
+        <Card className="col-start-4 row-start-3 mx-8 my-auto aspect-square h-24 rounded-xl p-4 shadow-around">
           <img
             src={RebinRBlue}
             alt="The blue letter R from the Rebin logo"
