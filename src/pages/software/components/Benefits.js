@@ -65,7 +65,7 @@ const BenefitBar = () => {
             </CardBody>
           </Card>
         </div>
-        <div className="mx-auto -mb-16 ml-6 mt-4 grid grid-cols-1 gap-y-4 md:mt-36 md:grid-cols-3 md:gap-16">
+        <div className="mx-auto mb-16 ml-6 mt-4 grid grid-cols-1 gap-y-4 md:mt-36 md:grid-cols-3 md:gap-16">
           <Card className="max-w-sm">
             <CardBody className="flex h-full items-center gap-4 p-4">
               <div className="w-full space-y-2 text-balance">

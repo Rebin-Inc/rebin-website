@@ -8,7 +8,7 @@ module.exports = {
           'url("/src/assets/images/whyChooseUs/dottedCircle.svg")',
         'dotted-line': 'url("/src/assets/images/whyChooseUs/dottedLine.svg")',
         'dotted-half-circle':
-          'url("/src/assets/images/software/benefits/dottedHalfCircle.svg")',
+          'url("/src/assets/images/software/benefits/dotted_half_circle.png")',
         'call-to-action': 'url("/src/assets/images/callToAction/cta_bg.svg")',
       },
       boxShadow: {
