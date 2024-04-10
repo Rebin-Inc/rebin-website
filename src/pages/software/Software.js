@@ -1,6 +1,6 @@
 import React from 'react';
 import Button from '../../components/Button';
-import Repoint from '../../assets/images/software/software.svg';
+import Repoint from '../../assets/images/software/software.png';
 import FeatureMenu from './components/FeatureMenu';
 import Benefits from './components/Benefits';
 import CallToAction from '../../components/CallToAction';
