@@ -1,5 +1,5 @@
 import React from 'react';
-import RebinRBlue from '../../../assets/images/Rebin_R_Blauw.svg';
+import RebinRBlue from '../../../assets/images/Rebin_R_Blauw.png';
 import { Card, CardBody } from '@material-tailwind/react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
@@ -83,20 +83,21 @@ const WhyChooseUsCards = () => {
             </CardBody>
           </Card>
         ))}
-        <Card className="col-start-4 row-start-3 m-auto h-fit w-fit">
+        <Card className="col-start-4 row-start-3 mx-8 my-6 rounded-xl p-4">
           <img
             src={RebinRBlue}
             alt="The blue letter R from the Rebin logo"
-            className="aspect-square w-24"
+            className="aspect-square h-16"
           />
         </Card>
       </div>
+      {/* Slider for small screens */}
       <div className="block space-y-16 bg-dotted-line bg-top bg-no-repeat xl:hidden">
-        <Card className="col-start-4 row-start-3 m-auto h-fit w-fit">
+        <Card className="col-start-4 row-start-3 m-auto h-fit w-fit p-4">
           <img
             src={RebinRBlue}
             alt="The blue letter R from the Rebin logo"
-            className="aspect-square w-24"
+            className="aspect-square h-16"
           />
         </Card>
         <Slider {...settings} className="max-h-30">
