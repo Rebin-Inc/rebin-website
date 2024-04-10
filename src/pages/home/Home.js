@@ -7,8 +7,8 @@ import Industries from './components/Industries';
 import Testimonial from './components/Testimonial';
 import CallToAction from '../../components/CallToAction';
 import PartnersSection from './components/PartnersSection';
-import SmartCity from '../../assets/videos/home/smart_city.mp4';
 import Button from '../../components/Button';
+import SmartCityVideo from './components/SmartCityVideo';
 
 const Home = () => {
   return (
@@ -26,10 +26,7 @@ const Home = () => {
           <Button text="Contact us" href="/contact" />
         </div>
         <div className="order-2 self-center overflow-hidden">
-          <video className="place-self-center" autoPlay loop muted>
-            <source src={SmartCity} type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <SmartCityVideo />
         </div>
       </div>
       <StatisticBar></StatisticBar>
