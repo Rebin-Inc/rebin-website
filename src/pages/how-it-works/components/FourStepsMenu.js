@@ -17,7 +17,7 @@ import React from 'react';
 import Bin from '../../../assets/images/howItWorks/fourStepMenu/bin.png';
 import Repoint from '../../../assets/images/howItWorks/fourStepMenu/repoint.png';
 import Cards from '../../../assets/images/howItWorks/fourStepMenu/cards.png';
-import Checkmark from '../../../assets/images/checkmark.svg';
+import Checkmark from '../../../assets/images/checkmark.png';
 import CustomerSupport from '../../../assets/images/howItWorks/fourStepMenu/customer_support.png';
 
 export default function FourStepsMenu() {

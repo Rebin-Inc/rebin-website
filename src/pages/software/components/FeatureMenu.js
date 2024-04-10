@@ -11,7 +11,7 @@ import Route from '../../../assets/images/software/featureMenu/route.png';
 import Sensor from '../../../assets/images/software/featureMenu/sensor.png';
 import Analytics from '../../../assets/images/software/featureMenu/analytics.png';
 import Repoint from '../../../assets/images/software/featureMenu/repoint.png';
-import Checkmark from '../../../assets/images/checkmark.svg';
+import Checkmark from '../../../assets/images/checkmark.png';
 import Dashboard from '../../../assets/images/software/featureMenu/dashboard.png';
 import CreateRoute from '../../../assets/images/software/featureMenu/create_route.png';
 
