@@ -33,7 +33,7 @@ const NewsCards = () => {
       title:
         'Slimme vuilnisbakken vangen tekort aan gemeentepersoneel op in Brakel',
       duration: '2 min',
-      date: 'November 2,2023',
+      date: 'November 2, 2023',
       image: Article3,
       href: 'https://www.nieuwsblad.be/cnt/dmf20231102_95819056',
       image_description:
