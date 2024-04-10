@@ -1,9 +1,7 @@
 import React from 'react';
 import AdvantageBar from './components/AdvantageBar';
 import CallToAction from '../../components/CallToAction';
-import BinLevel from '../../assets/images/howItWorks/bin_level.svg';
-import BinsCollected from '../../assets/images/howItWorks/bins_collected.svg';
-import Co2 from '../../assets/images/howItWorks/co2.svg';
+import Stats from '../../assets/images/howItWorks/stats.png';
 import FourStepsMenu from './components/FourStepsMenu';
 import Button from '../../components/Button';
 
@@ -24,17 +22,10 @@ const HowItWorks = () => {
           </p>
           <Button text="Book a demo" href="/contact" />
         </div>
-        <div className="mx-auto mt-6 grid w-fit space-y-8 lg:mt-0 lg:max-w-md xl:max-w-lg xl:space-y-12">
-          <img src={BinLevel} alt="" className="rounded-xl shadow-around" />
-          <div className="flex justify-between">
-            <img
-              src={BinsCollected}
-              alt=""
-              className="w-4/12 rounded-xl shadow-around "
-            />
-            <img src={Co2} alt="" className="w-7/12 rounded-xl shadow-around" />
-          </div>
-        </div>
+        <img
+          src={Stats}
+          alt="Statistics showing fill level, the amount of assets collected and the amount of carbon dioxide saved"
+        />
       </div>
       <AdvantageBar></AdvantageBar>
       <div className="mt-20">
