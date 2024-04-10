@@ -138,7 +138,7 @@ const Header = () => {
             href="https://rebin-prod.we-are.be/login"
             margin="0"
           />
-          <LanguageDropdown></LanguageDropdown>
+          {/* <LanguageDropdown></LanguageDropdown> */}
         </div>
 
         {/* Mobile menu, show/hide based on menu state. */}
@@ -239,7 +239,7 @@ const Header = () => {
                   >
                     Log in
                   </Link>
-                  <Disclosure as="div" className="-mx-3">
+                  {/* <Disclosure as="div" className="-mx-3">
                     {({ open }) => (
                       <>
                         <Disclosure.Button className="flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base font-medium leading-7 hover:bg-gray-50">
@@ -266,7 +266,7 @@ const Header = () => {
                         </Disclosure.Panel>
                       </>
                     )}
-                  </Disclosure>
+                  </Disclosure> */}
                 </div>
               </div>
             </div>
