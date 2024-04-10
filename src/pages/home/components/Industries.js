@@ -4,14 +4,14 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import ArrowRightWhite from '../../../assets/images/Pijl_Rechts_Wit.svg';
 import ArrowLeftWhite from '../../../assets/images/Pijl_Links_Wit.svg';
-import Bin from '../../../assets/images/home/industries/bin.svg';
-import BinWhite from '../../../assets/images/home/industries/bin_white.svg';
-import Container from '../../../assets/images/home/industries/container.svg';
-import ContainerWhite from '../../../assets/images/home/industries/container_white.svg';
-import Silo from '../../../assets/images/home/industries/silo.svg';
-import SiloWhite from '../../../assets/images/home/industries/silo_white.svg';
-import Liquids from '../../../assets/images/home/industries/liquids.svg';
-import LiquidsWhite from '../../../assets/images/home/industries/liquids_white.svg';
+import Bin from '../../../assets/images/home/industries/bin.png';
+import BinWhite from '../../../assets/images/home/industries/bin_white.png';
+import Container from '../../../assets/images/home/industries/container.png';
+import ContainerWhite from '../../../assets/images/home/industries/container_white.png';
+import Silo from '../../../assets/images/home/industries/silo.png';
+import SiloWhite from '../../../assets/images/home/industries/silo_white.png';
+import Liquids from '../../../assets/images/home/industries/liquids.png';
+import LiquidsWhite from '../../../assets/images/home/industries/liquids_white.png';
 
 function Industries() {
   const industries = [
@@ -110,6 +110,7 @@ function Industries() {
                   width: 50,
                   marginBottom: 50,
                   backgroundRepeat: 'no-repeat',
+                  backgroundSize: 'contain',
                   backgroundImage:
                     activeTab === index
                       ? `url(${industry.imageWhite})`
