@@ -15,7 +15,7 @@ import { Helmet } from 'react-helmet';
 const titles = {
   '/': [
     'Optimize asset management with our smart technology',
-    "Revolutionise your asset monitoring with Rebin's technology. Optimise collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
+    "Revolutionize your asset monitoring with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
   ],
   '/how-it-works': [
     'How it works',
@@ -27,7 +27,7 @@ const titles = {
   ],
   '/references': [
     'References',
-    "Curious about how we've helped other organisations? Check it out.",
+    "Curious about how we've helped other organizations? Check it out.",
   ],
   '/about': ['About us', 'Interested in our story? Read it now.'],
   '/contact': [
@@ -39,7 +39,7 @@ const titles = {
 function App() {
   const [title, setTitle] = useState('Rebin');
   const [description, setDescription] = useState(
-    "Revolutionise your asset monitoring with Rebin's technology. Optimise collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
+    "Revolutionize your asset monitoring with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
   );
 
   const location = useLocation();
@@ -53,7 +53,7 @@ function App() {
     setDescription(
       titles[location.pathname]
         ? titles[location.pathname][1]
-        : "Revolutionise your asset monitoring with Rebin's technology. Optimise collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
+        : "Revolutionize your asset monitoring with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
     );
   }, [location.pathname]);
 
