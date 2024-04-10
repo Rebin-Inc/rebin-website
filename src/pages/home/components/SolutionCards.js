@@ -1,7 +1,7 @@
 import { Card, CardBody } from '@material-tailwind/react';
-import sensor from '../../../assets/images/home/solutions/sensor.svg';
-import software from '../../../assets/images/home/solutions/software.svg';
-import consulting from '../../../assets/images/home/solutions/consulting.svg';
+import sensor from '../../../assets/images/home/solutions/sensor.png';
+import software from '../../../assets/images/home/solutions/software.png';
+import consulting from '../../../assets/images/home/solutions/consulting.png';
 import Button from '../../../components/Button';
 
 export default function SolutionCards() {
@@ -15,7 +15,7 @@ export default function SolutionCards() {
           <img
             src={sensor}
             alt="icon of Rebin Smart Sensor"
-            className="mx-auto"
+            className="mx-auto aspect-square h-16"
           />
           <h4 className="text-rebin-darkblue mb-2 text-3xl font-bold md:text-2xl">
             Hardware
@@ -34,7 +34,7 @@ export default function SolutionCards() {
           <img
             src={software}
             alt="Icon of computer screen containing code"
-            className="mx-auto"
+            className="mx-auto aspect-square h-16"
           />
           <h4 className="text-rebin-darkblue mb-2 text-3xl font-bold md:text-2xl">
             Software
@@ -50,7 +50,11 @@ export default function SolutionCards() {
         className="m-h-80 -top-4 mx-5 rounded-3xl py-4 shadow-around md:-left-2 md:top-0 md:mx-0 md:my-8"
       >
         <CardBody className="space-y-4">
-          <img src={consulting} alt="Icon of a dialog" className="mx-auto" />
+          <img
+            src={consulting}
+            alt="Icon of a dialog"
+            className="mx-auto aspect-square h-16"
+          />
           <h4 className="text-rebin-darkblue mb-2 text-3xl font-bold md:text-2xl">
             Consulting
           </h4>
