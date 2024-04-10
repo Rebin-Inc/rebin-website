@@ -7,13 +7,13 @@ import {
 } from '@material-tailwind/react';
 import React from 'react';
 import parse from 'html-react-parser';
-import Route from '../../../assets/images/software/featureMenu/route.svg';
-import Sensor from '../../../assets/images/software/featureMenu/sensor.svg';
-import Analytics from '../../../assets/images/software/featureMenu/analytics.svg';
-import Repoint from '../../../assets/images/software/featureMenu/repoint.svg';
+import Route from '../../../assets/images/software/featureMenu/route.png';
+import Sensor from '../../../assets/images/software/featureMenu/sensor.png';
+import Analytics from '../../../assets/images/software/featureMenu/analytics.png';
+import Repoint from '../../../assets/images/software/featureMenu/repoint.png';
 import Checkmark from '../../../assets/images/checkmark.svg';
-import Dashboard from '../../../assets/images/software/featureMenu/dashboard.svg';
-import CreateRoute from '../../../assets/images/software/featureMenu/create_route.svg';
+import Dashboard from '../../../assets/images/software/featureMenu/dashboard.png';
+import CreateRoute from '../../../assets/images/software/featureMenu/create_route.png';
 
 export default function FeatureMenu() {
   const [activeTab, setActiveTab] = React.useState(0);
@@ -82,7 +82,11 @@ export default function FeatureMenu() {
           >
             <button className="min-h-16">
               <div className="flex flex-col space-x-4 md:flex-row">
-                <img src={icon} alt={label} className="h-12" />
+                <img
+                  src={icon}
+                  alt={label}
+                  className="aspect-square h-12 w-12"
+                />
                 <span className="text-rebin-darkblue hidden text-xl font-bold sm:block">
                   {label}
                 </span>
