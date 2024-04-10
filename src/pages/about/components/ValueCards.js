@@ -36,7 +36,7 @@ const ValueCards = () => {
             />
           </div>
           <Typography variant="h5" color="blue-gray" className="mb-2">
-            Entrepreunerial
+            Entrepreneurial
           </Typography>
           <Typography>
             We challenge industry norms with an entrepreneurial mindset.

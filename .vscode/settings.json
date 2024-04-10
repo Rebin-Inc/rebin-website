@@ -9,6 +9,7 @@
     "Delrue",
     "emsp",
     "Geyter",
+    "kyanu",
     "Kyanu",
     "Linkedin",
     "maarkedal",
@@ -22,6 +23,7 @@
     "Rebineers",
     "Sigfox",
     "tailwindcss",
+    "technologies",
     "transform",
     "unizo",
     "Unizo",
@@ -31,5 +33,5 @@
     "youtube",
     "Youtube"
   ],
-  "cSpell.ignoreWords": ["transform"]
+  "cSpell.ignoreWords": ["transform", "technologies"]
 }

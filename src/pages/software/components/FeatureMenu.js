@@ -36,9 +36,9 @@ export default function FeatureMenu() {
       ],
     },
     {
-      label: 'Route optimalisation',
+      label: 'Route optimisation',
       icon: Route,
-      title: 'Route optimalisation',
+      title: 'Route optimisation',
       image: CreateRoute,
       subtitle: 'Bypass unnecessary assets',
       desc: `

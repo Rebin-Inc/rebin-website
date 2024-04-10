@@ -18,7 +18,7 @@ const BenefitBar = () => {
       desc: 'Gain insights into how often assets are used and act accordingly.',
     },
     {
-      title: 'Legislation complient',
+      title: 'Legislation compliant',
       desc: 'Meet the latest regulations effortlessly through accessible data from the Rebin platform.',
     },
   ];

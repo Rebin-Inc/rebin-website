@@ -10,7 +10,7 @@ const WhyChooseUsCards = () => {
     {
       title: 'Advanced software',
       description:
-        'Discover the capabilities of our comprehensive software, ranging from optimal collection routes to insightful statisitcs.',
+        'Discover the capabilities of our comprehensive software, ranging from optimal collection routes to insightful statistics.',
       rowStart: 'row-start-1',
       colStart: 'col-start-1',
       imagePosition: 'right',
