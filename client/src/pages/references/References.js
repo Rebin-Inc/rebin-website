@@ -18,7 +18,7 @@ const References = () => {
       </div>
       <div className="mt-20 lg:mt-28">
         <h1 className="mt-20 text-gradient-horizontal text-3xl font-bold">
-          Our refferences
+          Our references
         </h1>
         <h2 className="mt-4 text-4xl font-bold">Latest succes stories</h2>
         <BlogCards></BlogCards>
