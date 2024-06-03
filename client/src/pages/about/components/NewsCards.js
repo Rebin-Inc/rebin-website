@@ -31,13 +31,12 @@ const NewsCards = () => {
     {
       id: 3,
       title:
-        'Slimme vuilnisbakken vangen tekort aan gemeentepersoneel op in Brakel',
+        'Gemeentepersoneel weet voortaan of vuilnisbak vol is of niet: “Dat bespaart tijd en brandstof”',
       duration: '2 min',
-      date: 'November 2, 2023',
+      date: 'May 22, 2024',
       image: Article3,
-      href: 'https://www.nieuwsblad.be/cnt/dmf20231102_95819056',
-      image_description:
-        'Local authority of the municipality of Brakel overseeing the installation of the Rebin Smart Waste Sensors.',
+      href: 'https://www.nieuwsblad.be/cnt/dmf20240522_95244752',
+      image_description: '',
     },
   ];
 
@@ -55,10 +54,10 @@ const NewsCards = () => {
                 <img
                   src={article.image}
                   alt={article.image_description}
-                  className="w-full"
+                  className="h-48 w-full object-cover"
                 />
               </div>
-              <div className="bg-rebin-grey mb-6 mt-10 w-28 rounded-lg">
+              <div className="bg-rebin-grey mb-6 mt-10 w-32 rounded-lg px-1">
                 <h5 className="text-gradient-horizontal mx-auto font-bold">
                   News article
                 </h5>
