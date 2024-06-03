@@ -1,62 +1,35 @@
 {
-  "homepage": "https://www.rebin.be/",
-  "name": "rebin-website",
-  "version": "0.1.0",
-  "private": false,
-  "dependencies": {
-    "@headlessui/react": "^1.7.18",
-    "@heroicons/react": "^2.1.1",
-    "@material-tailwind/react": "^2.1.9",
-    "axios": "^1.6.8",
-    "eslint-config-react-app": "^7.0.1",
-    "html-react-parser": "^5.1.8",
-    "react": "^18.2.0",
-    "react-countup": "^6.5.2",
-    "react-dom": "^18.2.0",
-    "react-helmet": "^6.1.0",
-    "react-icons": "^5.0.1",
-    "react-player": "^2.15.1",
-    "react-router-dom": "^6.22.1",
-    "react-scripts": "5.0.1",
-    "react-slick": "^0.30.2",
-    "slick-carousel": "^1.8.1"
+  "name": "server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "engines": {
+    "node": "18.17.0",
+    "npm": "9.6.7"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "nodemon index",
+    "start": "node index.js",
+    "heroku-postbuild": "cd client && npm install && npm run build"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-timestream-query": "^3.521.0",
+    "@aws-sdk/client-timestream-write": "^3.521.0",
+    "axios": "^1.6.7",
+    "bcrypt": "^5.1.1",
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "moment-timezone": "^0.5.45",
+    "nodemailer": "^6.9.9",
+    "pg": "^8.11.3"
   },
   "devDependencies": {
-    "gh-pages": "^6.1.1",
-    "prettier": "^3.2.5",
-    "prettier-plugin-tailwindcss": "^0.5.13"
-  },
-  "prettier": {
-    "semi": true,
-    "singleQuote": true,
-    "plugins": [
-      "prettier-plugin-tailwindcss"
-    ]
+    "nodemon": "^3.0.3"
   }
 }
