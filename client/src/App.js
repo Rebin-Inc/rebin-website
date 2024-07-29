@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, Outlet } from 'react-router-dom';
 import Layout from './Layout';
 import Contact from './pages/contact/Contact';
@@ -9,7 +9,9 @@ import Software from './pages/software/Software';
 import Consulting from './pages/consulting/Consulting';
 import Sensor from './pages/sensor/Sensor';
 import Home from './pages/home/Home';
-import { useEffect } from 'react';
+import Maarkedal from './pages/references/components/Maarkedal';
+import Ateljee from './pages/references/components/Ateljee';
+import Moorslede from './pages/references/components/Moorslede';
 import { Helmet } from 'react-helmet';
 
 const titles = {
@@ -33,6 +35,18 @@ const titles = {
   '/contact': [
     'Contact',
     'Contact Rebin to make your asset management more efficient.',
+  ],
+  '/blog/maarkedal': [
+    'Optimizing waste collection in Maarkedal',
+    'Discover how we optimized waste collection in Maarkedal using smart waste sensors.',
+  ],
+  '/blog/ateljee': [
+    'Optimizing textile collection with Ateljee',
+    'Discover how we optimized waste collection in Ateljee using smart waste sensors.',
+  ],
+  '/blog/Moorslede': [
+    'Optimizing waste collection in Moorslede',
+    'Discover how we optimized waste collection in Moorslede using smart waste sensors.',
   ],
 };
 
@@ -85,6 +99,9 @@ function App() {
           <Route path="/software" element={<Software />} />
           <Route path="/consulting" element={<Consulting />} />
           <Route path="/sensor" element={<Sensor />} />
+          <Route path="/references/maarkedal" element={<Maarkedal />} /> {/* New Route */}
+          <Route path="/references/ateljee" element={<Ateljee />} /> {/* New Route */}
+          <Route path="/references/moorslede" element={<Moorslede />} /> {/* New Route */}
         </Route>
       </Route>
     </Routes>
@@ -92,3 +109,4 @@ function App() {
 }
 
 export default App;
+

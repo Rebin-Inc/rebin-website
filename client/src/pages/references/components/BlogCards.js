@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import Maarkedal from '../../../assets/images/references/blog/maarkedal.png';
+import MaarkedalImg from '../../../assets/images/references/blog/maarkedal.png';
+import MoorsledeImg from '../../../assets/images/references/blog/Iepersestraat.jpg';
 import Article1 from '../../../assets/images/about/newsCards/Artikel1.jpg';
 import Article2 from '../../../assets/images/about/newsCards/Artikel2.jpg';
 import Article3 from '../../../assets/images/about/newsCards/Artikel3.jpg';
@@ -9,32 +10,35 @@ const BlogCards = () => {
   const news = [
     {
       id: 1,
-      title:
-        'Optimizing waste collection in Maarkedal',
+      title: 'Optimizing waste collection in Maarkedal',
       duration: '3 min',
-      date: 'October 22, 2023',
-      image: Maarkedal,
-      href: 'https://www.vrt.be/vrtnws/nl/2023/10/22/maarkedal-zet-slimme-vuilbakken-in-om-tijd-en-brandstof-van-vuil/',
-      image_description:
-        'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Maarkedal.',
+      date: 'March 25, 2024',
+      image: MaarkedalImg,
+      href: '/references/maarkedal',
+      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Maarkedal.',
+    },
+    {
+      id: 2,
+      title: 'Optimizing waste collection in Moorslede',
+      duration: '2 min',
+      date: 'Jul 29, 2024',
+      image: MoorsledeImg,
+      href: '/references/moorslede',
+      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a textile container.',
     },
   ];
-
-  const openInNewTab = (url) => {
-    window.open(url, '_blank', 'noopener,noreferrer');
-  };
 
   return (
     <div className="my-16 grid place-content-center gap-10 md:grid-cols-3">
       {news.map((article) => (
-        <button className="flex max-w-96 content-stretch">
-          <Link onClick={() => openInNewTab(article.href)} className="h-full">
+        <button key={article.id} className="flex max-w-96 content-stretch">
+          <Link to={article.href} className="h-full">
             <div className="flex h-full flex-col rounded-xl border bg-white bg-clip-border p-4 pb-8 text-gray-700 shadow-around">
-              <div className="overflow-hidden rounded-xl">
+              <div className="overflow-hidden rounded-xl h-64 w-full">
                 <img
                   src={article.image}
                   alt={article.image_description}
-                  className="w-full"
+                  className="h-full w-full object-cover"
                 />
               </div>
               <div className="bg-rebin-grey mb-6 mt-10 w-28 rounded-lg">
@@ -58,3 +62,4 @@ const BlogCards = () => {
 };
 
 export default BlogCards;
+
