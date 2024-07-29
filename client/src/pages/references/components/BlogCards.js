@@ -9,15 +9,6 @@ import Article3 from '../../../assets/images/about/newsCards/Artikel3.jpg';
 const BlogCards = () => {
   const news = [
     {
-      id: 1,
-      title: 'Optimizing waste collection in Maarkedal',
-      duration: '3 min',
-      date: 'March 25, 2024',
-      image: MaarkedalImg,
-      href: '/references/maarkedal',
-      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Maarkedal.',
-    },
-    {
       id: 2,
       title: 'Optimizing waste collection in Moorslede',
       duration: '2 min',
@@ -25,6 +16,15 @@ const BlogCards = () => {
       image: MoorsledeImg,
       href: '/references/moorslede',
       image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a textile container.',
+    },
+    {
+      id: 1,
+      title: 'Optimizing waste collection in Maarkedal',
+      duration: '3 min',
+      date: 'March 25, 2024',
+      image: MaarkedalImg,
+      href: '/references/maarkedal',
+      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Maarkedal.',
     },
   ];
 
