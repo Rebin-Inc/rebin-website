@@ -15,7 +15,7 @@ const BlogCards = () => {
       date: 'Jul 29, 2024',
       image: MoorsledeImg,
       href: '/references/moorslede',
-      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a textile container.',
+      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Moorslsede.',
     },
     {
       id: 1,

@@ -1,9 +1,27 @@
 import React from 'react';
 import MoorsledeImg from '../../../assets/images/references/blog/Iepersestraat.jpg';
+import {Helmet} from 'react-helmet';
 
 const MoorsledeBlog = () => {
   return (
+
     <main className="mb-20 mt-10 w-full space-y-10">
+      <Helmet>
+        <meta name="description" content="Case-study Moorslede"/>
+        <meta name="language" content="eng"/>
+        <meta property="og:title" content="Real-time fill-level data helps Moorslede stay compliant with waste management legislation" />
+        <meta property="og:description" content="Discover how smart sensors can optimize public waste collection" />
+        <meta property='og:image' content="https://www.rebin.be/Iepersestraat.jpg" />
+        <meta property="og:url" content="https://www.rebin.be/references/moorslede"></meta>
+        <meta property="og:type" content="article"></meta>
+        <meta property="og:site_name" content="rebin.be"/>
+        <meta property="article:published_time" content="2024-07-29T13:38:24+02:00"></meta>
+        <meta property="article:author" content="Rebin"></meta>
+        <meta property="og:image:width" content="1200"></meta>
+        <meta property="og:image:height" content="630"></meta>
+
+        {/* Add more meta tags as needed */}
+      </Helmet>
       <span className="bg-gradient rounded-md px-2 py-2 text-sm text-white">
         Technology
       </span>
