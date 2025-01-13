@@ -64,7 +64,7 @@ const Features = () => {
               Increased collection efficiency
             </Typography>
             <Typography>
-              Increase material collection capacity with the same infrastructure and resources.
+              Increase material collection capacity with the same infrastructure.
             </Typography>
           </div>
         </CardBody>
