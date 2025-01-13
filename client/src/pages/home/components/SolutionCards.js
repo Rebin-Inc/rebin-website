@@ -50,7 +50,7 @@ export default function SolutionCards() {
             Route optimisation
           </h4>
           <p className="text-left text-rebin-darkblue md:text-base">
-            Optimize collection routes and reduce time and costs.
+            Optimize collection routes and reduce costs.
           </p>
           <img
             src={routeOptimization}
