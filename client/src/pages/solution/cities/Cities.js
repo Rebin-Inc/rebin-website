@@ -19,7 +19,7 @@ const Cities = () => {
           <p className="text-rebin-darkblue font-light mt-4 max-w-xl text-lg">
             Rebin provides real-time fill level monitoring, optimizes collection routes, and delivers actionable insights, one bin at a time. 
           </p>
-          <button onClick={() => (window.location.href = 'contact')}  className="special-button bg-gradient mt-6 w-fit px-4 py-3 text-white font-regular rounded-lg">
+          <button onClick={() => (window.location.href = '../contact')}   className="special-button bg-gradient mt-6 w-fit px-4 py-3 text-white font-regular rounded-lg">
             Book a demo
           </button>
         
