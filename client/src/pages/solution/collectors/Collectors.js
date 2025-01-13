@@ -54,7 +54,7 @@ const Collectors = () => {
         <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
           Fill level monitoring
         </h2>
-        <p className="mt-6 mb-16 sm:text-left">
+        <p className="mt-6 mb-16 sm:text-left font-light">
           Stay informed about container fill levels with customizable notifications and an intuitive dashboard. Avoid both overflow and unnecessary collection of waste assets.
         </p>
       </div>
@@ -76,7 +76,7 @@ const Collectors = () => {
       <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
         Optimized collection operations
       </h2>
-      <p className="mt-6 sm:text-left">
+      <p className="mt-6 sm:text-left font-light">
         Improve collection processes using both real-time and predictive fill level data. Optimize routes with a fully automated planning tool based on available drivers, vehicle capacities, and relevant geographical regions. 
       </p>
     </div>
@@ -100,7 +100,7 @@ const Collectors = () => {
         <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
           Comprehensive data insights
         </h2>
-        <p className="mt-6 sm:text-left">
+        <p className="mt-6 sm:text-left font-light">
           Gain insights into waste streams at both a global level and a sub-level by customer or region. Uncover trends and evolutions in the operational as well as the financial aspects of your collection process.
         </p>
       </div>
