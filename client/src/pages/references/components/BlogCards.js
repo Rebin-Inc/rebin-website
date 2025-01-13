@@ -8,7 +8,7 @@ const BlogCards = () => {
   const news = [
     {
       id: 3,
-      title: "Smart waste collection in Europe's biggest port",
+      title: "Streamlining waste management in Europe’s largest port",
       duration: '2 min',
       date: 'Jan 10, 2025',
       image: RotterdamImg,
@@ -17,7 +17,7 @@ const BlogCards = () => {
     },
     {
       id: 2,
-      title: 'Optimizing waste collection in Moorslede',
+      title: 'Rebin helps Moorslede become legislation compliant',
       duration: '2 min',
       date: 'Jul 29, 2024',
       image: MoorsledeImg,

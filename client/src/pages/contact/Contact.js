@@ -9,7 +9,7 @@ const Contact = () => {
           Contact
         </h1>
         <h2 className="text-center text-4xl font-bold">
-          Join our mission to make asset <br />
+          Join our mission to make waste <br />
           management more efficient
         </h2>
       </div>

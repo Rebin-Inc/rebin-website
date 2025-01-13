@@ -41,10 +41,10 @@ const About = () => {
               Our mission
             </h1>
             <h2 className="mt-4 text-4xl font-bold  sm:text-left">
-              Empowering organisations with smart asset management solutions
+              Empowering organisations with smart waste management solutions
             </h2>
             <p className="mt-6 sm:text-left">
-              Rebin enables businesses and governments to revolutionize asset management. With our innovative software, we provide real-time monitoring, streamline collection routes, and deliver actionable insights, one asset at a time.
+              Rebin enables businesses and governments to revolutionize waste management. With our innovative software, we provide real-time monitoring, streamline collection routes, and deliver actionable insights, one asset at a time.
             </p>
           </div>
         </div>

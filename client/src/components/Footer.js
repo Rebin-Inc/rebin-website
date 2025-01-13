@@ -19,7 +19,7 @@ const Footer = () => {
             <img className="h-8 w-auto" src={rebin} alt="The Rebin Logo"></img>
           </Link>
           <p className="text-sm font-light opacity-80">
-            Copyright &copy; 2024 for Rebin.<br></br>
+            Copyright &copy; 2025 for Rebin.<br></br>
             All rights reserved.
           </p>
           <Link

@@ -26,7 +26,7 @@ export default function SolutionCards() {
             Fill level monitoring
           </h4>
           <p className="text-left text-rebin-darkblue md:text-base">
-            Monitor fill levels in real-time and collect only when necessary.
+            Monitor container and bin fill levels in real-time and collect only when necessary.
           </p>
           <img
               src={fillLevelMonitoring}

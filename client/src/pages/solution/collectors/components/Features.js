@@ -22,7 +22,7 @@ const Features = () => {
               Route optimisation
             </Typography>
             <Typography>
-              Enhances the profitability of waste collection operations.
+              Enhance the profitability of your operations by avoiding empty pick-ups.
             </Typography>
           </div>
         </CardBody>
@@ -43,7 +43,7 @@ const Features = () => {
               Timely waste collection
             </Typography>
             <Typography>
-              Guarantee timely collection to reduce excess driving and overflowing assets.
+              Guarantee timely collection and put an end to overflowing assets.
             </Typography>
           </div>
         </CardBody>
@@ -64,7 +64,7 @@ const Features = () => {
               Increased collection efficiency
             </Typography>
             <Typography>
-              Ability to collect more waste with the same infrastructure.
+              Increase material collection capacity with the same infrastructure and resources.
             </Typography>
           </div>
         </CardBody>

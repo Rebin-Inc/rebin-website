@@ -4,7 +4,7 @@ import { ChevronDownIcon } from '@heroicons/react/20/solid';
 
 
 export default function FAQ() {
-  const [activeButton, setActiveButton] = useState('ourService');
+  const [activeButton, setActiveButton] = useState('general');
 
   const handleButtonClick = (button) => {
     setActiveButton(button);
@@ -46,7 +46,7 @@ export default function FAQ() {
           }`}
           onClick={() => handleButtonClick('ourService')}
         >
-          Service
+          Technology
         </button>
 
         <div className="block w-[10px] md:w-[20px] h-[2px] bg-rebin-blue z-0"></div>
@@ -57,7 +57,7 @@ export default function FAQ() {
           }`}
           onClick={() => handleButtonClick('onboarding')}
         >
-          Onboarding
+          Software platform
         </button>
 
         <div className="hidden md:block w-[30px] md:w-[80px] lg:w-[240px] h-[2px] bg-gradient-blue-white z-0"></div>

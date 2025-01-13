@@ -11,7 +11,7 @@ const RotterdamBlog = () => {
 
       {/* Blog Title */}
       <h1 className="text-4xl font-semibold">
-        Streamlining Waste Management in Europe’s Largest Port
+        Streamlining waste management in Europe’s largest port
       </h1>
 
       {/* Blog Meta Information */}
@@ -35,7 +35,6 @@ const RotterdamBlog = () => {
         area of over 12,000 hectares. Maintaining this vast expanse is a complex
         challenge, as Pieter Van Driel, project manager at Idverde—a company
         responsible for the port’s upkeep for many years—can attest.
-        <br />
         “Beyond maintaining greenery, emptying waste containers is one of the
         most time-consuming tasks we handle,” Pieter explains. The port area
         houses approximately 250 waste bins, distributed across its expansive
@@ -65,7 +64,7 @@ const RotterdamBlog = () => {
       {/* Quote Section */}
       <div className="flex justify-center">
         <q className="text-rebin-darkblue block text-xl font-semibold">
-          A smart system, with a lot of advantages and potential.
+          The automated route generation is very beneficial and saves us a lot of time and trouble.
         </q>
       </div>
 
@@ -84,19 +83,19 @@ const RotterdamBlog = () => {
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">1.</span>
           <span className="text-justify text-lg font-light">
-            Maarkedal faces waste management challenges due to varying bin usage
+            Rebin equipped 250 bins in the Port of Rotterdam with sensors to monitor real-time fill levels.
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">2.</span>
           <span className="text-justify text-lg font-light">
-            Rebin monitors fill levels and optimizes collection routes
+            Rebin's platform automates waste collection routes by region, saving time and resources.
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">3.</span>
           <span className="text-justify text-lg font-light">
-            Significant time and cost savings, and no more overflowing bins
+            The system is being explored for use in other projects of Idverde to further optimize operations.
           </span>
         </div>
       </section>

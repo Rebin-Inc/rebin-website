@@ -26,7 +26,7 @@ const MoorsledeBlog = () => {
         Technology
       </span>
       <h1 className="text-4xl font-semibold">
-        Real-time fill-level data helps Moorslede stay compliant with waste management legislation
+        Fill level data helps Moorslede stay compliant with waste management legislation
       </h1>
       <div className="flex gap-x-6">
         <span className="text-sm">2 min</span>
@@ -40,37 +40,37 @@ const MoorsledeBlog = () => {
         />
       </div>
       <div className="text-justify text-lg font-light">
-        Managing public waste is a significant challenge for nearly every local government, and Moorslede in Belgium, is no exception. Ensuring there are enough bins and that they are emptied or replaced on time is a complex task, further complicated by regional regulations. In Flanders, every local government must develop a comprehensive waste bin management plan by 2030. This plan requires creating an inventory of waste bins, monitoring fill levels, and implementing necessary reporting, analysis, and adjustments.
+        Managing public waste is a significant challenge for nearly every local government, and Moorslede in Belgium, is no exception. Ensuring the availability of sufficient bins and timely emptying or replacement is a complex task, further complicated by regional regulations. In Flanders, every local government must develop a comprehensive waste bin management plan by 2030. This plan requires creating an inventory of waste bins, monitoring fill levels, and implementing necessary reporting, analysis, and adjustments.
       </div>
       <div className="text-justify text-lg font-light">
         To address these challenges, Moorslede has embraced an innovative solution by partnering with Rebin. Rebin has installed 58 sensors across the municipality to enhance waste management efficiency. These sensors monitor the fill levels and usage of waste bins, providing real-time data that allows for timely and precise interventions.
       </div>
       <div className="flex justify-center">
         <q className="text-rebin-darkblue block text-xl font-semibold">
-          This solution saves us valuable time, automates everything, and ensures we remain compliant with all regulations.
+          Rebin's solution saves us valuable time, automates collection, and ensures we remain compliant with regulations.
         </q>
       </div>
       <div className="text-justify text-lg font-light">
-        With real-time monitoring of public bins, collections become more efficient, and local governments can identify exactly where bins are needed or where there are too many. This ensures they always have an up-to-date waste management plan, continuously comply with legislation, and can focus on addressing problem areas.
+        With real-time monitoring of public bins, waste ollections become more efficient, and local governments can precisely identify areas where bins are needed or where there are excess. This ensures that waste management plans are always up-to-date, compliance with legislation is maintained, and attention can be focused on addressing problem areas.
       </div>
       <section className="flex flex-col gap-y-2">
         <span className="text-rebin-darkblue mb-5 font-bold">Summary:</span>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">1.</span>
           <span className="text-justify text-lg font-light">
-            Moorslede struggles with managing waste bins and meeting Flanders' 2030 regulations
+            Moorslede struggles with managing waste bins and meeting Flanders' 2030 regulations.
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">2.</span>
           <span className="text-justify text-lg font-light">
-            Rebin’s 58 sensors provide real-time data to optimize bin usage and collections
+            Rebin provided an up-to-date bin inventory and installed fill level sensors in every bin.
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">3.</span>
           <span className="text-justify text-lg font-light">
-            Efficient collections, accurate bin management, and compliance with regulations
+            Result: Optimized collections, accurate bin management, and compliance with regulations
           </span>
         </div>
       </section>

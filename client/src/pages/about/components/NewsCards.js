@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Article1 from '../../../assets/images/about/newsCards/Artikel1.jpg';
 import Article2 from '../../../assets/images/about/newsCards/Artikel2.jpg';
 import Article3 from '../../../assets/images/about/newsCards/Artikel3.jpg';
+import Article4 from '../../../assets/images/about/newsCards/Artikel4.jpg';
 
 const NewsCards = () => {
   const news = [
@@ -31,11 +32,11 @@ const NewsCards = () => {
     {
       id: 3,
       title:
-        'Slimme vuilnisbakken geven zelf aan wanneer ze vol zijn: “Dit zorgt voor minder zwerfvuil”',
+        'Asse plaatst als vierde gemeente in Vlaanderen vulgraadsensoren in publieke vuilnisbakken',
       duration: '2 min',
-      date: 'June 14, 2024',
-      image: Article3,
-      href: 'https://www.nieuwsblad.be/cnt/dmf20240614_93815967',
+      date: 'October 9, 2024',
+      image: Article4,
+      href: 'https://www.hln.be/asse/asse-plaatst-als-vierde-gemeente-in-vlaanderen-vulgraadsensoren-in-publieke-vuilnisbakken~ad21dd83/',
       image_description: '',
     },
   ];

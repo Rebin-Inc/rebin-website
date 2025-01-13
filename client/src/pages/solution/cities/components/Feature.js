@@ -48,7 +48,7 @@ export default function Feature() {
       image: Statistics,
       subtitle: 'Take strategic decisions',
       desc: `
-      Access a variety of statistics, such as collection frequencies, waste amounts, and fill rate evolutions. Utilize data-driven insights to streamline resource management and reporting.
+      Access a variety of statistics, such as collection frequencies, waste amounts, and fill level evolutions. Utilize data-driven insights to streamline resource management and reporting.
       `,
     },
   ];
