@@ -21,7 +21,7 @@ const References = () => {
         <h1 className="mt-20 text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Our references
         </h1>
-        <h2 className="mt-4 text-4xl font-bold">Latest succes stories</h2>
+        <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue">Latest succes stories</h2>
         <BlogCards></BlogCards>
       </div>
     </main>

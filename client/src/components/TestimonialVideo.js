@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactPlayer from 'react-player';
 
-const AboutVideo = () => {
+const TestimonialVideo = () => {
   return (
     <div className="my-auto aspect-video overflow-hidden rounded-xl">
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=eX3YBk9gxZ8&ab_channel=Rebin"
+        url="https://youtu.be/QDe44I2yLy4"
         controls={false}
         width="100%"
         height="100%"
@@ -18,4 +18,4 @@ const AboutVideo = () => {
   );
 };
 
-export default AboutVideo;
+export default TestimonialVideo;

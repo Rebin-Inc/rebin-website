@@ -25,7 +25,7 @@ const MoorsledeBlog = () => {
       <span className="bg-gradient rounded-md px-2 py-2 text-sm text-white">
         Technology
       </span>
-      <h1 className="text-4xl font-semibold">
+      <h1 className="text-4xl font-semibold text-rebin-darkblue">
         Fill level data helps Moorslede stay compliant with waste management legislation
       </h1>
       <div className="flex gap-x-6">

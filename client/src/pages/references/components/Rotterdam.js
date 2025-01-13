@@ -10,7 +10,7 @@ const RotterdamBlog = () => {
       </span>
 
       {/* Blog Title */}
-      <h1 className="text-4xl font-semibold">
+      <h1 className="text-4xl font-semibold text-rebin-darkblue">
         Streamlining waste management in Europe’s largest port
       </h1>
 

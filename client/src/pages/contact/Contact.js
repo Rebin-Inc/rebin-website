@@ -8,7 +8,7 @@ const Contact = () => {
         <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Contact
         </h1>
-        <h2 className="text-center text-4xl font-bold">
+        <h2 className="text-center text-4xl font-bold text-rebin-darkblue">
           Join our mission to make waste <br />
           management more efficient
         </h2>

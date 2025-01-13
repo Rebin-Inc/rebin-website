@@ -59,7 +59,7 @@ const PartnersSection = () => {
   };
 
   return (
-    <section className="mt-10 space-y-8 text-center">
+    <section className="mt-10 space-y-4 text-center">
       <div className="absolute left-0 -z-10 h-48 w-full min-w-max"></div>
       <p className="text-rebin-darkblue">Trusted by <span className='text-white py-1 px-2 bg-gradient rounded-md mx-1'>leading</span> organizations</p>
       <Slider {...settings}>

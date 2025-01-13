@@ -16,7 +16,7 @@ const About = () => {
           <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
             Our story
           </h1>
-          <h2 className="w-2xl mt-4 text-5xl font-bold">How we started</h2>
+          <h2 className="w-2xl mt-4 text-5xl font-bold text-rebin-darkblue">How we started</h2>
           <p className="text-md font-regular mt-6 text-balance">
             Spotting an overflowing bin in the park, we decided to act.
             Recognizing inefficiencies in waste collection, we resolved to
@@ -40,7 +40,7 @@ const About = () => {
             <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg sm:mx-0">
               Our mission
             </h1>
-            <h2 className="mt-4 text-4xl font-bold  sm:text-left">
+            <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
               Empowering organisations with smart waste management solutions
             </h2>
             <p className="mt-6 sm:text-left">
@@ -49,6 +49,8 @@ const About = () => {
           </div>
         </div>
       </div>
+      {/*
+
       <div className="mt-20 lg:mt-28 flex flex-col text-center items-center">
         <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Core values
@@ -58,12 +60,14 @@ const About = () => {
         </h2>
         <ValueCards></ValueCards>
       </div>
+       */}
+
 
       <div className="mt-20 lg:mt-36 flex flex-col text-center items-center">
         <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Our team
         </h1>
-        <h2 className="mt-4 text-4xl font-bold">
+        <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue">
           Meet the Rebineers thriving for impact
         </h2>
         <TeamCards></TeamCards>
@@ -79,7 +83,7 @@ const About = () => {
         <h1 className="mt-20 text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Articles
         </h1>
-        <h2 className="mt-4 text-4xl font-bold">Rebin in the news</h2>
+        <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue">Rebin in the news</h2>
         <NewsCards></NewsCards>
       </div>
       <CallToAction></CallToAction>

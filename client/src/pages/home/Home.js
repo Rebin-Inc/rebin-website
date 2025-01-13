@@ -1,6 +1,6 @@
 import React from 'react';
 import SolutionCards from './components/SolutionCards';
-import AboutVideo from '../../components/AboutVideo';
+import TestimonialVideo from '../../components/TestimonialVideo';
 import CallToAction from '../../components/CallToAction';
 import PartnersSection from './components/PartnersSection';
 import Pijl from '../../assets/images/Pijl_Rechts_Wit.svg';
@@ -106,7 +106,7 @@ const Home = () => {
 
             {/* Video Section */}
             <div className="w-full max-w-2xl">
-              <AboutVideo />
+              <TestimonialVideo />
             </div>
           </div>
         </div>

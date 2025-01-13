@@ -41,7 +41,7 @@ const WithWithoutRebin = () => {
 
         {/* With Rebin button */}
         <button
-          className={`z-10 px-2 py-1 text-sm rounded-md transition-all duration-300 ${
+          className={`z-10 px-2 py-1 text-sm rounded-md transition-all duration-600 ${
             activeButton === 'WithRebin'
               ? 'bg-gradient text-white'
               : 'border-rebin-blue-color text-black'

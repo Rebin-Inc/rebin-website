@@ -31,7 +31,7 @@ const products = [
 ];
 
 const callsToAction = [
-  { name: 'Testimonial', href: 'https://youtu.be/UoLz_YA6oX', icon: PlayCircleIcon },
+  { name: 'Testimonial', href: 'https://youtu.be/QDe44I2yLy4', icon: PlayCircleIcon },
   { name: 'Contact sales', href: '/contact', icon: PhoneIcon },
 ];
 

@@ -7,7 +7,7 @@ const MaarkedalBlog = () => {
       <span className="bg-gradient rounded-md px-2 py-2 text-sm text-white">
         Technology
       </span>
-      <h1 className="text-4xl font-semibold">
+      <h1 className="text-4xl font-semibold text-rebin-darkblue">
         Optimizing waste collection in municipality Maarkedal with smart waste
         sensors
       </h1>

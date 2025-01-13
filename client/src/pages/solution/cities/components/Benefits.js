@@ -11,7 +11,7 @@ const Benefits = () => {
             1
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" color="blue-gray" className="mb-2 leading-tight">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
               Detailed bin inventory
             </Typography>
             <Typography>
@@ -28,7 +28,7 @@ const Benefits = () => {
             2
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" color="blue-gray" className="mb-2 leading-tight">
+            <Typography variant="h5"  className="mb-2 leading-tight text-rebin-darkblue">
               Cost savings
             </Typography>
             <Typography>
@@ -45,7 +45,7 @@ const Benefits = () => {
             3
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" color="blue-gray" className="mb-2 leading-tight">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
               Clean environment
             </Typography>
             <Typography>
@@ -62,7 +62,7 @@ const Benefits = () => {
             4
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" color="blue-gray" className="mb-2 leading-tight">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
               Automated scheduling
             </Typography>
             <Typography>
@@ -79,7 +79,7 @@ const Benefits = () => {
             5
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" color="blue-gray" className="mb-2 leading-tight">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
               Optimal bin placement
             </Typography>
             <Typography>
@@ -96,7 +96,7 @@ const Benefits = () => {
             6
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" color="blue-gray" className="mb-2 leading-tight">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
               Legislation compliant
             </Typography>
             <Typography>
