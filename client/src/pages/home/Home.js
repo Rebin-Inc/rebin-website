@@ -1,92 +1,138 @@
 import React from 'react';
-import StatisticBar from '../../components/StatisticBar';
 import SolutionCards from './components/SolutionCards';
 import AboutVideo from '../../components/AboutVideo';
-import WhyChooseUsCards from './components/WhyChooseUsCards';
-import Industries from './components/Industries';
-import Testimonial from './components/Testimonial';
 import CallToAction from '../../components/CallToAction';
 import PartnersSection from './components/PartnersSection';
-import Button from '../../components/Button';
-import SmartCityVideo from './components/SmartCityVideo';
+import Pijl from '../../assets/images/Pijl_Rechts_Wit.svg';
+import RebinR from '../../assets/images/Rebin_R_Gradient.svg';
+import platform from '../../assets/images/home/platform.svg';
+import mockup from '../../assets/images/home/mockup.svg';
+import FAQ from './components/FAQ';
 
 const Home = () => {
   return (
-    <main className="pb-0 md:mt-16">
-      <div className="grid grid-cols-1 items-center gap-x-6 gap-y-10 md:grid-cols-2">
-        <div className="order-1 flex h-fit flex-col">
-          <h1 className="text-4xl font-bold md:text-5xl">
-            The <span className="text-gradient-horizontal">nr.1 platform </span>
-            for efficient asset management
-          </h1>
-          <p className="mt-6 max-w-xl text-lg">
-            Access fill level monitoring, optimize collection routes, and obtain
-            key data insights.
-          </p>
-          <Button text="Contact us" href="/contact" />
+    <>
+      <div className="relative flex flex-col items-center gap-x-6 gap-y-5 text-center max-w-7xl ml-auto mr-auto p-6">
+        <span className="z-20 mt-5 text-white font-extralight text-md border border-rebin-blue-color px-3 py-2 rounded-lg">
+          Streamline waste collection
+        </span>
+        <div className="grid place-items-center">
+        <div class="absolute z-10 h-[300px] w-[300px] bg-[#0043ff] blur-[80px] sm:h-[300px] sm:w-[500px]"></div>
+          <div className='z-10 flex flex-col items-center gap-x-6 gap-y-5 text-center max-w-7xl ml-auto mr-auto'>
+            <h1 className="text-white text-4xl font-bold md:text-6xl md:mt-2 max-w-4xl text-center">
+              The nr.1 platform for efficient waste collection
+            </h1>
+            <p className="text-white font-thin mt-2 max-w-xl text-lg text-center">
+              Take control of your resources and explore how your waste<br /> collection can be optimized.
+            </p>
+            <button onClick={() => (window.location.href = 'contact')}  className="special-button bg-rebin-dark-blue mt-2 w-fit px-4 py-3 text-white font-regular rounded-lg text-center">
+              Talk to rebin
+            </button>
+          </div>
         </div>
-        <div className="order-2 self-center overflow-hidden">
-          <SmartCityVideo />
+        {/* Positioning the image */}
+        <div className="relative w-full h-48 -mt-[40px] md:mt-[120px] lg:mt-[300px] xl:mt-[320px]">
+          <img
+            className="absolute bottom-[-40%] md:bottom-[-50%] lg:bottom-[-60%] left-1/2 transform -translate-x-1/2 w-[95%] md:w-[80%] lg:w-[70%]"
+            src={platform}
+            alt="The Rebin Logo"
+          />
         </div>
       </div>
-      <StatisticBar></StatisticBar>
-      <div className="mt-20 text-center">
-        <h1 className="text-gradient-horizontal mx-auto text-3xl font-bold">
-          Solutions
-        </h1>
-        <h2 className="mt-4 text-4xl font-bold">
-          Discover our comprehensive offering
-        </h2>
-        <SolutionCards></SolutionCards>
-      </div>
-      <div className="grid-cols mt-20 grid place-items-center gap-x-12 gap-y-16 lg:grid-cols-2 lg:grid-rows-2 lg:place-items-start lg:gap-y-0">
-        <div className="mb-6 max-w-2xl lg:ml-16">
-          <h1 className="text-gradient-horizontal text-3xl font-semibold">
-            About
+
+      <div className="bg-white pt-10 md:pt-10">
+        <div className="md:mt-10 p-6">
+          <PartnersSection />
+        </div>
+
+        <div className="flex flex-col mt-10 md:mt-24 text-center items-center p-6">
+          <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
+            Solutions
           </h1>
-          <h2 className="mt-4 text-4xl font-semibold">
-            We believe that asset monitoring can be more efficient
+          <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue mb-10">
+            Discover our comprehensive offering
           </h2>
+          <SolutionCards />
         </div>
-        <div className="w-full max-w-2xl place-self-center lg:col-start-1 lg:row-span-2 lg:row-start-1">
-          <AboutVideo></AboutVideo>
+
+        {/* Why Choose Us Section */}
+        <div className="mt-10 md:mt-16 grid gap-x-4 items-center gap-y-12 md:grid-cols-2 max-w-7xl ml-auto mr-auto p-6">
+          {/* Content Container */}
+          <div className="flex flex-col items-start md:order-2">
+            <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
+              Why choose us
+            </h1>
+            <h2 className="text-left mt-4 text-4xl font-bold text-rebin-darkblue">
+              Seamlessly integrate <span className="text-rebin-blue">every</span> waste asset
+            </h2>
+            <p className="text-left mt-6">
+              Discover the power of our versatile solution, transforming any bin or container into a smart one.
+              Regardless of size or shape, our technology seamlessly integrates with every kind of waste asset.
+            </p>
+          </div>
+
+          {/* Image Container */}
+          <div className="-mt-10 sm:mt-0 flex justify-center order-2 md:order-1">
+            <img
+              className="mx-auto my-auto aspect-square w-full rounded-lg object-contain sm:w-4/5 md:w-[28rem]"
+              src={mockup}
+              alt="The Rebin team"
+            />
+          </div>
         </div>
-        <div className="max-w-xl lg:col-start-2 lg:row-start-2 lg:ml-16">
-          <p className="text-balance">
-            Our goal is to enhance asset management within organizations.
-            Leveraging our solution, you save time, cut costs, and reduce
-            environmental impact.
-          </p>
-          <Button text="View case study" arrow={true} href="references" />
+
+        {/* Full-width Background Section */}
+        <div className="bg-rebin-dark-blue w-screen mt-24 text-white">
+          <div className="grid grid-cols-1 gap-8 md:grid-cols-2 md:items-center max-w-7xl mx-auto px-10 py-12">
+            {/* Text Section */}
+            <div className="grid place-items-center">
+              <div className="blob absolute z-20"></div>
+              <div className="space-y-8 lg:pr-12 z-20">
+                <h1 className="w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
+                  Testimonials
+                </h1>
+                <h2 className="text-4xl font-semibold">
+                  Trusted by leading organizations
+                </h2>
+                <button
+                  className="special-button flex items-center bg-rebin-blue mt-2 w-fit px-4 py-3 text-white font-regular rounded-lg"
+                  onClick={() => (window.location.href = 'references')} // Use onClick for navigation if not using React Router
+                >
+                  Case studies
+                  <img src={Pijl} alt="Arrow Icon" className="w-8 h-8" />
+                </button>
+              </div>
+            </div>
+
+            {/* Video Section */}
+            <div className="w-full max-w-2xl">
+              <AboutVideo />
+            </div>
+          </div>
         </div>
+
+        <div className="flex flex-col mt-24 text-center items-center">
+          <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
+            Frequently asked questions
+          </h1>
+          <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue mb-10">
+            Got questions? We've got <br /> answers!
+          </h2>
+          <FAQ />
+        </div>
+         <CallToAction />
+         
       </div>
-      <PartnersSection></PartnersSection>
-      <div>
-        <h1 className="text-gradient-horizontal mx-auto mt-28 text-center text-3xl font-bold">
-          Why choose us?
-        </h1>
-        <h2 className="mt-4 text-center text-4xl font-bold">
-          Global leader in asset management
-        </h2>
-        <WhyChooseUsCards></WhyChooseUsCards>
-      </div>
-      <div className="mt-20">
-        <h1 className="text-gradient-horizontal mx-auto text-3xl font-bold">
-          Applications
-        </h1>
-        <h2 className="mt-4 text-center text-4xl font-bold">We can help you</h2>
-        <Industries></Industries>
-      </div>
-      <div className="mt-20">
-        <h1 className="text-gradient-horizontal text-3xl font-bold">
-          Testimonials
-        </h1>
-        <h2 className="mt-4 text-4xl font-bold">What our clients say</h2>
-        <Testimonial></Testimonial>
-      </div>
-      <CallToAction></CallToAction>
-    </main>
+    </>
   );
 };
 
 export default Home;
+
+
+
+
+
+
+
+

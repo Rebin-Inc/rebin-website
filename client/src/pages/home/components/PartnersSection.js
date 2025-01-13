@@ -1,8 +1,8 @@
 import React from 'react';
-import startItKBC from '../../../assets/images/home/partners/start_it_kbc.png';
-import unizo from '../../../assets/images/home/partners/unizo.png';
-import VLAIO from '../../../assets/images/home/partners/vlaio.png';
-import voka from '../../../assets/images/home/partners/voka.png';
+import ateljee from '../../../assets/images/home/partners/ateljee.svg';
+import ugent from '../../../assets/images/home/partners/ugent.svg';
+import Rotterdam from '../../../assets/images/home/partners/port_of_rotterdam.svg';
+import moorslede from '../../../assets/images/home/partners/moorslede.svg';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -10,20 +10,20 @@ import 'slick-carousel/slick/slick-theme.css';
 const PartnersSection = () => {
   const partners = [
     {
-      name: 'Start it KBC',
-      src: startItKBC,
+      name: 'Port of Rotterdam',
+      src: Rotterdam,
     },
     {
-      name: 'Unizo',
-      src: unizo,
+      name: 'Moorslede',
+      src: moorslede,
     },
     {
-      name: 'VLAIO',
-      src: VLAIO,
+      name: 'Ugent',
+      src: ugent,
     },
     {
-      name: 'Voka',
-      src: voka,
+      name: 'ateljee',
+      src: ateljee,
     },
   ];
 
@@ -32,7 +32,7 @@ const PartnersSection = () => {
     slidesToShow: 4,
     arrows: false,
     autoplay: true,
-    speed: 4000,
+    speed: 7000,
     autoplaySpeed: 2000,
     cssEase: 'linear',
     pauseOnHover: false,
@@ -59,25 +59,21 @@ const PartnersSection = () => {
   };
 
   return (
-    <section className="mt-20 space-y-8 py-8 text-center">
-      <div className="bg-rebin-grey absolute left-0 -z-10 h-48 w-full min-w-max"></div>
-      <p className="text-slate-500">Trusted by the following partners</p>
+    <section className="mt-10 space-y-8 text-center">
+      <div className="absolute left-0 -z-10 h-48 w-full min-w-max"></div>
+      <p className="text-rebin-darkblue">Trusted by <span className='text-white py-1 px-2 bg-gradient rounded-md mx-1'>leading</span> organizations</p>
       <Slider {...settings}>
         {partners.map((_, index) => (
           <div
             key={index}
-            className="slider-container divide-rebin-darkblue border-l"
+            className="slider-container"
           >
-            <div className="flex h-16 justify-center space-x-3">
+            <div className="flex h-14 justify-center items-center space-x-3">
               <img
                 src={partners[index].src}
                 alt={partners[index].name}
-                className="my-auto h-5/6 align-middle"
+                className="my-auto h-4/6 align-middle opacity-60"
               />
-              <p className="my-auto text-lg font-medium">
-                {' '}
-                {partners[index].name}
-              </p>
             </div>
           </div>
         ))}

@@ -1,13 +1,20 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import MaarkedalImg from '../../../assets/images/references/blog/maarkedal.png';
-import MoorsledeImg from '../../../assets/images/references/blog/Iepersestraat.jpg';
-import Article1 from '../../../assets/images/about/newsCards/Artikel1.jpg';
-import Article2 from '../../../assets/images/about/newsCards/Artikel2.jpg';
-import Article3 from '../../../assets/images/about/newsCards/Artikel3.jpg';
+import MoorsledeImg from '../../../assets/images/references/blog/moorslede.jpg';
+import RotterdamImg from '../../../assets/images/references/blog/rotterdam.jpg';
 
 const BlogCards = () => {
   const news = [
+    {
+      id: 3,
+      title: "Smart waste collection in Europe's biggest port",
+      duration: '2 min',
+      date: 'Jan 10, 2025',
+      image: RotterdamImg,
+      href: '/references/rotterdam',
+      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Moorslsede.',
+    },
     {
       id: 2,
       title: 'Optimizing waste collection in Moorslede',
@@ -31,7 +38,7 @@ const BlogCards = () => {
   return (
     <div className="my-16 grid place-content-center gap-10 md:grid-cols-3">
       {news.map((article) => (
-        <button key={article.id} className="flex max-w-96 content-stretch">
+        <button key={article.id} className="special-button flex max-w-96 content-stretch">
           <Link to={article.href} className="h-full">
             <div className="flex h-full flex-col rounded-xl border bg-white bg-clip-border p-4 pb-8 text-gray-700 shadow-around">
               <div className="overflow-hidden rounded-xl h-64 w-full">

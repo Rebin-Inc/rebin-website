@@ -1,69 +1,88 @@
 import { Card, CardBody } from '@material-tailwind/react';
-import sensor from '../../../assets/images/home/solutions/sensor.png';
-import software from '../../../assets/images/home/solutions/software.png';
-import consulting from '../../../assets/images/home/solutions/consulting.png';
-import Button from '../../../components/Button';
+import sensor from '../../../assets/images/home/solutions/sensor.svg';
+import map from '../../../assets/images/home/solutions/map.svg';
+import bar from '../../../assets/images/home/solutions/bar.svg';
+import fillLevelMonitoring from '../../../assets/images/home/solutions/fill-level-monitoring.svg';
+import dataInsights from '../../../assets/images/home/solutions/data-insights.svg';
+import routeOptimization from '../../../assets/images/home/solutions/route-optimization.svg';
+
 
 export default function SolutionCards() {
   return (
-    <div className="mx-auto my-10 grid grid-cols-1 md:grid-cols-3 lg:w-5/6 ">
+    <div className="mx-auto mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 lg:w-5/6">
       <Card
         shadow={false}
-        className="-bottom-4 mx-5 my-auto min-h-80 rounded-3xl py-4 shadow-around md:-right-2 md:bottom-0 md:mx-0"
+        className="min-h-80 flex flex-col items-center justify-between rounded-3xl border-rebin shadow-sm hover:shadow-lg"
       >
-        <CardBody className="space-y-4">
-          <img
-            src={sensor}
-            alt="icon of Rebin Smart Sensor"
-            className="mx-auto aspect-square h-16"
-          />
-          <h4 className="text-rebin-darkblue mb-2 text-3xl font-bold md:text-2xl">
-            Hardware
+        <CardBody className="flex flex-col items-start space-y-4">
+          <div className='flex items-center justify-center rounded-full bg-rebin-light-blue p-2 shadow-md'>
+            <img
+              src={sensor}
+              alt="Icon of sensor inside a bin"
+              className="aspect-square h-5 w-5"
+            />
+          </div>
+          <h4 className="text-left text-rebin-darkblue text-xl font-bold md:text-2xl">
+            Fill level monitoring
           </h4>
-          <p className="mx-auto text-black md:text-base">
-            Rebin selects the best sensor for your application
+          <p className="text-left text-rebin-darkblue md:text-base">
+            Monitor fill levels in real-time and collect only when necessary.
           </p>
-          {/* <Button text="Learn more" href="/sensor" /> */}
+          <img
+              src={fillLevelMonitoring}
+              alt="Icon of sensor inside a bin"
+          />
         </CardBody>
       </Card>
       <Card
         shadow={false}
-        className="z-10 my-auto min-h-80 rounded-3xl py-10 shadow-around md:max-w-96"
+        className="min-h-80 flex flex-col items-center justify-between rounded-3xl border-rebin shadow-sm hover:shadow-lg"
       >
-        <CardBody className="">
-          <img
-            src={software}
-            alt="Icon of computer screen containing code"
-            className="mx-auto aspect-square h-16"
-          />
-          <h4 className="text-rebin-darkblue mb-2 text-3xl font-bold md:text-2xl">
-            Software
+        <CardBody className="flex flex-col items-start space-y-4">
+          <div className='flex items-center justify-center rounded-full bg-rebin-light-blue p-2 shadow-md'>
+            <img
+              src={map}
+              alt="Icon of sensor inside a bin"
+              className="aspect-square h-5 w-5"
+            />
+          </div>
+          <h4 className="text-left text-rebin-darkblue text-xl font-bold md:text-2xl">
+            Route optimisation
           </h4>
-          <p className="mx-auto text-black md:text-base">
-            Streamline any type of asset with our unified software solution
+          <p className="text-left text-rebin-darkblue md:text-base">
+            Optimize collection routes and reduce time, costs, and emissions.
           </p>
-          <Button text="Learn more" href="/software" margin="mt-8" />
+          <img
+            src={routeOptimization}
+            alt="Icon of sensor inside a bin"
+          />
         </CardBody>
       </Card>
       <Card
         shadow={false}
-        className="m-h-80 -top-4 mx-5 rounded-3xl py-4 shadow-around md:-left-2 md:top-0 md:mx-0 md:my-8"
+        className="min-h-80 flex flex-col items-center justify-between rounded-3xl  border-rebin shadow-sm hover:shadow-lg"
       >
-        <CardBody className="space-y-4">
-          <img
-            src={consulting}
-            alt="Icon of a dialog"
-            className="mx-auto aspect-square h-16"
-          />
-          <h4 className="text-rebin-darkblue mb-2 text-3xl font-bold md:text-2xl">
-            Consulting
+        <CardBody className="flex flex-col items-start space-y-4">
+          <div className='flex items-center justify-center rounded-full bg-rebin-light-blue p-2 shadow-md'>
+            <img
+              src={bar}
+              alt="Icon of sensor inside a bin"
+              className="aspect-square h-5 w-5"
+            />
+          </div>
+          <h4 className="text-left text-rebin-darkblue text-xl font-bold md:text-2xl">
+            Data insights
           </h4>
-          <p className="mx-auto text-black md:text-base">
-            Experience customized asset policies to fit your needs
+          <p className="text-left text-rebin-darkblue md:text-base">
+            Gain actionable data insights for strategic decision-making.
           </p>
-          {/* <Button text="Learn more" href="/consulting" /> */}
+          <img
+            src={dataInsights}
+            alt="Icon of sensor inside a bin"
+          />
         </CardBody>
       </Card>
     </div>
   );
 }
+

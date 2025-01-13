@@ -1,11 +1,11 @@
 import React from 'react';
-import MoorsledeImg from '../../../assets/images/references/blog/Iepersestraat.jpg';
+import MoorsledeImg from '../../../assets/images/references/blog/moorslede.jpg';
 import {Helmet} from 'react-helmet';
 
 const MoorsledeBlog = () => {
   return (
 
-    <main className="mb-20 mt-10 w-full space-y-10">
+    <main className="mb-20 mt-10 w-full space-y-10 p-6 max-w-7xl ml-auto mr-auto">
       <Helmet>
         <meta name="description" content="Case-study Moorslede"/>
         <meta name="language" content="eng"/>

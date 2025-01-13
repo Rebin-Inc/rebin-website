@@ -83,13 +83,13 @@ const WhyChooseUsCards = () => {
             </CardBody>
           </Card>
         ))}
-        <Card className="col-start-4 row-start-3 mx-8 my-auto aspect-square h-24 rounded-xl p-4 shadow-around">
-          <img
-            src={RebinRBlue}
-            alt="The blue letter R from the Rebin logo"
-            className="aspect-square h-16"
-          />
-        </Card>
+          <Card className="col-start-4 row-start-3 mx-auto my-auto aspect-square h-18 rounded-xl p-4 shadow-around flex justify-center items-center">
+            <img
+              src={RebinRBlue}
+              alt="The blue letter R from the Rebin logo"
+              className="aspect-square h-10 w-10"
+            />
+          </Card>
       </div>
       {/* Slider for small screens */}
       <div className="block space-y-16 bg-dotted-line bg-top bg-no-repeat xl:hidden">

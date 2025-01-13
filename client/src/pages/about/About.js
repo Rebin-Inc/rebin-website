@@ -5,15 +5,15 @@ import ValueCards from './components/ValueCards';
 import TeamCards from './components/TeamCards';
 import NewsCards from './components/NewsCards';
 import CallToAction from '../../components/CallToAction';
-import Button from '../../components/Button';
+import Pijl from '../../assets/images/Pijl_Rechts_Wit.svg';
 import Team from '../../assets/images/about/team.png';
 
 const About = () => {
   return (
-    <main className="">
+    <main className="max-w-7xl ml-auto mr-auto p-6">
       <div className="mt-10 grid grid-cols-1 items-center gap-x-6 gap-y-12 lg:grid-cols-2 lg:gap-24">
         <div className="order-last lg:order-first">
-          <h1 className="text-gradient-horizontal text-4xl font-bold ">
+          <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
             Our story
           </h1>
           <h2 className="w-2xl mt-4 text-5xl font-bold">How we started</h2>
@@ -37,7 +37,7 @@ const About = () => {
         />
         <div className="flex items-center">
           <div>
-            <h1 className="text-gradient-horizontal text-3xl font-bold sm:mx-0">
+            <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg sm:mx-0">
               Our mission
             </h1>
             <h2 className="mt-4 text-4xl font-bold  sm:text-left">
@@ -49,8 +49,8 @@ const About = () => {
           </div>
         </div>
       </div>
-      <div className="mt-20 lg:mt-28">
-        <h1 className="text-gradient-horizontal mx-auto text-center text-3xl font-bold">
+      <div className="mt-20 lg:mt-28 flex flex-col text-center items-center">
+        <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Core values
         </h1>
         <h2 className="mt-4 text-center text-4xl font-bold">
@@ -59,18 +59,24 @@ const About = () => {
         <ValueCards></ValueCards>
       </div>
 
-      <div className="mt-20 text-center lg:mt-36">
-        <h1 className="text-gradient-horizontal mx-auto text-3xl font-bold">
+      <div className="mt-20 lg:mt-36 flex flex-col text-center items-center">
+        <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Our team
         </h1>
         <h2 className="mt-4 text-4xl font-bold">
           Meet the Rebineers thriving for impact
         </h2>
         <TeamCards></TeamCards>
-        <Button text="Become a Rebineer" arrow={true} href="/contact" />
+        <button
+            className="special-button flex items-center bg-gradient mt-2 w-fit px-4 py-3 text-white font-semibold rounded-lg"
+            onClick={() => (window.location.href = 'contact')} // Use onClick for navigation if not using React Router
+          >
+            Become a Rebineer
+            <img src={Pijl} alt="Arrow Icon" className="w-8 h-8" />
+      </button>
       </div>
       <div className="mt-20 lg:mt-28">
-        <h1 className="text-gradient-horizontal text-3xl font-bold">
+        <h1 className="mt-20 text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
           Articles
         </h1>
         <h2 className="mt-4 text-4xl font-bold">Rebin in the news</h2>

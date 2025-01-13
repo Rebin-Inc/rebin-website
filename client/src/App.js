@@ -6,43 +6,43 @@ import HowItWorks from './pages/how-it-works/HowItWorks';
 import References from './pages/references/References';
 import About from './pages/about/About';
 import Software from './pages/software/Software';
-import Consulting from './pages/consulting/Consulting';
-import Sensor from './pages/sensor/Sensor';
+import Cities from './pages/solution/cities/Cities';
+import Collectors from './pages/solution/collectors/Collectors';
 import Home from './pages/home/Home';
 import Maarkedal from './pages/references/components/Maarkedal';
-import Ateljee from './pages/references/components/Ateljee';
+import Rotterdam from './pages/references/components/Rotterdam';
 import Moorslede from './pages/references/components/Moorslede';
 import { Helmet } from 'react-helmet';
 
 const titles = {
   '/': [
-    'Optimize asset management with our smart technology',
-    "Revolutionize your asset monitoring with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
+    'Optimize waste management with our smart technology',
+    "Revolutionize your waste collection with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment.",
   ],
-  '/how-it-works': [
-    'How it works',
-    'Quick and easy installation; your asset becomes smart in just one minute.',
+
+  '/solution/cities': [
+    'Optimizing waste collection in Maarkedal',
+    'Discover how we optimized waste collection in Maarkedal using smart waste sensors.',
   ],
-  '/software': [
-    'The solution',
-    'Monitor fill levels of assets, optimize collection, and save costs.',
+
+  '/solution/collectors': [
+    'Optimizing waste collection in Maarkedal',
+    'Discover how we optimized waste collection in Maarkedal using smart waste sensors.',
   ],
+
   '/references': [
     'References',
     "Curious about how we've helped other organizations? Check it out.",
   ],
+
   '/about': ['About us', 'Interested in our story? Read it now.'],
   '/contact': [
     'Contact',
-    'Contact Rebin to make your asset management more efficient.',
+    'Contact Rebin to make your waste collection more efficient.',
   ],
   '/blog/maarkedal': [
     'Optimizing waste collection in Maarkedal',
     'Discover how we optimized waste collection in Maarkedal using smart waste sensors.',
-  ],
-  '/blog/ateljee': [
-    'Optimizing textile collection with Ateljee',
-    'Discover how we optimized waste collection in Ateljee using smart waste sensors.',
   ],
   '/blog/Moorslede': [
     'Optimizing waste collection in Moorslede',
@@ -53,7 +53,7 @@ const titles = {
 function App() {
   const [title, setTitle] = useState('Rebin');
   const [description, setDescription] = useState(
-    "Revolutionize your asset monitoring with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
+    "Revolutionize your waste collection with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment.",
   );
 
   const location = useLocation();
@@ -67,7 +67,7 @@ function App() {
     setDescription(
       titles[location.pathname]
         ? titles[location.pathname][1]
-        : "Revolutionize your asset monitoring with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment. Streamline your asset collection process with Rebin today.",
+        : "Revolutionize your waste collection with Rebin's technology. Optimize collection & reduce costs while promoting a greener environment.",
     );
   }, [location.pathname]);
 
@@ -90,18 +90,20 @@ function App() {
           </>
         }
       >
-        <Route element={<Layout />}>
+        <Route element={<Layout currentPath={location.pathname} />}>
           <Route index path="/" element={<Home />} />
+          <Route path="/solution">
+            
+            <Route path="cities" element={<Cities />} />
+            <Route path="collectors" element={<Collectors />} />
+            
+          </Route>
           <Route path="/contact" element={<Contact />} />
-          <Route path="/how-it-works" element={<HowItWorks />} />
           <Route path="/references" element={<References />} />
           <Route path="/about" element={<About />} />
-          <Route path="/software" element={<Software />} />
-          <Route path="/consulting" element={<Consulting />} />
-          <Route path="/sensor" element={<Sensor />} />
-          <Route path="/references/maarkedal" element={<Maarkedal />} /> {/* New Route */}
-          <Route path="/references/ateljee" element={<Ateljee />} /> {/* New Route */}
-          <Route path="/references/moorslede" element={<Moorslede />} /> {/* New Route */}
+          <Route path="/references/maarkedal" element={<Maarkedal />} /> 
+          <Route path="/references/moorslede" element={<Moorslede />} /> 
+          <Route path="/references/rotterdam" element={<Rotterdam />} /> 
         </Route>
       </Route>
     </Routes>

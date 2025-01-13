@@ -76,16 +76,16 @@ const Footer = () => {
               Smart waste sensor
             </Link> */}
             <Link
-              to="how-it-works"
+              to="solution/cities"
               className="inline text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
-              How it works
+              Cities & municipalities
             </Link>
             <Link
-              to="software"
+              to="solution/collectors"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
-              Software
+              Waste collectors
             </Link>
             {/* <Link
               to="consulting"
@@ -98,8 +98,8 @@ const Footer = () => {
             <p className="text-sm font-semibold">Contact</p>
             <p className="text-sm font-light opacity-80">info@rebin.be</p>
             <p className="text-sm font-light opacity-80">
-              Sassevaartstraat 46,
-              <br /> 9000 Gent
+              Lammerstraat 13
+              <br /> 9000 Gent, België
             </p>
             <p className="text-sm font-light opacity-80">BE 0799.727.089</p>
           </div>

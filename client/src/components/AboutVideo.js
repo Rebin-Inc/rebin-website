@@ -5,7 +5,7 @@ const AboutVideo = () => {
   return (
     <div className="my-auto aspect-video overflow-hidden rounded-xl">
       <ReactPlayer
-        url="https://www.youtube.com/watch?v=eX3YBk9gxZ8"
+        url="https://youtu.be/UoLz_YA6oXM"
         controls={false}
         width="100%"
         height="100%"

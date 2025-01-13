@@ -2,7 +2,7 @@ import React from 'react';
 
 const StatisticBar = () => {
   return (
-    <div className="bg-rebin-grey rounded-xl py-4">
+    <div className="mt-10 bg-rebin-grey rounded-xl py-4">
       <dl className="grid grid-cols-2 divide-x divide-solid md:grid-cols-4">
         <div className="grid place-content-center space-y-5 p-6 text-center">
           <dd className="text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">

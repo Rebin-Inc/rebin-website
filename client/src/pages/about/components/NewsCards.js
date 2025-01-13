@@ -20,22 +20,22 @@ const NewsCards = () => {
     {
       id: 2,
       title:
-        'Rebin (Maarkedal) en Straal (Gent) halen 50.000 euro binnen via Unizo Oost-Vlaanderen',
+        'De slimme vuilnisbak: van studentenproject naar de haven van Rotterdam (en de rest van de wereld?)',
       duration: '3 min',
-      date: 'July 10, 2023',
+      date: 'October 22, 2024',
       image: Article2,
-      href: 'https://www.unizo.be/berichten/pers/rebin-maarkedal-en-straal-gent-halen-50000-euro-binnen-unizo-oost-vlaanderen',
+      href: 'https://www.durfdenken.be/nl/ugenters/de-slimme-vuilnisbak-van-studentenproject-naar-de-haven-van-rotterdam-en-de-rest-van-de',
       image_description:
         'Group photo of the Rebin team around a newly installed Rebin Smart Waste Sensor.',
     },
     {
       id: 3,
       title:
-        'Gemeentepersoneel weet voortaan of vuilnisbak vol is of niet: “Dat bespaart tijd en brandstof”',
+        'Slimme vuilnisbakken geven zelf aan wanneer ze vol zijn: “Dit zorgt voor minder zwerfvuil”',
       duration: '2 min',
-      date: 'May 22, 2024',
+      date: 'June 14, 2024',
       image: Article3,
-      href: 'https://www.nieuwsblad.be/cnt/dmf20240522_95244752',
+      href: 'https://www.nieuwsblad.be/cnt/dmf20240614_93815967',
       image_description: '',
     },
   ];

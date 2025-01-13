@@ -3,7 +3,7 @@ import Maarkedal from '../../../assets/images/references/blog/maarkedal.png';
 
 const MaarkedalBlog = () => {
   return (
-    <main className="mb-20 mt-10 w-full space-y-10">
+    <main className="mb-20 mt-10 w-full space-y-10 max-w-7xl ml-auto mr-auto p-6">
       <span className="bg-gradient rounded-md px-2 py-2 text-sm text-white">
         Technology
       </span>

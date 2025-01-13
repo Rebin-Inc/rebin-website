@@ -67,8 +67,8 @@ const ContactForm = () => {
                 <div className="ml-4 ">
                   <span>Address</span>
                   <div className="text-md w-45 font-medium tracking-wide">
-                    Sassevaartstraat 46, <br />
-                    9000 Gent
+                    Lammerstraat 13 <br />
+                    9000 Gent, België
                   </div>
                 </div>
               </div>
