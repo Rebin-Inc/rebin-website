@@ -80,15 +80,19 @@ export default function Example() {
 
         <Popover.Group className="hidden lg:flex lg:gap-x-12">
           <Popover className="relative">
-            <Popover.Button
-              className={classNames(
-                isHomePage ? 'text-white' : 'text-gradient-hover',
-                'text-sm font-medium flex items-center gap-x-1'
-              )}
-            >
-              Solution
-              <ChevronDownIcon aria-hidden="true" className={`size-5 flex-none text-black ${isHomePage ? 'text-white' : 'text-black text-gradient-hover'}`} />
-            </Popover.Button>
+          <Popover.Button
+  className={classNames(
+    isHomePage ? 'text-white' : 'text-gradient-hover',
+    'text-sm font-medium flex items-center gap-x-1 focus:outline-none'
+  )}
+>
+  Solution
+  <ChevronDownIcon
+    aria-hidden="true"
+    className={`size-5 flex-none text-black ${isHomePage ? 'text-white' : 'text-black text-gradient-hover'}`}
+  />
+</Popover.Button>
+
 
             <Popover.Panel
               transition

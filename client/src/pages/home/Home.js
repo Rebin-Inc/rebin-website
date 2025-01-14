@@ -6,7 +6,7 @@ import PartnersSection from './components/PartnersSection';
 import Pijl from '../../assets/images/Pijl_Rechts_Wit.svg';
 import RebinR from '../../assets/images/Rebin_R_Gradient.svg';
 import platform from '../../assets/images/home/platform.svg';
-import mockup from '../../assets/images/home/mockup.svg';
+import mockup from '../../assets/images/home/mockup.png';
 import FAQ from './components/FAQ';
 
 const Home = () => {

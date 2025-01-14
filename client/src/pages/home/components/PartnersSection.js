@@ -1,8 +1,9 @@
 import React from 'react';
-import ateljee from '../../../assets/images/home/partners/ateljee.svg';
-import ugent from '../../../assets/images/home/partners/ugent.svg';
-import Rotterdam from '../../../assets/images/home/partners/port_of_rotterdam.svg';
-import moorslede from '../../../assets/images/home/partners/moorslede.svg';
+import ateljee from '../../../assets/images/home/partners/ateljee.png';
+import ugent from '../../../assets/images/home/partners/ugent.png';
+import Rotterdam from '../../../assets/images/home/partners/port_of_Rotterdam.png';
+import moorslede from '../../../assets/images/home/partners/moorslede.png';
+import idverde from '../../../assets/images/home/partners/idverde.png';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
@@ -24,6 +25,10 @@ const PartnersSection = () => {
     {
       name: 'ateljee',
       src: ateljee,
+    },
+    {
+      name: 'idverde',
+      src: idverde,
     },
   ];
 

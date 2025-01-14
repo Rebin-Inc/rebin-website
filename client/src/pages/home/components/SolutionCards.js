@@ -2,7 +2,7 @@ import { Card, CardBody } from '@material-tailwind/react';
 import sensor from '../../../assets/images/home/solutions/sensor.svg';
 import map from '../../../assets/images/home/solutions/map.svg';
 import bar from '../../../assets/images/home/solutions/bar.svg';
-import fillLevelMonitoring from '../../../assets/images/home/solutions/fill-level-monitoring.svg';
+import fillLevelMonitoring from '../../../assets/images/home/solutions/fill-level-monitoring.png';
 import dataInsights from '../../../assets/images/home/solutions/data-insights.svg';
 import routeOptimization from '../../../assets/images/home/solutions/route-optimization.svg';
 
