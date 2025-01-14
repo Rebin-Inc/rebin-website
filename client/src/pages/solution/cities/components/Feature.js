@@ -8,9 +8,9 @@ import {
 import React from 'react';
 import parse from 'html-react-parser';
 import Checkmark from '../../../../assets/images/checkmark.png';
-import Dashboard from '../../../../assets/images/solution/Dashboardmockup.svg';
-import Routing from '../../../../assets/images/solution/Routingmockup.svg';
-import Statistics from '../../../../assets/images/solution/Statisticsmockup.svg';
+import Dashboard from '../../../../assets/images/solution/Dashboardmockup.png';
+import Routing from '../../../../assets/images/solution/Routingmockup.png';
+import Statistics from '../../../../assets/images/solution/Statisticsmockup.png';
 import sensor from '../../../../assets/images/home/solutions/sensor.svg';
 import map from '../../../../assets/images/home/solutions/map.svg';
 import bar from '../../../../assets/images/home/solutions/bar.svg';

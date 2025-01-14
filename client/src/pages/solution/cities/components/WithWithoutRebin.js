@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import withoutRebin from '../../../../assets/images/withoutRebin.svg';
-import withRebin from '../../../../assets/images/withRebin.svg';
+import withoutRebin from '../../../../assets/images/withoutRebin.png';
+import withRebin from '../../../../assets/images/withRebin.png';
 
 const WithWithoutRebin = () => {
   const [activeButton, setActiveButton] = useState('WithoutRebin'); // Default active button

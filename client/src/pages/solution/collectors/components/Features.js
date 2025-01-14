@@ -22,7 +22,7 @@ const Features = () => {
               Route optimisation
             </Typography>
             <Typography>
-              Enhance the profitability of your operations by avoiding empty pick-ups.
+              Enhance profitability by avoiding empty pick-ups.
             </Typography>
           </div>
         </CardBody>
@@ -61,10 +61,10 @@ const Features = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Increased collection efficiency
+              Collection efficiency
             </Typography>
             <Typography>
-              Increase material collection capacity with the same infrastructure.
+              Increase material collection with the same resources.
             </Typography>
           </div>
         </CardBody>

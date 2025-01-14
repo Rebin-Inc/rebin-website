@@ -17,6 +17,9 @@ module.exports = {
       objectPosition: {
         'center-right': '80% 50%',
       },
+      fontFamily: {
+        sans: ['Poppins'],
+      },
     },
   },
   plugins: [],

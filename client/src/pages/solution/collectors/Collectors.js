@@ -3,9 +3,9 @@ import CallToAction from '../../../components/CallToAction';
 import SmartCityVideo from './components/SmartCityVideo';
 import Features from './components/Features';
 import Benefits from './components/Benefits';
-import Mockup1 from '../../../assets/images/solution/collector1Mockup.svg'
-import Mockup2 from '../../../assets/images/solution/collector2Mockup.svg'
-import Mockup3 from '../../../assets/images/solution/collector3Mockup.svg'
+import Mockup1 from '../../../assets/images/solution/collector1Mockup.png'
+import Mockup2 from '../../../assets/images/solution/collector2Mockup.png'
+import Mockup3 from '../../../assets/images/solution/collector3Mockup.png'
 
 const Collectors = () => {
 

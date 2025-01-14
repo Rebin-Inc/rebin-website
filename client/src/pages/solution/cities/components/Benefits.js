@@ -11,10 +11,10 @@ const Benefits = () => {
             1
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
               Detailed bin inventory
             </Typography>
-            <Typography>
+            <Typography className='font-sans'>
               Map bins digitally and access an up-to-date inventory.
             </Typography>
           </div>
@@ -28,10 +28,10 @@ const Benefits = () => {
             2
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5"  className="mb-2 leading-tight text-rebin-darkblue">
+            <Typography variant="h5"  className="mb-2 leading-tight text-rebin-darkblue font-sans">
               Cost savings
             </Typography>
-            <Typography>
+            <Typography className='font-sans'>
               Reduce collection costs by eliminating unnecessary pick-ups. 
             </Typography>
           </div>
@@ -45,10 +45,10 @@ const Benefits = () => {
             3
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
               Clean environment
             </Typography>
-            <Typography>
+            <Typography className='font-sans'>
               Prevent overflowing bins and litter with real-time fill level insights.
             </Typography>
           </div>
@@ -62,10 +62,10 @@ const Benefits = () => {
             4
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
               Automated scheduling
             </Typography>
-            <Typography>
+            <Typography className='font-sans'>
               Avoid scheduling difficulties with a adaptive planning tool. 
             </Typography>
           </div>
@@ -79,10 +79,10 @@ const Benefits = () => {
             5
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
               Optimal bin placement
             </Typography>
-            <Typography>
+            <Typography className='font-sans'>
               Use insights to identify redundant bins and optimize placement.
             </Typography>
           </div>
@@ -96,10 +96,10 @@ const Benefits = () => {
             6
           </div>
           <div className="flex flex-col text-left -mt-1">
-            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
+            <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
               Legislation compliant
             </Typography>
-            <Typography>
+            <Typography className='font-sans'>
             Meet the latest regulations through accessible data from our platform.
             </Typography>
           </div>

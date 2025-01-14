@@ -8,7 +8,7 @@ const References = () => {
     <>
     <main className="mb-20 mt-10 w-full space-y-10 p-6 max-w-7xl ml-auto mr-auto">
       <div className="grid place-content-center gap-4 ">
-        <h1 className="text-5xl font-bold mx-auto text-center">
+        <h1 className="text-5xl font-bold mx-auto text-center text-rebin-darkblue">
           Embracing the <span className="text-gradient-horizontal ">Future</span> of <br>
           </br>smart
           solutions

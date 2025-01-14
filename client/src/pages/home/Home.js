@@ -5,7 +5,7 @@ import CallToAction from '../../components/CallToAction';
 import PartnersSection from './components/PartnersSection';
 import Pijl from '../../assets/images/Pijl_Rechts_Wit.svg';
 import RebinR from '../../assets/images/Rebin_R_Gradient.svg';
-import platform from '../../assets/images/home/platform.svg';
+import platform from '../../assets/images/home/platform.png';
 import mockup from '../../assets/images/home/mockup.png';
 import FAQ from './components/FAQ';
 
@@ -31,7 +31,7 @@ const Home = () => {
           </div>
         </div>
         {/* Positioning the image */}
-        <div className="relative w-full h-48 -mt-[40px] md:mt-[120px] lg:mt-[300px] xl:mt-[320px]">
+        <div className="z-20 relative w-full h-48 -mt-[40px] md:mt-[120px] lg:mt-[300px] xl:mt-[320px]">
           <img
             className="absolute bottom-[-40%] md:bottom-[-50%] lg:bottom-[-60%] left-1/2 transform -translate-x-1/2 w-[95%] md:w-[80%] lg:w-[70%]"
             src={platform}
