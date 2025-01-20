@@ -15,12 +15,12 @@ const PartnersSection = () => {
       src: Rotterdam,
     },
     {
-      name: 'Moorslede',
-      src: moorslede,
-    },
-    {
       name: 'Ugent',
       src: ugent,
+    },
+    {
+      name: 'Moorslede',
+      src: moorslede,
     },
     {
       name: 'ateljee',

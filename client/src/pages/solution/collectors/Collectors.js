@@ -116,8 +116,8 @@ const Collectors = () => {
   </div>
 </div>
 
-<div className="grid md:grid-cols-2 mt-24 ">
-  <div className='flex flex-col text-left max-w-xl'>
+<div className="flex flex-col md:flex-row mt-24 ">
+  <div className='flex flex-col text-left w-fit'>
     <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
         Benefits
     </h1>
