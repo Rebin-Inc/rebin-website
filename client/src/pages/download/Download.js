@@ -54,7 +54,7 @@ const AutoDownloadPage = () => {
         {/* Call-to-Action Button */}
         <button
           className=" flex items-center bg-rebin-blue text-white font-semibold text-base px-6 py-3 rounded-lg shadow-lg transition-all duration-300"
-          onClick={() => (window.location.href = "contact")}
+          onClick={() => (window.location.href = "/contact")}
         >
           <span>Contact Us</span>
           <img src={Pijl} alt="Arrow Icon" className="ml-2 w-6 h-6" />
