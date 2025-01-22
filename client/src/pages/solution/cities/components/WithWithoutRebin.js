@@ -60,6 +60,8 @@ const WithWithoutRebin = () => {
           alt="The Rebin team"
         />
       </div>
+      
+      
     </div>
   );
 };

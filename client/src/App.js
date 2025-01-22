@@ -2,16 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { Routes, Route, useLocation, Outlet } from 'react-router-dom';
 import Layout from './Layout';
 import Contact from './pages/contact/Contact';
-import HowItWorks from './pages/how-it-works/HowItWorks';
 import References from './pages/references/References';
 import About from './pages/about/About';
-import Software from './pages/software/Software';
 import Cities from './pages/solution/cities/Cities';
 import Collectors from './pages/solution/collectors/Collectors';
 import Home from './pages/home/Home';
 import Maarkedal from './pages/references/components/Maarkedal';
 import Rotterdam from './pages/references/components/Rotterdam';
 import Moorslede from './pages/references/components/Moorslede';
+import Download from './pages/download/Download';
 import { Helmet } from 'react-helmet';
 
 const titles = {
@@ -92,11 +91,9 @@ function App() {
       >
         <Route element={<Layout currentPath={location.pathname} />}>
           <Route index path="/" element={<Home />} />
-          <Route path="/solution">
-            
+          <Route path="/solution"> 
             <Route path="cities" element={<Cities />} />
             <Route path="collectors" element={<Collectors />} />
-            
           </Route>
           <Route path="/contact" element={<Contact />} />
           <Route path="/references" element={<References />} />
@@ -106,6 +103,7 @@ function App() {
           <Route path="/references/rotterdam" element={<Rotterdam />} /> 
         </Route>
       </Route>
+      <Route path="/case-study-maarkedal" element={<Download />} />
     </Routes>
   );
 }
