@@ -6,8 +6,12 @@ import Benefits from './components/Benefits';
 import Mockup1 from '../../../assets/images/solution/collector1Mockup.png'
 import Mockup2 from '../../../assets/images/solution/collector2Mockup.png'
 import Mockup3 from '../../../assets/images/solution/collector3Mockup.png'
+import { useTranslation } from 'react-i18next';
 
 const Collectors = () => {
+
+  const { t } =useTranslation();
+  
 
   return (
     <>
@@ -15,16 +19,16 @@ const Collectors = () => {
       <div className="grid grid-cols-1 items-center gap-x-6 gap-y-10 md:grid-cols-2">
         <div className="order-1 flex h-fit flex-col gap-y-5">
           <span className="w-fit text-rebin-blue font-extralight text-md border border-rebin-blue-color px-3 py-2 rounded-lg">
-            Waste collectors
+            {t("collectorpage.hero_span")}
           </span>
           <h1 className="text-rebin-darkblue text-3xl font-bold md:text-5xl md:mt-2 ">
-            Streamline your waste collection process
+          {t("collectorpage.hero_title")}
           </h1>
           <p className="mt-2 font-light max-w-xl text-lg">
-            Whether you are focused on optimizing your operations, improving service quality, or gaining a competitive edge, Rebin’s solution is there to support your success.
+          {t("collectorpage.hero_description")}
           </p>
           <button onClick={() => (window.location.href = '../contact')}  className="special-button bg-gradient mt-2 w-fit px-4 py-3 text-white font-regular rounded-lg">
-            Book a demo
+          {t("collectorpage.hero_cta_button")}
           </button>
         </div>
         <div className="order-2 self-center overflow-hidden">
@@ -40,10 +44,10 @@ const Collectors = () => {
   {/* Title Section */}
   <div className="flex flex-col text-center items-center">
     <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-      Solution
+      {t("collectorpage.solution_span")}
     </h1>
     <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue mb-10 max-w-xl">
-      The route to waste management efficiency
+      {t("collectorpage.solution_title")}
     </h2>
   </div>
 
@@ -52,10 +56,10 @@ const Collectors = () => {
     <div className="flex items-center order-2 md:order-1">
       <div>
         <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
-          Fill level monitoring
+        {t("collectorpage.solution_1_title")}
         </h2>
         <p className="mt-6 mb-16 sm:text-left font-light">
-          Stay informed about container fill levels with customizable notifications and an intuitive dashboard. Avoid both overflow and unnecessary collection of waste assets.
+        {t("collectorpage.solution_1_description")}
         </p>
       </div>
     </div>
@@ -74,10 +78,10 @@ const Collectors = () => {
   <div className="flex items-center order-2">
     <div>
       <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
-        Optimized collection operations
+        {t("collectorpage.solution_2_title")}
       </h2>
       <p className="mt-6 sm:text-left font-light">
-        Improve collection processes using both real-time and predictive fill level data. Optimize routes with a fully automated planning tool based on available drivers, vehicle capacities, and relevant geographical regions. 
+        {t("collectorpage.solution_2_description")} 
       </p>
     </div>
   </div>
@@ -98,10 +102,10 @@ const Collectors = () => {
     <div className="flex items-center order-2 md:order-1">
       <div>
         <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
-          Comprehensive data insights
+          {t("collectorpage.solution_3_title")}
         </h2>
         <p className="mt-6 sm:text-left font-light">
-          Gain insights into waste streams at both a global level and a sub-level by customer or region. Uncover trends and evolutions in the operational as well as the financial aspects of your collection process.
+          {t("collectorpage.solution_3_description")}
         </p>
       </div>
     </div>
@@ -119,10 +123,10 @@ const Collectors = () => {
 <div className="flex flex-col md:flex-row mt-24 ">
   <div className='flex flex-col text-left w-fit'>
     <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-        Benefits
+      {t("collectorpage.benefits_span")}
     </h1>
     <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue mb-6">
-      The key to waste collection success
+      {t("collectorpage.benefits_title")}
     </h2>
   </div>
   <Benefits></Benefits>

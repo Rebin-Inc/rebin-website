@@ -15,26 +15,8 @@ import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/
 import rebinBlue from '../assets/images/Rebin.svg';
 import rebinWhite from '../assets/images/Rebin_Wit.svg';
 import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
-const products = [
-  {
-    name: 'Cities and municipalities',
-    description: 'Data-powered solutions for city waste management.',
-    href: '/solution/cities',
-    icon: BuildingLibraryIcon,
-  },
-  {
-    name: 'Private waste collectors',
-    description: 'Leveraging data for private waste collection success.',
-    href: '/solution/collectors',
-    icon: TruckIcon,
-  },
-];
-
-const callsToAction = [
-  { name: 'Testimonial', href: 'https://youtu.be/QDe44I2yLy4', icon: PlayCircleIcon },
-  { name: 'Contact sales', href: '/contact', icon: PhoneIcon },
-];
 
 export default function Example() {
 
@@ -46,6 +28,26 @@ export default function Example() {
   function classNames(...classes) {
     return classes.filter(Boolean).join(' ');
   }
+
+  const products = [
+    {
+      name: t("header.solution_1_title"),
+      description:  t("header.solution_1_description"),
+      href: '/solution/cities',
+      icon: BuildingLibraryIcon,
+    },
+    {
+      name: t("header.solution_2_title"),
+      description:  t("header.solution_2_description"),
+      href: '/solution/collectors',
+      icon: TruckIcon,
+    },
+  ];
+  
+  const callsToAction = [
+    { name: t("header.testimonial"), href: 'https://youtu.be/QDe44I2yLy4', icon: PlayCircleIcon },
+    { name: t("header.sales"), href: '/contact', icon: PhoneIcon },
+  ];
 
   return (
     <header>
@@ -167,13 +169,14 @@ export default function Example() {
           </Link>
         </Popover.Group>
 
-        <div className="hidden lg:flex lg:flex-1 lg:justify-end">
+        <div className="hidden lg:flex lg:flex-1 lg:justify-end gap-x-6">
           <a
               className={`special-button bg-rebin-blue  w-fit px-6 py-2 text-white font-regular rounded-md ${isHomePage ? "" : "bg-gradient"}`}
               href="https://www.platform.rebin.be/"
             >
             {t("header.login")}
           </a>
+          <LanguageSelector></LanguageSelector>
         </div>
       </nav>
 

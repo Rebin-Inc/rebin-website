@@ -3,8 +3,12 @@ import { Card, CardBody, Typography } from '@material-tailwind/react';
 import Time from '../../../../assets/images/solution/time.svg';
 import Truck from '../../../../assets/images/solution/truck.svg';
 import Route from '../../../../assets/images/solution/route.svg';
+import { useTranslation } from 'react-i18next';
 
 const Features = () => {
+
+  const { t } =useTranslation();
+
   return (
     <div className="mt-5 grid max-w-7xl gap-6 md:grid-cols-3 md:px-4">
       {/* Card 1 */}
@@ -19,10 +23,10 @@ const Features = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Route optimisation
+              {t("collectorpage.feature_1_title")}
             </Typography>
             <Typography>
-              Enhance profitability by avoiding empty pick-ups.
+              {t("collectorpage.feature_1_description")}
             </Typography>
           </div>
         </CardBody>
@@ -40,10 +44,10 @@ const Features = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Timely waste collection
+            {t("collectorpage.feature_2_title")}
             </Typography>
             <Typography>
-              Guarantee timely collection and put an end to overflowing assets.
+              {t("collectorpage.feature_2_description")}
             </Typography>
           </div>
         </CardBody>
@@ -61,10 +65,10 @@ const Features = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Collection efficiency
+              {t("collectorpage.feature_3_title")}
             </Typography>
             <Typography>
-              Increase material collection with the same resources.
+              {t("collectorpage.feature_3_description")}
             </Typography>
           </div>
         </CardBody>

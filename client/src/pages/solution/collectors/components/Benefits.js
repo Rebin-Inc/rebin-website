@@ -3,8 +3,12 @@ import { Card, CardBody, Typography } from '@material-tailwind/react';
 import Time from '../../../../assets/images/solution/time.svg';
 import Truck from '../../../../assets/images/solution/truck.svg';
 import Route from '../../../../assets/images/solution/route.svg';
+import { useTranslation } from 'react-i18next';
 
 const Benefits = () => {
+
+  const { t } =useTranslation();
+
   return (
     <div className="mt-5 grid max-w-3xl gap-6 md:grid-cols-2 md:px-4">
       {/* Card 1 */}
@@ -15,10 +19,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full ">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Optimized fleet planning
+              {t("collectorpage.benefits_1_title")}
             </Typography>
             <Typography className='text-justify'>
-              Align your process with fleet availability and load capacity to avoid interrupted routes due to fully loaded trucks.
+              {t("collectorpage.benefits_2_description")}
             </Typography>
           </div>
         </CardBody>
@@ -32,10 +36,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Operational efficiency
+              {t("collectorpage.benefits_2_title")}
             </Typography>
             <Typography className='text-justify'>
-              Cut collection costs by eliminating unnecessary pick-ups, ensuring cost-effective operations.
+            {t("collectorpage.benefits_2_description")}
             </Typography>
           </div>
         </CardBody>
@@ -49,10 +53,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Improved service
+              {t("collectorpage.benefits_3_title")}
             </Typography>
             <Typography className='text-justify'>
-              Fully relieve customers with a hassle-free logistics process by removing notification needs and avoid overflow.
+              {t("collectorpage.benefits_3_description")}
             </Typography>
           </div>
         </CardBody>
@@ -66,10 +70,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1 w-full">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue">
-              Maximized volumes
+              {t("collectorpage.benefits_4_title")}
             </Typography>
             <Typography className='text-justify '>
-              Increase volumes and revenues by collecting valuable waste streams like glass and textiles on time.
+              {t("collectorpage.benefits_4_description")}
             </Typography>
           </div>
         </CardBody>

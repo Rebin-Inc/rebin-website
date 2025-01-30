@@ -23,16 +23,8 @@ const ContactForm = () => {
     setLoading(true);
   
     try {
-      const result = await axios.post('https://api.emailjs.com/api/v1.0/email/send', {
-        service_id: 'service_gx6m6mz',
-        template_id: 'template_bywh74c',
-        user_id: 'NX7_T34KfIWfA-7ma',
-        template_params: {
-          from_name: inputs.name || "No Name",
-          message: inputs.message || "No Message",
-          phone: inputs.phone || "No Phone",
-          email: inputs.email || "No Email",
-        },
+      const result = await axios.post('/contact/sendMail', {
+        name: inputs.name, phone: inputs.phone, email: inputs.email, message: inputs.message
       });
   
       console.log("Success:", result);
@@ -172,7 +164,7 @@ const ContactForm = () => {
                     />
                   </svg>
                 )}
-                <span className="">Send Message</span>
+                <span className="">{t("contactpage.form_cta_button")}</span>
               </button>
             </form>
           </div>

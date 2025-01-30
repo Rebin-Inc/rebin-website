@@ -19,6 +19,8 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, 'client','build', 'index.html'));
 })
 
+app.use("/contact", require("./routes/contact"));
+
  //Listen server
 const port = process.env.PORT || 5000;
 
