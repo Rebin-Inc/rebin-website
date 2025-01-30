@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { MdLocationPin, MdEmail } from 'react-icons/md';
 import axios from 'axios';
+import { useTranslation } from 'react-i18next';
 
 const ContactForm = () => {
+
+  const { t } =useTranslation();
+
   const [inputs, setInputs] = useState({
     name: '',
     phone: '',
@@ -14,34 +18,32 @@ const ContactForm = () => {
   const handleChange = (e) => {
     setInputs({ ...inputs, [e.target.name]: e.target.value });
   };
-
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setLoading(true); // Start loading spinner
-    const result = await axios.post(
-      'https://api.emailjs.com/api/v1.0/email/send',
-      {
+    setLoading(true);
+  
+    try {
+      const result = await axios.post('https://api.emailjs.com/api/v1.0/email/send', {
         service_id: 'service_gx6m6mz',
         template_id: 'template_bywh74c',
         user_id: 'NX7_T34KfIWfA-7ma',
         template_params: {
-          from_name: inputs.name,
-          message: inputs.message,
-          phone: inputs.phone,
-          email: inputs.email,
+          from_name: inputs.name || "No Name",
+          message: inputs.message || "No Message",
+          phone: inputs.phone || "No Phone",
+          email: inputs.email || "No Email",
         },
-      },
-    );
-    console.log(result);
-    setLoading(false); // Stop loading spinner after email is sent
-    // Reset input fields after successful submission
-    setInputs({
-      name: '',
-      phone: '',
-      email: '',
-      message: '',
-    });
+      });
+  
+      console.log("Success:", result);
+      setInputs({ name: '', phone: '', email: '', message: '' });
+    } catch (error) {
+      console.error("Error sending email:", error.response?.data || error.message);
+    } finally {
+      setLoading(false);
+    }
   };
+  
 
   return (
     <div className="items-top relative flex justify-center bg-white sm:items-center sm:pt-0">
@@ -51,7 +53,7 @@ const ContactForm = () => {
             {/* Blue banner */}
             <div className="bg-gradient-reverse col-span-2 space-y-10 rounded-lg p-8">
               <h1 className="text-normal my-5 mb-16 text-lg font-semibold text-white sm:text-xl">
-                Contact information
+              {t("contactpage.form_information")}
               </h1>
               <div className="flex items-center text-white">
                 <MdEmail className="size-10"></MdEmail>
@@ -65,10 +67,9 @@ const ContactForm = () => {
               <div className="mt-8 flex items-center text-white">
                 <MdLocationPin className="size-10"></MdLocationPin>
                 <div className="ml-4 ">
-                  <span>Address</span>
+                  <span>{t("contactpage.form_address_title")}</span>
                   <div className="text-md w-45 font-medium tracking-wide">
-                    Lammerstraat 13 <br />
-                    9000 Gent, België
+                  {t("contactpage.form_address_info")}
                   </div>
                 </div>
               </div>
@@ -80,12 +81,12 @@ const ContactForm = () => {
               name="contactForm"
             >
               <h1 className="text-normal my-5 text-xl font-semibold text-black">
-                Get in touch
+              {t("contactpage.form_touch")}
               </h1>
               <div className="grid grid-cols-1 space-y-5 sm:grid-cols-2 sm:space-y-0">
                 <div className="flex flex-col space-y-2 sm:mr-3">
                   <label htmlFor="name" className="font-medium">
-                    Full name
+                  {t("contactpage.form_name_title")}
                   </label>
                   <input
                     required
@@ -93,7 +94,7 @@ const ContactForm = () => {
                     name="name"
                     id="name"
                     autoComplete="given-name"
-                    placeholder="Your full name"
+                    placeholder={t("contactpage.form_name_info")}
                     className="border-rebin mb-4 block w-full rounded-md py-2 pl-5 pr-20 text-sm font-light"
                     value={inputs.name}
                     onChange={handleChange}
@@ -102,7 +103,7 @@ const ContactForm = () => {
 
                 <div className="flex flex-col space-y-2">
                   <label htmlFor="tel" className="font-medium">
-                    Phone
+                    {t("contactpage.form_phone_title")}
                   </label>
                   <input
                     required
@@ -110,7 +111,7 @@ const ContactForm = () => {
                     name="phone"
                     id="tel"
                     autoComplete="tel"
-                    placeholder="Your phone number"
+                    placeholder={t("contactpage.form_phone_info")}
                     className="border-rebin mb-4 block w-full rounded-md py-2 pl-5 pr-20 text-sm font-light"
                     value={inputs.phone}
                     onChange={handleChange}
@@ -119,7 +120,7 @@ const ContactForm = () => {
               </div>
               <div className="mt-2 flex flex-col space-y-2">
                 <label htmlFor="email" className="font-medium">
-                  Email
+                {t("contactpage.form_email_title")}
                 </label>
                 <input
                   required
@@ -127,7 +128,7 @@ const ContactForm = () => {
                   name="email"
                   id="email"
                   autoComplete="email"
-                  placeholder="Your email address"
+                  placeholder={t("contactpage.form_email_info")}
                   className="border-rebin mb-4 block w-full rounded-md py-2 pl-5 pr-20 text-sm font-light"
                   value={inputs.email}
                   onChange={handleChange}
@@ -135,12 +136,12 @@ const ContactForm = () => {
               </div>
               <div className="mt-2 flex flex-col space-y-2">
                 <label htmlFor="message" className="font-medium">
-                  Message
+                  {t("contactpage.form_message_title")}
                 </label>
                 <textarea
                   name="message"
                   id="message"
-                  placeholder="Please include all relevant information"
+                  placeholder={t("contactpage.form_message_info")}
                   className="border-rebin mb-4 block w-full rounded-md py-2 pl-5 pr-20 text-sm font-light"
                   value={inputs.message}
                   onChange={handleChange}

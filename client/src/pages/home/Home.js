@@ -8,25 +8,30 @@ import RebinR from '../../assets/images/Rebin_R_Gradient.svg';
 import platform from '../../assets/images/home/platform.png';
 import mockup from '../../assets/images/home/mockup.png';
 import FAQ from './components/FAQ';
+import { useTranslation } from 'react-i18next';
 
 const Home = () => {
+
+
+  const { t } =useTranslation();
+
   return (
     <>
       <div className="relative flex flex-col items-center gap-x-6 gap-y-5 text-center max-w-7xl ml-auto mr-auto p-6">
         <span className="z-20 mt-5 text-white font-extralight text-md border border-rebin-blue-color px-3 py-2 rounded-lg">
-          Streamline waste collection
+        {t("homepage.hero_span")}
         </span>
         <div className="grid place-items-center">
         <div class="absolute z-10 h-[300px] w-[300px] bg-[#0043ff] blur-[80px] sm:h-[300px] sm:w-[500px]"></div>
           <div className='z-10 flex flex-col items-center gap-x-6 gap-y-5 text-center max-w-7xl ml-auto mr-auto'>
             <h1 className="text-white text-4xl font-bold md:text-6xl md:mt-2 max-w-4xl text-center">
-              The nr.1 platform for efficient waste collection
+            {t("homepage.hero_title")}
             </h1>
             <p className="text-white font-thin mt-2 max-w-xl text-lg text-center">
-              Take control of your resources and explore how your waste<br /> collection can be optimized.
+            {t("homepage.hero_subtitle")}
             </p>
             <button onClick={() => (window.location.href = 'contact')}  className="special-button bg-rebin-dark-blue mt-2 w-fit px-4 py-3 text-white font-regular rounded-lg text-center">
-              Talk to rebin
+            {t("homepage.hero_cta_button")}
             </button>
           </div>
         </div>
@@ -47,10 +52,10 @@ const Home = () => {
 
         <div className="flex flex-col mt-10 md:mt-24 text-center items-center p-6">
           <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-            Solutions
+          {t("homepage.solution_span")}
           </h1>
           <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue mb-10">
-            Discover our comprehensive offering
+          {t("homepage.solution_title")}
           </h2>
           <SolutionCards />
         </div>
@@ -60,14 +65,13 @@ const Home = () => {
           {/* Content Container */}
           <div className="flex flex-col items-start md:order-2">
             <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-              Why choose us
+            {t("homepage.why_choose_us_span")}
             </h1>
             <h2 className="text-left mt-4 text-4xl font-bold text-rebin-darkblue">
-              Seamlessly integrate <span className="text-rebin-blue">every</span> waste asset
+            {t("homepage.why_choose_us_title")}
             </h2>
             <p className="text-left mt-6">
-              Discover the power of our versatile solution, transforming any bin or container into a smart one.
-              Regardless of size or shape, our technology seamlessly integrates with every kind of waste asset.
+            {t("homepage.why_choose_us_description")}
             </p>
           </div>
 
@@ -89,16 +93,16 @@ const Home = () => {
               <div className="blob absolute z-20"></div>
               <div className="space-y-8 lg:pr-12 z-20">
                 <h1 className="w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-                  Testimonials
+                {t("homepage.testimonial_span")}
                 </h1>
                 <h2 className="text-4xl font-semibold">
-                  Trusted by leading organizations
+                {t("homepage.testimonial_title")}
                 </h2>
                 <button
                   className="special-button flex items-center bg-rebin-blue mt-2 w-fit px-4 py-3 text-white font-regular rounded-lg"
                   onClick={() => (window.location.href = 'references')} // Use onClick for navigation if not using React Router
                 >
-                  Case studies
+                  {t("homepage.testimonial_cta_button")}
                   <img src={Pijl} alt="Arrow Icon" className="w-8 h-8" />
                 </button>
               </div>
@@ -113,10 +117,10 @@ const Home = () => {
 
         <div className="flex flex-col mt-24 text-center items-center">
           <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-            Frequently asked questions
+          {t("homepage.FAQ_span")}
           </h1>
           <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue mb-10">
-            Got questions? We've got <br /> answers!
+          {t("homepage.FAQ_title")}
           </h2>
           <FAQ />
         </div>

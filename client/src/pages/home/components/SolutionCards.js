@@ -5,9 +5,13 @@ import bar from '../../../assets/images/home/solutions/bar.svg';
 import fillLevelMonitoring from '../../../assets/images/home/solutions/fill-level-monitoring.png';
 import dataInsights from '../../../assets/images/home/solutions/data-insights.png';
 import routeOptimization from '../../../assets/images/home/solutions/route-optimization.png';
+import { useTranslation } from 'react-i18next';
 
 
 export default function SolutionCards() {
+
+  const { t } =useTranslation();
+
   return (
     <div className="mx-auto mt-10 grid grid-cols-1 gap-6 md:grid-cols-3 lg:w-5/6">
       <Card
@@ -23,10 +27,10 @@ export default function SolutionCards() {
             />
           </div>
           <h4 className="text-left text-rebin-darkblue text-xl font-bold md:text-2xl">
-            Fill level monitoring
+          {t("homepage.solution_1_title")}
           </h4>
           <p className="text-left text-rebin-darkblue md:text-base">
-            Monitor container levels and collect only when necessary.
+          {t("homepage.solution_1_subtitle")}
           </p>
           <img
               src={fillLevelMonitoring}
@@ -47,10 +51,10 @@ export default function SolutionCards() {
             />
           </div>
           <h4 className="text-left text-rebin-darkblue text-xl font-bold md:text-2xl">
-            Route optimisation
+            {t("homepage.solution_2_title")}
           </h4>
           <p className="text-left text-rebin-darkblue md:text-base">
-            Optimize collection routes and reduce time, costs, and emissions.
+            {t("homepage.solution_2_subtitle")}
           </p>
           <img
             src={routeOptimization}
@@ -71,10 +75,10 @@ export default function SolutionCards() {
             />
           </div>
           <h4 className="text-left text-rebin-darkblue text-xl font-bold md:text-2xl">
-            Data insights
+            {t("homepage.solution_3_title")}
           </h4>
           <p className="text-left text-rebin-darkblue md:text-base">
-            Gain actionable data insights for strategic decision-making.
+            {t("homepage.solution_3_subtitle")}
           </p>
           <img
             src={dataInsights}

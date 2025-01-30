@@ -5,8 +5,12 @@ import { Link } from 'react-router-dom';
 import CookiePolicy from '../assets/documents/Cookieverklaring_Rebin.pdf';
 import TermsAndConditions from '../assets/documents/AlgemeneVoorwaarden_Rebin.pdf';
 import PrivacyPolicy from '../assets/documents/Privacyverklaring_Rebin.pdf';
+import { useTranslation } from 'react-i18next';
 
 const Footer = () => {
+
+  const { t } = useTranslation();
+
   return (
     <footer className="bg-gradient-footer pt-20 text-white">
       <div
@@ -41,7 +45,7 @@ const Footer = () => {
         </div>
         <div className="lg mb-8 grid grid-cols-2 gap-y-10 sm:grid-cols-4 lg:flex lg:w-full lg:flex-row lg:justify-around">
           <div className="flex flex-col space-y-4">
-            <p className="text-sm font-semibold">Explore</p>
+            <p className="text-sm font-semibold">{t("footer.explore")}</p>
             {/* <Link
               to="how-it-works"
               className="inline text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
@@ -52,23 +56,23 @@ const Footer = () => {
               to="references"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
-              References
+              {t("footer.explore_1")}
             </Link>
             <Link
               to="about"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
-              About us
+               {t("footer.explore_2")}
             </Link>
             <Link
               to="contact"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
-              Contact
+               {t("footer.explore_3")}
             </Link>
           </div>
           <div className="flex flex-col space-y-4">
-            <p className="text-sm font-semibold">Solution</p>
+            <p className="text-sm font-semibold">{t("footer.solution")}</p>
             {/* <Link
               to="sensor"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
@@ -79,13 +83,13 @@ const Footer = () => {
               to="solution/cities"
               className="inline text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
-              Cities & municipalities
+              {t("footer.solution_1")}
             </Link>
             <Link
               to="solution/collectors"
               className="text-sm font-light opacity-80 hover:font-normal hover:opacity-100"
             >
-              Waste collectors
+              {t("footer.solution_2")}
             </Link>
             {/* <Link
               to="consulting"
@@ -95,16 +99,15 @@ const Footer = () => {
             </Link> */}
           </div>
           <div className="flex flex-col space-y-4">
-            <p className="text-sm font-semibold">Contact</p>
-            <p className="text-sm font-light opacity-80">info@rebin.be</p>
+            <p className="text-sm font-semibold">{t("footer.contact")}</p>
+            <p className="text-sm font-light opacity-80">{t("footer.contact_1")}</p>
             <p className="text-sm font-light opacity-80">
-              Lammerstraat 13
-              <br /> 9000 Gent, België
+              {t("footer.contact_2")}
             </p>
-            <p className="text-sm font-light opacity-80">BE 0799.727.089</p>
+            <p className="text-sm font-light opacity-80">{t("footer.contact_3")}</p>
           </div>
           <div className="flex flex-col space-y-4">
-            <p className="text-sm font-semibold">Stay up to date</p>
+            <p className="text-sm font-semibold">{t("footer.update")}</p>
             <div className="flex max-w-md flex-col space-y-4">
               <input
                 id="email-address"
@@ -112,13 +115,13 @@ const Footer = () => {
                 type="email"
                 autoComplete="email"
                 className="focus:border-1 max-w-36 rounded-md border-0 bg-white/10 px-3.5 py-1  text-xs text-white focus:border-blue-500"
-                placeholder="Enter your email"
+                placeholder={t("footer.input")}
               />
               <button
                 type="submit"
-                className="text-rebin-darkblue max-w-14 flex-none rounded-md bg-white px-1 py-1 text-xs font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
+                className="text-rebin-darkblue max-w-20 flex-none rounded-md bg-white px-1 py-1 text-xs font-semibold shadow-sm focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2"
               >
-                Send
+                {t("footer.cta_button")}
               </button>
             </div>
           </div>

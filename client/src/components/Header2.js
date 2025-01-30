@@ -14,6 +14,7 @@ import {
 import { ChevronDownIcon, PhoneIcon, PlayCircleIcon } from '@heroicons/react/20/solid';
 import rebinBlue from '../assets/images/Rebin.svg';
 import rebinWhite from '../assets/images/Rebin_Wit.svg';
+import { useTranslation } from 'react-i18next';
 
 const products = [
   {
@@ -36,6 +37,8 @@ const callsToAction = [
 ];
 
 export default function Example() {
+
+  const { t } =useTranslation();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const location = useLocation();
   const isHomePage = location.pathname === '/';
@@ -86,7 +89,7 @@ export default function Example() {
     'text-sm font-medium flex items-center gap-x-1 focus:outline-none'
   )}
 >
-  Solution
+{t("header.solution")}
   <ChevronDownIcon
     aria-hidden="true"
     className={`size-5 flex-none text-black ${isHomePage ? 'text-white' : 'text-black text-gradient-hover'}`}
@@ -142,7 +145,7 @@ export default function Example() {
             )}
             to="/references"
           >
-            References
+            {t("header.references")}
           </Link>
           <Link
             className={classNames(
@@ -151,7 +154,7 @@ export default function Example() {
             )}
             to="about"
           >
-            About us
+            {t("header.about")}
           </Link>
           <Link
             className={classNames(
@@ -160,7 +163,7 @@ export default function Example() {
             )}
             to="/contact"
           >
-            Contact
+            {t("header.contact")}
           </Link>
         </Popover.Group>
 
@@ -169,7 +172,7 @@ export default function Example() {
               className={`special-button bg-rebin-blue  w-fit px-6 py-2 text-white font-regular rounded-md ${isHomePage ? "" : "bg-gradient"}`}
               href="https://www.platform.rebin.be/"
             >
-            Log in
+            {t("header.login")}
           </a>
         </div>
       </nav>
@@ -200,7 +203,7 @@ export default function Example() {
               <div className="space-y-2 py-6">
                 <Disclosure as="div" className="-mx-3">
                   <Disclosure.Button className="group flex w-full items-center justify-between rounded-lg py-2 pl-3 pr-3.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50">
-                    Solution
+                    {t("header.solution")}
                     <ChevronDownIcon
                       aria-hidden="true"
                       className="size-5 flex-none group-data-[open]:rotate-180"
@@ -227,7 +230,7 @@ export default function Example() {
                     onClick={() => setMobileMenuOpen(false)}
                   >
                     
-                    References
+                    {t("header.references")}
                   </Link>
                  
                   <Link
@@ -236,7 +239,7 @@ export default function Example() {
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    About
+                    {t("header.about")}
                   </Link>
                   
                   <Link
@@ -245,7 +248,7 @@ export default function Example() {
                     className="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                     onClick={() => setMobileMenuOpen(false)}
                   >
-                    Contact
+                    {t("header.contact")}
                   </Link>
             
               </div>
@@ -254,7 +257,7 @@ export default function Example() {
                   href="https://www.platform.rebin.be/"
                   className="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-gray-900 hover:bg-gray-50"
                 >
-                  Log in
+                  {t("header.login")}
                 </a>
               </div>
             </div>
