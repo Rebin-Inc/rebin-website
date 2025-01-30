@@ -1,7 +1,11 @@
 import React from 'react';
 import { Card, CardBody, Typography } from '@material-tailwind/react';
+import { useTranslation } from 'react-i18next';
 
 const Benefits = () => {
+
+  const { t } =useTranslation();
+
   return (
     <div className="mt-10 grid max-w-7xl gap-6 md:grid-cols-2 lg:grid-cols-3 md:px-4">
       {/* Card 1 */}
@@ -12,10 +16,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
-              Detailed bin inventory
+            {t("citiespage.benefit1_title")}
             </Typography>
             <Typography className='font-sans'>
-              Map bins digitally and access an up-to-date inventory.
+            {t("citiespage.benefit1_description")}
             </Typography>
           </div>
         </CardBody>
@@ -29,10 +33,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1">
             <Typography variant="h5"  className="mb-2 leading-tight text-rebin-darkblue font-sans">
-              Cost savings
+            {t("citiespage.benefit2_title")}
             </Typography>
             <Typography className='font-sans'>
-              Reduce collection costs by eliminating unnecessary pick-ups. 
+            {t("citiespage.benefit2_description")}
             </Typography>
           </div>
         </CardBody>
@@ -46,10 +50,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
-              Clean environment
+            {t("citiespage.benefit3_title")}
             </Typography>
             <Typography className='font-sans'>
-              Prevent overflowing bins and litter with real-time fill level insights.
+            {t("citiespage.benefit3_description")}
             </Typography>
           </div>
         </CardBody>
@@ -63,10 +67,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
-              Automated scheduling
+            {t("citiespage.benefit4_title")}
             </Typography>
             <Typography className='font-sans'>
-              Avoid scheduling difficulties with a adaptive planning tool. 
+            {t("citiespage.benefit4_description")}
             </Typography>
           </div>
         </CardBody>
@@ -80,10 +84,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
-              Optimal bin placement
+            {t("citiespage.benefit5_title")}
             </Typography>
             <Typography className='font-sans'>
-              Use insights to identify redundant bins and optimize placement.
+            {t("citiespage.benefit5_description")}
             </Typography>
           </div>
         </CardBody>
@@ -97,10 +101,10 @@ const Benefits = () => {
           </div>
           <div className="flex flex-col text-left -mt-1">
             <Typography variant="h5" className="mb-2 leading-tight text-rebin-darkblue font-sans">
-              Legislation compliant
+            {t("citiespage.benefit6_title")}
             </Typography>
             <Typography className='font-sans'>
-            Meet the latest regulations through accessible data from our platform.
+            {t("citiespage.benefit6_description")}
             </Typography>
           </div>
         </CardBody>

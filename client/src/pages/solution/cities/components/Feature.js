@@ -14,42 +14,39 @@ import Statistics from '../../../../assets/images/solution/Statisticsmockup.png'
 import sensor from '../../../../assets/images/home/solutions/sensor.svg';
 import map from '../../../../assets/images/home/solutions/map.svg';
 import bar from '../../../../assets/images/home/solutions/bar.svg';
+import { useTranslation } from 'react-i18next';
 
 export default function Feature() {
   const [activeTab, setActiveTab] = React.useState(0);
 
+  const { t } =useTranslation();
+
   const data = [
     {
-      label: 'Dashboard',
+      label: t("citiespage.feature1_label"),
       icon: sensor,
-      title: 'Dashboard',
+      title: t("citiespage.feature1_title"),
       image: Dashboard,
-      subtitle: 'Know the status of your bins',
-      desc: `
-        Track the fill levels of your bins with a complete overview. Quickly identify critical KPIs and make informed decisions accordingly.
-      `,
+      subtitle: t("citiespage.feature1_subtitle"),
+      desc: t("citiespage.feature1_description"),
     },
     {
-      label: 'Routing',
+      label: t("citiespage.feature2_label"),
       icon: map,
-      title: 'Route optimisation',
+      title: t("citiespage.feature2_title"),
       image: Routing,
-      subtitle: 'Bypass unnecessary stops',
-      desc: `
-      Improve collection operations by overlooking empty bins, saving costs and reducing CO2 emissions along the way. Tailor routes using up-to-date fill level information to avoid unnecessary staff deployment.
-      `,
-      advantages: ['Reduced collection time', 'Fuel cost savings'],
+      subtitle: t("citiespage.feature2_subtitle"),
+      desc: t("citiespage.feature2_description"),
+      advantages: [t("citiespage.feature2_stat1"), t("citiespage.feature2_stat2")],
       percentages: ['58', '40'],
     },
     {
-      label: 'Analytics',
+      label: t("citiespage.feature3_label"),
       icon: bar,
-      title: 'Analytics',
+      title: t("citiespage.feature3_title"),
       image: Statistics,
-      subtitle: 'Take strategic decisions',
-      desc: `
-      Access a variety of statistics, such as collection frequencies, waste amounts, and fill level evolutions. Utilize data-driven insights to streamline resource management and reporting.
-      `,
+      subtitle: t("citiespage.feature3_subtitle"),
+      desc: t("citiespage.feature3_description"),
     },
   ];
 

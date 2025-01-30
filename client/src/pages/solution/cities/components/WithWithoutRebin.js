@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import withoutRebin from '../../../../assets/images/withoutRebin.png';
 import withRebin from '../../../../assets/images/withRebin.png';
+import { useTranslation } from 'react-i18next';
 
 const WithWithoutRebin = () => {
+
+  const { t } =useTranslation();
+
   const [activeButton, setActiveButton] = useState('WithoutRebin'); // Default active button
   const [isFading, setIsFading] = useState(false); // State to control fade effect
 
@@ -30,7 +34,7 @@ const WithWithoutRebin = () => {
           }`}
           onClick={() => handleButtonClick('WithoutRebin')}
         >
-          Without Rebin
+          {t("citiespage.without_rebin_span")}
         </button>
 
         <div className="w-[20px] h-[2px] bg-rebin-blue z-0"></div>
@@ -43,7 +47,7 @@ const WithWithoutRebin = () => {
           }`}
           onClick={() => handleButtonClick('WithRebin')}
         >
-          With Rebin
+          {t("citiespage.with_rebin_span")}
         </button>
 
         <div className="w-[30px] md:w-[240px] h-[2px] bg-gradient-blue-white z-0"></div>
