@@ -84,7 +84,7 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
 
         },
         contactpage: {
-          hero_span: "Contact",
+          hero_span: "Contact", 
           hero_title: "Join our mission to make waste management more efficient",
           form_information: "Contact information",
           form_address_title: "Address",
@@ -98,13 +98,37 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
           form_email_info: "Your email address",
           form_message_title: "Message",
           form_message_info: "Please include all relevant information",
+        },
+        aboutpage: {
+          hero_span: "Our story", 
+          hero_title: "How we started",
+          hero_description: "Spotting an overflowing bin in the park, we decided to act. Recognizing inefficiencies in waste collection, we resolved to enhance the system, tackling overflowing bins and other asset challenges to benefit the environment and community.",
+          statisticbar_stat1: "Collection _hours_ saved",
+          statisticbar_stat2: "_Kilometers_ less covered",
+          statisticbar_stat3: "Tons less _CO2_",
+          statisticbar_stat4: "_Plastic_ bags avoided",
+          mission_span: "Our mission",
+          mission_title: "Empowering organisations with smart waste management solutions",
+          mission_description: "Rebin enables businesses and governments to revolutionize waste management. With our innovative software, we provide real-time monitoring, streamline collection routes, and deliver actionable insights, one asset at a time.",
+          team_span: "Our team",
+          team_title: "Meet the Rebineers thriving for impact",
+          team_cta: "Become a Rebineer",
+          articles_span: "Articles",
+          articles_title: "Rebin in the news",
+          article1_title: "Maarkedal introduces smart waste sensors to save time and fuel in waste collection",
+          article2_title: "The smart trash bin: from student project to the Port of Rotterdam (and the rest of the world?)",
+          article3_title: "Asse becomes the fourth municipality in Flanders to install fill level sensors in public trash bins",
+          article1_date: "October 22, 2023",
+          article2_date: "October 22, 2024",
+          article3_date: "October 9, 2023",
+          news_article_span: "News article" 
         }
       }
     },
     nl: {
       translation: {
         header: {
-          solution: "oplossing",
+          solution: "Oplossing",
           references: "Referenties",
           about: "Over ons",
           contact: "Contact",
@@ -192,6 +216,30 @@ i18n.use(LanguageDetector).use(initReactI18next).init({
           form_email_info: "jouw email-adres",
           form_message_title: "Bericht",
           form_message_info: "Vermeld alle relevante informatie",
+        },
+        aboutpage: {
+          hero_span: "Ons verhaal",
+          hero_title: "Hoe het begon",
+          hero_description: "Toen we tijdens een doodgewone wandeling in het park de zoveelste overvolle afvalbak zagen, besloten we actie te ondernemen. Na een uitgebreid onderzoek werden we ons bewust van de inefficiëntie van de huidige afvalinzaming, en sloegen we de handen in elkaar om overvolle afvalbakken en andere uitdagingen binnen de sector aan te pakken.",
+          statisticbar_stat1: "_Arbeidsuren_ uitgespaard",
+          statisticbar_stat2: "_Kilometer_ minder afgelegd",
+          statisticbar_stat3: "Ton minder _CO2_",
+          statisticbar_stat4: "_Afvalzakken_ vermeden",
+          mission_span: "Onze missie",
+          mission_title: "Organisaties versterken met slimme oplossingen voor afvalbeheer",
+          mission_description: "Rebin stelt bedrijven en overheden in staat om afvalbeheer te transformeren. Met onze innovatieve software bieden we real-time monitoring, optimaliseren we inzamelroutes, en leveren we bruikbare data-inzichten, op niveau van iedere afvalbak of container.",
+          team_span: "Ons team",
+          team_title: "Ontmoet de Rebineers strevend naar impact",
+          team_cta: "Word een Rebineer",
+          articles_span: "Artikels",
+          articles_title: "Rebin in het nieuws",
+          article1_title: "Maarkedal zet slimme vuilnisbakken in om te besparen op tijd en brandstof van vuilniswagens",
+          article2_title: "De slimme vuilnisbak: van studentenproject naar de haven van Rotterdam (en de rest van de wereld?)",
+          article3_title: "Asse plaatst als vierde gemeente in Vlaanderen vulgraadsensoren in publieke vuilnisbakken",
+          article1_date: "22 oktober, 2023",
+          article2_date: "22 oktober, 2024",
+          article3_date: "9 oktober, 2023",
+          news_article_span: "Nieuws artikel" 
         }
       }
     }

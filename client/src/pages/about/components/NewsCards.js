@@ -4,15 +4,19 @@ import Article1 from '../../../assets/images/about/newsCards/Artikel1.jpg';
 import Article2 from '../../../assets/images/about/newsCards/Artikel2.jpg';
 import Article3 from '../../../assets/images/about/newsCards/Artikel3.jpg';
 import Article4 from '../../../assets/images/about/newsCards/Artikel4.jpg';
+import { useTranslation } from 'react-i18next';
 
 const NewsCards = () => {
+
+  const { t } =useTranslation();
+
   const news = [
     {
       id: 1,
       title:
-        'Maarkedal zet slimme vuilnisbakken in om te besparen op tijd en brandstof van vuilniswagens',
+      t("aboutpage.article1_title"),
       duration: '1 min',
-      date: 'October 22, 2023',
+      date: t("aboutpage.article1_date"),
       image: Article1,
       href: 'https://www.vrt.be/vrtnws/nl/2023/10/22/maarkedal-zet-slimme-vuilbakken-in-om-tijd-en-brandstof-van-vuil/',
       image_description:
@@ -21,9 +25,9 @@ const NewsCards = () => {
     {
       id: 2,
       title:
-        'De slimme vuilnisbak: van studentenproject naar de haven van Rotterdam (en de rest van de wereld?)',
+      t("aboutpage.article2_title"),
       duration: '3 min',
-      date: 'October 22, 2024',
+      date: t("aboutpage.article2_date"),
       image: Article2,
       href: 'https://www.durfdenken.be/nl/ugenters/de-slimme-vuilnisbak-van-studentenproject-naar-de-haven-van-rotterdam-en-de-rest-van-de',
       image_description:
@@ -32,12 +36,12 @@ const NewsCards = () => {
     {
       id: 3,
       title:
-        'Asse plaatst als vierde gemeente in Vlaanderen vulgraadsensoren in publieke vuilnisbakken',
+      t("aboutpage.article3_title"),
       duration: '2 min',
-      date: 'October 9, 2024',
+      date: t("aboutpage.article3_date"),
       image: Article4,
       href: 'https://www.hln.be/asse/asse-plaatst-als-vierde-gemeente-in-vlaanderen-vulgraadsensoren-in-publieke-vuilnisbakken~ad21dd83/',
-      image_description: '',
+      image_description: 'Group photo of the Rebin team and the local government of Asse around a newly installed Rebin Smart Waste Sensor.',
     },
   ];
 
@@ -60,7 +64,7 @@ const NewsCards = () => {
               </div>
               <div className="bg-rebin-grey mb-6 mt-10 w-32 rounded-lg px-1">
                 <h5 className="text-gradient-horizontal mx-auto font-bold">
-                  News article
+                {t("aboutpage.news_article_span")}
                 </h5>
               </div>
               <h5 className="text-blue-gray-900 mb-2 block text-left font-sans text-xl font-semibold leading-snug tracking-normal antialiased">

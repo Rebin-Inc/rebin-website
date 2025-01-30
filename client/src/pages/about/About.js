@@ -7,21 +7,22 @@ import NewsCards from './components/NewsCards';
 import CallToAction from '../../components/CallToAction';
 import Pijl from '../../assets/images/Pijl_Rechts_Wit.svg';
 import Team from '../../assets/images/about/team.png';
+import { useTranslation } from 'react-i18next';
 
 const About = () => {
+
+ const { t } =useTranslation();
+
   return (
     <main className="max-w-7xl ml-auto mr-auto p-6">
       <div className="mt-10 grid grid-cols-1 items-center gap-x-6 gap-y-12 lg:grid-cols-2 lg:gap-24">
         <div className="order-last lg:order-first">
           <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-            Our story
+          {t("aboutpage.hero_span")}
           </h1>
-          <h2 className="w-2xl mt-4 text-5xl font-bold text-rebin-darkblue">How we started</h2>
+          <h2 className="w-2xl mt-4 text-5xl font-bold text-rebin-darkblue">{t("aboutpage.hero_title")}</h2>
           <p className="text-md font-regular mt-6 text-balance">
-            Spotting an overflowing bin in the park, we decided to act.
-            Recognizing inefficiencies in waste collection, we resolved to
-            enhance the system, tackling overflowing bins and other asset
-            challenges to benefit the environment and community.
+          {t("aboutpage.hero_description")}
           </p>
         </div>
         <div className="mx-auto w-full max-w-xl place-self-center">
@@ -38,13 +39,13 @@ const About = () => {
         <div className="flex items-center">
           <div>
             <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg sm:mx-0">
-              Our mission
+            {t("aboutpage.mission_span")}
             </h1>
             <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue sm:text-left">
-              Empowering organisations with smart waste management solutions
+            {t("aboutpage.mission_title")}
             </h2>
             <p className="mt-6 sm:text-left">
-              Rebin enables businesses and governments to revolutionize waste management. With our innovative software, we provide real-time monitoring, streamline collection routes, and deliver actionable insights, one asset at a time.
+            {t("aboutpage.mission_description")}
             </p>
           </div>
         </div>
@@ -65,25 +66,25 @@ const About = () => {
 
       <div className="mt-20 lg:mt-36 flex flex-col text-center items-center">
         <h1 className="text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-          Our team
+        {t("aboutpage.team_span")}
         </h1>
         <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue">
-          Meet the Rebineers thriving for impact
+        {t("aboutpage.team_title")}
         </h2>
         <TeamCards></TeamCards>
         <button
             className="special-button flex items-center bg-gradient mt-2 w-fit px-4 py-3 text-white font-semibold rounded-lg"
             onClick={() => (window.location.href = 'contact')} // Use onClick for navigation if not using React Router
           >
-            Become a Rebineer
+            {t("aboutpage.team_cta")}
             <img src={Pijl} alt="Arrow Icon" className="w-8 h-8" />
       </button>
       </div>
       <div className="mt-20 lg:mt-28">
         <h1 className="mt-20 text-rebin-blue w-fit font-light text-md border border-rebin-blue-color px-4 py-1 rounded-lg">
-          Articles
+        {t("aboutpage.articles_span")}
         </h1>
-        <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue">Rebin in the news</h2>
+        <h2 className="mt-4 text-4xl font-bold text-rebin-darkblue">{t("aboutpage.articles_title")}</h2>
         <NewsCards></NewsCards>
       </div>
       <CallToAction></CallToAction>

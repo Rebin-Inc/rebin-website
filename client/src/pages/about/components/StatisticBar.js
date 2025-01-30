@@ -15,7 +15,7 @@ const StatisticBar = () => {
         </div>
         <div className="grid place-content-center space-y-5 p-6 text-center">
           <dd className="order-first text-3xl font-semibold tracking-tight text-gray-900 sm:text-5xl">
-            9.210
+            100000000
           </dd>
           <dt className="text-base text-gray-600">
             <span className="text-rebin-blue font-black">Kilometers</span> less
