@@ -16,7 +16,7 @@ const Cities = () => {
           <span className="text-rebin-blue font-extralight text-md border border-rebin-blue-color px-3 py-2 rounded-lg">
           {t("citiespage.hero_span")}
           </span>
-          <h1 className="text-rebin-darkblue text-3xl font-bold md:text-5xl md:mt-2 max-w-2xl">
+          <h1 className="text-rebin-darkblue text-3xl font-bold md:text-5xl md:mt-2 max-w-4xl">
           {t("citiespage.hero_title")}
           </h1>
           <p className="text-rebin-darkblue font-light mt-4 max-w-xl text-lg">

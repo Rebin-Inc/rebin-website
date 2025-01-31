@@ -22,7 +22,7 @@ const Benefits = () => {
               {t("collectorpage.benefits_1_title")}
             </Typography>
             <Typography className='text-justify'>
-              {t("collectorpage.benefits_2_description")}
+              {t("collectorpage.benefits_1_description")}
             </Typography>
           </div>
         </CardBody>

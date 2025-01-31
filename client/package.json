@@ -62,5 +62,6 @@
     "plugins": [
       "prettier-plugin-tailwindcss"
     ]
-  }
+  }, 
+   "proxy": "http://localhost:5000"
 }
