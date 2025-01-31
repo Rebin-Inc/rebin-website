@@ -14,7 +14,7 @@ const StatisticBar = () => {
             <CountUp decimal="," separator="." end={1221} />
           </dd>
           <dt className="text-base text-gray-600">
-          {t("aboutpage.statisticbar_stat1")}
+          <p className='text-rebin-blue '>{t("aboutpage.statisticbar_stat1").split('_')[1] } <span className='text-gray-600'>{t("aboutpage.statisticbar_stat1").split('_')[2]}</span></p>
           </dt>
         </div>
         <div className="grid place-content-center space-y-5 p-6 text-center">
@@ -22,7 +22,7 @@ const StatisticBar = () => {
             <CountUp decimal="," separator="." end={9210} />
           </dd>
           <dt className="text-base text-gray-600">
-          {t("aboutpage.statisticbar_stat2")}
+            <p className='text-rebin-blue '>{t("aboutpage.statisticbar_stat2").split('_')[1] } <span className='text-gray-600'>{t("aboutpage.statisticbar_stat2").split('_')[2]}</span></p>
           </dt>
         </div>
         <div className="grid place-content-center space-y-5 p-6 text-center">
@@ -30,7 +30,7 @@ const StatisticBar = () => {
             <CountUp decimal="," separator="." decimals={1} end={7.6} />
           </dd>
           <dt className="text-base text-gray-600">
-          {t("aboutpage.statisticbar_stat3")}
+            <p className='text-gray-600'>{t("aboutpage.statisticbar_stat3").split('_')[0] } <span className='text-rebin-blue'>{t("aboutpage.statisticbar_stat3").split('_')[1]}</span></p>
           </dt>
         </div>
         <div className="grid place-content-center space-y-5 p-6 text-center">
@@ -38,7 +38,7 @@ const StatisticBar = () => {
             <CountUp decimal="," separator="." end={13410} />
           </dd>
           <dt className="text-base text-gray-600">
-          {t("aboutpage.statisticbar_stat4")}
+            <p className='text-rebin-blue '>{t("aboutpage.statisticbar_stat4").split('_')[1] } <span className='text-gray-600'>{t("aboutpage.statisticbar_stat4").split('_')[2]}</span></p>
           </dt>
         </div>
       </dl>

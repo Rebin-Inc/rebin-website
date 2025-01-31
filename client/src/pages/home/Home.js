@@ -19,19 +19,19 @@ const Home = () => {
     <>
       <div className="relative flex flex-col items-center gap-x-6 gap-y-5 text-center max-w-7xl ml-auto mr-auto p-6">
         <span className="z-20 mt-5 text-white font-extralight text-md border border-rebin-blue-color px-3 py-2 rounded-lg">
-        {t("homepage.hero_span")}
+          {t("homepage.hero_span")}
         </span>
         <div className="grid place-items-center">
         <div class="absolute z-10 h-[300px] w-[300px] bg-[#0043ff] blur-[80px] sm:h-[300px] sm:w-[500px]"></div>
           <div className='z-10 flex flex-col items-center gap-x-6 gap-y-5 text-center max-w-7xl ml-auto mr-auto'>
             <h1 className="text-white text-4xl font-bold md:text-6xl md:mt-2 max-w-4xl text-center">
-            {t("homepage.hero_title")}
+              {t("homepage.hero_title")}
             </h1>
             <p className="text-white font-thin mt-2 max-w-xl text-lg text-center">
-            {t("homepage.hero_subtitle")}
+              {t("homepage.hero_subtitle")}
             </p>
             <button onClick={() => (window.location.href = 'contact')}  className="special-button bg-rebin-dark-blue mt-2 w-fit px-4 py-3 text-white font-regular rounded-lg text-center">
-            {t("homepage.hero_cta_button")}
+              {t("homepage.hero_cta_button")}
             </button>
           </div>
         </div>
@@ -68,7 +68,7 @@ const Home = () => {
             {t("homepage.why_choose_us_span")}
             </h1>
             <h2 className="text-left mt-4 text-4xl font-bold text-rebin-darkblue">
-            {t("homepage.why_choose_us_title")}
+            <p>{t("homepage.why_choose_us_title").split('_')[0]} <span className='text-rebin-blue'>{t("homepage.why_choose_us_title").split('_')[1]}</span> {t("homepage.why_choose_us_title").split('_')[2]} </p>
             </h2>
             <p className="text-left mt-6">
             {t("homepage.why_choose_us_description")}
