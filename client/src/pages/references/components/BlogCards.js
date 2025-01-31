@@ -3,35 +3,42 @@ import { Link } from 'react-router-dom';
 import MaarkedalImg from '../../../assets/images/references/blog/maarkedal.png';
 import MoorsledeImg from '../../../assets/images/references/blog/moorslede.jpg';
 import RotterdamImg from '../../../assets/images/references/blog/rotterdam.jpg';
+import { useTranslation } from 'react-i18next';
 
 const BlogCards = () => {
+
+  const { t } =useTranslation();
+
   const news = [
     {
       id: 3,
-      title: "Streamlining waste management in Europe’s largest port",
-      duration: '2 min',
-      date: 'Jan 10, 2025',
+      span: t("referencespage.blogcard3_span"),
+      title: t("referencespage.blogcard3_title"),
+      duration: '4 min',
+      date: t("referencespage.blogcard3_date"),
       image: RotterdamImg,
       href: '/references/rotterdam',
-      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Moorslsede.',
+      image_description: 'aerial view of the port of Rotterdam',
     },
     {
       id: 2,
-      title: 'Rebin helps Moorslede become legislation compliant',
-      duration: '2 min',
-      date: 'Jul 29, 2024',
+      span: t("referencespage.blogcard2_span"),
+      title: t("referencespage.blogcard2_title"),
+      duration: '3 min',
+      date: t("referencespage.blogcard2_date"),
       image: MoorsledeImg,
       href: '/references/moorslede',
-      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Moorslsede.',
+      image_description: 'Image of the city centre of Moorslede',
     },
     {
       id: 1,
-      title: 'Optimizing waste collection in Maarkedal',
-      duration: '3 min',
-      date: 'March 25, 2024',
+      span: t("referencespage.blogcard1_span"),
+      title: t("referencespage.blogcard1_title"),
+      duration: '4 min',
+      date: t("referencespage.blogcard1_date"),
       image: MaarkedalImg,
       href: '/references/maarkedal',
-      image_description: 'Close-up of the Rebin Smart Waste Sensor installed inside a bin in Maarkedal.',
+      image_description: 'Image of the Rebin Smart Waste Sensor installed inside a bin in Maarkedal.',
     },
   ];
 
@@ -50,7 +57,7 @@ const BlogCards = () => {
               </div>
               <div className="bg-rebin-grey mb-6 mt-10 w-28 rounded-lg">
                 <h5 className="text-gradient-horizontal mx-auto font-bold">
-                  Technology
+                {article.span}
                 </h5>
               </div>
               <h5 className="text-blue-gray-900 mb-2 block text-left font-sans text-xl font-semibold leading-snug tracking-normal antialiased">

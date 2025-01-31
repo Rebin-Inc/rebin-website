@@ -1,23 +1,27 @@
 import React from 'react';
 import RotterdamImg from '../../../assets/images/references/blog/rotterdam2.jpg';
+import { useTranslation } from 'react-i18next';
 
 const RotterdamBlog = () => {
+
+  const { t } =useTranslation();
+
   return (
     <main className="mb-20 mt-10 w-full space-y-10 max-w-7xl ml-auto mr-auto p-6">
       {/* Blog Tag */}
       <span className="bg-gradient rounded-md px-2 py-2 text-sm text-white">
-        Technology
+      {t("referencespage.blogcard1_span")}
       </span>
 
       {/* Blog Title */}
       <h1 className="text-4xl font-semibold text-rebin-darkblue">
-        Streamlining waste management in Europe’s largest port
+      {t("referencespage.rotterdam_title")}
       </h1>
 
       {/* Blog Meta Information */}
       <div className="flex gap-x-6">
         <span className="text-sm">4 min</span>
-        <span className="text-sm">January 13, 2025</span>
+        <span className="text-sm">{t("referencespage.blogcard1_date")}</span>
       </div>
 
       {/* Blog Image */}
@@ -31,71 +35,43 @@ const RotterdamBlog = () => {
 
       {/* Blog Content */}
       <div className="text-justify text-lg font-light">
-        As the largest port in Europe, the Port of Rotterdam spans an enormous
-        area of over 12,000 hectares. Maintaining this vast expanse is a complex
-        challenge, as Pieter Van Driel, project manager at Idverde—a company
-        responsible for the port’s upkeep for many years—can attest.
-        “Beyond maintaining greenery, emptying waste containers is one of the
-        most time-consuming tasks we handle,” Pieter explains. The port area
-        houses approximately 250 waste bins, distributed across its expansive
-        grounds. “Although we often encountered empty bins during our collection
-        routes, we absolutely want to prevent overflowing bins that could lead
-        to litter,” he adds. This logistical challenge took a turn in spring
-        2024, when Pieter reached out to Rebin.
+      {t("referencespage.rotterdam_text1")}
       </div>
 
       <div className="text-justify text-lg font-light">
-        Since partnering with Rebin, every waste bin in the port has been
-        equipped with a sensor. These sensors provide real-time data on bin fill
-        levels, allowing the team to know precisely which bins need attention
-        and, equally importantly, which ones don’t. Besides insights into fill
-        levels, the planning tool on Rebin's platform has brought significant
-        advantages to Idverde’s operations. Pieter explains, “Of course, if only
-        a few bins are full but they are scattered dozens of kilometers apart,
-        it would be far from efficient to collect them all in the same
-        collection route. By organizing our work by regions, we maintain a
-        structured approach while saving substantial resources.” Furthermore,
-        Rebin’s platform allows routes to be generated automatically—daily,
-        weekly, or as needed—without requiring manual inputs. Pieter emphasizes
-        the convenience this brings: “The automated route generation is very
-        beneficial and saves us a lot of time and trouble.”
+      {t("referencespage.rotterdam_text2")}
       </div>
 
       {/* Quote Section */}
       <div className="flex justify-center">
         <q className="text-rebin-darkblue block text-xl font-semibold">
-          The automated route generation is very beneficial and saves us a lot of time and trouble.
+        {t("referencespage.rotterdam_quote")}
         </q>
       </div>
 
       <div className="text-justify text-lg font-light">
-        One of the aspects Pieter values most about Rebin is the interactions
-        with its team. “The Rebin team is always accessible and open to
-        feedback, which helps them continuously innovate. This aligns perfectly
-        with our vision at Idverde.” Looking ahead, Idverde is exploring ways to
-        implement Rebin’s system in additional projects, further optimizing
-        their operations.
+      {t("referencespage.rotterdam_text3")}
       </div>
 
       {/* Summary Section */}
       <section className="flex flex-col gap-y-2">
-        <span className="text-rebin-darkblue mb-5 font-bold">Summary:</span>
+        <span className="text-rebin-darkblue mb-5 font-bold">{t("referencespage.references_summary")}</span>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">1.</span>
           <span className="text-justify text-lg font-light">
-            Rebin equipped 250 bins in the Port of Rotterdam with sensors to monitor real-time fill levels.
+          {t("referencespage.rotterdam_summary1")}
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">2.</span>
           <span className="text-justify text-lg font-light">
-            Rebin's platform automates waste collection routes by region, saving time and resources.
+          {t("referencespage.rotterdam_summary2")}
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">3.</span>
           <span className="text-justify text-lg font-light">
-            The system is being explored for use in other projects of Idverde to further optimize operations.
+          {t("referencespage.rotterdam_summary3")}
           </span>
         </div>
       </section>

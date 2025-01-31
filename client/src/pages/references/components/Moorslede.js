@@ -1,8 +1,12 @@
 import React from 'react';
 import MoorsledeImg from '../../../assets/images/references/blog/moorslede.jpg';
 import {Helmet} from 'react-helmet';
+import { useTranslation } from 'react-i18next';
 
 const MoorsledeBlog = () => {
+
+  const { t } =useTranslation();
+
   return (
 
     <main className="mb-20 mt-10 w-full space-y-10 p-6 max-w-7xl ml-auto mr-auto">
@@ -23,14 +27,14 @@ const MoorsledeBlog = () => {
         {/* Add more meta tags as needed */}
       </Helmet>
       <span className="bg-gradient rounded-md px-2 py-2 text-sm text-white">
-        Technology
+      {t("referencespage.blogcard2_span")}
       </span>
       <h1 className="text-4xl font-semibold text-rebin-darkblue">
-        Fill level data helps Moorslede stay compliant with waste management legislation
+      {t("referencespage.moorslede_title")}
       </h1>
       <div className="flex gap-x-6">
-        <span className="text-sm">2 min</span>
-        <span className="text-sm">Jul 29, 2024</span>
+        <span className="text-sm">3 min</span>
+        <span className="text-sm">{t("referencespage.blogcard2_date")}</span>
       </div>
       <div className="my-10 h-80 w-full rounded-xl">
         <img
@@ -40,37 +44,37 @@ const MoorsledeBlog = () => {
         />
       </div>
       <div className="text-justify text-lg font-light">
-        Managing public waste is a significant challenge for nearly every local government, and Moorslede in Belgium, is no exception. Ensuring the availability of sufficient bins and timely emptying or replacement is a complex task, further complicated by regional regulations. In Flanders, every local government must develop a comprehensive waste bin management plan by 2030. This plan requires creating an inventory of waste bins, monitoring fill levels, and implementing necessary reporting, analysis, and adjustments.
+      {t("referencespage.moorslede_text1")}
       </div>
       <div className="text-justify text-lg font-light">
-        To address these challenges, Moorslede has embraced an innovative solution by partnering with Rebin. Rebin has installed 58 sensors across the municipality to enhance waste management efficiency. These sensors monitor the fill levels and usage of waste bins, providing real-time data that allows for timely and precise interventions.
+      {t("referencespage.moorslede_text2")}
       </div>
       <div className="flex justify-center">
         <q className="text-rebin-darkblue block text-xl font-semibold">
-          Rebin's solution saves us valuable time, automates collection, and ensures we remain compliant with regulations.
+        {t("referencespage.moorslede_quote")}
         </q>
       </div>
       <div className="text-justify text-lg font-light">
-        With real-time monitoring of public bins, waste ollections become more efficient, and local governments can precisely identify areas where bins are needed or where there are excess. This ensures that waste management plans are always up-to-date, compliance with legislation is maintained, and attention can be focused on addressing problem areas.
+      {t("referencespage.moorslede_text3")}
       </div>
       <section className="flex flex-col gap-y-2">
-        <span className="text-rebin-darkblue mb-5 font-bold">Summary:</span>
+        <span className="text-rebin-darkblue mb-5 font-bold">{t("referencespage.references_summary")}</span>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">1.</span>
           <span className="text-justify text-lg font-light">
-            Moorslede struggles with managing waste bins and meeting Flanders' 2030 regulations.
+          {t("referencespage.moorslede_summary1")}
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">2.</span>
           <span className="text-justify text-lg font-light">
-            Rebin provided an up-to-date bin inventory and installed fill level sensors in every bin.
+          {t("referencespage.moorslede_summary2")}
           </span>
         </div>
         <div className="flex items-center gap-x-5">
           <span className="text-gradient font-bold">3.</span>
           <span className="text-justify text-lg font-light">
-            Result: Optimized collections, accurate bin management, and compliance with regulations
+          {t("referencespage.moorslede_summary3")}
           </span>
         </div>
       </section>
