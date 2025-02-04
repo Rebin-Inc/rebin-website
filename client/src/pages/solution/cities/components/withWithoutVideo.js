@@ -1,5 +1,8 @@
 import React, { useRef, useState, useEffect } from 'react';
-import Video from '../../../../assets/videos/home/smart_city.mp4';
+import VideoNl from '../../../../assets/videos/Website video municipalities nederlands.mp4';
+import VideoEn from '../../../../assets/videos/Website video with Rebin cities & municipalities.mp4';
+import { useTranslation } from 'react-i18next';
+
 
 const isSafari = () => {
   const ua = navigator.userAgent.toLowerCase();
@@ -7,8 +10,12 @@ const isSafari = () => {
 };
 
 export default function App() {
+  const { i18n } = useTranslation();
   const videoParentRef = useRef();
   const [shouldUseImage, setShouldUseImage] = useState(false);
+
+  const withRebin = i18n.language === 'en' ? VideoEn : VideoNl
+
 
   useEffect(() => {
     if (isSafari() && videoParentRef.current) {
@@ -38,7 +45,7 @@ export default function App() {
   return (
     <>
       {shouldUseImage ? (
-        <img src={Video} alt="Animation of a smart city" />
+        <img src={withRebin} alt="Animation smart waste collection" />
       ) : (
         <div ref={videoParentRef} className="relative">
           <video
@@ -52,12 +59,10 @@ export default function App() {
             controlsList="nodownload nofullscreen noremoteplayback noplaybackrate" // Block speed control
             className="pointer-events-none select-none" // Prevents interactions
           >
-            <source src={Video} type="video/mp4" />
+            <source src={withRebin} type="video/mp4" />
           </video>
         </div>
       )}
     </>
   );
 }
-
-

@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import withoutRebin from '../../../../assets/images/withoutRebin.png';
+import zonderRebin from '../../../../assets/images/ZonderRebin.png';
 import withRebin from '../../../../assets/images/withRebin.png';
+import WithWithoutVideo from'../components/withWithoutVideo.js';
 import { useTranslation } from 'react-i18next';
 
 const WithWithoutRebin = () => {
 
   const { t } =useTranslation();
+  const { i18n } = useTranslation();
+
+  const image = i18n.language === 'en' ? withoutRebin : zonderRebin
 
   const [activeButton, setActiveButton] = useState('WithoutRebin'); // Default active button
   const [isFading, setIsFading] = useState(false); // State to control fade effect
@@ -54,15 +59,15 @@ const WithWithoutRebin = () => {
       </div>
 
       {/* Image display with fade effect */}
-      <div className="relative mt-6 min-w-[300px]">
-        <img
+      <div className={`relative mt-6 min-w-[300px] ${activeButton === 'WithRebin' ? '-mb-16': ''}`}>
+      {activeButton === 'WithRebin' ? <WithWithoutVideo></WithWithoutVideo> :         <img
           key={activeButton} // Force re-render when the activeButton changes
           className={`rounded-lg w-full h-auto transition-opacity duration-300 ${
             isFading ? 'opacity-0' : 'opacity-100'
           }`}
-          src={activeButton === 'WithRebin' ? withRebin : withoutRebin}
+          src={image}
           alt="The Rebin team"
-        />
+        />}
       </div>
       
       
